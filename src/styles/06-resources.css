@@ -1,0 +1,559 @@
+/* prototype : recherche, onglets, cartes, sommaire actif */
+.r-q {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: none;
+  font: inherit;
+  color: var(--ink);
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.r-q::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+.r-q::-webkit-search-cancel-button {
+  filter: grayscale(1);
+}
+.fq-search .c-in {
+  cursor: text;
+}
+.fq-search .composer:focus-within {
+  border-color: var(--ink);
+}
+.fq-sug span {
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+.fq-sug span:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.r-tabs-in span {
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+.r-tabs-in span:hover {
+  color: var(--ink);
+}
+.r-im {
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.r-feat > .r-im {
+  width: 848px;
+  height: 520px;
+  border-radius: 8px;
+}
+.r-feat > .r-im img:where(:not(.px)) {
+  width: 848px;
+  height: 520px;
+  border-radius: 0;
+}
+.r-card .r-im {
+  margin-bottom: 18px;
+}
+.r-card .r-im img:where(:not(.px)) {
+  margin: 0;
+  border-radius: 0;
+}
+.r-im img:where(:not(.px)) {
+  transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.r-card,
+.r-feat,
+.mr-row,
+.mr-feat {
+  cursor: pointer;
+}
+.r-card:hover .r-im img:where(:not(.px)),
+.r-feat:hover .r-im img:where(:not(.px)),
+.mr-row:hover .r-im img:where(:not(.px)),
+.mr-feat:hover .r-im img:where(:not(.px)) {
+  transform: scale(1.045);
+}
+.r-card h3,
+.r-feat-b h2 {
+  transition: color 0.2s;
+}
+.r-card:hover h3,
+.r-feat:hover h2 {
+  color: var(--acc);
+}
+.r-feat .lnk {
+  transition: color 0.2s;
+}
+.r-empty {
+  margin: 56px 72px 0;
+  padding: 40px;
+  border: 1px dashed #cfcfc8;
+  border-radius: 10px;
+  text-align: center;
+}
+.r-empty b {
+  display: block;
+  font: 600 22px/1.2 'Geist';
+  letter-spacing: -0.03em;
+}
+.r-empty p {
+  margin: 8px 0 18px;
+  font: 400 15px/1.5 'Geist';
+  color: var(--muted);
+}
+.r-reset {
+  cursor: pointer;
+}
+.r-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(28px + env(safe-area-inset-bottom, 0px));
+  z-index: 90;
+  transform: translateX(-50%);
+  max-width: min(440px, calc(100vw - 32px));
+  background: #0e0e0c;
+  color: #f4f4f1;
+  border-radius: 10px;
+  padding: 13px 16px;
+  font: 400 14px/1.4 'Geist';
+  box-shadow: 0 18px 40px -16px rgba(14, 14, 12, 0.55);
+  pointer-events: none;
+}
+.r-toast b {
+  display: block;
+  font-weight: 500;
+}
+.r-toast small {
+  display: block;
+  margin-top: 2px;
+  font: 400 12px/1.4 'Geist';
+  color: rgba(244, 244, 241, 0.6);
+}
+.a-toc,
+.a-side {
+  position: sticky;
+  top: 96px;
+  align-self: start;
+}
+.a-toc a {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.a-toc a:hover {
+  color: var(--ink);
+}
+.a-prog i {
+  width: 0;
+  transition: width 0.15s linear;
+}
+.a-txt h2[data-s] {
+  scroll-margin-top: 96px;
+}
+.a-share span {
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.a-share span:hover {
+  border-color: var(--ink);
+}
+.a-copy.ok {
+  color: #2e8b57;
+  border-color: #2e8b57;
+}
+.a-check li {
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.a-check li i {
+  position: relative;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.a-check li.ok {
+  color: var(--muted);
+}
+.a-check li.ok i {
+  background: var(--acc);
+  border-color: var(--acc);
+}
+.a-check li.ok i::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.a-ckc {
+  margin-top: 14px;
+  font: 400 12px/1 'Geist Mono';
+  color: var(--muted);
+}
+.a-ckc b {
+  color: var(--ink);
+  font-weight: 500;
+}
+.a-ckc.done b {
+  color: var(--acc);
+}
+.a-tabw {
+  overflow-x: auto;
+}
+.r-page [hidden],
+.a-page [hidden] {
+  display: none !important;
+}
+.a-hero,
+.ma-hero {
+  position: relative;
+}
+
+/* mobile */
+.mr-hero {
+  padding-bottom: 28px;
+}
+.mr-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  height: 50px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 16px 36px -24px rgba(0, 0, 0, 0.35);
+  font: 400 16px/1 'Geist';
+}
+.mr-search:focus-within {
+  border-color: var(--ink);
+}
+.mr-search .c-ic {
+  flex: none;
+}
+.mr-tabs {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.mr-tabs::-webkit-scrollbar {
+  display: none;
+}
+.mr-tabs-in {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+  padding: 0 21px;
+}
+.mr-tabs-in span {
+  font: 500 14px/1 'Geist';
+  color: var(--muted);
+  padding: 17px 0 15px;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.mr-tabs-in span.on {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+.mr-cnt {
+  padding: 16px 21px 0;
+}
+.mr-feat {
+  display: block;
+  margin: 20px 21px 0;
+}
+.mr-feat .r-im {
+  height: 230px;
+  border-radius: 8px;
+}
+.mr-feat .r-im img:where(:not(.px)) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.mr-feat .k,
+.mr-row .k {
+  display: flex;
+  justify-content: space-between;
+  font: 400 11px/1 'Geist Mono';
+  color: var(--muted);
+}
+.mr-feat .k {
+  margin-top: 16px;
+}
+.mr-feat h2 {
+  margin-top: 12px;
+  font: 600 26px/1.1 'Geist';
+  letter-spacing: -0.045em;
+}
+.mr-feat p {
+  margin-top: 10px;
+  font: 400 15px/1.55 'Geist';
+  color: var(--text);
+}
+.mr-feat .r-by {
+  margin-top: 18px;
+}
+.mr-list {
+  display: flex;
+  flex-direction: column;
+  margin: 28px 21px 0;
+  border-top: 1px solid var(--ink);
+}
+.mr-row {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.mr-row .r-im {
+  height: 84px;
+  border-radius: 5px;
+}
+.mr-row .r-im img:where(:not(.px)) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.mr-row > div {
+  min-width: 0;
+}
+.mr-row h3 {
+  margin-top: 8px;
+  font: 500 16px/1.3 'Geist';
+  letter-spacing: -0.02em;
+}
+.mr-row .r-date {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+}
+.mr-cta {
+  margin: 16px 0;
+  padding: 24px;
+}
+.mr-cta b {
+  font-size: 24px;
+}
+.mr-cta .btn {
+  align-self: stretch;
+  margin-top: 6px;
+}
+.mr-empty {
+  margin: 28px 21px 0;
+  padding: 28px 20px;
+}
+.mr-nl {
+  margin: 40px 21px 56px;
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 24px;
+}
+.mr-nl b {
+  display: block;
+  font: 600 21px/1.2 'Geist';
+  letter-spacing: -0.03em;
+}
+.mr-nl p {
+  margin-top: 6px;
+  font: 400 14px/1.5 'Geist';
+  color: var(--muted);
+}
+.mr-nl .nl-f {
+  margin-top: 16px;
+  background: #fff;
+  border-color: var(--line);
+  color: var(--muted);
+}
+.mr-nl .nl-f a,
+.mr-nl .nl-f button {
+  background: var(--ink);
+  color: #fff;
+}
+.mr-nl .nl-msg {
+  color: var(--text);
+}
+
+.ma-head {
+  padding-bottom: 28px;
+}
+.ma-meta {
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 18px;
+  font-size: 11px;
+}
+.ma-h1 {
+  font-size: 34px;
+  line-height: 1.04;
+}
+.ma-head .a-by {
+  margin-top: 22px;
+}
+.ma-hero {
+  margin: 0 21px;
+  height: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.ma-hero img:where(:not(.px)) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ma-toc {
+  margin: 24px 21px 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ma-toc-h {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  font: 500 15px/1 'Geist';
+  cursor: pointer;
+}
+.ma-toc-h span:first-child {
+  flex: 1;
+}
+.ma-toc-h .a-progt {
+  margin: 0;
+}
+.ma-toc-h .plus {
+  transition: transform 0.3s;
+}
+.ma-toc.open .ma-toc-h .plus {
+  transform: rotate(45deg);
+}
+.ma-toc-l {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+.ma-toc.open .ma-toc-l {
+  grid-template-rows: 1fr;
+}
+.ma-toc.snap .ma-toc-l,
+.ma-toc.snap .plus {
+  transition: none;
+}
+.ma-toc-l > div {
+  overflow: hidden;
+  padding: 0 16px;
+}
+.ma-toc-l a {
+  display: block;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+  font: 400 14px/1.35 'Geist';
+  color: var(--muted);
+  cursor: pointer;
+}
+.ma-toc-l a.on {
+  color: var(--ink);
+  font-weight: 500;
+}
+.ma-toc-l a:last-child {
+  margin-bottom: 6px;
+}
+.ma-toc .a-prog {
+  margin: 0;
+  height: 3px;
+}
+.ma-txt {
+  padding: 36px 21px 8px;
+}
+.ma-txt h2 {
+  margin-top: 44px;
+  font-size: 26px;
+}
+.ma-txt h3 {
+  margin-top: 26px;
+  font-size: 19px;
+}
+.ma-txt p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+.ma-txt .tldr {
+  padding: 20px;
+}
+.ma-txt .tldr li {
+  font-size: 15px;
+}
+.ma-txt .a-fig-in {
+  height: 300px;
+}
+.ma-txt .a-fig-in > img:where(:not(.px)) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ma-txt .a-ai {
+  left: 14px;
+  right: 14px;
+  top: 36px;
+}
+.ma-txt .a-ai .ai-q,
+.ma-txt .a-ai .ai-a {
+  font-size: 13px;
+}
+.ma-txt blockquote {
+  font-size: 27px;
+  padding-left: 20px;
+}
+.ma-txt .a-tab {
+  min-width: 460px;
+  font-size: 14px;
+}
+.ma-txt .a-code {
+  font-size: 11px;
+  overflow-x: auto;
+}
+.ma-txt .a-code > div {
+  white-space: pre;
+}
+.ma-txt .a-check li {
+  font-size: 15px;
+}
+.ma-txt .a-faq .mo-faq {
+  margin-top: 18px;
+}
+.ma-txt .a-author {
+  padding: 20px;
+  gap: 14px;
+}
+.ma-box {
+  padding: 16px 21px 56px;
+}
+.ma-box .a-sbox .btn {
+  margin-top: 4px;
+}
+.ma-share {
+  margin: 22px 0 0;
+  justify-content: flex-start;
+}
+.ma-rel {
+  margin: 0;
+}

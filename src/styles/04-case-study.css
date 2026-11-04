@@ -1,0 +1,214 @@
+/* étude de cas */
+.cs-row {
+  align-items: flex-start;
+}
+.cs-row .lead {
+  width: 620px;
+}
+.cs-facts {
+  width: 460px;
+  border-top: 1px solid var(--ink);
+}
+.cs-facts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cs-facts span {
+  font: 400 12px/1.5 'Geist Mono';
+  color: var(--muted);
+}
+.cs-facts b {
+  font: 500 14px/1.5 'Geist';
+  text-align: right;
+}
+.cs-hero {
+  height: 640px;
+}
+.cs-hero > img:where(:not(.px)) {
+  width: 1344px;
+  height: 640px;
+}
+.cs-hwin {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  width: 620px;
+}
+.cs-hero .cs-hwin .shot {
+  position: static;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cs-hero .case-logo img:where(:not(.px)) {
+  position: static;
+  width: auto;
+  height: 64px;
+}
+.case-logo {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+.case-logo img:where(:not(.px)) {
+  height: 64px;
+  width: auto;
+  display: block;
+}
+.case-k {
+  font: 500 12px/1 'Geist Mono';
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  padding-bottom: 12px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--ink);
+}
+.cs-brief {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 48px;
+  padding: 0 72px 112px;
+}
+.cs-b1 p {
+  font: 600 40px/1.1 'Geist';
+  letter-spacing: -0.04em;
+}
+.cs-b1 .serif {
+  font-size: 46px;
+  color: var(--muted);
+  letter-spacing: -0.02em;
+  margin-top: 4px;
+}
+.cs-b2 ul {
+  list-style: none;
+}
+.cs-b2 li {
+  font: 400 16px/1.5 'Geist';
+  color: var(--text);
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cs-win {
+  box-shadow: 0 18px 40px -22px rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--line);
+}
+.cs-win .shot {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cs-site {
+  display: flex;
+  gap: 24px;
+  padding: 0 72px;
+}
+.cs-big {
+  width: 840px;
+  flex: none;
+  align-self: flex-start;
+}
+.cs-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.cs-grid {
+  display: grid;
+  gap: 24px;
+  padding: 56px 72px 112px;
+}
+.cs-g4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.cs-g3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cs-tile h3 {
+  margin-top: 18px;
+  font: 600 19px/1.2 'Geist';
+  letter-spacing: -0.025em;
+}
+.cs-tile p {
+  margin-top: 8px;
+  font: 400 14px/1.5 'Geist';
+  color: var(--muted);
+}
+.cs-dark {
+  background: var(--ink);
+  color: #f4f4f1;
+}
+.cs-dark .shead {
+  padding-top: 112px;
+}
+.cs-dark .h2 .serif {
+  color: #8a8a82;
+}
+.cs-dark .lead {
+  color: rgba(244, 244, 241, 0.68);
+}
+.cs-dark .cs-win {
+  border-color: #2b2b28;
+}
+.cs-bo {
+  display: flex;
+  gap: 56px;
+  padding: 0 72px;
+  align-items: center;
+}
+.cs-bowin {
+  width: 840px;
+  flex: none;
+}
+.cs-bo-r h3 {
+  font: 600 30px/1.1 'Geist';
+  letter-spacing: -0.04em;
+}
+.cs-bo-r p {
+  margin: 16px 0 28px;
+  font: 400 16px/1.55 'Geist';
+  color: rgba(244, 244, 241, 0.68);
+}
+.cs-d p {
+  color: rgba(244, 244, 241, 0.6);
+}
+.cs-next {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+  padding: 112px 72px;
+}
+.cs-nx-l {
+  flex: 1;
+}
+.cs-nx-l .h2 {
+  margin-top: 16px;
+}
+.cs-nx-l .lead {
+  margin-top: 18px;
+  width: 440px;
+}
+.cs-nx-b {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 32px;
+}
+.cs-nx-m {
+  width: 760px;
+  height: 440px;
+  flex: none;
+  background: var(--ink);
+}
+.cs-nx-m .win-stand {
+  left: auto;
+  right: 28px;
+  bottom: 28px;
+  width: 500px;
+}

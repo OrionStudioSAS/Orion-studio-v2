@@ -1,0 +1,21 @@
+@import './00-reset.css';
+@import './01-base.css';
+@import './02-home.css';
+@import './03-components.css';
+@import './04-case-study.css';
+@import './05-studio.css';
+@import './06-resources.css';
+@import './07-site.css';
+@import './08-project-modal.css';
+@import './09-orio.css';
+@import './10-footer-cursor.css';
+
+/* Les pixel arts sont des fichiers SVG : ni rétrécis ni déplaçables comme des photos */
+img.px {
+  max-width: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+#root {
+  display: contents;
+}

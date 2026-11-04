@@ -1,0 +1,467 @@
+/* footer : survols */
+.ft .cta h2 .serif,
+.mo-cta h2 .serif {
+  transition: color 0.5s;
+}
+.ft .cta:hover h2 .serif {
+  color: #c9c9c1;
+}
+.cta-r .mail b,
+.mo-cta .mail b {
+  transition:
+    color 0.25s,
+    border-color 0.25s;
+}
+.cta-r .mail:hover b,
+.mo-cta .mail:hover b {
+  color: var(--acc);
+  border-color: var(--acc);
+}
+.btn-line {
+  transition:
+    background 0.3s,
+    color 0.3s,
+    border-color 0.3s;
+}
+.btn-line:hover {
+  background: #f4f4f1;
+  color: var(--ink);
+  border-color: #f4f4f1;
+}
+.btn-acc {
+  transition: background 0.3s;
+}
+.btn-acc:hover {
+  background: #ff6a40;
+}
+.btn-ink {
+  transition: background 0.3s;
+}
+.btn-ink:hover {
+  background: #2a2a27;
+}
+.btn-ghost {
+  transition: background 0.3s;
+}
+.btn-ghost:hover {
+  background: #e9e9e4;
+}
+.ft-l .logo :is(svg, :where(img.px)) {
+  transition: transform 0.5s cubic-bezier(0.3, 1.5, 0.5, 1);
+}
+.ft-l .logo:hover .logo-m,
+.mo-ft-main .logo:hover .logo-m {
+  transform: rotate(-14deg) scale(1.12);
+}
+.fc a,
+.mo-fc a {
+  position: relative;
+  align-self: flex-start;
+  transition:
+    color 0.25s,
+    transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.fc a::before,
+.mo-fc a::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  background: var(--acc);
+  transform: scale(0);
+  transition: transform 0.3s cubic-bezier(0.3, 1.5, 0.5, 1);
+}
+.fc a:hover,
+.mo-fc a:hover {
+  color: #ffffff;
+  transform: translateX(14px);
+}
+.fc a:hover::before,
+.mo-fc a:hover::before {
+  transform: scale(1);
+}
+.fc-k {
+  transition: color 0.3s;
+}
+.fc:hover .fc-k {
+  color: #a8a8a0;
+}
+.ft-cards > div,
+.mo-fcard {
+  position: relative;
+  transition: background 0.35s;
+}
+.ft-cards > div::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: var(--acc);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.ft-cards > div:hover {
+  background: #151513;
+}
+.ft-cards > div:hover::after {
+  transform: scaleX(1);
+}
+.ft-cards b,
+.mo-fcard b {
+  transition: color 0.3s;
+}
+.ft-cards > div:hover b,
+.mo-fcard:hover b {
+  color: var(--acc);
+}
+.ft-cards a,
+.mo-fcard a {
+  border-bottom-color: rgba(244, 244, 241, 0.3);
+  background: linear-gradient(var(--acc), var(--acc)) 0 100%/0 1px no-repeat;
+  transition:
+    background-size 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
+    color 0.25s;
+}
+.ft-cards > div:hover a,
+.mo-fcard:hover a {
+  background-size: 100% 1px;
+  color: #ffffff;
+}
+.nl {
+  transition:
+    border-color 0.3s,
+    background 0.3s;
+}
+.nl:hover {
+  border-color: #3a3a35;
+}
+.nl-f {
+  transition: border-color 0.25s;
+}
+.nl-f:hover,
+.nl-f:focus-within {
+  border-color: #77776f;
+}
+.nl-f input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: 400 14px/1.2 'Geist';
+  color: #f4f4f1;
+  padding: 4px 0;
+}
+.nl-f input::placeholder {
+  color: rgba(244, 244, 241, 0.4);
+}
+.nl-f button {
+  border: 0;
+  background: #f4f4f1;
+  color: var(--ink);
+  font: 500 13px/1 'Geist';
+  padding: 10px 14px;
+  border-radius: 5px;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+.nl-f button:hover {
+  background: var(--acc);
+}
+.nl-msg {
+  margin-top: 10px;
+  font: 400 12.5px/1.45 'Geist';
+  color: rgba(244, 244, 241, 0.7);
+}
+.nl-msg.err {
+  color: #ff8a66;
+}
+.nl-msg small {
+  display: block;
+  margin-top: 2px;
+  font: 400 11px/1.4 'Geist Mono';
+  color: rgba(244, 244, 241, 0.45);
+}
+.ft-legal > span,
+.ft-legal div span,
+.mo-legal-l span {
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.ft-legal div:not(.ft-lang) span:hover,
+.mo-legal-l span:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.ft-lang span {
+  cursor: pointer;
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+.ft-lang span:not(.on):hover {
+  color: #ffffff;
+  background: #1f1f1c;
+}
+.ft-sky .bigword,
+.mo-sky .bigword {
+  transition: opacity 0.6s;
+}
+.ft-sky:hover .bigword {
+  opacity: 0.24 !important;
+}
+/* curseur pixel */
+.cur-dot,
+.cur-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  pointer-events: none;
+  display: none;
+}
+body.has-cur .cur-dot,
+body.has-cur .cur-ring {
+  display: block;
+}
+body.has-cur .site-d,
+body.has-cur .site-d * {
+  cursor: none !important;
+}
+body.has-cur .site-d input {
+  cursor: text !important;
+}
+.cur-dot i {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: var(--acc);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s;
+}
+.cur-ring {
+  mix-blend-mode: difference;
+}
+.cur-ring i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid #ffffff;
+  border-radius: 6px;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+    height 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+    background 0.3s,
+    border-color 0.3s,
+    border-radius 0.3s;
+  font: 500 13px/1 'Geist';
+  color: var(--ink);
+  white-space: nowrap;
+  font-style: normal;
+}
+.cur-ring.is-link i {
+  width: 62px;
+  height: 62px;
+  border-radius: 10px;
+}
+.cur-ring.is-label {
+  mix-blend-mode: normal;
+}
+.cur-ring.is-label i {
+  width: auto;
+  height: 40px;
+  padding: 0 16px;
+  background: var(--acc);
+  border-color: var(--acc);
+  border-radius: 4px;
+}
+.cur-ring.is-down i {
+  width: 30px;
+  height: 30px;
+}
+body.cur-label .cur-dot i {
+  opacity: 0;
+}
+
+/* mobile */
+.mo-burger {
+  position: relative;
+  background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+}
+.mo-burger i {
+  position: absolute;
+  left: 10px;
+  width: 18px;
+  height: 1.6px;
+  background: var(--ink);
+  transition:
+    transform 0.45s cubic-bezier(0.7, 0, 0.2, 1),
+    top 0.45s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.mo-burger i:first-child {
+  top: 15px;
+}
+.mo-burger i:last-child {
+  top: 23px;
+}
+.menu-open .mo-burger i:first-child {
+  top: 19px;
+  transform: rotate(45deg);
+}
+.menu-open .mo-burger i:last-child {
+  top: 19px;
+  transform: rotate(-45deg);
+}
+.mo-nav.menu-open {
+  z-index: 70;
+  background: #fff;
+  box-shadow: none;
+}
+.mo-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 60;
+  background: #fff;
+  padding: calc(76px + env(safe-area-inset-top, 0px)) 21px 32px;
+  overflow-y: auto;
+  visibility: hidden;
+  clip-path: inset(0 0 100% 0);
+  transition:
+    clip-path 0.6s cubic-bezier(0.7, 0, 0.2, 1),
+    visibility 0s 0.6s;
+}
+.mo-menu.on {
+  visibility: visible;
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 0.6s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.mo-menu > * {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.4s,
+    transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.mo-menu.on > * {
+  opacity: 1;
+  transform: none;
+}
+.mo-menu.on > :nth-child(2) {
+  transition-delay: 0.06s;
+}
+.mo-menu.on > :nth-child(3) {
+  transition-delay: 0.1s;
+}
+.mo-menu.on > :nth-child(4) {
+  transition-delay: 0.14s;
+}
+.mo-menu.on > :nth-child(5) {
+  transition-delay: 0.18s;
+}
+.mo-menu.on > :nth-child(6) {
+  transition-delay: 0.22s;
+}
+.mo-menu.on > :nth-child(7) {
+  transition-delay: 0.26s;
+}
+.mo-mk {
+  font: 400 11px/1 'Geist Mono';
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.mo-mg {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+}
+.mo-mi {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  font: 500 17px/1.2 'Geist';
+  letter-spacing: -0.025em;
+  border-bottom: 1px solid var(--line);
+}
+.mo-ml2 {
+  display: flex;
+  flex-direction: column;
+}
+.mo-ml2 a {
+  font: 600 30px/1.2 'Geist';
+  letter-spacing: -0.045em;
+  padding: 6px 0;
+}
+.mo-mfoot {
+  margin-top: 22px;
+  text-align: center;
+  font: 400 12px/1.4 'Geist Mono';
+  color: var(--muted);
+}
+.mo-media .betel {
+  z-index: 1;
+}
+.mo-chat {
+  z-index: 3;
+}
+.mo-rail {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-x: contain;
+}
+.mo-rail::-webkit-scrollbar,
+.mo-tabs::-webkit-scrollbar,
+.mo-sug::-webkit-scrollbar {
+  display: none;
+}
+.mo-track {
+  padding-right: 21px;
+}
+.mo-cell,
+.mo-art {
+  scroll-snap-align: start;
+}
+.mo-tabs {
+  width: auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-right: 21px;
+}
+.mo-tabs span {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.mo-sug {
+  width: auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-right: -14px;
+  padding-right: 14px;
+}
+.mo-sug .sg {
+  flex: none;
+}
+.mo-acc-h .pm {
+  color: var(--ink);
+}

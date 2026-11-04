@@ -1,0 +1,136 @@
+:root {
+  --ink: #0e0e0c;
+  --ink2: #1b1b19;
+  --text: #3b3b37;
+  --muted: #77776f;
+  --line: #e3e3de;
+  --panel: #f4f4f1;
+  --bg: #ffffff;
+  --acc: #ff4d1a;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #dadad5;
+  font-family: 'Geist', sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.artboard {
+  width: 1440px;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+.rail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+.rail-l {
+  left: 47px;
+}
+.rail-r {
+  left: 1392px;
+}
+.sec {
+  position: relative;
+  border-top: 1px solid var(--line);
+  padding: 0 48px;
+}
+.in {
+  padding: 0 48px;
+}
+.mono {
+  font-family: 'Geist Mono', monospace;
+}
+.serif {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 3px;
+  font: 500 10px/1 'Geist Mono';
+  color: rgba(255, 255, 255, 0.75);
+}
+.kbd-d {
+  border-color: var(--line);
+  color: var(--muted);
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 44px;
+  padding: 0 16px 0 18px;
+  border-radius: 6px;
+  font: 500 15px/1 'Geist';
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.btn-ink {
+  background: var(--ink);
+  color: #fff;
+}
+.btn-ghost {
+  background: var(--panel);
+  color: var(--ink);
+}
+.btn-acc {
+  background: var(--acc);
+  color: var(--ink);
+}
+.btn-acc .kbd {
+  border-color: rgba(14, 14, 12, 0.3);
+  color: rgba(14, 14, 12, 0.7);
+}
+.lnk {
+  font: 500 15px/1 'Geist';
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
+}
+h2.h2 {
+  font: 600 56px/1.02 'Geist';
+  letter-spacing: -0.045em;
+}
+.h2 .serif {
+  font-size: 62px;
+  letter-spacing: -0.02em;
+  color: var(--muted);
+}
+.lead {
+  font: 400 18px/1.55 'Geist';
+  color: var(--text);
+  letter-spacing: -0.005em;
+}
+.shead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 112px 48px 56px;
+}
+.shead .lead {
+  width: 420px;
+}
