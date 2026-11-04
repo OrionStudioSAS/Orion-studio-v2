@@ -5,49 +5,335 @@ export function MobileMenu() {
     <nav className="mo-menu" id="m-menu" aria-label="Menu">
       <div className="mo-mk">Expertises</div>
       <div className="mo-mg">
-        <a className="mo-mi">
+        <Link to="/expertises/site-internet" className="mo-mi" data-exp="site-internet">
           <img className="px picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
           <span>Site internet</span>
-        </a>
-        <a className="mo-mi">
+        </Link>
+        <Link to="/expertises/site-vitrine" className="mo-mi mo-msub" data-exp="site-vitrine">
+          <span>Site vitrine</span>
+        </Link>
+        <Link to="/expertises/site-dynamique" className="mo-mi mo-msub" data-exp="site-dynamique">
+          <span>Site dynamique</span>
+        </Link>
+        <Link to="/expertises/site-concept" className="mo-mi mo-msub" data-exp="site-concept">
+          <span>Site concept</span>
+        </Link>
+        <Link
+          to="/expertises/developpement-applications"
+          className="mo-mi"
+          data-exp="developpement-applications"
+        >
           <img className="px picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
-          <span>Développement & applications</span>
-        </a>
-        <a className="mo-mi">
+          <span>Développement d’applications</span>
+        </Link>
+        <Link to="/expertises/automatisations" className="mo-mi" data-exp="automatisations">
           <img className="px picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
           <span>Automatisations</span>
-        </a>
-        <a className="mo-mi">
+        </Link>
+        <Link to="/expertises/seo" className="mo-mi" data-exp="seo">
           <img className="px picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
           <span>SEO</span>
-        </a>
-        <a className="mo-mi">
+        </Link>
+        <Link to="/expertises/geo" className="mo-mi" data-exp="geo">
           <img className="px picon" src="/px/picon-84c912e7.svg" alt="" width={20} height={20} />
           <span>GEO</span>
-        </a>
-        <a className="mo-mi">
+        </Link>
+        <Link to="/expertises/google-ads" className="mo-mi" data-exp="google-ads">
           <img className="px picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
           <span>Google Ads</span>
-        </a>
+        </Link>
       </div>
       <div className="mo-mk">Pour qui ?</div>
-      <div className="mo-mg">
-        <a className="mo-mi">
+      <div className="mo-mg mo-mg-who">
+        <Link to="/pour-qui/tpe-pme" className="mo-mi" data-sector="pme">
           <img className="px picon" src="/px/picon-4780f153.svg" alt="" width={20} height={20} />
           <span>TPE & PME</span>
-        </a>
-        <Link to="/golfs" className="mo-mi">
-          <img className="px picon" src="/px/picon-1bac5105.svg" alt="" width={20} height={20} />
-          <span>Golfs</span>
         </Link>
-        <a className="mo-mi">
+        <Link to="/pour-qui/independants" className="mo-mi" data-sector="indep">
           <img className="px picon" src="/px/picon-00814f13.svg" alt="" width={20} height={20} />
           <span>Indépendants & micro-entrepreneurs</span>
-        </a>
-        <a className="mo-mi">
+        </Link>
+        <Link to="/pour-qui/marques-e-commerce" className="mo-mi" data-sector="shop">
           <img className="px picon" src="/px/picon-808b4de1.svg" alt="" width={20} height={20} />
           <span>Marques & e-commerçants</span>
-        </a>
+        </Link>
+        <Link to="/pour-qui/start-up" className="mo-mi" data-sector="startup">
+          <img className="px picon" src="/px/picon-f0c33abd.svg" alt="" width={20} height={20} />
+          <span>Start-up</span>
+        </Link>
+      </div>
+      <div className="mo-mk">Par secteur</div>
+      <div className="sec-ring mo-sec-ring">
+        <Link to="/pour-qui/golfs" className="sec-st" data-sector="golf" role="link" tabIndex={0}>
+          <span className="sec-av">
+            <span>
+              <img
+                className="px"
+                src="/px/art-adc97f27.svg"
+                alt=""
+                style={{ width: '100%', height: '100%' }}
+              />
+            </span>
+          </span>
+          <b>Golfs</b>
+        </Link>
+        <Link
+          to="/pour-qui/boulangeries"
+          className="sec-st"
+          data-sector="boulangerie"
+          role="link"
+          tabIndex={0}
+        >
+          <span className="sec-av">
+            <span>
+              <img
+                className="px"
+                src="/px/art-e0dda6d2.svg"
+                alt=""
+                style={{ width: '100%', height: '100%' }}
+              />
+            </span>
+          </span>
+          <b>Boulangeries</b>
+        </Link>
+        <Link to="/pour-qui/restaurants" className="sec-st" data-sector="restaurant" role="link" tabIndex={0}>
+          <span className="sec-av">
+            <span>
+              <svg
+                viewBox="-1 -1 16 16"
+                width="100%"
+                height="100%"
+                shapeRendering="crispEdges"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect x="-1" y="-1" width="16" height="16" fill="#E4E9EE" />
+                <rect x="6" y="2" width="2" height="1" fill="#6E7781" />
+                <rect x="6" y="3" width="2" height="1" fill="#6E7781" />
+                <rect x="4" y="4" width="6" height="1" fill="#B9C2CB" />
+                <rect x="3" y="5" width="1" height="1" fill="#B9C2CB" />
+                <rect x="4" y="5" width="1" height="1" fill="#F4F6F8" />
+                <rect x="5" y="5" width="7" height="1" fill="#B9C2CB" />
+                <rect x="2" y="6" width="1" height="1" fill="#B9C2CB" />
+                <rect x="3" y="6" width="1" height="1" fill="#F4F6F8" />
+                <rect x="4" y="6" width="9" height="1" fill="#B9C2CB" />
+                <rect x="2" y="7" width="1" height="1" fill="#B9C2CB" />
+                <rect x="3" y="7" width="1" height="1" fill="#F4F6F8" />
+                <rect x="4" y="7" width="9" height="1" fill="#B9C2CB" />
+                <rect x="2" y="8" width="11" height="1" fill="#B9C2CB" />
+                <rect x="1" y="9" width="13" height="1" fill="#6E7781" />
+              </svg>
+            </span>
+          </span>
+          <b>Restaurants</b>
+        </Link>
+        <Link to="/pour-qui/associations" className="sec-st" data-sector="asso" role="link" tabIndex={0}>
+          <span className="sec-av">
+            <span>
+              <svg
+                viewBox="-1 -1 16 16"
+                width="100%"
+                height="100%"
+                shapeRendering="crispEdges"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect x="-1" y="-1" width="16" height="16" fill="#FFE3D9" />
+                <rect x="3" y="2" width="3" height="1" fill="#FF4D1A" />
+                <rect x="8" y="2" width="3" height="1" fill="#FF4D1A" />
+                <rect x="2" y="3" width="10" height="1" fill="#FF4D1A" />
+                <rect x="2" y="4" width="1" height="1" fill="#FF4D1A" />
+                <rect x="3" y="4" width="2" height="1" fill="#FFB59C" />
+                <rect x="5" y="4" width="7" height="1" fill="#FF4D1A" />
+                <rect x="2" y="5" width="1" height="1" fill="#FF4D1A" />
+                <rect x="3" y="5" width="1" height="1" fill="#FFB59C" />
+                <rect x="4" y="5" width="8" height="1" fill="#FF4D1A" />
+                <rect x="2" y="6" width="10" height="1" fill="#FF4D1A" />
+                <rect x="3" y="7" width="8" height="1" fill="#FF4D1A" />
+                <rect x="11" y="7" width="1" height="1" fill="#C93A12" />
+                <rect x="4" y="8" width="6" height="1" fill="#FF4D1A" />
+                <rect x="10" y="8" width="1" height="1" fill="#C93A12" />
+                <rect x="5" y="9" width="4" height="1" fill="#FF4D1A" />
+                <rect x="9" y="9" width="1" height="1" fill="#C93A12" />
+                <rect x="6" y="10" width="2" height="1" fill="#FF4D1A" />
+                <rect x="8" y="10" width="1" height="1" fill="#C93A12" />
+              </svg>
+            </span>
+          </span>
+          <b>Associations</b>
+        </Link>
+        <Link to="/pour-qui/artisans" className="sec-st" data-sector="artisan" role="link" tabIndex={0}>
+          <span className="sec-av">
+            <span>
+              <svg
+                viewBox="-1 -1 16 16"
+                width="100%"
+                height="100%"
+                shapeRendering="crispEdges"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect x="-1" y="-1" width="16" height="16" fill="#DCE6F0" />
+                <rect x="2" y="2" width="1" height="1" fill="#8994A3" />
+                <rect x="3" y="2" width="8" height="1" fill="#4A5563" />
+                <rect x="1" y="3" width="1" height="1" fill="#8994A3" />
+                <rect x="2" y="3" width="10" height="1" fill="#4A5563" />
+                <rect x="2" y="4" width="9" height="1" fill="#4A5563" />
+                <rect x="6" y="5" width="2" height="1" fill="#C98B4E" />
+                <rect x="6" y="6" width="2" height="1" fill="#C98B4E" />
+                <rect x="6" y="7" width="2" height="1" fill="#C98B4E" />
+                <rect x="6" y="8" width="2" height="1" fill="#C98B4E" />
+                <rect x="6" y="9" width="2" height="1" fill="#C98B4E" />
+                <rect x="6" y="10" width="2" height="1" fill="#C98B4E" />
+                <rect x="6" y="11" width="2" height="1" fill="#8A5523" />
+                <rect x="6" y="12" width="2" height="1" fill="#8A5523" />
+              </svg>
+            </span>
+          </span>
+          <b>Artisans</b>
+        </Link>
+        <Link to="/pour-qui/hotels-gites" className="sec-st" data-sector="hotel" role="link" tabIndex={0}>
+          <span className="sec-av">
+            <span>
+              <img
+                className="px"
+                src="/px/art-e6cc4a17.svg"
+                alt=""
+                style={{ width: '100%', height: '100%' }}
+              />
+            </span>
+          </span>
+          <b>Hôtels & gîtes</b>
+        </Link>
+        <Link to="/pour-qui/coiffeurs" className="sec-st" data-sector="coiffure" role="link" tabIndex={0}>
+          <span className="sec-av">
+            <span>
+              <img
+                className="px"
+                src="/px/art-b8783d94.svg"
+                alt=""
+                style={{ width: '100%', height: '100%' }}
+              />
+            </span>
+          </span>
+          <b>Coiffeurs</b>
+        </Link>
+        <Link to="/pour-qui/immobilier" className="sec-st" data-sector="immo" role="link" tabIndex={0}>
+          <span className="sec-av">
+            <span>
+              <img
+                className="px"
+                src="/px/art-b70ac2f6.svg"
+                alt=""
+                style={{ width: '100%', height: '100%' }}
+              />
+            </span>
+          </span>
+          <b>Immobilier</b>
+        </Link>
+        <Link
+          to="/pour-qui"
+          className="sec-st sec-all mm-all"
+          role="link"
+          tabIndex={0}
+          aria-label="Voir tous les secteurs (8)"
+        >
+          <span className="sec-av">
+            <span className="sec-mos">
+              <i>
+                <img
+                  className="px"
+                  src="/px/art-e0dda6d2.svg"
+                  alt=""
+                  style={{ width: '100%', height: '100%' }}
+                />
+              </i>
+              <i>
+                <svg
+                  viewBox="-1 -1 16 16"
+                  width="100%"
+                  height="100%"
+                  shapeRendering="crispEdges"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <rect x="-1" y="-1" width="16" height="16" fill="#E4E9EE" />
+                  <rect x="6" y="2" width="2" height="1" fill="#6E7781" />
+                  <rect x="6" y="3" width="2" height="1" fill="#6E7781" />
+                  <rect x="4" y="4" width="6" height="1" fill="#B9C2CB" />
+                  <rect x="3" y="5" width="1" height="1" fill="#B9C2CB" />
+                  <rect x="4" y="5" width="1" height="1" fill="#F4F6F8" />
+                  <rect x="5" y="5" width="7" height="1" fill="#B9C2CB" />
+                  <rect x="2" y="6" width="1" height="1" fill="#B9C2CB" />
+                  <rect x="3" y="6" width="1" height="1" fill="#F4F6F8" />
+                  <rect x="4" y="6" width="9" height="1" fill="#B9C2CB" />
+                  <rect x="2" y="7" width="1" height="1" fill="#B9C2CB" />
+                  <rect x="3" y="7" width="1" height="1" fill="#F4F6F8" />
+                  <rect x="4" y="7" width="9" height="1" fill="#B9C2CB" />
+                  <rect x="2" y="8" width="11" height="1" fill="#B9C2CB" />
+                  <rect x="1" y="9" width="13" height="1" fill="#6E7781" />
+                </svg>
+              </i>
+              <i>
+                <svg
+                  viewBox="-1 -1 16 16"
+                  width="100%"
+                  height="100%"
+                  shapeRendering="crispEdges"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <rect x="-1" y="-1" width="16" height="16" fill="#FFE3D9" />
+                  <rect x="3" y="2" width="3" height="1" fill="#FF4D1A" />
+                  <rect x="8" y="2" width="3" height="1" fill="#FF4D1A" />
+                  <rect x="2" y="3" width="10" height="1" fill="#FF4D1A" />
+                  <rect x="2" y="4" width="1" height="1" fill="#FF4D1A" />
+                  <rect x="3" y="4" width="2" height="1" fill="#FFB59C" />
+                  <rect x="5" y="4" width="7" height="1" fill="#FF4D1A" />
+                  <rect x="2" y="5" width="1" height="1" fill="#FF4D1A" />
+                  <rect x="3" y="5" width="1" height="1" fill="#FFB59C" />
+                  <rect x="4" y="5" width="8" height="1" fill="#FF4D1A" />
+                  <rect x="2" y="6" width="10" height="1" fill="#FF4D1A" />
+                  <rect x="3" y="7" width="8" height="1" fill="#FF4D1A" />
+                  <rect x="11" y="7" width="1" height="1" fill="#C93A12" />
+                  <rect x="4" y="8" width="6" height="1" fill="#FF4D1A" />
+                  <rect x="10" y="8" width="1" height="1" fill="#C93A12" />
+                  <rect x="5" y="9" width="4" height="1" fill="#FF4D1A" />
+                  <rect x="9" y="9" width="1" height="1" fill="#C93A12" />
+                  <rect x="6" y="10" width="2" height="1" fill="#FF4D1A" />
+                  <rect x="8" y="10" width="1" height="1" fill="#C93A12" />
+                </svg>
+              </i>
+              <i>
+                <svg
+                  viewBox="-1 -1 16 16"
+                  width="100%"
+                  height="100%"
+                  shapeRendering="crispEdges"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <rect x="-1" y="-1" width="16" height="16" fill="#DCE6F0" />
+                  <rect x="2" y="2" width="1" height="1" fill="#8994A3" />
+                  <rect x="3" y="2" width="8" height="1" fill="#4A5563" />
+                  <rect x="1" y="3" width="1" height="1" fill="#8994A3" />
+                  <rect x="2" y="3" width="10" height="1" fill="#4A5563" />
+                  <rect x="2" y="4" width="9" height="1" fill="#4A5563" />
+                  <rect x="6" y="5" width="2" height="1" fill="#C98B4E" />
+                  <rect x="6" y="6" width="2" height="1" fill="#C98B4E" />
+                  <rect x="6" y="7" width="2" height="1" fill="#C98B4E" />
+                  <rect x="6" y="8" width="2" height="1" fill="#C98B4E" />
+                  <rect x="6" y="9" width="2" height="1" fill="#C98B4E" />
+                  <rect x="6" y="10" width="2" height="1" fill="#C98B4E" />
+                  <rect x="6" y="11" width="2" height="1" fill="#8A5523" />
+                  <rect x="6" y="12" width="2" height="1" fill="#8A5523" />
+                </svg>
+              </i>
+            </span>
+            <em>+4</em>
+          </span>
+          <b>Tous les secteurs</b>
+        </Link>
       </div>
       <div className="mo-ml2">
         <Link to="/realisations">Réalisations</Link>
@@ -83,7 +369,7 @@ export function VideoLightbox() {
           controls
           playsInline
           preload="none"
-          poster="/images/standing-poster.jpg"
+          poster="/images/f54b9517fb.jpg"
         />
       </div>
     </div>
@@ -97,45 +383,45 @@ export function StoriesViewer() {
       <div className="sx-box" role="dialog" aria-modal="true" aria-label="Stories d’Orion Studio">
         <div className="sx-g" data-set="studio" hidden>
           <span className="sx-th">
-            <img src="/images/img-21643aaf.png" alt="" />
+            <img src="/images/a608f4afa30e86.png" alt="" />
           </span>
           <div className="sx-sl" data-t="img" data-fit="cover" data-cap="Jour de shooting.">
-            <img className="sx-bg" src="/images/img-73d13380.png" alt="" />
-            <img className="sx-fg" src="/images/img-73d13380.png" alt="Jour de shooting." />
+            <img className="sx-bg" src="/images/347124480e4a57.png" alt="" />
+            <img className="sx-fg" src="/images/347124480e4a57.png" alt="Jour de shooting." />
           </div>
           <div className="sx-sl" data-t="img" data-fit="cover" data-cap="Julien, côté fauteuil.">
-            <img className="sx-bg" src="/images/img-8551791d.png" alt="" />
-            <img className="sx-fg" src="/images/img-8551791d.png" alt="Julien, côté fauteuil." />
+            <img className="sx-bg" src="/images/569cf65d4427e1.png" alt="" />
+            <img className="sx-fg" src="/images/569cf65d4427e1.png" alt="Julien, côté fauteuil." />
           </div>
           <div className="sx-sl" data-t="img" data-fit="cover" data-cap="Théo, côté chaise de réalisateur.">
-            <img className="sx-bg" src="/images/img-10db7bf1.png" alt="" />
-            <img className="sx-fg" src="/images/img-10db7bf1.png" alt="Théo, côté chaise de réalisateur." />
+            <img className="sx-bg" src="/images/23873003fe2522.png" alt="" />
+            <img className="sx-fg" src="/images/23873003fe2522.png" alt="Théo, côté chaise de réalisateur." />
           </div>
           <div className="sx-sl" data-t="img" data-fit="contain" data-cap="Le rouge, presque orange.">
-            <img className="sx-bg" src="/images/img-fc28f010.png" alt="" />
-            <img className="sx-fg" src="/images/img-fc28f010.png" alt="Le rouge, presque orange." />
+            <img className="sx-bg" src="/images/f9ca0176950b2b.png" alt="" />
+            <img className="sx-fg" src="/images/f9ca0176950b2b.png" alt="Le rouge, presque orange." />
           </div>
         </div>
         <div className="sx-g" data-set="studio" hidden>
           <span className="sx-th">
-            <img src="/images/img-080dfe88.png" alt="" />
+            <img src="/images/4f470e228f8d42.png" alt="" />
           </span>
           <div className="sx-sl" data-t="img" data-fit="cover" data-cap="Ce matin, au studio.">
-            <img className="sx-bg" src="/images/img-a3943d4e.png" alt="" />
-            <img className="sx-fg" src="/images/img-a3943d4e.png" alt="Ce matin, au studio." />
+            <img className="sx-bg" src="/images/d59a9003b57e1a.png" alt="" />
+            <img className="sx-fg" src="/images/d59a9003b57e1a.png" alt="Ce matin, au studio." />
           </div>
           <div className="sx-sl" data-t="img" data-fit="cover" data-cap="Doggy, à l’accueil.">
-            <img className="sx-bg" src="/images/img-080dfe88.png" alt="" />
-            <img className="sx-fg" src="/images/img-080dfe88.png" alt="Doggy, à l’accueil." />
+            <img className="sx-bg" src="/images/4f470e228f8d42.png" alt="" />
+            <img className="sx-fg" src="/images/4f470e228f8d42.png" alt="Doggy, à l’accueil." />
           </div>
           <div className="sx-sl" data-t="img" data-fit="contain" data-cap="Le plus calme du plateau.">
-            <img className="sx-bg" src="/images/img-fadddece.png" alt="" />
-            <img className="sx-fg" src="/images/img-fadddece.png" alt="Le plus calme du plateau." />
+            <img className="sx-bg" src="/images/529d056e5364c0.png" alt="" />
+            <img className="sx-fg" src="/images/529d056e5364c0.png" alt="Le plus calme du plateau." />
           </div>
         </div>
         <div className="sx-g" data-set="studio" hidden>
           <span className="sx-th logo">
-            <img src="/images/stand-ing.png" alt="" />
+            <img src="/images/f929bc41088d4e.png" alt="" />
           </span>
           <div
             className="sx-sl"
@@ -143,41 +429,41 @@ export function StoriesViewer() {
             data-fit="contain"
             data-cap="Stand-ING · Imaginez. Personnalisez. Exposez."
           >
-            <img className="sx-bg" src="/images/standing-poster.jpg" alt="" />
+            <img className="sx-bg" src="/images/b3624ef1019ca0.jpg" alt="" />
             <video
               className="sx-fg"
               src="/media/standing-ad.mp4"
               playsInline
               preload="none"
               muted
-              poster="/images/standing-poster.jpg"
+              poster="/images/f54b9517fb.jpg"
             />
           </div>
         </div>
         <div className="sx-g" data-set="studio" hidden>
           <span className="sx-th">
-            <img src="/images/img-ff3fcf95.png" alt="" />
+            <img src="/images/2e238aa4803b68.png" alt="" />
           </span>
           <div className="sx-sl" data-t="img" data-fit="contain" data-cap="Le bureau du jour.">
-            <img className="sx-bg" src="/images/img-b2c5bcf2.png" alt="" />
-            <img className="sx-fg" src="/images/img-b2c5bcf2.png" alt="Le bureau du jour." />
+            <img className="sx-bg" src="/images/763775a11e4636.png" alt="" />
+            <img className="sx-fg" src="/images/763775a11e4636.png" alt="Le bureau du jour." />
           </div>
           <div className="sx-sl" data-t="img" data-fit="cover" data-cap="Le moniteur vintage du plateau.">
-            <img className="sx-bg" src="/images/img-07a5af77.png" alt="" />
-            <img className="sx-fg" src="/images/img-07a5af77.png" alt="Le moniteur vintage du plateau." />
+            <img className="sx-bg" src="/images/b9fcad2688824d.png" alt="" />
+            <img className="sx-fg" src="/images/b9fcad2688824d.png" alt="Le moniteur vintage du plateau." />
           </div>
           <div className="sx-sl" data-t="img" data-fit="cover" data-cap="La plante du bureau.">
-            <img className="sx-bg" src="/images/img-7cf0e673.png" alt="" />
-            <img className="sx-fg" src="/images/img-7cf0e673.png" alt="La plante du bureau." />
+            <img className="sx-bg" src="/images/8a174aa0f7139b.png" alt="" />
+            <img className="sx-fg" src="/images/8a174aa0f7139b.png" alt="La plante du bureau." />
           </div>
           <div className="sx-sl" data-t="img" data-fit="cover" data-cap="Le boîtier, toujours à portée.">
-            <img className="sx-bg" src="/images/img-c34d1371.png" alt="" />
-            <img className="sx-fg" src="/images/img-c34d1371.png" alt="Le boîtier, toujours à portée." />
+            <img className="sx-bg" src="/images/59d744e3bf52ec.png" alt="" />
+            <img className="sx-fg" src="/images/59d744e3bf52ec.png" alt="Le boîtier, toujours à portée." />
           </div>
         </div>
         <div className="sx-g" data-set="studio" hidden>
           <span className="sx-th logo">
-            <img src="/images/chateau-l-arc-golf-club.png" alt="" />
+            <img src="/images/a58f0039fd543e.png" alt="" />
           </span>
           <div
             className="sx-sl"
@@ -185,14 +471,10 @@ export function StoriesViewer() {
             data-fit="contain"
             data-cap="Le site du Château l’Arc Golf Club."
           >
-            <img
-              className="sx-bg"
-              src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg"
-              alt=""
-            />
+            <img className="sx-bg" src="/images/661531aedb86a4.jpg" alt="" />
             <img
               className="sx-fg"
-              src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg"
+              src="/images/661531aedb86a4.jpg"
               alt="Le site du Château l’Arc Golf Club."
             />
           </div>
@@ -202,24 +484,16 @@ export function StoriesViewer() {
             data-fit="contain"
             data-cap="Réserver un départ en quelques clics."
           >
-            <img className="sx-bg" src="/images/img-11f11561.jpg" alt="" />
+            <img className="sx-bg" src="/images/8c9e1b90dcf458.jpg" alt="" />
             <img
               className="sx-fg"
-              src="/images/img-11f11561.jpg"
+              src="/images/8c9e1b90dcf458.jpg"
               alt="Réserver un départ en quelques clics."
             />
           </div>
           <div className="sx-sl" data-t="img" data-fit="contain" data-cap="Le back-office, dans Orion Admin.">
-            <img
-              className="sx-bg"
-              src="/images/accueil-d-orion-admin-pour-le-chateau-l-arc-golf.jpg"
-              alt=""
-            />
-            <img
-              className="sx-fg"
-              src="/images/accueil-d-orion-admin-pour-le-chateau-l-arc-golf.jpg"
-              alt="Le back-office, dans Orion Admin."
-            />
+            <img className="sx-bg" src="/images/94f1f7140db692.jpg" alt="" />
+            <img className="sx-fg" src="/images/94f1f7140db692.jpg" alt="Le back-office, dans Orion Admin." />
           </div>
         </div>
         <div className="sx-top">
@@ -262,7 +536,7 @@ export function ProjectModal() {
       <div className="pj-veil" data-close="" />
       <div className="pj-box" role="dialog" aria-modal="true" aria-labelledby="pj-title">
         <aside className="pj-side">
-          <img className="pj-sky" src="/images/img-8048ecb4.png" alt="" />
+          <img className="pj-sky" src="/images/729bb5e7cb4d36.png" alt="" />
           <div className="pj-side-in">
             <div className="pj-brand">
               <img className="px omark" src="/px/omark-fb765945.svg" alt="" width={23} height={22} />
@@ -295,10 +569,7 @@ export function ProjectModal() {
               </li>
             </ol>
             <div className="pj-duo">
-              <img
-                src="/images/julien-et-theo-fondateurs-d-orion-studio.png"
-                alt="Julien et Théo, fondateurs d’Orion Studio"
-              />
+              <img src="/images/a4d016edd40d8d.png" alt="Julien et Théo, fondateurs d’Orion Studio" />
               <div>
                 <b>Julien ou Théo</b>
                 <span>vous répond directement, sans intermédiaire.</span>
@@ -405,25 +676,6 @@ export function ProjectModal() {
                   </span>
                 </label>
                 <label className="pj-card">
-                  <input type="checkbox" name="type" value="SEO & GEO" id="pj-type-seo" />
-                  <span className="pj-card-in">
-                    <img className="px picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
-                    <b>SEO & GEO</b>
-                    <small>Google et les réponses des IA</small>
-                    <i className="pj-tick">
-                      <svg
-                        width="12"
-                        height="10"
-                        viewBox="0 0 12 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M1 5.2L4.3 8.5L11 1.5" stroke="#FFFFFF" strokeWidth="1.8" />
-                      </svg>
-                    </i>
-                  </span>
-                </label>
-                <label className="pj-card">
                   <input type="checkbox" name="type" value="Google Ads" id="pj-type-ads" />
                   <span className="pj-card-in">
                     <img className="px picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
@@ -464,20 +716,20 @@ export function ProjectModal() {
                 <div className="pj-k">Budget envisagé</div>
                 <div className="pj-chips" role="radiogroup">
                   <label className="pj-chip">
-                    <input type="radio" name="budget" value="Moins de 5 k€" id="pj-budget-0" />
-                    <span>Moins de 5 k€</span>
+                    <input type="radio" name="budget" value="Moins de 3 000 €" id="pj-budget-0" />
+                    <span>Moins de 3 000 €</span>
                   </label>
                   <label className="pj-chip">
-                    <input type="radio" name="budget" value="5 à 15 k€" id="pj-budget-1" />
-                    <span>5 à 15 k€</span>
+                    <input type="radio" name="budget" value="3 000 à 5 000 €" id="pj-budget-1" />
+                    <span>3 000 à 5 000 €</span>
                   </label>
                   <label className="pj-chip">
-                    <input type="radio" name="budget" value="15 à 40 k€" id="pj-budget-2" />
-                    <span>15 à 40 k€</span>
+                    <input type="radio" name="budget" value="5 000 à 10 000 €" id="pj-budget-2" />
+                    <span>5 000 à 10 000 €</span>
                   </label>
                   <label className="pj-chip">
-                    <input type="radio" name="budget" value="Plus de 40 k€" id="pj-budget-3" />
-                    <span>Plus de 40 k€</span>
+                    <input type="radio" name="budget" value="10 000 € et plus" id="pj-budget-3" />
+                    <span>10 000 € et plus</span>
                   </label>
                   <label className="pj-chip">
                     <input type="radio" name="budget" value="À définir ensemble" id="pj-budget-4" />

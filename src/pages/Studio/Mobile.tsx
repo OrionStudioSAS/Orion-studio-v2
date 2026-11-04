@@ -14,15 +14,15 @@ function MoHero() {
         Julien, Théo<span className="serif">et Doggy.</span>
       </h1>
       <p className="mo-lead">
-        Un studio de design et de développement web basé à Paris. Deux associés qui dessinent et codent
-        eux-mêmes, pour des clients partout en France et à l’international. Et un chien qui veille sur
+        Un studio de design et de développement web basé à Paris. Une équipe à taille humaine qui dessine et
+        code elle-même, pour des clients partout en France et à l’international. Et un chien qui veille sur
         l’accueil.
       </p>
       <div className="sx-ring sx-ring-m" aria-label="Stories du studio">
         <button type="button" className="sx-b" data-g="0" aria-label="Voir la story Shooting">
           <span className="av">
             <span>
-              <img src="/images/img-21643aaf.png" alt="" />
+              <img src="/images/a608f4afa30e86.png" alt="" />
             </span>
           </span>
           <small>Shooting</small>
@@ -30,7 +30,7 @@ function MoHero() {
         <button type="button" className="sx-b" data-g="1" aria-label="Voir la story Doggy">
           <span className="av">
             <span>
-              <img src="/images/img-080dfe88.png" alt="" />
+              <img src="/images/4f470e228f8d42.png" alt="" />
             </span>
           </span>
           <small>Doggy</small>
@@ -38,7 +38,7 @@ function MoHero() {
         <button type="button" className="sx-b logo" data-g="2" aria-label="Voir la story Stand-ING">
           <span className="av">
             <span>
-              <img src="/images/stand-ing.png" alt="" />
+              <img src="/images/f929bc41088d4e.png" alt="" />
             </span>
           </span>
           <small>Stand-ING</small>
@@ -46,7 +46,7 @@ function MoHero() {
         <button type="button" className="sx-b" data-g="3" aria-label="Voir la story Le bureau">
           <span className="av">
             <span>
-              <img src="/images/img-ff3fcf95.png" alt="" />
+              <img src="/images/2e238aa4803b68.png" alt="" />
             </span>
           </span>
           <small>Le bureau</small>
@@ -54,7 +54,7 @@ function MoHero() {
         <button type="button" className="sx-b logo" data-g="4" aria-label="Voir la story Château l’Arc">
           <span className="av">
             <span>
-              <img src="/images/chateau-l-arc-golf-club.png" alt="" />
+              <img src="/images/a58f0039fd543e.png" alt="" />
             </span>
           </span>
           <small>Château l’Arc</small>
@@ -70,7 +70,7 @@ function MoHero() {
 function St3Mmedia() {
   return (
     <div className="st3-mmedia">
-      <img src="/images/le-studio-orion-en-pixel-art.png" alt="Le studio Orion en pixel art" />
+      <img src="/images/70e993e39a19ce.png" alt="Le studio Orion en pixel art" />
       <div className="crew crew-m" data-pos={'{"rest":[27,50,74],"desk":[13,87],"dog":[20,82]}'}>
         <figure className="cm cm-j">
           <span className="dg pp pp-julien " role="button" tabIndex={0} aria-label="Julien" data-cur="Julien">
@@ -161,7 +161,7 @@ function St3Mmedia() {
   )
 }
 
-function OnEstDeuxA() {
+function OnPasseNosJournees() {
   return (
     <section className="mo-sec mo-mf" style={{ borderTop: 'none' }}>
       <div className="mo-k">
@@ -170,7 +170,7 @@ function OnEstDeuxA() {
       </div>
       <h2 className="mo-mh st2-mh">
         <div className="mo-ml">
-          <span className="mf-t mo-mt ">On est deux</span>
+          <span className="mf-t mo-mt ">On passe nos journées</span>
           <span
             className="dg pp pp-julien pp-inline"
             role="button"
@@ -292,7 +292,7 @@ function Mq() {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Développement & applications</span>
+        <span>Développement d’applications</span>
         <i>
           <svg
             className="pxstar"
@@ -430,7 +430,7 @@ function Mq() {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Développement & applications</span>
+        <span>Développement d’applications</span>
         <i>
           <svg
             className="pxstar"
@@ -568,7 +568,7 @@ function Mq() {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Développement & applications</span>
+        <span>Développement d’applications</span>
         <i>
           <svg
             className="pxstar"
@@ -700,37 +700,37 @@ function LesCoulissesEnPolaroids() {
         <div className="mo-track">
           <figure className="pw-m">
             <span className="pw-in" style={{ '--r': '-4deg' } as CSSProperties}>
-              <img src="/images/img-21643aaf.png" alt="" />
+              <img src="/images/a608f4afa30e86.png" alt="" />
               <figcaption>Julien & Théo</figcaption>
             </span>
           </figure>
           <figure className="pw-m">
             <span className="pw-in" style={{ '--r': '5deg' } as CSSProperties}>
-              <img src="/images/img-080dfe88.png" alt="" />
+              <img src="/images/4f470e228f8d42.png" alt="" />
               <figcaption>Doggy, à l’accueil</figcaption>
             </span>
           </figure>
           <figure className="pw-m">
             <span className="pw-in" style={{ '--r': '-3deg' } as CSSProperties}>
-              <img src="/images/img-8551791d.png" alt="" />
+              <img src="/images/569cf65d4427e1.png" alt="" />
               <figcaption>Julien</figcaption>
             </span>
           </figure>
           <figure className="pw-m">
             <span className="pw-in" style={{ '--r': '4deg' } as CSSProperties}>
-              <img src="/images/img-10db7bf1.png" alt="" />
+              <img src="/images/23873003fe2522.png" alt="" />
               <figcaption>Théo</figcaption>
             </span>
           </figure>
           <figure className="pw-m">
             <span className="pw-in" style={{ '--r': '3deg' } as CSSProperties}>
-              <img src="/images/img-5b303193.png" alt="" />
+              <img src="/images/7e252fc0055d46.png" alt="" />
               <figcaption>Le rouge, presque orange</figcaption>
             </span>
           </figure>
           <figure className="pw-m">
             <span className="pw-in" style={{ '--r': '-5deg' } as CSSProperties}>
-              <img src="/images/img-ff3fcf95.png" alt="" />
+              <img src="/images/2e238aa4803b68.png" alt="" />
               <figcaption>Le bureau du jour</figcaption>
             </span>
           </figure>
@@ -919,49 +919,39 @@ function MoFt() {
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
-          visibilité, en français et en anglais.
+          visibilité.
         </p>
-        <div className="nl mo-nl">
-          <div className="nl-k">La lettre d’Orion</div>
-          <div className="nl-t">
-            Un e-mail par mois sur le web, l’e-commerce et la visibilité dans les IA. Pas de spam, promis.
-          </div>
-          <div className="nl-f">
-            <span>votre@email.fr</span>
-            <a>S’inscrire</a>
-          </div>
-        </div>
         <div className="mo-fcols">
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
-            <a>Site internet</a>
-            <a>Développement & applications</a>
-            <a>Automatisations</a>
-            <a>SEO</a>
-            <a>GEO</a>
-            <a>Google Ads</a>
+            <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/developpement-applications">Développement d’applications</Link>
+            <Link to="/expertises/automatisations">Automatisations</Link>
+            <Link to="/expertises/seo">SEO</Link>
+            <Link to="/expertises/geo">GEO</Link>
+            <Link to="/expertises/google-ads">Google Ads</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>
-            <a>TPE & PME</a>
-            <Link to="/golfs">Golfs</Link>
-            <a>Indépendants</a>
-            <a>Marques & e-commerçants</a>
+            <Link to="/pour-qui/tpe-pme">TPE & PME</Link>
+            <Link to="/pour-qui/golfs">Golfs</Link>
+            <Link to="/pour-qui/independants">Indépendants</Link>
+            <Link to="/pour-qui/marques-e-commerce">Marques & e-commerçants</Link>
+            <Link to="/pour-qui/start-up">Start-up</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Méthode</a>
-            <a>Orion Admin</a>
+            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Ressources</div>
             <Link to="/ressources">Articles</Link>
             <Link to="/ressources?cat=guides">Guides</Link>
-            <a>Questions fréquentes</a>
-            <a>Analyse gratuite</a>
+            <Link to="/faq">Questions fréquentes</Link>
           </div>
         </div>
         <div className="mo-fcards">
@@ -997,10 +987,7 @@ function MoFt() {
       </div>
       <div className="mo-sky">
         <div className="hm-layer">
-          <img
-            src="/images/le-ciel-et-la-constellation-d-orion-en-pixels-2.png"
-            alt="Le ciel et la constellation d’Orion, en pixels"
-          />
+          <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
             className="px bigword"
             src="/px/bigword-a5329b0d.svg"
@@ -1022,10 +1009,8 @@ function MoFt() {
             <span>English</span>
           </div>
           <div className="mo-legal-l">
-            <span>Mentions légales</span>
-            <span>Confidentialité</span>
-            <span>Cookies</span>
-            <span>Plan du site</span>
+            <Link to="/mentions-legales">Mentions légales</Link>
+            <Link to="/confidentialite">Confidentialité</Link>
           </div>
           <span>© 2026 Orion Studio SAS — RCS 938 775 368</span>
         </div>
@@ -1040,7 +1025,7 @@ export function Mobile() {
       <MobileNav />
       <MoHero />
       <St3Mmedia />
-      <OnEstDeuxA />
+      <OnPasseNosJournees />
       <Mq />
       <LesCoulissesEnPolaroids />
       <CinqEtapesDoggyVous />

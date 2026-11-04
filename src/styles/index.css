@@ -19,3 +19,7 @@ img.px {
 #root {
   display: contents;
 }
+/* Le gris de planche de travail de la maquette ne doit pas apparaître sous une page courte */
+body {
+  background: #fff;
+}

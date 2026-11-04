@@ -20,49 +20,39 @@ export function MobileFooter() {
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
-          visibilité, en français et en anglais.
+          visibilité.
         </p>
-        <div className="nl mo-nl">
-          <div className="nl-k">La lettre d’Orion</div>
-          <div className="nl-t">
-            Un e-mail par mois sur le web, l’e-commerce et la visibilité dans les IA. Pas de spam, promis.
-          </div>
-          <div className="nl-f">
-            <span>votre@email.fr</span>
-            <a>S’inscrire</a>
-          </div>
-        </div>
         <div className="mo-fcols">
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
-            <a>Site internet</a>
-            <a>Développement & applications</a>
-            <a>Automatisations</a>
-            <a>SEO</a>
-            <a>GEO</a>
-            <a>Google Ads</a>
+            <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/developpement-applications">Développement d’applications</Link>
+            <Link to="/expertises/automatisations">Automatisations</Link>
+            <Link to="/expertises/seo">SEO</Link>
+            <Link to="/expertises/geo">GEO</Link>
+            <Link to="/expertises/google-ads">Google Ads</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>
-            <a>TPE & PME</a>
-            <Link to="/golfs">Golfs</Link>
-            <a>Indépendants</a>
-            <a>Marques & e-commerçants</a>
+            <Link to="/pour-qui/tpe-pme">TPE & PME</Link>
+            <Link to="/pour-qui/golfs">Golfs</Link>
+            <Link to="/pour-qui/independants">Indépendants</Link>
+            <Link to="/pour-qui/marques-e-commerce">Marques & e-commerçants</Link>
+            <Link to="/pour-qui/start-up">Start-up</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Méthode</a>
-            <a>Orion Admin</a>
+            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Ressources</div>
             <Link to="/ressources">Articles</Link>
             <Link to="/ressources?cat=guides">Guides</Link>
-            <a>Questions fréquentes</a>
-            <a>Analyse gratuite</a>
+            <Link to="/faq">Questions fréquentes</Link>
           </div>
         </div>
         <div className="mo-fcards">
@@ -98,10 +88,7 @@ export function MobileFooter() {
       </div>
       <div className="mo-sky">
         <div className="hm-layer">
-          <img
-            src="/images/le-ciel-et-la-constellation-d-orion-en-pixels-2.png"
-            alt="Le ciel et la constellation d’Orion, en pixels"
-          />
+          <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
             className="px bigword"
             src="/px/bigword-a5329b0d.svg"
@@ -123,10 +110,8 @@ export function MobileFooter() {
             <span>English</span>
           </div>
           <div className="mo-legal-l">
-            <span>Mentions légales</span>
-            <span>Confidentialité</span>
-            <span>Cookies</span>
-            <span>Plan du site</span>
+            <Link to="/mentions-legales">Mentions légales</Link>
+            <Link to="/confidentialite">Confidentialité</Link>
           </div>
           <span>© 2026 Orion Studio SAS — RCS 938 775 368</span>
         </div>

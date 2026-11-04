@@ -218,9 +218,15 @@
 }
 .pj-types {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   margin-top: 20px;
+}
+.pj-types > .pj-card {
+  grid-column: span 2;
+}
+.pj-types > .pj-card:nth-child(n + 4) {
+  grid-column: span 3;
 }
 .pj-card,
 .pj-chip,
@@ -690,6 +696,13 @@ body.has-cur .pj textarea {
   }
   .pj-types {
     grid-template-columns: 1fr 1fr;
+  }
+  .pj-types > .pj-card,
+  .pj-types > .pj-card:nth-child(n + 4) {
+    grid-column: auto;
+  }
+  .pj-types > .pj-card:last-child {
+    grid-column: 1/-1;
   }
   .pj-grid,
   .pj-book {

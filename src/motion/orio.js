@@ -3,8 +3,9 @@ import { PJ } from './projectModal'
 import { WHO, FAQ_A } from './sections'
 
 /* ---------- widget conversationnel Orio ---------- */
+let OW = {}
 function initOrio() {
-  return (() => {
+  OW = (() => {
     const ow = $('#ow')
     if (!ow) return {}
     const btn = $('.ow-btn', ow),
@@ -108,7 +109,7 @@ function initOrio() {
       seo: 'Audit, SEO technique, contenus et référencement local : on fait remonter votre site sur les recherches qui amènent de vrais clients.',
       geo: 'Vos clients posent leurs questions à ChatGPT, Perplexity ou Gemini. On structure votre site et vos contenus pour que votre marque apparaisse, et soit citée, dans leurs réponses.<small>Notre guide : « Être cité par ChatGPT et Perplexity »</small>',
       equipe:
-        'Orion, c’est Julien et Théo : deux associés basés à Paris, qui conçoivent et développent eux-mêmes. Pas de commercial entre vous et le projet.',
+        'Orion Studio, c’est une équipe à taille humaine basée à Paris, menée par ses associés Julien et Théo, qui conçoivent et développent eux-mêmes. Pas de commercial entre vous et le projet.',
       ou: 'Le studio est à Paris (60 rue François Ier, 75008). On travaille partout en France et à l’international, sur place ou à distance.',
       suivi:
         'Chaque projet a son espace dans Orion Admin : étapes, documents, messages et validations au même endroit, avec une préprod pour tester avant la mise en ligne.',
@@ -302,4 +303,4 @@ function initOrio() {
   })()
 }
 
-export { initOrio }
+export { OW, initOrio }

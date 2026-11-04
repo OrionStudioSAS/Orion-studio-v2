@@ -88,7 +88,7 @@ function MrFeat() {
   return (
     <Link to="/ressources/etre-cite-par-chatgpt-perplexity" className="mr-feat" data-k="seo">
       <span className="r-im">
-        <img src="/images/img-b2b421e0.png" alt="" />
+        <img src="/images/8da8d8ba5e08da.png" alt="" />
       </span>
       <div className="k">
         <span>À la une · SEO & GEO</span>
@@ -118,7 +118,7 @@ function MrList() {
         data-soon="Shopify, Webflow ou sur-mesure : comment choisir en 2026"
       >
         <span className="r-im">
-          <img src="/images/img-0294a67b.png" alt="" />
+          <img src="/images/015f650fa5e47b.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -135,7 +135,7 @@ function MrList() {
         data-soon="Refonte de site : le cahier des charges en douze questions"
       >
         <span className="r-im">
-          <img src="/images/img-588fba6e.png" alt="" />
+          <img src="/images/aee46e2ea20958.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -148,7 +148,7 @@ function MrList() {
       </a>
       <a className="mr-row" data-k="seo" data-soon="SEO local : les dix réglages de votre fiche Google">
         <span className="r-im">
-          <img src="/images/img-d67d96ba.png" alt="" />
+          <img src="/images/bf5c99b2affb23.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -165,7 +165,7 @@ function MrList() {
         data-soon="Site de golf : ce que les joueurs regardent avant de réserver"
       >
         <span className="r-im">
-          <img src="/images/img-a97491bf.png" alt="" />
+          <img src="/images/43c1e04cd1ba76.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -178,7 +178,7 @@ function MrList() {
       </a>
       <a className="mr-row" data-k="auto" data-soon="Automatiser ses devis avec Make : un exemple pas à pas">
         <span className="r-im">
-          <img src="/images/img-2c68e65f.png" alt="" />
+          <img src="/images/8353e035bb2d3a.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -203,7 +203,7 @@ function MrList() {
         data-soon="Google Ads pour une PME : par où commencer avec un petit budget"
       >
         <span className="r-im">
-          <img src="/images/img-eba41a20.png" alt="" />
+          <img src="/images/f963f77cbfab80.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -216,7 +216,7 @@ function MrList() {
       </a>
       <a className="mr-row" data-k="shop" data-soon="Fiches produits Shopify : anatomie d’une page qui vend">
         <span className="r-im">
-          <img src="/images/img-54ba4ddb.png" alt="" />
+          <img src="/images/514c26ed6ab15b.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -233,7 +233,7 @@ function MrList() {
         data-soon="llms.txt : à quoi sert ce fichier, et faut-il l’ajouter ?"
       >
         <span className="r-im">
-          <img src="/images/img-ea281d04.png" alt="" />
+          <img src="/images/2140baa9120499.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -250,7 +250,7 @@ function MrList() {
         data-soon="Indépendants : les cinq pages indispensables de votre site"
       >
         <span className="r-im">
-          <img src="/images/img-8b2fe8cc.png" alt="" />
+          <img src="/images/b177a26d522956.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -263,7 +263,7 @@ function MrList() {
       </a>
       <a className="mr-row" data-k="methode" data-soon="Espace client : quand faut-il en créer un ?">
         <span className="r-im">
-          <img src="/images/img-66a6a0f8.png" alt="" />
+          <img src="/images/bc4f84b8174216.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -280,7 +280,7 @@ function MrList() {
         data-soon="Vitesse de site : ce qui ralentit vraiment votre page d’accueil"
       >
         <span className="r-im">
-          <img src="/images/img-cecc2f45.png" alt="" />
+          <img src="/images/1fc3e456af0ef4.png" alt="" />
         </span>
         <div>
           <div className="k">
@@ -305,19 +305,6 @@ function REmpty() {
   )
 }
 
-function MrNl() {
-  return (
-    <div className="mr-nl">
-      <b>La lettre d’Orion</b>
-      <p>Un e-mail par mois avec le meilleur de ces articles, et rien d’autre.</p>
-      <div className="nl-f">
-        <span>votre@email.fr</span>
-        <a>S’inscrire</a>
-      </div>
-    </div>
-  )
-}
-
 function MoFt() {
   return (
     <footer className="mo-ft">
@@ -338,49 +325,39 @@ function MoFt() {
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
-          visibilité, en français et en anglais.
+          visibilité.
         </p>
-        <div className="nl mo-nl">
-          <div className="nl-k">La lettre d’Orion</div>
-          <div className="nl-t">
-            Un e-mail par mois sur le web, l’e-commerce et la visibilité dans les IA. Pas de spam, promis.
-          </div>
-          <div className="nl-f">
-            <span>votre@email.fr</span>
-            <a>S’inscrire</a>
-          </div>
-        </div>
         <div className="mo-fcols">
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
-            <a>Site internet</a>
-            <a>Développement & applications</a>
-            <a>Automatisations</a>
-            <a>SEO</a>
-            <a>GEO</a>
-            <a>Google Ads</a>
+            <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/developpement-applications">Développement d’applications</Link>
+            <Link to="/expertises/automatisations">Automatisations</Link>
+            <Link to="/expertises/seo">SEO</Link>
+            <Link to="/expertises/geo">GEO</Link>
+            <Link to="/expertises/google-ads">Google Ads</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>
-            <a>TPE & PME</a>
-            <Link to="/golfs">Golfs</Link>
-            <a>Indépendants</a>
-            <a>Marques & e-commerçants</a>
+            <Link to="/pour-qui/tpe-pme">TPE & PME</Link>
+            <Link to="/pour-qui/golfs">Golfs</Link>
+            <Link to="/pour-qui/independants">Indépendants</Link>
+            <Link to="/pour-qui/marques-e-commerce">Marques & e-commerçants</Link>
+            <Link to="/pour-qui/start-up">Start-up</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Méthode</a>
-            <a>Orion Admin</a>
+            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Ressources</div>
             <Link to="/ressources">Articles</Link>
             <Link to="/ressources?cat=guides">Guides</Link>
-            <a>Questions fréquentes</a>
-            <a>Analyse gratuite</a>
+            <Link to="/faq">Questions fréquentes</Link>
           </div>
         </div>
         <div className="mo-fcards">
@@ -416,10 +393,7 @@ function MoFt() {
       </div>
       <div className="mo-sky">
         <div className="hm-layer">
-          <img
-            src="/images/le-ciel-et-la-constellation-d-orion-en-pixels-2.png"
-            alt="Le ciel et la constellation d’Orion, en pixels"
-          />
+          <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
             className="px bigword"
             src="/px/bigword-a5329b0d.svg"
@@ -441,10 +415,8 @@ function MoFt() {
             <span>English</span>
           </div>
           <div className="mo-legal-l">
-            <span>Mentions légales</span>
-            <span>Confidentialité</span>
-            <span>Cookies</span>
-            <span>Plan du site</span>
+            <Link to="/mentions-legales">Mentions légales</Link>
+            <Link to="/confidentialite">Confidentialité</Link>
           </div>
           <span>© 2026 Orion Studio SAS — RCS 938 775 368</span>
         </div>
@@ -463,7 +435,6 @@ export function Mobile() {
       <MrFeat />
       <MrList />
       <REmpty />
-      <MrNl />
       <MoFt />
     </section>
   )

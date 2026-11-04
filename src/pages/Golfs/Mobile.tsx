@@ -5,7 +5,7 @@ function MoHero() {
   return (
     <section className="mo-hero">
       <div className="crumb">
-        <Link to="/">
+        <Link to="/pour-qui">
           Pour qui ? / <b>Golfs</b>
         </Link>
       </div>
@@ -32,7 +32,7 @@ function MoMedia() {
       <div className="hm-layer">
         <img
           className="mo-media-bg"
-          src="/images/parcours-de-golf-au-crepuscule-en-pixel-art.png"
+          src="/images/c24449a7dc9b00.png"
           alt="Parcours de golf au crépuscule, en pixel art"
         />
       </div>
@@ -40,9 +40,9 @@ function MoMedia() {
         <div className="mo-greet">
           <img className="px omark" src="/px/omark-72fafdaa.svg" alt="" width={25} height={24} />
           <span>
-            Quel golf analyse-t-on
+            On regarde le site
             <br />
-            ce soir ?
+            de votre golf ?
           </span>
         </div>
         <div className="mo-comp">
@@ -156,7 +156,7 @@ function MoMedia() {
 function MgProof() {
   return (
     <div className="mg-proof">
-      <img src="/images/chateau-l-arc-golf-club-2.png" alt="Château l’Arc Golf Club" />
+      <img src="/images/433e53ddc3b7c2.png" alt="Château l’Arc Golf Club" />
       <p>
         <b>Le site et le back-office du Château l’Arc Golf Club</b> sont conçus et développés par Orion
         Studio.
@@ -193,11 +193,7 @@ function CeQuOnConstruit() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img
-                  className="shot"
-                  src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg"
-                  alt=""
-                />
+                <img className="shot" src="/images/661531aedb86a4.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -212,7 +208,7 @@ function CeQuOnConstruit() {
         </article>
         <article className="mg-of">
           <div className="mg-vis mg-vis-shop">
-            <img src="/images/pro-shop-de-golf-en-pixel-art.png" alt="Pro-shop de golf, en pixel art" />
+            <img src="/images/5e085b075a94d1.png" alt="Pro-shop de golf, en pixel art" />
           </div>
           <h3>E-commerce</h3>
           <p>Proshops en ligne, vente de produits, cartes cadeaux et expériences.</p>
@@ -251,7 +247,7 @@ function FonctionnalitesSpecifiquesAuGolf() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-11f11561.jpg" alt="" />
+                <img className="shot" src="/images/8c9e1b90dcf458.jpg" alt="" />
               </div>
             </div>
             <h3>Réservation de départs</h3>
@@ -269,7 +265,7 @@ function FonctionnalitesSpecifiquesAuGolf() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-7c8e229e.jpg" alt="" />
+                <img className="shot" src="/images/7a925e15ecb2e0.jpg" alt="" />
               </div>
             </div>
             <h3>Le parcours</h3>
@@ -287,7 +283,7 @@ function FonctionnalitesSpecifiquesAuGolf() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-dee652fe.jpg" alt="" />
+                <img className="shot" src="/images/64525d51033540.jpg" alt="" />
               </div>
             </div>
             <h3>Tarifs & green fees</h3>
@@ -305,7 +301,7 @@ function FonctionnalitesSpecifiquesAuGolf() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-208244aa.jpg" alt="" />
+                <img className="shot" src="/images/5b81411ff7e76f.jpg" alt="" />
               </div>
             </div>
             <h3>Compétitions & résultats</h3>
@@ -323,7 +319,7 @@ function FonctionnalitesSpecifiquesAuGolf() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-b97da1bb.jpg" alt="" />
+                <img className="shot" src="/images/640db08a1fe9fc.jpg" alt="" />
               </div>
             </div>
             <h3>État du parcours & bandeau</h3>
@@ -341,7 +337,7 @@ function FonctionnalitesSpecifiquesAuGolf() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-e3324a1e.jpg" alt="" />
+                <img className="shot" src="/images/dd157dcd71774f.jpg" alt="" />
               </div>
             </div>
             <h3>Pop-up marketing</h3>
@@ -359,7 +355,7 @@ function FonctionnalitesSpecifiquesAuGolf() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-7f6ea75a.jpg" alt="" />
+                <img className="shot" src="/images/5e9c86f1e60ec9.jpg" alt="" />
               </div>
             </div>
             <h3>L’Académie</h3>
@@ -377,7 +373,7 @@ function FonctionnalitesSpecifiquesAuGolf() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-d3b5805c.jpg" alt="" />
+                <img className="shot" src="/images/8deab05355e477.jpg" alt="" />
               </div>
             </div>
             <h3>Adhésion en ligne</h3>
@@ -395,7 +391,7 @@ function FonctionnalitesSpecifiquesAuGolf() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-21b9003f.jpg" alt="" />
+                <img className="shot" src="/images/6656fa29418d13.jpg" alt="" />
               </div>
             </div>
             <h3>Séminaires & privatisation</h3>
@@ -419,7 +415,7 @@ function VosOutilsUnSeul() {
       <div className="mg-int">
         <div data-row="0">
           <span className="it-lg">
-            <img src="/images/img-e92ef036.png" alt="" width="20" height="20" />
+            <img src="/images/e92ef03659.png" alt="" width="20" height="20" />
           </span>
           <div>
             <b>Prima Golf</b>
@@ -475,7 +471,7 @@ function VosOutilsUnSeul() {
         </div>
         <div data-row="-1">
           <span className="it-lg it-fill">
-            <img src="/images/img-998b826a.png" alt="" width="20" height="20" />
+            <img src="/images/7954283424ddad.png" alt="" width="20" height="20" />
           </span>
           <div>
             <b>Zenchef</b>
@@ -588,7 +584,7 @@ function CasClientChateauL() {
           <span className="win-sp" />
         </div>
         <div className="win-body">
-          <img className="shot" src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg" alt="" />
+          <img className="shot" src="/images/661531aedb86a4.jpg" alt="" />
         </div>
       </div>
       <div className="mc-list mg-case">
@@ -737,49 +733,39 @@ function MoFt() {
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
-          visibilité, en français et en anglais.
+          visibilité.
         </p>
-        <div className="nl mo-nl">
-          <div className="nl-k">La lettre d’Orion</div>
-          <div className="nl-t">
-            Un e-mail par mois sur le web, l’e-commerce et la visibilité dans les IA. Pas de spam, promis.
-          </div>
-          <div className="nl-f">
-            <span>votre@email.fr</span>
-            <a>S’inscrire</a>
-          </div>
-        </div>
         <div className="mo-fcols">
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
-            <a>Site internet</a>
-            <a>Développement & applications</a>
-            <a>Automatisations</a>
-            <a>SEO</a>
-            <a>GEO</a>
-            <a>Google Ads</a>
+            <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/developpement-applications">Développement d’applications</Link>
+            <Link to="/expertises/automatisations">Automatisations</Link>
+            <Link to="/expertises/seo">SEO</Link>
+            <Link to="/expertises/geo">GEO</Link>
+            <Link to="/expertises/google-ads">Google Ads</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>
-            <a>TPE & PME</a>
-            <Link to="/golfs">Golfs</Link>
-            <a>Indépendants</a>
-            <a>Marques & e-commerçants</a>
+            <Link to="/pour-qui/tpe-pme">TPE & PME</Link>
+            <Link to="/pour-qui/golfs">Golfs</Link>
+            <Link to="/pour-qui/independants">Indépendants</Link>
+            <Link to="/pour-qui/marques-e-commerce">Marques & e-commerçants</Link>
+            <Link to="/pour-qui/start-up">Start-up</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Méthode</a>
-            <a>Orion Admin</a>
+            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Ressources</div>
             <Link to="/ressources">Articles</Link>
             <Link to="/ressources?cat=guides">Guides</Link>
-            <a>Questions fréquentes</a>
-            <a>Analyse gratuite</a>
+            <Link to="/faq">Questions fréquentes</Link>
           </div>
         </div>
         <div className="mo-fcards">
@@ -815,10 +801,7 @@ function MoFt() {
       </div>
       <div className="mo-sky">
         <div className="hm-layer">
-          <img
-            src="/images/le-ciel-et-la-constellation-d-orion-en-pixels-2.png"
-            alt="Le ciel et la constellation d’Orion, en pixels"
-          />
+          <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
             className="px bigword"
             src="/px/bigword-a5329b0d.svg"
@@ -840,10 +823,8 @@ function MoFt() {
             <span>English</span>
           </div>
           <div className="mo-legal-l">
-            <span>Mentions légales</span>
-            <span>Confidentialité</span>
-            <span>Cookies</span>
-            <span>Plan du site</span>
+            <Link to="/mentions-legales">Mentions légales</Link>
+            <Link to="/confidentialite">Confidentialité</Link>
           </div>
           <span>© 2026 Orion Studio SAS — RCS 938 775 368</span>
         </div>

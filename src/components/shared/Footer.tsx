@@ -13,50 +13,40 @@ export function Footer({ children }: { children: ReactNode }) {
           </span>
           <p>
             Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications
-            et visibilité, en français et en anglais.
+            et visibilité.
           </p>
-          <div className="nl">
-            <div className="nl-k">La lettre d’Orion</div>
-            <div className="nl-t">
-              Un e-mail par mois sur le web, l’e-commerce et la visibilité dans les IA. Pas de spam, promis.
-            </div>
-            <div className="nl-f">
-              <span>votre@email.fr</span>
-              <a>S’inscrire</a>
-            </div>
-          </div>
         </div>
         <div className="ft-cols">
           <div className="fc">
             <div className="fc-k">Expertises</div>
-            <a>Site internet</a>
-            <a>Développement & applications</a>
-            <a>Automatisations</a>
-            <a>SEO</a>
-            <a>GEO</a>
-            <a>Google Ads</a>
+            <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/developpement-applications">Développement d’applications</Link>
+            <Link to="/expertises/automatisations">Automatisations</Link>
+            <Link to="/expertises/seo">SEO</Link>
+            <Link to="/expertises/geo">GEO</Link>
+            <Link to="/expertises/google-ads">Google Ads</Link>
           </div>
           <div className="fc">
             <div className="fc-k">Pour qui ?</div>
-            <a>TPE & PME</a>
-            <Link to="/golfs">Golfs</Link>
-            <a>Indépendants</a>
-            <a>Marques & e-commerçants</a>
+            <Link to="/pour-qui/tpe-pme">TPE & PME</Link>
+            <Link to="/pour-qui/golfs">Golfs</Link>
+            <Link to="/pour-qui/independants">Indépendants</Link>
+            <Link to="/pour-qui/marques-e-commerce">Marques & e-commerçants</Link>
+            <Link to="/pour-qui/start-up">Start-up</Link>
           </div>
           <div className="fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Méthode</a>
-            <a>Orion Admin</a>
+            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="fc">
             <div className="fc-k">Ressources</div>
             <Link to="/ressources">Articles</Link>
             <Link to="/ressources?cat=guides">Guides</Link>
-            <a>Questions fréquentes</a>
-            <a>Analyse gratuite</a>
+            <Link to="/faq">Questions fréquentes</Link>
           </div>
         </div>
       </div>
@@ -84,10 +74,7 @@ export function Footer({ children }: { children: ReactNode }) {
       </div>
       <div className="ft-sky">
         <div className="hm-layer">
-          <img
-            src="/images/le-ciel-et-la-constellation-d-orion-en-pixels.png"
-            alt="Le ciel et la constellation d’Orion, en pixels"
-          />
+          <img src="/images/926133384353c5.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
             className="px bigword"
             src="/px/bigword-b79decb3.svg"
@@ -106,10 +93,8 @@ export function Footer({ children }: { children: ReactNode }) {
         <div className="ft-legal">
           <span>© 2026 Orion Studio SAS — RCS 938 775 368</span>
           <div>
-            <span>Mentions légales</span>
-            <span>Confidentialité</span>
-            <span>Cookies</span>
-            <span>Plan du site</span>
+            <Link to="/mentions-legales">Mentions légales</Link>
+            <Link to="/confidentialite">Confidentialité</Link>
           </div>
           <div className="ft-lang">
             <span className="on">Français</span>

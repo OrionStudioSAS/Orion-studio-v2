@@ -46,11 +46,11 @@ function McHero() {
     <div className="mc-hero">
       <img
         className="mc-hero-bg"
-        src="/images/le-parcours-du-chateau-l-arc-en-pixel-art.png"
+        src="/images/0c7a0e0257cfb3.png"
         alt="Le parcours du Château l’Arc en pixel art"
       />
       <div className="mc-logo">
-        <img src="/images/chateau-l-arc-golf-club-2.png" alt="Château l’Arc Golf Club" />
+        <img src="/images/433e53ddc3b7c2.png" alt="Château l’Arc Golf Club" />
       </div>
       <div className="win win-shot mc-win mc-hwin">
         <div className="win-bar">
@@ -63,7 +63,7 @@ function McHero() {
           <span className="win-sp" />
         </div>
         <div className="win-body">
-          <img className="shot" src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg" alt="" />
+          <img className="shot" src="/images/661531aedb86a4.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@ function LeSiteReserverDepuis() {
             <span className="win-sp" />
           </div>
           <div className="win-body">
-            <img className="shot" src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg" alt="" />
+            <img className="shot" src="/images/661531aedb86a4.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -146,7 +146,7 @@ function LeSiteReserverDepuis() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-11f11561.jpg" alt="" />
+                <img className="shot" src="/images/8c9e1b90dcf458.jpg" alt="" />
               </div>
             </div>
             <h3>Réservation de départs</h3>
@@ -164,7 +164,7 @@ function LeSiteReserverDepuis() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-7c8e229e.jpg" alt="" />
+                <img className="shot" src="/images/7a925e15ecb2e0.jpg" alt="" />
               </div>
             </div>
             <h3>Le parcours</h3>
@@ -182,7 +182,7 @@ function LeSiteReserverDepuis() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-dee652fe.jpg" alt="" />
+                <img className="shot" src="/images/64525d51033540.jpg" alt="" />
               </div>
             </div>
             <h3>Tarifs & green fees</h3>
@@ -200,7 +200,7 @@ function LeSiteReserverDepuis() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-7f6ea75a.jpg" alt="" />
+                <img className="shot" src="/images/5e9c86f1e60ec9.jpg" alt="" />
               </div>
             </div>
             <h3>L’Académie</h3>
@@ -218,7 +218,7 @@ function LeSiteReserverDepuis() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-d3b5805c.jpg" alt="" />
+                <img className="shot" src="/images/8deab05355e477.jpg" alt="" />
               </div>
             </div>
             <h3>Adhésion en ligne</h3>
@@ -236,7 +236,7 @@ function LeSiteReserverDepuis() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-21b9003f.jpg" alt="" />
+                <img className="shot" src="/images/6656fa29418d13.jpg" alt="" />
               </div>
             </div>
             <h3>Séminaires & privatisation</h3>
@@ -283,7 +283,7 @@ function LeBackOfficeDans() {
             <span className="win-sp" />
           </div>
           <div className="win-body">
-            <img className="shot" src="/images/accueil-d-orion-admin-pour-le-chateau-l-arc-golf.jpg" alt="" />
+            <img className="shot" src="/images/94f1f7140db692.jpg" alt="" />
           </div>
         </div>
         <h3 className="mc-boh">Le tableau de bord du club</h3>
@@ -291,7 +291,9 @@ function LeBackOfficeDans() {
           Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit. Pour le
           Château l’Arc, il sert aussi de back-office au quotidien.
         </p>
-        <a className="btn btn-acc mo-btn">Découvrir Orion Admin</a>
+        <Link to="/realisations/orion-admin" className="btn btn-acc mo-btn">
+          Découvrir Orion Admin
+        </Link>
       </div>
       <div className="mo-rail mc-rail">
         <div className="mo-track">
@@ -307,7 +309,7 @@ function LeBackOfficeDans() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-208244aa.jpg" alt="" />
+                <img className="shot" src="/images/5b81411ff7e76f.jpg" alt="" />
               </div>
             </div>
             <h3>Compétitions & résultats</h3>
@@ -325,7 +327,7 @@ function LeBackOfficeDans() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-b97da1bb.jpg" alt="" />
+                <img className="shot" src="/images/640db08a1fe9fc.jpg" alt="" />
               </div>
             </div>
             <h3>État du parcours & bandeau</h3>
@@ -343,7 +345,7 @@ function LeBackOfficeDans() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-e3324a1e.jpg" alt="" />
+                <img className="shot" src="/images/dd157dcd71774f.jpg" alt="" />
               </div>
             </div>
             <h3>Pop-up marketing</h3>
@@ -364,7 +366,7 @@ function ResultatsEtTemoignage() {
         </h2>
       </div>
       <div className="mc-av">
-        <img className="mo-av-bg" src="/images/img-8048ecb4.png" alt="" />
+        <img className="mo-av-bg" src="/images/729bb5e7cb4d36.png" alt="" />
         <div className="mo-av-veil" />
         <div className="mo-av-in">
           <div className="av-k mo-av-k">
@@ -377,7 +379,7 @@ function ResultatsEtTemoignage() {
           </p>
           <div className="mo-av-by">
             <span className="av-logo mo-av-logo">
-              <img src="/images/chateau-l-arc-golf-club-2.png" alt="Château l’Arc Golf Club" />
+              <img src="/images/433e53ddc3b7c2.png" alt="Château l’Arc Golf Club" />
             </span>
             <div>
               <b>Direction du club</b>
@@ -404,7 +406,7 @@ function McNk() {
       <div className="mc-nk">Projet suivant</div>
       <article className="mo-proj" data-to="/realisations/stand-ing">
         <div className="mo-pm">
-          <img className="mo-pm-bg" src="/images/img-2c2cba64.png" alt="" />
+          <img className="mo-pm-bg" src="/images/b07c317bbc84a7.png" alt="" />
           <div className="win win-shot mo-win">
             <div className="win-bar">
               <span className="dots">
@@ -416,7 +418,7 @@ function McNk() {
               <span className="win-sp" />
             </div>
             <div className="win-body">
-              <img className="cfg-shot" src="/images/configurateur-de-stand-3d-stand-ing.png" alt="" />
+              <img className="cfg-shot" src="/images/cfe60288d854b0.png" alt="" />
             </div>
           </div>
         </div>
@@ -455,49 +457,39 @@ function MoFt() {
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
-          visibilité, en français et en anglais.
+          visibilité.
         </p>
-        <div className="nl mo-nl">
-          <div className="nl-k">La lettre d’Orion</div>
-          <div className="nl-t">
-            Un e-mail par mois sur le web, l’e-commerce et la visibilité dans les IA. Pas de spam, promis.
-          </div>
-          <div className="nl-f">
-            <span>votre@email.fr</span>
-            <a>S’inscrire</a>
-          </div>
-        </div>
         <div className="mo-fcols">
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
-            <a>Site internet</a>
-            <a>Développement & applications</a>
-            <a>Automatisations</a>
-            <a>SEO</a>
-            <a>GEO</a>
-            <a>Google Ads</a>
+            <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/developpement-applications">Développement d’applications</Link>
+            <Link to="/expertises/automatisations">Automatisations</Link>
+            <Link to="/expertises/seo">SEO</Link>
+            <Link to="/expertises/geo">GEO</Link>
+            <Link to="/expertises/google-ads">Google Ads</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>
-            <a>TPE & PME</a>
-            <Link to="/golfs">Golfs</Link>
-            <a>Indépendants</a>
-            <a>Marques & e-commerçants</a>
+            <Link to="/pour-qui/tpe-pme">TPE & PME</Link>
+            <Link to="/pour-qui/golfs">Golfs</Link>
+            <Link to="/pour-qui/independants">Indépendants</Link>
+            <Link to="/pour-qui/marques-e-commerce">Marques & e-commerçants</Link>
+            <Link to="/pour-qui/start-up">Start-up</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Méthode</a>
-            <a>Orion Admin</a>
+            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Ressources</div>
             <Link to="/ressources">Articles</Link>
             <Link to="/ressources?cat=guides">Guides</Link>
-            <a>Questions fréquentes</a>
-            <a>Analyse gratuite</a>
+            <Link to="/faq">Questions fréquentes</Link>
           </div>
         </div>
         <div className="mo-fcards">
@@ -533,10 +525,7 @@ function MoFt() {
       </div>
       <div className="mo-sky">
         <div className="hm-layer">
-          <img
-            src="/images/le-ciel-et-la-constellation-d-orion-en-pixels-2.png"
-            alt="Le ciel et la constellation d’Orion, en pixels"
-          />
+          <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
             className="px bigword"
             src="/px/bigword-a5329b0d.svg"
@@ -558,10 +547,8 @@ function MoFt() {
             <span>English</span>
           </div>
           <div className="mo-legal-l">
-            <span>Mentions légales</span>
-            <span>Confidentialité</span>
-            <span>Cookies</span>
-            <span>Plan du site</span>
+            <Link to="/mentions-legales">Mentions légales</Link>
+            <Link to="/confidentialite">Confidentialité</Link>
           </div>
           <span>© 2026 Orion Studio SAS — RCS 938 775 368</span>
         </div>

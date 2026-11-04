@@ -60,22 +60,22 @@ function RzBar() {
     <div className="rz-bar">
       <nav className="rz-tabs">
         <a className="on" data-k="all">
-          Tous<i>8</i>
+          Tous<i>11</i>
         </a>
         <a className="" data-k="site">
-          Sites internet<i>2</i>
+          Sites internet<i>6</i>
         </a>
         <a className="" data-k="shop">
-          E-commerce<i>2</i>
+          E-commerce<i>4</i>
         </a>
         <a className="" data-k="app">
-          Applications & outils<i>4</i>
+          Applications & outils<i>6</i>
         </a>
         <a className="" data-k="da">
-          Direction artistique & UX<i>2</i>
+          Direction artistique & UX<i>3</i>
         </a>
       </nav>
-      <span className="rz-n">8 projets · 2024–2026</span>
+      <span className="rz-n">11 projets</span>
     </div>
   )
 }
@@ -85,7 +85,7 @@ function RzGrid() {
     <div className="rz-grid">
       <article className="rz-card rz-larc" data-cats="site app da" data-to="/realisations/chateau-larc">
         <div className="p-media">
-          <img src="/images/img-3b6de440.png" alt="" />
+          <img src="/images/55a80d70f3d20a.png" alt="" />
           <div className="win win-shot win-golf">
             <div className="win-bar">
               <span className="dots">
@@ -99,7 +99,7 @@ function RzGrid() {
             <div className="win-body">
               <img
                 className="shot"
-                src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg"
+                src="/images/661531aedb86a4.jpg"
                 alt="Page d’accueil du site du Château l’Arc Golf Club"
               />
             </div>
@@ -118,7 +118,7 @@ function RzGrid() {
       </article>
       <article className="rz-card rz-standing" data-cats="app" data-to="/realisations/stand-ing">
         <div className="p-media">
-          <img src="/images/img-12109804.png" alt="" />
+          <img src="/images/2c63fe08cd774a.png" alt="" />
           <div className="win win-stand">
             <div className="win-bar">
               <span className="dots">
@@ -132,7 +132,7 @@ function RzGrid() {
             <div className="win-body">
               <img
                 className="cfg-shot"
-                src="/images/configurateur-de-stand-3d-stand-ing.png"
+                src="/images/cfe60288d854b0.png"
                 alt="Configurateur de stand 3D Stand-ING"
               />
             </div>
@@ -148,21 +148,203 @@ function RzGrid() {
           Un configurateur de stands en ligne : le client compose, visualise et reçoit son devis.
         </p>
       </article>
+      <article className="rz-card rz-balme" data-cats="site shop app" data-to="/realisations/moulin-de-balme">
+        <div className="p-media">
+          <img src="/images/4a723a9387332c.png" alt="" />
+          <div className="win win-shot mdb-cwin">
+            <div className="win-bar">
+              <span className="dots">
+                <i />
+                <i />
+                <i />
+              </span>
+              <span className="win-title">moulin-de-balme.fr</span>
+              <span className="win-sp" />
+            </div>
+            <div className="win-body">
+              <img className="shot" src="/images/ce971a6eeb6bd1.jpg" alt="Le site du Moulin de Balme" />
+            </div>
+          </div>
+        </div>
+        <div className="p-meta">
+          <h3 className="p-name">
+            <Link to="/realisations/moulin-de-balme">Le Moulin de Balme</Link>
+          </h3>
+          <span className="p-tag">Boulangerie · Site + back-office</span>
+        </div>
+        <p className="p-desc">
+          La boulangerie de Stéphane et Tomoko Reinat, à Brive : un site avec click & collect, et un
+          back-office pour tout gérer depuis le fournil.
+        </p>
+        <a className="lnk rz-more">Lire l’étude de cas</a>
+      </article>
+      <article className="rz-card rz-dathy" data-cats="site da">
+        <div className="p-media">
+          <img src="/images/dc0beeb280fba7.png" alt="" />
+          <div className="win win-shot mdb-cwin">
+            <div className="win-bar">
+              <span className="dots">
+                <i />
+                <i />
+                <i />
+              </span>
+              <span className="win-title">dathy.fr</span>
+              <span className="win-sp" />
+            </div>
+            <div className="win-body">
+              <img className="shot" src="/images/d6469bcda29f1a.jpg" alt="Le site DATHY" />
+            </div>
+          </div>
+        </div>
+        <div className="p-meta">
+          <h3 className="p-name">DATHY</h3>
+          <span className="p-tag">Site vitrine · DA</span>
+        </div>
+        <p className="p-desc">
+          Le site d’un cabinet d’assistance à maîtrise d’ouvrage en bâtiment et travaux publics, dans le
+          Vexin.
+        </p>
+        <Link to="/realisations/dathy" className="lnk rz-more" data-proj="dathy">
+          Voir le projet
+        </Link>
+      </article>
+      <article className="rz-card rz-ocha" data-cats="shop">
+        <div className="p-media">
+          <img src="/images/881de3b40197db.png" alt="" />
+          <div className="win win-shot mdb-cwin">
+            <div className="win-bar">
+              <span className="dots">
+                <i />
+                <i />
+                <i />
+              </span>
+              <span className="win-title">ochaandco.com</span>
+              <span className="win-sp" />
+            </div>
+            <div className="win-body">
+              <img className="shot" src="/images/71eb80b3e243f6.jpg" alt="Le site Ocha & Co." />
+            </div>
+          </div>
+        </div>
+        <div className="p-meta">
+          <h3 className="p-name">Ocha & Co.</h3>
+          <span className="p-tag">E-commerce · Shopify</span>
+        </div>
+        <p className="p-desc">
+          La boutique en ligne d’une maison de thé japonaise : matchas et thés bio, quiz pour trouver le sien.
+        </p>
+        <Link to="/realisations/ocha-and-co" className="lnk rz-more" data-proj="ocha-and-co">
+          Voir le projet
+        </Link>
+      </article>
+      <article className="rz-card rz-sc" data-cats="site app">
+        <div className="p-media">
+          <img src="/images/6cb0d8d4f25c2a.png" alt="" />
+          <div className="win win-shot mdb-cwin">
+            <div className="win-bar">
+              <span className="dots">
+                <i />
+                <i />
+                <i />
+              </span>
+              <span className="win-title">swingcall.fr</span>
+              <span className="win-sp" />
+            </div>
+            <div className="win-body">
+              <img className="shot" src="/images/a4c19bfe3dd683.jpg" alt="Le site Swing Call" />
+            </div>
+          </div>
+        </div>
+        <div className="p-meta">
+          <h3 className="p-name">Swing Call</h3>
+          <span className="p-tag">Start-up · Site produit</span>
+        </div>
+        <p className="p-desc">Le site d’une start-up qui équipe les golfs d’un agent IA téléphonique.</p>
+        <Link to="/realisations/swing-call" className="lnk rz-more" data-proj="swing-call">
+          Voir le projet
+        </Link>
+      </article>
+      <article className="rz-card rz-aev" data-cats="site app">
+        <div className="p-media">
+          <img src="/images/17682ce2f50cef.png" alt="" />
+          <div className="win win-shot mdb-cwin">
+            <div className="win-bar">
+              <span className="dots">
+                <i />
+                <i />
+                <i />
+              </span>
+              <span className="win-title">association-ev.fr</span>
+              <span className="win-sp" />
+            </div>
+            <div className="win-body">
+              <img
+                className="shot"
+                src="/images/f7f70ac67d2f8d.jpg"
+                alt="Le site Association des Entrepreneurs du Vexin"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="p-meta">
+          <h3 className="p-name">Association des Entrepreneurs du Vexin</h3>
+          <span className="p-tag">Association · Site + espace membres</span>
+        </div>
+        <p className="p-desc">
+          Le site du réseau des chefs d’entreprise du Vexin : membres, événements et adhésion en ligne.
+        </p>
+        <Link
+          to="/realisations/entrepreneurs-du-vexin"
+          className="lnk rz-more"
+          data-proj="entrepreneurs-du-vexin"
+        >
+          Voir le projet
+        </Link>
+      </article>
+      <article className="rz-card rz-ht" data-cats="site">
+        <div className="p-media">
+          <img src="/images/6fd799a3a74785.png" alt="" />
+          <div className="win win-shot mdb-cwin">
+            <div className="win-bar">
+              <span className="dots">
+                <i />
+                <i />
+                <i />
+              </span>
+              <span className="win-title">houssestaxi.com</span>
+              <span className="win-sp" />
+            </div>
+            <div className="win-body">
+              <img className="shot" src="/images/17eafb1d2deb75.jpg" alt="Le site Housses Taxi" />
+            </div>
+          </div>
+        </div>
+        <div className="p-meta">
+          <h3 className="p-name">Housses Taxi</h3>
+          <span className="p-tag">Site vitrine · TPE</span>
+        </div>
+        <p className="p-desc">
+          Le site d’un fabricant de housses sur mesure pour taxis et VTC, dans le Val-d’Oise.
+        </p>
+        <Link to="/realisations/housses-taxi" className="lnk rz-more" data-proj="housses-taxi">
+          Voir le projet
+        </Link>
+      </article>
       <article className="rz-card rz-bocaux" data-cats="shop">
         <div className="p-media">
-          <img src="/images/img-9d5bedd1.png" alt="" />
-          <div className="shop">
-            <div className="shop-img">
-              <span className="jar" />
+          <img src="/images/07246a74f6555c.png" alt="" />
+          <div className="win win-shot win-golf win-bv">
+            <div className="win-bar">
+              <span className="dots">
+                <i />
+                <i />
+                <i />
+              </span>
+              <span className="win-title">lesbocauxduvexin.fr</span>
+              <span className="win-sp" />
             </div>
-            <div className="shop-b">
-              <div className="shop-k">Épicerie · Bocaux</div>
-              <div className="shop-t">Soupe de potimarron</div>
-              <div className="shop-row">
-                <span className="shop-p">6,90 €</span>
-                <span className="shop-q">— 1 +</span>
-              </div>
-              <div className="shop-cta">Ajouter au panier</div>
+            <div className="win-body">
+              <img className="shot" src="/images/4decbda594bb3c.jpg" alt="La boutique Les Bocaux du Vexin" />
             </div>
           </div>
         </div>
@@ -171,12 +353,15 @@ function RzGrid() {
           <span className="p-tag">E-commerce · Shopify · 2026</span>
         </div>
         <p className="p-desc">
-          Une boutique Shopify simple à tenir au quotidien pour une conserverie locale.
+          La boutique Shopify d’une conserverie du Vexin : bocaux consignés, box à composer et abonnement.
         </p>
+        <Link to="/realisations/les-bocaux-du-vexin" className="lnk rz-more" data-proj="les-bocaux-du-vexin">
+          Voir le projet
+        </Link>
       </article>
       <article className="rz-card rz-admin" data-cats="app" data-to="/realisations/chateau-larc">
         <div className="p-media">
-          <img src="/images/img-17705de3.png" alt="" />
+          <img src="/images/4b8094654fed91.png" alt="" />
           <div className="win win-shot win-adm">
             <div className="win-bar">
               <span className="dots">
@@ -190,7 +375,7 @@ function RzGrid() {
             <div className="win-body">
               <img
                 className="shot"
-                src="/images/accueil-d-orion-admin-pour-le-chateau-l-arc-golf.jpg"
+                src="/images/94f1f7140db692.jpg"
                 alt="Accueil d’Orion Admin pour le Château l’Arc Golf Club"
               />
             </div>
@@ -205,126 +390,43 @@ function RzGrid() {
         <p className="p-desc">
           Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit.
         </p>
+        <Link to="/realisations/orion-admin" className="lnk rz-more" data-proj="orion-admin">
+          Voir le projet
+        </Link>
       </article>
-      <article className="rz-card rz-osmose" data-cats="shop">
+      <article className="rz-card rz-osmose" data-cats="shop da">
         <div className="p-media">
-          <img src="/images/img-016e5f0f.png" alt="" />
-          <div className="win rz-wire">
+          <img src="/images/5e44d143820ccb.png" alt="" />
+          <div className="win win-shot mdb-cwin">
             <div className="win-bar">
               <span className="dots">
                 <i />
                 <i />
                 <i />
               </span>
-              <span className="win-title">Osmose Nutrition</span>
+              <span className="win-title">Osmose Nutrition — maquettes</span>
               <span className="win-sp" />
             </div>
             <div className="win-body">
-              <div className="wire" style={{ border: 'none', padding: '0' }}>
-                <i style={{ width: '58%' }} />
-                <i style={{ width: '36%' }} />
-                <i className="blk" />
-                <i style={{ width: '72%' }} />
-                <i style={{ width: '44%' }} />
-              </div>
+              <img
+                className="shot"
+                src="/images/b351708a31fde9.jpg"
+                alt="Maquette de la boutique Osmose Nutrition"
+              />
             </div>
           </div>
         </div>
         <div className="p-meta">
           <h3 className="p-name">Osmose Nutrition</h3>
-          <span className="p-tag">E-commerce · Abonnements · 2025</span>
+          <span className="p-tag">E-commerce · Refonte UX/CRO · 2025</span>
         </div>
-        <p className="p-desc">Une boutique en ligne avec abonnements.</p>
-      </article>
-      <article className="rz-card rz-parker" data-cats="da">
-        <div className="p-media">
-          <img src="/images/img-6c874cfa.png" alt="" />
-          <div className="win rz-wire">
-            <div className="win-bar">
-              <span className="dots">
-                <i />
-                <i />
-                <i />
-              </span>
-              <span className="win-title">Parker & Smith</span>
-              <span className="win-sp" />
-            </div>
-            <div className="win-body">
-              <div className="wire" style={{ border: 'none', padding: '0' }}>
-                <i style={{ width: '58%' }} />
-                <i style={{ width: '36%' }} />
-                <i className="blk" />
-                <i style={{ width: '72%' }} />
-                <i style={{ width: '44%' }} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="p-meta">
-          <h3 className="p-name">Parker & Smith</h3>
-          <span className="p-tag">Horlogerie · DA & UX · 2025</span>
-        </div>
-        <p className="p-desc">Direction artistique et UX pour une marque d’horlogerie.</p>
-      </article>
-      <article className="rz-card rz-tersen" data-cats="app">
-        <div className="p-media">
-          <img src="/images/img-2d4d06b2.png" alt="" />
-          <div className="win rz-wire">
-            <div className="win-bar">
-              <span className="dots">
-                <i />
-                <i />
-                <i />
-              </span>
-              <span className="win-title">Tersen — Groupe Colas</span>
-              <span className="win-sp" />
-            </div>
-            <div className="win-body">
-              <div className="wire" style={{ border: 'none', padding: '0' }}>
-                <i style={{ width: '58%' }} />
-                <i style={{ width: '36%' }} />
-                <i className="blk" />
-                <i style={{ width: '72%' }} />
-                <i style={{ width: '44%' }} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="p-meta">
-          <h3 className="p-name">Tersen — Groupe Colas</h3>
-          <span className="p-tag">Plateforme SaaS · 2025</span>
-        </div>
-        <p className="p-desc">Une plateforme SaaS, de la conception au développement.</p>
-      </article>
-      <article className="rz-card rz-boat" data-cats="site">
-        <div className="p-media">
-          <img src="/images/img-a8360f3c.png" alt="" />
-          <div className="win rz-wire">
-            <div className="win-bar">
-              <span className="dots">
-                <i />
-                <i />
-                <i />
-              </span>
-              <span className="win-title">Absolute Boat</span>
-              <span className="win-sp" />
-            </div>
-            <div className="win-body">
-              <div className="wire" style={{ border: 'none', padding: '0' }}>
-                <i style={{ width: '58%' }} />
-                <i style={{ width: '36%' }} />
-                <i className="blk" />
-                <i style={{ width: '72%' }} />
-                <i style={{ width: '44%' }} />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="p-meta">
-          <h3 className="p-name">Absolute Boat</h3>
-          <span className="p-tag">Yachting · Site · 2024</span>
-        </div>
-        <p className="p-desc">Le site d’une entreprise du yachting.</p>
+        <p className="p-desc">
+          La refonte de la boutique d’un fabricant de compléments alimentaires : diagnostic, routine sur
+          mesure, abonnements.
+        </p>
+        <Link to="/realisations/osmose-nutrition" className="lnk rz-more" data-proj="osmose-nutrition">
+          Voir le projet
+        </Link>
       </article>
     </div>
   )
@@ -334,7 +436,7 @@ function RzAvs() {
   return (
     <section className="rz-avs">
       <div className="av-card rz-av">
-        <img className="av-bg" src="/images/img-5789321f.png" alt="" />
+        <img className="av-bg" src="/images/b1ad4d0b43d462.png" alt="" />
         <div className="av-veil" />
         <div className="av-l">
           <div className="av-k">
@@ -348,10 +450,7 @@ function RzAvs() {
           </p>
           <div className="av-by">
             <span className="av-logo">
-              <img
-                src="/images/association-des-entrepreneurs-du-vexin.png"
-                alt="Association des Entrepreneurs du Vexin"
-              />
+              <img src="/images/4261b99ecbbc3b.png" alt="Association des Entrepreneurs du Vexin" />
             </span>
             <div>
               <b>Thierry Cordier</b>

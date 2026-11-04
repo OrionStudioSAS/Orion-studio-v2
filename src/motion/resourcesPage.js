@@ -330,4 +330,4 @@ function resPage(R, mob) {
   resArticle(R, mob)
 }
 
-export { toast, resTab, resPage, ART }
+export { norm, toast, resTab, resPage, ART }

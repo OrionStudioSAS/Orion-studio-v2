@@ -87,8 +87,8 @@ function expertises(R, mob) {
 
 const WHO = {
   golf: {
-    img: '/images/img-f604674b.jpg',
-    mimg: '/images/parcours-de-golf-en-provence-en-pixel-art-2.png',
+    img: '/images/f604674bcf.jpg',
+    mimg: '/images/b4c2890700.png',
     h3: 'Remplir les départs, fidéliser les membres.',
     lead: 'Site de golf, réservation de départs en ligne, espace membres, boutique du pro-shop et back-office pour les événements : tout ce qu’un club gère au quotidien, au même endroit.',
     items: [
@@ -100,31 +100,58 @@ const WHO = {
     small: 'Un site qui donne envie de venir jouer, géré par l’équipe du club.',
   },
   pme: {
-    img: '/images/img-bfc42a57.jpg',
+    img: '/images/bfc42a5774.jpg',
     h3: 'Un site qui fait venir des demandes, sans y passer vos soirées.',
     lead: 'Artisans, cabinets, commerces, entreprises de services : un site professionnel, rapide et bien référencé, que vous mettez à jour vous-même, sans y passer vos soirées.',
     items: ['Site vitrine sur mesure', 'Formulaire de devis', 'Fiche Google & avis'],
-    ref: 'Association des Entrepreneurs du Vexin',
-    small: 'Site vitrine',
-    mimg: '/images/img-bfc42a57.jpg',
+    ref: 'Housses Taxi',
+    small: 'Un atelier du Val-d’Oise qui fabrique des housses sur mesure pour taxis et VTC.',
+    view: 'tpe-pme',
+    mimg: '/images/bfc42a5774.jpg',
   },
   indep: {
-    img: '/images/img-71d9f5f3.jpg',
+    img: '/images/71d9f5f30a.jpg',
     h3: 'Une présence pro, rapide à lancer, avec un budget maîtrisé.',
     lead: 'Consultants, coachs, créatifs, artisans, professions libérales : une présence professionnelle, claire et bien référencée, lancée rapidement avec un budget maîtrisé.',
     items: ['Accueil & services', 'Prise de rendez-vous', 'Portfolio & réalisations'],
     ref: 'DATHY',
     small: '',
-    mimg: '/images/img-71d9f5f3.jpg',
+    view: 'independants',
+    mimg: '/images/71d9f5f30a.jpg',
   },
   shop: {
-    img: '/images/img-6fb5fcdf.jpg',
+    img: '/images/6fb5fcdfb6.jpg',
     h3: 'Des boutiques Shopify qui vendent, et les outils pour grandir.',
     lead: 'Création et refonte de boutiques Shopify, fiches produits qui convertissent, intégrations logistiques et marketing : on construit la boutique, et les outils pour la faire grandir.',
     items: ['Boutique Shopify sur mesure', 'Fiches produits', 'Panier & paiement'],
-    ref: 'Les Bocaux du Vexin',
-    small: 'Une boutique Shopify simple à tenir au quotidien pour une conserverie locale.',
-    mimg: '/images/img-6fb5fcdf.jpg',
+    ref: 'Osmose Nutrition · Ocha & Co.',
+    small: 'Une boutique de compléments repensée, et une maison de thé japonaise.',
+    view: 'marques-e-commerce',
+    mimg: '/images/6fb5fcdfb6.jpg',
+  },
+  startup: {
+    img: '/images/16d4b28751.jpg',
+    mimg: '/images/92f9399126.png',
+    h3: 'Un site qui fait comprendre votre produit et réserver des démos.',
+    lead: 'Start-up et jeunes entreprises innovantes : un site qui explique votre produit en quelques secondes, fait réserver des démos, et suit le rythme de vos versions.',
+    items: ['Page de lancement', 'Réservation de démo', 'Le produit lui-même'],
+    ref: 'Swing Call',
+    small: 'Un agent IA téléphonique pour les golfs.',
+    view: 'start-up',
+  },
+  secteurs: {
+    img: '/images/30a4881580.jpg',
+    mimg: '/images/0bcbd917e3.png',
+    h3: 'Un site pensé pour votre métier.',
+    lead: 'Golfs, boulangeries, restaurants, associations, artisans, hôtels et gîtes, coiffeurs, agences immobilières : chaque métier a ses outils, et sa page.',
+    items: [
+      'Golfs · Boulangeries · Restaurants',
+      'Associations · Artisans · Hôtels & gîtes',
+      'Coiffeurs · Immobilier',
+    ],
+    ref: 'Château l’Arc Golf Club · Le Moulin de Balme',
+    small: 'Un golf en Provence, une boulangerie à Brive.',
+    view: 'secteurs',
   },
 }
 function whoDesk(R) {
@@ -137,14 +164,18 @@ function whoDesk(R) {
     ul = $('.who-cols ul', p),
     ref = $('.who-ref', p),
     cols = $('.who-cols', p)
-  let cur = 'golf'
+  let cur = list[0].dataset.k
   const apply = (d) => {
     im.src = d.img
     h3.innerHTML = d.h3
     lead.innerHTML = d.lead
     ul.innerHTML = d.items.map((x) => `<li>${x}</li>`).join('')
-    ref.innerHTML = d.ref + (d.small ? `<small>${d.small}</small>` : '')
+    ref.innerHTML =
+      d.ref +
+      (d.small ? `<small>${d.small}</small>` : '') +
+      (d.view ? `<a class="lnk who-go" data-who-go="${d.view}">Voir la page</a>` : '')
   }
+  apply(WHO[cur])
   const show = (k) => {
     if (k === cur) return
     cur = k
@@ -174,7 +205,7 @@ function whoDesk(R) {
   list.forEach((d) => {
     d.tabIndex = 0
     d.setAttribute('role', 'button')
-    d.setAttribute('aria-pressed', d.dataset.k === 'golf')
+    d.setAttribute('aria-pressed', d.dataset.k === cur)
     if (FINE) d.addEventListener('mouseenter', () => show(d.dataset.k))
     d.addEventListener('click', () => show(d.dataset.k))
     d.addEventListener('keydown', (e) => {
@@ -190,10 +221,10 @@ function whoDesk(R) {
 }
 function whoMob(R) {
   const accs = $$('.mo-acc', R),
-    keys = ['pme', 'golf', 'indep', 'shop'],
+    keys = accs.map((a) => a.dataset.k),
     panel = $('.mo-who', R)
   if (!panel) return
-  let open = accs[1]
+  let open = accs[0]
   const fill = (k) => {
     const d = WHO[k]
     $('.mo-who-img', panel).src = d.mimg
@@ -201,6 +232,8 @@ function whoMob(R) {
     $('.mo-who-b p', panel).innerHTML = d.lead
     $('.mo-who-b ul', panel).innerHTML = d.items.map((x) => `<li>${x}</li>`).join('')
     $('.mo-ref', panel).innerHTML = d.ref + (d.small ? `<small>${d.small}</small>` : '')
+    const g = $('.who-go', panel)
+    if (g) g.dataset.whoGo = d.view || ''
   }
   const toggle = (a) => {
     if (open) open.classList.remove('mo-acc-on', 'open')
@@ -366,8 +399,9 @@ function footer(R, mob) {
   })
   up($$(mob ? '.mo-fcard' : '.ft-cards > div', R), $(mob ? '.mo-fcards' : '.ft-cards', R), { y: 24, s: 0.07 })
   if (!anim) return
-  const sky = $(mob ? '.mo-sky' : '.ft-sky', R),
-    im = $('.hm-layer', sky)
+  const sky = $(mob ? '.mo-sky' : '.ft-sky', R)
+  if (!sky) return
+  const im = $('.hm-layer', sky)
   G.fromTo(
     im,
     { yPercent: -8 },

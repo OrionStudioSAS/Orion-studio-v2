@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Nav } from '../../components/shared/Nav'
 import { MmVeilLive } from '../../components/shared/MmVeilLive'
+import { ChateauLArcGolf } from '../../components/shared/ChateauLArcGolf'
 import { Footer } from '../../components/shared/Footer'
 
 function Hero() {
@@ -47,12 +48,9 @@ function Hero() {
 function HeroMedia() {
   return (
     <div className="hero-media cs-hero">
-      <img
-        src="/images/un-stand-realise-par-stand-ing-en-pixel-art.png"
-        alt="Un stand réalisé par Stand-ING, en pixel art"
-      />
+      <img src="/images/cabd38389825fd.png" alt="Un stand réalisé par Stand-ING, en pixel art" />
       <div className="case-logo">
-        <img src="/images/stand-ing.png" alt="Stand-ING" />
+        <img src="/images/f929bc41088d4e.png" alt="Stand-ING" />
       </div>
       <div className="win cs-hwin">
         <div className="win-bar">
@@ -64,11 +62,7 @@ function HeroMedia() {
           <span className="win-title">Stand-ING — Configurateur de stand 3D</span>
           <span className="win-sp" />
         </div>
-        <img
-          className="shot"
-          src="/images/configurateur-de-stand-3d-stand-ing.png"
-          alt="Le configurateur de stand Stand-ING"
-        />
+        <img className="shot" src="/images/cfe60288d854b0.png" alt="Le configurateur de stand Stand-ING" />
       </div>
       <div className="capt">Un stand Stand-ING, en pixel</div>
     </div>
@@ -139,7 +133,7 @@ function LeParcoursExposantEn() {
               <span className="win-title">Accueil</span>
               <span className="win-sp" />
             </div>
-            <img className="shot" src="/images/img-3cd40f8b.jpg" alt="" />
+            <img className="shot" src="/images/72fba341afabc8.jpg" alt="" />
           </div>
           <h3>Accueil</h3>
           <p>
@@ -158,7 +152,7 @@ function LeParcoursExposantEn() {
               <span className="win-title">Configuration</span>
               <span className="win-sp" />
             </div>
-            <img className="shot" src="/images/img-6f268604.jpg" alt="" />
+            <img className="shot" src="/images/0728f74559c19f.jpg" alt="" />
           </div>
           <h3>Configuration</h3>
           <p>
@@ -177,7 +171,7 @@ function LeParcoursExposantEn() {
               <span className="win-title">Boutique</span>
               <span className="win-sp" />
             </div>
-            <img className="shot" src="/images/img-a39f8131.jpg" alt="" />
+            <img className="shot" src="/images/9bdf57c828f6bb.jpg" alt="" />
           </div>
           <h3>Boutique</h3>
           <p>Mobilier, multimédia, signalétique : chaque accessoire prend place directement sur le stand.</p>
@@ -193,7 +187,7 @@ function LeParcoursExposantEn() {
               <span className="win-title">Validation</span>
               <span className="win-sp" />
             </div>
-            <img className="shot" src="/images/img-e47610ce.jpg" alt="" />
+            <img className="shot" src="/images/b1046185927fed.jpg" alt="" />
           </div>
           <h3>Validation</h3>
           <p>Un récapitulatif, un clic, et le bon de commande est généré instantanément.</p>
@@ -232,7 +226,7 @@ function LaVideoFormatStory() {
             loop
             playsInline
             preload="metadata"
-            poster="/images/standing-poster.jpg"
+            poster="/images/f54b9517fb.jpg"
             aria-label="Vidéo de présentation du configurateur Stand-ING"
           />
           <div className="sv-top">
@@ -241,7 +235,7 @@ function LaVideoFormatStory() {
             </div>
             <div className="sv-head">
               <span className="sv-av">
-                <img src="/images/stand-ing.png" alt="" />
+                <img src="/images/f929bc41088d4e.png" alt="" />
               </span>
               <div>
                 <b>standing</b>
@@ -348,7 +342,7 @@ function DansLeConfigurateurLe() {
           </div>
           <img
             className="shot"
-            src="/images/la-boutique-du-configurateur-rubrique-signaletiq.jpg"
+            src="/images/a71dfaa0af1087.jpg"
             alt="La boutique du configurateur, rubrique signalétique"
           />
         </div>
@@ -373,7 +367,7 @@ function DansLeConfigurateurLe() {
               <span className="win-title">Tourner autour du stand</span>
               <span className="win-sp" />
             </div>
-            <img className="shot" src="/images/standing-poster.jpg" alt="" />
+            <img className="shot" src="/images/b3624ef1019ca0.jpg" alt="" />
           </div>
           <h3>Tourner autour du stand</h3>
           <p>Une orbite libre pour explorer chaque détail avant de choisir.</p>
@@ -389,7 +383,7 @@ function DansLeConfigurateurLe() {
               <span className="win-title">Questions et remarques</span>
               <span className="win-sp" />
             </div>
-            <img className="shot" src="/images/img-817dd90e.jpg" alt="" />
+            <img className="shot" src="/images/cd45015e1fa265.jpg" alt="" />
           </div>
           <h3>Questions et remarques</h3>
           <p>Un besoin spécifique ? L’exposant écrit, l’équipe Stand-ING prend le relais.</p>
@@ -405,55 +399,11 @@ function DansLeConfigurateurLe() {
               <span className="win-title">L’invitation par e-mail</span>
               <span className="win-sp" />
             </div>
-            <img className="shot" src="/images/img-12da3d8d.jpg" alt="" />
+            <img className="shot" src="/images/a0ea3932c74f0c.jpg" alt="" />
           </div>
           <h3>L’invitation par e-mail</h3>
           <p>Le parcours commence dans la boîte mail, avec le code d’accès au configurateur.</p>
         </article>
-      </div>
-    </section>
-  )
-}
-
-function ChateauLArcGolf() {
-  return (
-    <section className="sec" style={{ padding: '0' }}>
-      <div className="cs-next" data-to="/realisations/chateau-larc">
-        <div className="cs-nx-l">
-          <span className="p-tag">Projet suivant</span>
-          <h2 className="h2">Château l’Arc Golf Club</h2>
-          <p className="lead">
-            Un site qui donne envie de venir jouer, et un back-office pour gérer départs, offres et
-            événements.
-          </p>
-          <div className="cs-nx-b">
-            <a className="btn btn-ink">Voir le projet</a>
-            <Link to="/realisations" className="lnk">
-              Toutes les réalisations
-            </Link>
-          </div>
-        </div>
-        <div className="p-media cs-nx-m">
-          <img src="/images/img-3b6de440.png" alt="" />
-          <div className="win win-shot win-golf">
-            <div className="win-bar">
-              <span className="dots">
-                <i />
-                <i />
-                <i />
-              </span>
-              <span className="win-title">chateaularcgolfclub.com</span>
-              <span className="win-sp" />
-            </div>
-            <div className="win-body">
-              <img
-                className="shot"
-                src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg"
-                alt="Page d’accueil du site du Château l’Arc Golf Club"
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

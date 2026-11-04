@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MobileNav } from '../../components/shared/MobileNav'
+import { MoMcNk } from '../../components/shared/MoMcNk'
 
 function MoHero() {
   return (
@@ -44,12 +45,12 @@ function McHero() {
     <div className="mc-hero">
       <img
         className="mc-hero-bg"
-        src="/images/un-stand-realise-par-stand-ing-en-pixel-art-2.png"
+        src="/images/07c611b251fd66.png"
         alt="Un stand réalisé par Stand-ING, en pixel art"
         style={{ left: '0', width: '390px', height: '380px', objectFit: 'cover' }}
       />
       <div className="mc-logo">
-        <img src="/images/stand-ing.png" alt="Stand-ING" />
+        <img src="/images/f929bc41088d4e.png" alt="Stand-ING" />
       </div>
       <div className="win win-shot mc-win mc-hwin">
         <div className="win-bar">
@@ -62,7 +63,7 @@ function McHero() {
           <span className="win-sp" />
         </div>
         <div className="win-body">
-          <img className="shot" src="/images/img-6f268604.jpg" alt="" />
+          <img className="shot" src="/images/0728f74559c19f.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -129,7 +130,7 @@ function LeParcoursExposantEn() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-3cd40f8b.jpg" alt="" />
+                <img className="shot" src="/images/72fba341afabc8.jpg" alt="" />
               </div>
             </div>
             <h3>Accueil</h3>
@@ -150,7 +151,7 @@ function LeParcoursExposantEn() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-6f268604.jpg" alt="" />
+                <img className="shot" src="/images/0728f74559c19f.jpg" alt="" />
               </div>
             </div>
             <h3>Configuration</h3>
@@ -171,7 +172,7 @@ function LeParcoursExposantEn() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-a39f8131.jpg" alt="" />
+                <img className="shot" src="/images/9bdf57c828f6bb.jpg" alt="" />
               </div>
             </div>
             <h3>Boutique</h3>
@@ -191,7 +192,7 @@ function LeParcoursExposantEn() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-e47610ce.jpg" alt="" />
+                <img className="shot" src="/images/b1046185927fed.jpg" alt="" />
               </div>
             </div>
             <h3>Validation</h3>
@@ -230,7 +231,7 @@ function LaVideoFormatStory() {
             loop
             playsInline
             preload="metadata"
-            poster="/images/standing-poster.jpg"
+            poster="/images/f54b9517fb.jpg"
             aria-label="Vidéo de présentation du configurateur Stand-ING"
           />
           <div className="sv-top">
@@ -239,7 +240,7 @@ function LaVideoFormatStory() {
             </div>
             <div className="sv-head">
               <span className="sv-av">
-                <img src="/images/stand-ing.png" alt="" />
+                <img src="/images/f929bc41088d4e.png" alt="" />
               </span>
               <div>
                 <b>standing</b>
@@ -329,7 +330,7 @@ function DansLeConfigurateurLe() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/standing-poster.jpg" alt="" />
+                <img className="shot" src="/images/b3624ef1019ca0.jpg" alt="" />
               </div>
             </div>
             <h3>Tourner autour du stand</h3>
@@ -347,7 +348,7 @@ function DansLeConfigurateurLe() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-817dd90e.jpg" alt="" />
+                <img className="shot" src="/images/cd45015e1fa265.jpg" alt="" />
               </div>
             </div>
             <h3>Questions et remarques</h3>
@@ -365,7 +366,7 @@ function DansLeConfigurateurLe() {
                 <span className="win-sp" />
               </div>
               <div className="win-body">
-                <img className="shot" src="/images/img-12da3d8d.jpg" alt="" />
+                <img className="shot" src="/images/a0ea3932c74f0c.jpg" alt="" />
               </div>
             </div>
             <h3>L’invitation par e-mail</h3>
@@ -373,50 +374,6 @@ function DansLeConfigurateurLe() {
           </article>
         </div>
       </div>
-    </section>
-  )
-}
-
-function McNk() {
-  return (
-    <section className="mo-sec">
-      <div className="mc-nk">Projet suivant</div>
-      <article className="mo-proj" data-to="/realisations/chateau-larc">
-        <div className="mo-pm">
-          <img className="mo-pm-bg" src="/images/img-f588b997.png" alt="" />
-          <div className="win win-shot mo-win">
-            <div className="win-bar">
-              <span className="dots">
-                <i />
-                <i />
-                <i />
-              </span>
-              <span className="win-title">chateaularcgolfclub.com</span>
-              <span className="win-sp" />
-            </div>
-            <div className="win-body">
-              <img
-                className="shot"
-                src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div className="mo-pmeta">
-          <h3>
-            <Link to="/realisations/chateau-larc">Château l’Arc Golf Club</Link>
-          </h3>
-          <span>Golf · Site + back-office · 2026</span>
-        </div>
-        <p>
-          Un site qui donne envie de venir jouer, et un back-office pour gérer départs, offres et événements.
-        </p>
-        <a className="lnk mo-more">Lire l’étude de cas</a>
-      </article>
-      <Link to="/realisations" className="btn btn-ink mo-btn mo-btn-full mc-all">
-        Toutes les réalisations
-      </Link>
     </section>
   )
 }
@@ -441,49 +398,39 @@ function MoFt() {
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
-          visibilité, en français et en anglais.
+          visibilité.
         </p>
-        <div className="nl mo-nl">
-          <div className="nl-k">La lettre d’Orion</div>
-          <div className="nl-t">
-            Un e-mail par mois sur le web, l’e-commerce et la visibilité dans les IA. Pas de spam, promis.
-          </div>
-          <div className="nl-f">
-            <span>votre@email.fr</span>
-            <a>S’inscrire</a>
-          </div>
-        </div>
         <div className="mo-fcols">
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
-            <a>Site internet</a>
-            <a>Développement & applications</a>
-            <a>Automatisations</a>
-            <a>SEO</a>
-            <a>GEO</a>
-            <a>Google Ads</a>
+            <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/developpement-applications">Développement d’applications</Link>
+            <Link to="/expertises/automatisations">Automatisations</Link>
+            <Link to="/expertises/seo">SEO</Link>
+            <Link to="/expertises/geo">GEO</Link>
+            <Link to="/expertises/google-ads">Google Ads</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>
-            <a>TPE & PME</a>
-            <Link to="/golfs">Golfs</Link>
-            <a>Indépendants</a>
-            <a>Marques & e-commerçants</a>
+            <Link to="/pour-qui/tpe-pme">TPE & PME</Link>
+            <Link to="/pour-qui/golfs">Golfs</Link>
+            <Link to="/pour-qui/independants">Indépendants</Link>
+            <Link to="/pour-qui/marques-e-commerce">Marques & e-commerçants</Link>
+            <Link to="/pour-qui/start-up">Start-up</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Méthode</a>
-            <a>Orion Admin</a>
+            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Ressources</div>
             <Link to="/ressources">Articles</Link>
             <Link to="/ressources?cat=guides">Guides</Link>
-            <a>Questions fréquentes</a>
-            <a>Analyse gratuite</a>
+            <Link to="/faq">Questions fréquentes</Link>
           </div>
         </div>
         <div className="mo-fcards">
@@ -519,10 +466,7 @@ function MoFt() {
       </div>
       <div className="mo-sky">
         <div className="hm-layer">
-          <img
-            src="/images/le-ciel-et-la-constellation-d-orion-en-pixels-2.png"
-            alt="Le ciel et la constellation d’Orion, en pixels"
-          />
+          <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
             className="px bigword"
             src="/px/bigword-a5329b0d.svg"
@@ -544,10 +488,8 @@ function MoFt() {
             <span>English</span>
           </div>
           <div className="mo-legal-l">
-            <span>Mentions légales</span>
-            <span>Confidentialité</span>
-            <span>Cookies</span>
-            <span>Plan du site</span>
+            <Link to="/mentions-legales">Mentions légales</Link>
+            <Link to="/confidentialite">Confidentialité</Link>
           </div>
           <span>© 2026 Orion Studio SAS — RCS 938 775 368</span>
         </div>
@@ -566,7 +508,7 @@ export function Mobile() {
       <LeParcoursExposantEn />
       <LaVideoFormatStory />
       <DansLeConfigurateurLe />
-      <McNk />
+      <MoMcNk />
       <MoFt />
     </section>
   )

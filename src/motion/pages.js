@@ -1,8 +1,12 @@
+import { auPage } from './automationsPage'
 import { RM, G, ST, anim, $, $$, split, onView, up, pixelate, goTo } from './core'
 import { sparkle, magnetic } from './effects'
-import { logoCycle } from './footerUi'
+import { faqPage } from './faqPage'
+import { CL_LOGOS, CL_LOGOS_M, logoCycle } from './footerUi'
 import { chatFlow } from './hero'
+import { legalPage, e4Page } from './legalPages'
 import { resPage } from './resourcesPage'
+import { sectorsPage } from './routing'
 import { manifesto, headings, projects, steps, faq, footer } from './sections'
 import { storyInit } from './standingVideo'
 import { doggyInit, wall, stepWalk, crewAnim } from './studio'
@@ -259,7 +263,7 @@ function initPage(R, mob) {
   magnetic(R)
   filters(R, mob)
   bindGo(R)
-  logoCycle($$(mob ? '.mo-cl-g > div' : '.clients > div:not(:first-child)', R))
+  logoCycle($$(mob ? '.mo-cl-g > div' : '.clients > div:not(:first-child)', R), mob ? CL_LOGOS_M : CL_LOGOS)
   storyInit(R)
   doggyInit(R)
   wall(R)
@@ -270,6 +274,11 @@ function initPage(R, mob) {
   if ($('.q, .mo-q', R)) faq(R, mob)
   ecosystem(R, mob)
   resPage(R, mob)
+  faqPage(R, mob)
+  sectorsPage(R)
+  legalPage(R)
+  e4Page(R)
+  auPage(R, mob)
 }
 
 export { pageHero, ecosystem, filters, pageIntro, blocks, bindGo, initPage }

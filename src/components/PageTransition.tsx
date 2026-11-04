@@ -2,18 +2,19 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { flushSync } from 'react-dom'
 import { useLocation, useNavigationType, type Location } from 'react-router-dom'
 import { runPendingAfter } from '../motion/nav'
+import { findRoute, isMobileViewport, loadPage, pageId } from '../pageLoader'
 
 const COVER_MS = 420
 const HOLD_MS = 60
 const REVEAL_MS = 650
 const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches
-const pageId = (l: Location) => l.pathname + l.search
 
 /**
  * Rideau de pixels : des carrés noirs (quelques-uns orange) couvrent l'écran,
  * la nouvelle page prend la place de l'ancienne à l'abri, puis les carrés s'effacent.
+ * Si le fichier de la page n'est pas encore arrivé (`ready`), l'écran reste couvert en l'attendant.
  */
-function pixelWipe(onCovered: () => void, onDone: () => void) {
+function pixelWipe(ready: Promise<unknown>, onCovered: () => void, onDone: () => void) {
   const canvas = document.createElement('canvas')
   canvas.className = 'px-wipe'
   document.body.append(canvas)
@@ -40,29 +41,31 @@ function pixelWipe(onCovered: () => void, onDone: () => void) {
   }
 
   const start = performance.now()
-  let covered = false
-  const tick = (now: number) => {
-    const t = now - start
-    if (t < COVER_MS) {
-      const k = t / COVER_MS
+  const cover = (now: number) => {
+    const k = (now - start) / COVER_MS
+    if (k < 1) {
       draw(k * k)
-    } else {
-      if (!covered) {
-        covered = true
-        draw(1)
-        onCovered()
-      }
-      const k = Math.min(1, (t - COVER_MS - HOLD_MS) / REVEAL_MS)
-      if (k >= 1) {
-        canvas.remove()
-        onDone()
-        return
-      }
-      if (k > 0) draw((1 - k) * (1 - k))
+      requestAnimationFrame(cover)
+      return
     }
-    requestAnimationFrame(tick)
+    draw(1)
+    ready.finally(() => {
+      onCovered()
+      const revealFrom = performance.now() + HOLD_MS
+      const reveal = (t: number) => {
+        const r = Math.min(1, (t - revealFrom) / REVEAL_MS)
+        if (r >= 1) {
+          canvas.remove()
+          onDone()
+          return
+        }
+        if (r > 0) draw((1 - r) * (1 - r))
+        requestAnimationFrame(reveal)
+      }
+      requestAnimationFrame(reveal)
+    })
   }
-  requestAnimationFrame(tick)
+  requestAnimationFrame(cover)
 }
 
 /** Affiche la page courante et orchestre le changement de page (l'adresse change aussitôt, l'affichage sous le rideau). */
@@ -93,12 +96,13 @@ export function PageTransition({ children }: { children: (location: Location) =>
     const run = () => {
       if (busyRef.current) return
       if (pageId(latestRef.current) === pageId(shownRef.current)) return
+      const ready = loadPage(findRoute(latestRef.current.pathname), isMobileViewport())
       if (reducedMotion()) {
-        swap()
+        ready.finally(swap)
         return
       }
       busyRef.current = true
-      pixelWipe(swap, () => {
+      pixelWipe(ready, swap, () => {
         busyRef.current = false
         run() // une autre page a été demandée pendant le rideau
       })

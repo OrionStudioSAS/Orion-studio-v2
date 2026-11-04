@@ -16,7 +16,8 @@ function Hero() {
       <div className="hero-row">
         <p className="lead">
           Orion Studio conçoit et développe des sites sur-mesure, des boutiques Shopify et des applications
-          web. Deux associés basés à Paris, du premier croquis à la mise en ligne, sans intermédiaire.
+          web. Une équipe à taille humaine basée à Paris, du premier croquis à la mise en ligne, sans
+          intermédiaire.
         </p>
         <div className="hero-cta">
           <div className="hero-btns">
@@ -61,20 +62,16 @@ function HeroMedia() {
     <div className="hero-media">
       <div className="hm-layer">
         <img
-          src="/images/une-baie-la-nuit-sous-la-constellation-d-orion-e.png"
+          src="/images/e6d0322ad0257f.png"
           alt="Une baie la nuit sous la constellation d’Orion, en pixel art"
         />
-        <img
-          className="hero-orig"
-          src="/images/la-meme-scene-peinture-d-origine.jpg"
-          alt="La même scène, peinture d’origine"
-        />
+        <img className="hero-orig" src="/images/c209a53cbba40f.jpg" alt="La même scène, peinture d’origine" />
         <i className="betel" style={{ left: '698px', top: '106px' }} />
       </div>
       <div className="chat ch2">
         <div className="greet ch2-greet">
           <img className="px omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
-          <span>Quel site analyse-t-on ce soir ?</span>
+          <span>On regarde votre site ensemble ?</span>
         </div>
         <div className="composer ch2-comp">
           <div className="ch2-in">
@@ -248,25 +245,23 @@ function OrionStudioCEst() {
             <span className="mf-t ">Orion Studio, c’est</span>
             <img
               className="mf-pic"
-              src="/images/julien-et-theo-fondateurs-d-orion-studio.png"
+              src="/images/a4d016edd40d8d.png"
               alt="Julien et Théo, fondateurs d’Orion Studio"
             />
-            <span className="mf-t ">Julien et Théo,</span>
           </div>
           <div className="mf-l">
-            <span className="mf-t ">deux associés basés à Paris</span>
-            <img
-              className="mf-pic"
-              src="/images/une-baie-la-nuit-en-pixel-art.png"
-              alt="Une baie la nuit, en pixel art"
-            />
+            <span className="mf-t ">une équipe à taille humaine,</span>
           </div>
           <div className="mf-l">
-            <span className="mf-t mf-m">qui dessinent</span>
+            <span className="mf-t ">basée à Paris</span>
+            <img className="mf-pic" src="/images/417a770a7fa506.png" alt="Une baie la nuit, en pixel art" />
+          </div>
+          <div className="mf-l">
+            <span className="mf-t mf-m">qui dessine</span>
             <span className="mf-ui mf-figma" title="Figma">
               <img className="px" src="/px/art-13e55d0a.svg" alt="" width={40} height={60} />
             </span>
-            <span className="mf-t mf-m">et codent</span>
+            <span className="mf-t mf-m">et code</span>
             <span className="mf-ui mf-code">
               <i className="k" style={{ width: '46%' }} />
               <i style={{ width: '70%', marginLeft: '10px' }} />
@@ -282,18 +277,396 @@ function OrionStudioCEst() {
                 <b />
                 <b />
               </span>
-              <img src="/images/img-e01c44f8.png" alt="" />
+              <img src="/images/7de98511bd76f4.png" alt="" />
             </span>
             <span className="mf-t mf-m mf-s">des clients.</span>
           </div>
         </h2>
-        <div className="mf-foot">
-          <Link to="/le-studio" className="btn btn-ink">
-            Découvrir le studio
-          </Link>
-          <Link to="/realisations" className="lnk">
-            Voir nos réalisations
-          </Link>
+        <div className="tm">
+          <div className="tm-copy">
+            <span className="tm-k">L’équipe</span>
+            <h3 className="tm-h">
+              Derrière l’écran,<span className="serif">Julien et Théo.</span>
+            </h3>
+            <p className="tm-txt">
+              Vous échangez directement avec eux, du premier appel à la mise en ligne. Doggy, lui, s’occupe de
+              l’accueil.
+            </p>
+            <div className="tm-btns">
+              <a className="btn tm-btn" data-go="cta">
+                Réserver un appel
+              </a>
+              <Link to="/le-studio" className="lnk tm-lnk">
+                Découvrir le studio
+              </Link>
+            </div>
+            <span className="tm-note">Un appel de 30 minutes, en visio, au téléphone ou au studio.</span>
+          </div>
+          <div className="tm-stage">
+            <svg
+              className="tm-sky"
+              viewBox="0 0 836 440"
+              preserveAspectRatio="xMidYMid slice"
+              aria-hidden="true"
+            >
+              <rect x="331" y="77" width="3" height="3" fill="#F4F4F1" opacity="0.25" />
+              <rect x="74" y="48" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="519" y="109" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="444" y="214" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="92" y="217" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="228" y="31" width="3" height="3" fill="#F4F4F1" opacity="0.25" />
+              <rect x="226" y="23" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="429" y="73" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="573" y="92" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="381" y="49" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="633" y="105" width="3" height="3" fill="#F4F4F1" opacity="0.8" />
+              <rect x="795" y="160" width="3" height="3" fill="#F4F4F1" opacity="0.8" />
+              <rect x="370" y="153" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="715" y="124" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="537" y="253" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="294" y="37" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="168" y="175" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="431" y="20" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="348" y="179" width="3" height="3" fill="#F4F4F1" opacity="0.8" />
+              <rect x="70" y="47" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="713" y="33" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="662" y="228" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="684" y="177" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="363" y="86" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="60" y="111" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="756" y="126" width="3" height="3" fill="#F4F4F1" opacity="0.8" />
+              <rect x="508" y="41" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="411" y="142" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="563" y="142" width="3" height="3" fill="#F4F4F1" opacity="0.55" />
+              <rect x="699" y="194" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="84" y="90" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="674" y="119" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="603" y="93" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="4" y="74" width="3" height="3" fill="#F4F4F1" opacity="0.55" />
+              <rect x="624" y="163" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="467" y="200" width="3" height="3" fill="#F4F4F1" opacity="0.8" />
+              <rect x="403" y="53" width="3" height="3" fill="#F4F4F1" opacity="0.8" />
+              <rect x="63" y="97" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="451" y="83" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="615" y="26" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="580" y="77" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="628" y="13" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="628" y="192" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="355" y="186" width="3" height="3" fill="#F4F4F1" opacity="0.25" />
+              <rect x="118" y="249" width="3" height="3" fill="#F4F4F1" opacity="0.8" />
+              <rect x="495" y="159" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="104" y="175" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="708" y="82" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="540" y="185" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="776" y="270" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="712" y="133" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="364" y="114" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="627" y="99" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="757" y="116" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="364" y="14" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="483" y="132" width="2" height="2" fill="#F4F4F1" opacity="0.55" />
+              <rect x="457" y="178" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="225" y="52" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="201" y="172" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="639" y="0" width="3" height="3" fill="#F4F4F1" opacity="0.55" />
+              <rect x="818" y="43" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="801" y="102" width="3" height="3" fill="#F4F4F1" opacity="0.4" />
+              <rect x="444" y="170" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="474" y="205" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="174" y="65" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="604" y="238" width="2" height="2" fill="#F4F4F1" opacity="0.8" />
+              <rect x="673" y="179" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="21" y="7" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <rect x="444" y="99" width="2" height="2" fill="#F4F4F1" opacity="0.25" />
+              <rect x="257" y="108" width="2" height="2" fill="#F4F4F1" opacity="0.4" />
+              <line
+                x1="658"
+                y1="39"
+                x2="700"
+                y2="94"
+                stroke="#F4F4F1"
+                strokeOpacity=".16"
+                strokeDasharray="2 4"
+              />
+              <line
+                x1="769"
+                y1="49"
+                x2="736"
+                y2="107"
+                stroke="#F4F4F1"
+                strokeOpacity=".16"
+                strokeDasharray="2 4"
+              />
+              <line
+                x1="700"
+                y1="94"
+                x2="718"
+                y2="101"
+                stroke="#F4F4F1"
+                strokeOpacity=".16"
+                strokeDasharray="2 4"
+              />
+              <line
+                x1="718"
+                y1="101"
+                x2="736"
+                y2="107"
+                stroke="#F4F4F1"
+                strokeOpacity=".16"
+                strokeDasharray="2 4"
+              />
+              <line
+                x1="700"
+                y1="94"
+                x2="676"
+                y2="154"
+                stroke="#F4F4F1"
+                strokeOpacity=".16"
+                strokeDasharray="2 4"
+              />
+              <line
+                x1="736"
+                y1="107"
+                x2="778"
+                y2="147"
+                stroke="#F4F4F1"
+                strokeOpacity=".16"
+                strokeDasharray="2 4"
+              />
+              <rect className="tm-tw" x="656" y="37" width="4" height="4" fill="#FF4D1A" />
+              <rect className="tm-tw" x="660" y="37" width="4" height="4" fill="#FF4D1A" />
+              <rect className="tm-tw" x="652" y="37" width="4" height="4" fill="#FF4D1A" />
+              <rect className="tm-tw" x="656" y="41" width="4" height="4" fill="#FF4D1A" />
+              <rect className="tm-tw" x="656" y="33" width="4" height="4" fill="#FF4D1A" />
+              <rect className="tm-tw" x="768" y="48" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="770" y="48" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="764" y="48" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="768" y="51" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="768" y="45" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="698" y="93" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="702" y="93" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="696" y="93" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="698" y="96" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="698" y="90" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="716" y="99" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="720" y="99" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="714" y="99" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="716" y="102" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="716" y="96" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="734" y="105" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="738" y="105" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="732" y="105" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="734" y="108" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="734" y="102" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="674" y="153" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="678" y="153" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="672" y="153" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="674" y="156" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="674" y="150" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="776" y="145" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="780" y="145" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="774" y="145" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="776" y="148" width="3" height="3" fill="#F4F4F1" />
+              <rect className="tm-tw" x="776" y="142" width="3" height="3" fill="#F4F4F1" />
+            </svg>
+            <span className="tm-capt">Le studio · Paris 8e</span>
+            <svg
+              className="tm-eif"
+              width="135"
+              height="198"
+              viewBox="0 0 135 198"
+              fill="#2A3050"
+              aria-hidden="true"
+            >
+              <rect x="63" y="0" width="9" height="9" />
+              <rect x="63" y="9" width="9" height="9" />
+              <rect x="54" y="18" width="9" height="9" />
+              <rect x="63" y="18" width="9" height="9" />
+              <rect x="72" y="18" width="9" height="9" />
+              <rect x="54" y="27" width="9" height="9" />
+              <rect x="63" y="27" width="9" height="9" />
+              <rect x="72" y="27" width="9" height="9" />
+              <rect x="54" y="36" width="9" height="9" />
+              <rect x="72" y="36" width="9" height="9" />
+              <rect x="54" y="45" width="9" height="9" />
+              <rect x="63" y="45" width="9" height="9" />
+              <rect x="72" y="45" width="9" height="9" />
+              <rect x="45" y="54" width="9" height="9" />
+              <rect x="54" y="54" width="9" height="9" />
+              <rect x="72" y="54" width="9" height="9" />
+              <rect x="81" y="54" width="9" height="9" />
+              <rect x="45" y="63" width="9" height="9" />
+              <rect x="54" y="63" width="9" height="9" />
+              <rect x="63" y="63" width="9" height="9" />
+              <rect x="72" y="63" width="9" height="9" />
+              <rect x="81" y="63" width="9" height="9" />
+              <rect x="45" y="72" width="9" height="9" />
+              <rect x="81" y="72" width="9" height="9" />
+              <rect x="45" y="81" width="9" height="9" />
+              <rect x="81" y="81" width="9" height="9" />
+              <rect x="36" y="90" width="9" height="9" />
+              <rect x="45" y="90" width="9" height="9" />
+              <rect x="81" y="90" width="9" height="9" />
+              <rect x="90" y="90" width="9" height="9" />
+              <rect x="36" y="99" width="9" height="9" />
+              <rect x="45" y="99" width="9" height="9" />
+              <rect x="54" y="99" width="9" height="9" />
+              <rect x="63" y="99" width="9" height="9" />
+              <rect x="72" y="99" width="9" height="9" />
+              <rect x="81" y="99" width="9" height="9" />
+              <rect x="90" y="99" width="9" height="9" />
+              <rect x="36" y="108" width="9" height="9" />
+              <rect x="90" y="108" width="9" height="9" />
+              <rect x="27" y="117" width="9" height="9" />
+              <rect x="36" y="117" width="9" height="9" />
+              <rect x="90" y="117" width="9" height="9" />
+              <rect x="99" y="117" width="9" height="9" />
+              <rect x="27" y="126" width="9" height="9" />
+              <rect x="99" y="126" width="9" height="9" />
+              <rect x="27" y="135" width="9" height="9" />
+              <rect x="36" y="135" width="9" height="9" />
+              <rect x="45" y="135" width="9" height="9" />
+              <rect x="54" y="135" width="9" height="9" />
+              <rect x="63" y="135" width="9" height="9" />
+              <rect x="72" y="135" width="9" height="9" />
+              <rect x="81" y="135" width="9" height="9" />
+              <rect x="90" y="135" width="9" height="9" />
+              <rect x="99" y="135" width="9" height="9" />
+              <rect x="18" y="144" width="9" height="9" />
+              <rect x="27" y="144" width="9" height="9" />
+              <rect x="99" y="144" width="9" height="9" />
+              <rect x="108" y="144" width="9" height="9" />
+              <rect x="18" y="153" width="9" height="9" />
+              <rect x="45" y="153" width="9" height="9" />
+              <rect x="54" y="153" width="9" height="9" />
+              <rect x="63" y="153" width="9" height="9" />
+              <rect x="72" y="153" width="9" height="9" />
+              <rect x="81" y="153" width="9" height="9" />
+              <rect x="108" y="153" width="9" height="9" />
+              <rect x="9" y="162" width="9" height="9" />
+              <rect x="18" y="162" width="9" height="9" />
+              <rect x="36" y="162" width="9" height="9" />
+              <rect x="90" y="162" width="9" height="9" />
+              <rect x="108" y="162" width="9" height="9" />
+              <rect x="117" y="162" width="9" height="9" />
+              <rect x="9" y="171" width="9" height="9" />
+              <rect x="36" y="171" width="9" height="9" />
+              <rect x="90" y="171" width="9" height="9" />
+              <rect x="117" y="171" width="9" height="9" />
+              <rect x="0" y="180" width="9" height="9" />
+              <rect x="9" y="180" width="9" height="9" />
+              <rect x="27" y="180" width="9" height="9" />
+              <rect x="99" y="180" width="9" height="9" />
+              <rect x="117" y="180" width="9" height="9" />
+              <rect x="126" y="180" width="9" height="9" />
+              <rect x="0" y="189" width="9" height="9" />
+              <rect x="27" y="189" width="9" height="9" />
+              <rect x="99" y="189" width="9" height="9" />
+              <rect x="126" y="189" width="9" height="9" />
+              <rect className="tm-led" x="63" y="0" width="9" height="9" fill="#FF4D1A" />
+            </svg>
+            <div className="tm-floor" />
+            <div className="tm-crew">
+              <figure className="tm-m cm tm-j">
+                <span
+                  className="dg pp pp-julien "
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Julien"
+                  data-cur="Julien"
+                >
+                  <span className="dg-bub">Salut, moi c’est Julien.</span>
+                  <span className="dg-in">
+                    <img className="px dg-f" src="/px/art-44f04d8d.svg" alt="" width={140} height={252} />
+                    <img
+                      className="px dg-f pp-blink"
+                      src="/px/pp-blink-9e4e5c3f.svg"
+                      alt=""
+                      width={140}
+                      height={252}
+                    />
+                    <img
+                      className="px dg-f pp-walk"
+                      src="/px/pp-walk-93d15303.svg"
+                      alt=""
+                      width={140}
+                      height={252}
+                    />
+                  </span>
+                </span>
+                <figcaption>
+                  <b>Julien</b>
+                  <span>Cofondateur</span>
+                </figcaption>
+              </figure>
+              <figure className="tm-m cm tm-t">
+                <span className="dg pp pp-theo " role="button" tabIndex={0} aria-label="Théo" data-cur="Théo">
+                  <span className="dg-bub">Salut, moi c’est Théo.</span>
+                  <span className="dg-in">
+                    <img className="px dg-f" src="/px/art-d2be32b3.svg" alt="" width={140} height={252} />
+                    <img
+                      className="px dg-f pp-blink"
+                      src="/px/pp-blink-e686656a.svg"
+                      alt=""
+                      width={140}
+                      height={252}
+                    />
+                    <img
+                      className="px dg-f pp-walk"
+                      src="/px/pp-walk-926b93ba.svg"
+                      alt=""
+                      width={140}
+                      height={252}
+                    />
+                  </span>
+                </span>
+                <figcaption>
+                  <b>Théo</b>
+                  <span>Cofondateur</span>
+                </figcaption>
+              </figure>
+              <figure className="tm-m cm tm-d">
+                <span
+                  className="dg "
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Doggy, le chien du studio"
+                  data-cur="Ouaf"
+                >
+                  <span className="dg-bub" aria-live="polite">
+                    Ouaf ! Bienvenue au studio.
+                  </span>
+                  <span className="dg-in">
+                    <img
+                      className="px dg-f dg-base"
+                      src="/px/dg-base-05b76fc7.svg"
+                      alt=""
+                      width={156}
+                      height={150}
+                    />
+                    <img
+                      className="px dg-f dg-blink"
+                      src="/px/dg-blink-a4a1e48c.svg"
+                      alt=""
+                      width={156}
+                      height={150}
+                    />
+                    <img
+                      className="px dg-f dg-mouth"
+                      src="/px/dg-mouth-9dece0b7.svg"
+                      alt=""
+                      width={156}
+                      height={150}
+                    />
+                  </span>
+                </span>
+                <figcaption>
+                  <b>Doggy</b>
+                  <span>Chien du studio</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -316,7 +689,7 @@ function RealisationsRecentes() {
       <div className="proj-grid">
         <article className="p-a" data-to="/realisations/chateau-larc">
           <div className="p-media">
-            <img src="/images/img-3b6de440.png" alt="" />
+            <img src="/images/55a80d70f3d20a.png" alt="" />
             <div className="win win-shot win-golf">
               <div className="win-bar">
                 <span className="dots">
@@ -330,7 +703,7 @@ function RealisationsRecentes() {
               <div className="win-body">
                 <img
                   className="shot"
-                  src="/images/page-d-accueil-du-site-du-chateau-l-arc-golf-clu.jpg"
+                  src="/images/661531aedb86a4.jpg"
                   alt="Page d’accueil du site du Château l’Arc Golf Club"
                 />
               </div>
@@ -349,7 +722,7 @@ function RealisationsRecentes() {
         </article>
         <article className="p-b" data-to="/realisations/stand-ing">
           <div className="p-media">
-            <img src="/images/img-12109804.png" alt="" />
+            <img src="/images/2c63fe08cd774a.png" alt="" />
             <div className="win win-stand">
               <div className="win-bar">
                 <span className="dots">
@@ -363,7 +736,7 @@ function RealisationsRecentes() {
               <div className="win-body">
                 <img
                   className="cfg-shot"
-                  src="/images/configurateur-de-stand-3d-stand-ing.png"
+                  src="/images/cfe60288d854b0.png"
                   alt="Configurateur de stand 3D Stand-ING"
                 />
               </div>
@@ -379,21 +752,25 @@ function RealisationsRecentes() {
             Un configurateur de stands en ligne : le client compose, visualise et reçoit son devis.
           </p>
         </article>
-        <article className="p-c">
+        <article className="p-c" data-proj="les-bocaux-du-vexin" style={{ cursor: 'pointer' }}>
           <div className="p-media">
-            <img src="/images/img-9d5bedd1.png" alt="" />
-            <div className="shop">
-              <div className="shop-img">
-                <span className="jar" />
+            <img src="/images/07246a74f6555c.png" alt="" />
+            <div className="win win-shot win-golf win-bv">
+              <div className="win-bar">
+                <span className="dots">
+                  <i />
+                  <i />
+                  <i />
+                </span>
+                <span className="win-title">lesbocauxduvexin.fr</span>
+                <span className="win-sp" />
               </div>
-              <div className="shop-b">
-                <div className="shop-k">Épicerie · Bocaux</div>
-                <div className="shop-t">Soupe de potimarron</div>
-                <div className="shop-row">
-                  <span className="shop-p">6,90 €</span>
-                  <span className="shop-q">— 1 +</span>
-                </div>
-                <div className="shop-cta">Ajouter au panier</div>
+              <div className="win-body">
+                <img
+                  className="shot"
+                  src="/images/4decbda594bb3c.jpg"
+                  alt="La boutique Les Bocaux du Vexin"
+                />
               </div>
             </div>
           </div>
@@ -405,9 +782,14 @@ function RealisationsRecentes() {
             Une boutique Shopify simple à tenir au quotidien pour une conserverie locale.
           </p>
         </article>
-        <article className="p-d" data-to="/realisations/chateau-larc">
+        <article
+          className="p-d"
+          data-proj="orion-admin"
+          style={{ cursor: 'pointer' }}
+          data-to="/realisations/chateau-larc"
+        >
           <div className="p-media">
-            <img src="/images/img-17705de3.png" alt="" />
+            <img src="/images/4b8094654fed91.png" alt="" />
             <div className="win win-shot win-adm">
               <div className="win-bar">
                 <span className="dots">
@@ -421,7 +803,7 @@ function RealisationsRecentes() {
               <div className="win-body">
                 <img
                   className="shot"
-                  src="/images/accueil-d-orion-admin-pour-le-chateau-l-arc-golf.jpg"
+                  src="/images/94f1f7140db692.jpg"
                   alt="Accueil d’Orion Admin pour le Château l’Arc Golf Club"
                 />
               </div>
@@ -439,29 +821,39 @@ function RealisationsRecentes() {
         </article>
       </div>
       <div className="index">
-        <div className="ix-row">
+        <div className="ix-row" data-proj="osmose-nutrition">
           <span className="n">Osmose Nutrition</span>
           <span className="t">E-commerce · Abonnements</span>
           <span className="y">2025</span>
         </div>
-        <div className="ix-row">
-          <span className="n">Parker & Smith</span>
-          <span className="t">Horlogerie · DA & UX</span>
-          <span className="y">2025</span>
+        <div className="ix-row" data-proj="ocha-and-co">
+          <span className="n">Ocha & Co.</span>
+          <span className="t">E-commerce · Shopify</span>
+          <span className="y" />
         </div>
-        <div className="ix-row">
-          <span className="n">Tersen — Groupe Colas</span>
-          <span className="t">Plateforme SaaS</span>
-          <span className="y">2025</span>
+        <div className="ix-row" data-proj="moulin-de-balme">
+          <span className="n">Le Moulin de Balme</span>
+          <span className="t">Boulangerie · Site + back-office</span>
+          <span className="y" />
         </div>
-        <div className="ix-row">
-          <span className="n">Absolute Boat</span>
-          <span className="t">Yachting · Site</span>
-          <span className="y">2024</span>
+        <div className="ix-row" data-proj="dathy">
+          <span className="n">DATHY</span>
+          <span className="t">AMO bâtiment & TP · Site vitrine</span>
+          <span className="y" />
+        </div>
+        <div className="ix-row" data-proj="housses-taxi">
+          <span className="n">Housses Taxi</span>
+          <span className="t">Fabricant · Site vitrine</span>
+          <span className="y" />
+        </div>
+        <div className="ix-row" data-proj="swing-call">
+          <span className="n">Swing Call</span>
+          <span className="t">Start-up · Site produit</span>
+          <span className="y" />
         </div>
       </div>
       <div className="ix-foot">
-        <span className="mono">8 projets · 2024–2026</span>
+        <span className="mono">11 projets</span>
         <Link to="/realisations" className="btn btn-ink">
           Toutes les réalisations
         </Link>
@@ -509,7 +901,7 @@ function DuCroquisAuCode() {
         </div>
         <div className="cell e-dev">
           <img className="px picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
-          <h3>Développement & applications</h3>
+          <h3>Développement d’applications</h3>
           <p>
             <b>Applications web, espaces clients et outils métiers</b> qui tiennent la charge.
           </p>
@@ -662,14 +1054,9 @@ function PourQui() {
       </div>
       <div className="who">
         <div className="who-list">
-          <div className="" data-k="pme">
+          <div className="on" data-k="pme">
             <img className="px picon" src="/px/picon-4780f153.svg" alt="" width={20} height={20} />
             TPE & PME
-            <span className="mk" />
-          </div>
-          <div className="on" data-k="golf">
-            <img className="px picon" src="/px/picon-1bac5105.svg" alt="" width={20} height={20} />
-            Golfs
             <span className="mk" />
           </div>
           <div className="" data-k="indep">
@@ -682,11 +1069,21 @@ function PourQui() {
             Marques & e-commerçants
             <span className="mk" />
           </div>
+          <div className="" data-k="startup">
+            <img className="px picon" src="/px/picon-f0c33abd.svg" alt="" width={20} height={20} />
+            Start-up
+            <span className="mk" />
+          </div>
+          <div className="" data-k="secteurs">
+            <img className="px picon" src="/px/picon-480b3e48.svg" alt="" width={20} height={20} />
+            Par secteur : golfs, boulangeries…
+            <span className="mk" />
+          </div>
         </div>
         <div className="who-p">
           <img
             className="who-img"
-            src="/images/parcours-de-golf-en-provence-en-pixel-art.png"
+            src="/images/231a9906889e87.png"
             alt="Parcours de golf en Provence, en pixel art"
           />
           <div className="who-pin">
@@ -848,7 +1245,7 @@ function AvSec() {
   return (
     <section className="sec av-sec">
       <div className="av-card">
-        <img className="av-bg" src="/images/img-5789321f.png" alt="" />
+        <img className="av-bg" src="/images/b1ad4d0b43d462.png" alt="" />
         <div className="av-veil" />
         <div className="av-l">
           <div className="av-k">
@@ -862,10 +1259,7 @@ function AvSec() {
           </p>
           <div className="av-by">
             <span className="av-logo">
-              <img
-                src="/images/association-des-entrepreneurs-du-vexin.png"
-                alt="Association des Entrepreneurs du Vexin"
-              />
+              <img src="/images/4261b99ecbbc3b.png" alt="Association des Entrepreneurs du Vexin" />
             </span>
             <div>
               <b>Thierry Cordier</b>
@@ -1227,7 +1621,7 @@ function Ressources() {
       <div className="res">
         <a className="art" data-cur="Lire">
           <span className="art-im">
-            <img src="/images/img-27de7549.png" alt="" />
+            <img src="/images/1547cebce5d492.png" alt="" />
           </span>
           <div className="k">
             <span>Guide</span>
@@ -1238,7 +1632,7 @@ function Ressources() {
         </a>
         <Link to="/ressources/etre-cite-par-chatgpt-perplexity" className="art" data-cur="Lire">
           <span className="art-im">
-            <img src="/images/img-5f76407d.png" alt="" />
+            <img src="/images/b665a1ab308a17.png" alt="" />
           </span>
           <div className="k">
             <span>SEO & GEO</span>
@@ -1249,7 +1643,7 @@ function Ressources() {
         </Link>
         <a className="art" data-cur="Lire">
           <span className="art-im">
-            <img src="/images/img-70a0d7bb.png" alt="" />
+            <img src="/images/204444271e8f06.png" alt="" />
           </span>
           <div className="k">
             <span>Méthode</span>

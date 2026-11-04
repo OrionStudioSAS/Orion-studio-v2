@@ -43,7 +43,7 @@ function AHero() {
   return (
     <div className="a-hero">
       <img
-        src="/images/une-bibliotheque-ancienne-avec-un-planetaire-en.png"
+        src="/images/125257b1101030.png"
         alt="Une bibliothèque ancienne avec un planétaire en laiton, en pixel art"
       />
     </div>
@@ -118,7 +118,7 @@ function ABody() {
         </p>
         <figure className="a-fig">
           <div className="a-fig-in">
-            <img src="/images/img-feb43772.png" alt="" />
+            <img src="/images/d94e259aa63cc9.png" alt="" />
             <div className="ai a-ai">
               <div className="ai-q">
                 Quelle agence pour créer le site de notre golf, près d’Aix-en-Provence ?
@@ -403,7 +403,7 @@ function ALireEnsuite() {
           data-soon="llms.txt : à quoi sert ce fichier, et faut-il l’ajouter ?"
         >
           <span className="r-im">
-            <img src="/images/img-ea281d04.png" alt="" />
+            <img src="/images/2140baa9120499.png" alt="" />
           </span>
           <div className="k">
             <span>SEO & GEO</span>
@@ -414,7 +414,7 @@ function ALireEnsuite() {
         </a>
         <a className="r-card" data-k="seo" data-soon="SEO local : les dix réglages de votre fiche Google">
           <span className="r-im">
-            <img src="/images/img-d67d96ba.png" alt="" />
+            <img src="/images/bf5c99b2affb23.png" alt="" />
           </span>
           <div className="k">
             <span>SEO & GEO</span>
@@ -429,7 +429,7 @@ function ALireEnsuite() {
           data-soon="Shopify, Webflow ou sur-mesure : comment choisir en 2026"
         >
           <span className="r-im">
-            <img src="/images/img-0294a67b.png" alt="" />
+            <img src="/images/015f650fa5e47b.png" alt="" />
           </span>
           <div className="k">
             <span>Guides</span>

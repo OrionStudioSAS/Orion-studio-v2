@@ -2,11 +2,26 @@ import { G, ST, anim, $, $$, esc } from './core'
 import { footer } from './sections'
 
 /* ---------- logos clients : apparition / disparition en boucle ---------- */
-const CL_NAMES = ['Osmose Nutrition', 'Parker & Smith', 'Groupe Colas', 'Absolute Boat']
-function logoCycle(cells) {
+const CL_NAMES = [],
+  CL_LOGOS = [
+    '<img class="cl-logo cl-c" src="/images/b56f8e7e2f.png" alt="Les Bocaux du Vexin" style="height:30px">',
+    '<img class="cl-logo cl-c" src="/images/c171f2a0ba.png" alt="Association des Entrepreneurs du Vexin" style="height:64px">',
+    '<img class="cl-logo cl-c" src="/images/3e13f8b915.png" alt="Housses Taxi" style="height:38px">',
+    '<img class="cl-logo cl-c" src="/images/f98ae461e1.png" alt="Osmose Nutrition" style="height:34px">',
+    '<img class="cl-logo cl-c" src="/images/f20df44bf4.png" alt="Ocha & Co." style="height:58px">',
+  ],
+  CL_LOGOS_M = [
+    '<img src="/images/b56f8e7e2f.png" alt="Les Bocaux du Vexin" style="height:24px">',
+    '<img src="/images/c171f2a0ba.png" alt="Association des Entrepreneurs du Vexin" style="height:48px">',
+    '<img src="/images/3e13f8b915.png" alt="Housses Taxi" style="height:30px">',
+    '<img src="/images/f98ae461e1.png" alt="Osmose Nutrition" style="height:26px">',
+    '<img src="/images/f20df44bf4.png" alt="Ocha & Co." style="height:44px">',
+  ]
+function logoCycle(cells, extra = CL_LOGOS) {
   if (!cells.length || !anim) return
   const pool = [
     ...cells.map((c) => c.innerHTML),
+    ...extra,
     ...CL_NAMES.map((n) => `<span class="cl-name">${esc(n)}</span>`),
   ]
   cells.forEach((c) => {
@@ -104,4 +119,4 @@ function footerUI(R) {
   )
 }
 
-export { logoCycle, footerUI }
+export { CL_LOGOS, CL_LOGOS_M, logoCycle, footerUI }

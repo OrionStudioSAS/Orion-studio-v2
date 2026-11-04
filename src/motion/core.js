@@ -13,6 +13,7 @@ const G = gsap,
 const anim = !RM
 const $ = (s, r = document) => r.querySelector(s),
   $$ = (s, r = document) => [...r.querySelectorAll(s)]
+const NBSP = '\u202f'
 const isMob = () => matchMedia('(max-width: 819px)').matches
 // Une seule page, et une seule version (desktop ou mobile), est montée à la fois.
 const root = () => $('.view .site-m, .view .site-d')
@@ -207,6 +208,7 @@ function goTo(where) {
 }
 
 export {
+  NBSP,
   RM,
   FINE,
   G,

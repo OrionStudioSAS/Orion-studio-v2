@@ -1,10 +1,10 @@
-import { useEffect, useLayoutEffect, useRef, useState, type ComponentType } from 'react'
+import { useEffect, useLayoutEffect, useReducer, useRef, useState } from 'react'
 import { mountPage } from '../motion/site'
-
-const MOBILE_QUERY = '(max-width: 819px)'
+import { MOBILE_QUERY, isMobileViewport, loadPage, loadedPage } from '../pageLoader'
+import type { SiteRoute } from '../routes'
 
 function useIsMobile() {
-  const [mobile, setMobile] = useState(() => matchMedia(MOBILE_QUERY).matches)
+  const [mobile, setMobile] = useState(isMobileViewport)
   useEffect(() => {
     const mq = matchMedia(MOBILE_QUERY)
     const onChange = () => setMobile(mq.matches)
@@ -14,23 +14,26 @@ function useIsMobile() {
   return mobile
 }
 
-type PageProps = {
-  view: string
-  Desktop: ComponentType
-  Mobile: ComponentType
-}
-
 /** Une page du site : maquette 1440 ou 390 selon la largeur, animations branchées le temps qu'elle est affichée. */
-export function Page({ view, Desktop, Mobile }: PageProps) {
+export function Page({ route }: { route: SiteRoute }) {
   const mobile = useIsMobile()
   const rootRef = useRef<HTMLDivElement>(null)
+  const [, refresh] = useReducer((n: number) => n + 1, 0)
+  const Content = loadedPage(route, mobile)
 
-  useLayoutEffect(() => mountPage(view, rootRef.current, mobile), [view, mobile])
+  // Normalement déjà chargée par PageTransition ; sinon (passage desktop ↔ mobile), on la charge ici.
+  useEffect(() => {
+    if (!Content) loadPage(route, mobile).then(refresh)
+  }, [Content, route, mobile])
+
+  useLayoutEffect(() => {
+    if (Content) return mountPage(route.view, rootRef.current, mobile)
+  }, [Content, route.view, mobile])
 
   return (
-    <div className={`view ${view === 'accueil' ? 'v-home' : 'v-pg'} on`} data-view={view}>
+    <div className={`view ${route.wrap} on`} data-view={route.view}>
       <div ref={rootRef} className={mobile ? 'site-m' : 'site-d'}>
-        {mobile ? <Mobile /> : <Desktop />}
+        {Content && <Content />}
       </div>
     </div>
   )

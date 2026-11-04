@@ -33,7 +33,7 @@ function MaHero() {
   return (
     <div className="ma-hero">
       <img
-        src="/images/une-bibliotheque-ancienne-avec-un-planetaire-en.png"
+        src="/images/125257b1101030.png"
         alt="Une bibliothèque ancienne avec un planétaire en laiton, en pixel art"
       />
     </div>
@@ -128,7 +128,7 @@ function ATxt() {
       </p>
       <figure className="a-fig">
         <div className="a-fig-in">
-          <img src="/images/img-feb43772.png" alt="" />
+          <img src="/images/d94e259aa63cc9.png" alt="" />
           <div className="ai a-ai">
             <div className="ai-q">
               Quelle agence pour créer le site de notre golf, près d’Aix-en-Provence ?
@@ -417,7 +417,7 @@ function ALireEnsuite() {
           data-soon="llms.txt : à quoi sert ce fichier, et faut-il l’ajouter ?"
         >
           <span className="r-im">
-            <img src="/images/img-ea281d04.png" alt="" />
+            <img src="/images/2140baa9120499.png" alt="" />
           </span>
           <div>
             <div className="k">
@@ -430,7 +430,7 @@ function ALireEnsuite() {
         </a>
         <a className="mr-row" data-k="seo" data-soon="SEO local : les dix réglages de votre fiche Google">
           <span className="r-im">
-            <img src="/images/img-d67d96ba.png" alt="" />
+            <img src="/images/bf5c99b2affb23.png" alt="" />
           </span>
           <div>
             <div className="k">
@@ -447,7 +447,7 @@ function ALireEnsuite() {
           data-soon="Shopify, Webflow ou sur-mesure : comment choisir en 2026"
         >
           <span className="r-im">
-            <img src="/images/img-0294a67b.png" alt="" />
+            <img src="/images/015f650fa5e47b.png" alt="" />
           </span>
           <div>
             <div className="k">
@@ -485,49 +485,39 @@ function MoFt() {
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
-          visibilité, en français et en anglais.
+          visibilité.
         </p>
-        <div className="nl mo-nl">
-          <div className="nl-k">La lettre d’Orion</div>
-          <div className="nl-t">
-            Un e-mail par mois sur le web, l’e-commerce et la visibilité dans les IA. Pas de spam, promis.
-          </div>
-          <div className="nl-f">
-            <span>votre@email.fr</span>
-            <a>S’inscrire</a>
-          </div>
-        </div>
         <div className="mo-fcols">
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
-            <a>Site internet</a>
-            <a>Développement & applications</a>
-            <a>Automatisations</a>
-            <a>SEO</a>
-            <a>GEO</a>
-            <a>Google Ads</a>
+            <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/developpement-applications">Développement d’applications</Link>
+            <Link to="/expertises/automatisations">Automatisations</Link>
+            <Link to="/expertises/seo">SEO</Link>
+            <Link to="/expertises/geo">GEO</Link>
+            <Link to="/expertises/google-ads">Google Ads</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>
-            <a>TPE & PME</a>
-            <Link to="/golfs">Golfs</Link>
-            <a>Indépendants</a>
-            <a>Marques & e-commerçants</a>
+            <Link to="/pour-qui/tpe-pme">TPE & PME</Link>
+            <Link to="/pour-qui/golfs">Golfs</Link>
+            <Link to="/pour-qui/independants">Indépendants</Link>
+            <Link to="/pour-qui/marques-e-commerce">Marques & e-commerçants</Link>
+            <Link to="/pour-qui/start-up">Start-up</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Méthode</a>
-            <a>Orion Admin</a>
+            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Ressources</div>
             <Link to="/ressources">Articles</Link>
             <Link to="/ressources?cat=guides">Guides</Link>
-            <a>Questions fréquentes</a>
-            <a>Analyse gratuite</a>
+            <Link to="/faq">Questions fréquentes</Link>
           </div>
         </div>
         <div className="mo-fcards">
@@ -563,10 +553,7 @@ function MoFt() {
       </div>
       <div className="mo-sky">
         <div className="hm-layer">
-          <img
-            src="/images/le-ciel-et-la-constellation-d-orion-en-pixels-2.png"
-            alt="Le ciel et la constellation d’Orion, en pixels"
-          />
+          <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
             className="px bigword"
             src="/px/bigword-a5329b0d.svg"
@@ -588,10 +575,8 @@ function MoFt() {
             <span>English</span>
           </div>
           <div className="mo-legal-l">
-            <span>Mentions légales</span>
-            <span>Confidentialité</span>
-            <span>Cookies</span>
-            <span>Plan du site</span>
+            <Link to="/mentions-legales">Mentions légales</Link>
+            <Link to="/confidentialite">Confidentialité</Link>
           </div>
           <span>© 2026 Orion Studio SAS — RCS 938 775 368</span>
         </div>

@@ -18,8 +18,8 @@ function Hero() {
       </h1>
       <div className="hero-row">
         <p className="lead">
-          Un studio de design et de développement web basé à Paris. Deux associés qui dessinent et codent
-          eux-mêmes, pour des clients partout en France et à l’international. Et un chien qui veille sur
+          Un studio de design et de développement web basé à Paris. Une équipe à taille humaine qui dessine et
+          code elle-même, pour des clients partout en France et à l’international. Et un chien qui veille sur
           l’accueil.
         </p>
         <div className="hero-cta">
@@ -27,7 +27,7 @@ function Hero() {
             <button type="button" className="sx-b" data-g="0" aria-label="Voir la story Shooting">
               <span className="av">
                 <span>
-                  <img src="/images/img-21643aaf.png" alt="" />
+                  <img src="/images/a608f4afa30e86.png" alt="" />
                 </span>
               </span>
               <small>Shooting</small>
@@ -35,7 +35,7 @@ function Hero() {
             <button type="button" className="sx-b" data-g="1" aria-label="Voir la story Doggy">
               <span className="av">
                 <span>
-                  <img src="/images/img-080dfe88.png" alt="" />
+                  <img src="/images/4f470e228f8d42.png" alt="" />
                 </span>
               </span>
               <small>Doggy</small>
@@ -43,7 +43,7 @@ function Hero() {
             <button type="button" className="sx-b logo" data-g="2" aria-label="Voir la story Stand-ING">
               <span className="av">
                 <span>
-                  <img src="/images/stand-ing.png" alt="" />
+                  <img src="/images/f929bc41088d4e.png" alt="" />
                 </span>
               </span>
               <small>Stand-ING</small>
@@ -51,7 +51,7 @@ function Hero() {
             <button type="button" className="sx-b" data-g="3" aria-label="Voir la story Le bureau">
               <span className="av">
                 <span>
-                  <img src="/images/img-ff3fcf95.png" alt="" />
+                  <img src="/images/2e238aa4803b68.png" alt="" />
                 </span>
               </span>
               <small>Le bureau</small>
@@ -59,7 +59,7 @@ function Hero() {
             <button type="button" className="sx-b logo" data-g="4" aria-label="Voir la story Château l’Arc">
               <span className="av">
                 <span>
-                  <img src="/images/chateau-l-arc-golf-club.png" alt="" />
+                  <img src="/images/a58f0039fd543e.png" alt="" />
                 </span>
               </span>
               <small>Château l’Arc</small>
@@ -106,7 +106,7 @@ function HeroMedia() {
   return (
     <div className="hero-media st3-media">
       <img
-        src="/images/le-studio-orion-en-pixel-art-bureaux-ecrans-etag.png"
+        src="/images/bc42c16dc85167.png"
         alt="Le studio Orion en pixel art : bureaux, écrans, étagères, fenêtre sur Paris"
       />
       <div className="crew " data-pos={'{"rest":[38,52,64],"desk":[16,82],"dog":[21,79]}'}>
@@ -200,7 +200,7 @@ function HeroMedia() {
   )
 }
 
-function OnEstDeuxA() {
+function OnPasseNosJournees() {
   return (
     <section className="sec st2-mf" style={{ padding: '0', borderTop: 'none' }}>
       <div className="mf st2-mfin">
@@ -210,7 +210,7 @@ function OnEstDeuxA() {
         </div>
         <h2 className="mf-h st2-mh">
           <div className="mf-l">
-            <span className="mf-t ">On est deux</span>
+            <span className="mf-t ">On passe nos journées</span>
             <span
               className="dg pp pp-julien pp-inline"
               role="button"
@@ -345,7 +345,7 @@ function Mq() {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Développement & applications</span>
+        <span>Développement d’applications</span>
         <i>
           <svg
             className="pxstar"
@@ -483,7 +483,7 @@ function Mq() {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Développement & applications</span>
+        <span>Développement d’applications</span>
         <i>
           <svg
             className="pxstar"
@@ -621,7 +621,7 @@ function Mq() {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Développement & applications</span>
+        <span>Développement d’applications</span>
         <i>
           <svg
             className="pxstar"
@@ -1181,37 +1181,37 @@ function LesCoulissesEnPolaroids() {
       <div className="st2-wall">
         <figure className="pw" style={{ left: '72px', top: '40px', width: '430px' }}>
           <span className="pw-in" style={{ '--r': '-4deg' } as CSSProperties}>
-            <img src="/images/img-21643aaf.png" alt="" style={{ width: '402px', height: '402px' }} />
+            <img src="/images/a608f4afa30e86.png" alt="" style={{ width: '402px', height: '402px' }} />
             <figcaption>Julien & Théo</figcaption>
           </span>
         </figure>
         <figure className="pw" style={{ left: '500px', top: '160px', width: '330px' }}>
           <span className="pw-in" style={{ '--r': '5deg' } as CSSProperties}>
-            <img src="/images/img-080dfe88.png" alt="" style={{ width: '302px', height: '302px' }} />
+            <img src="/images/4f470e228f8d42.png" alt="" style={{ width: '302px', height: '302px' }} />
             <figcaption>Doggy, à l’accueil</figcaption>
           </span>
         </figure>
         <figure className="pw" style={{ left: '840px', top: '30px', width: '360px' }}>
           <span className="pw-in" style={{ '--r': '-3deg' } as CSSProperties}>
-            <img src="/images/img-8551791d.png" alt="" style={{ width: '332px', height: '332px' }} />
+            <img src="/images/569cf65d4427e1.png" alt="" style={{ width: '332px', height: '332px' }} />
             <figcaption>Julien</figcaption>
           </span>
         </figure>
         <figure className="pw" style={{ left: '1080px', top: '200px', width: '340px' }}>
           <span className="pw-in" style={{ '--r': '4deg' } as CSSProperties}>
-            <img src="/images/img-10db7bf1.png" alt="" style={{ width: '312px', height: '312px' }} />
+            <img src="/images/23873003fe2522.png" alt="" style={{ width: '312px', height: '312px' }} />
             <figcaption>Théo</figcaption>
           </span>
         </figure>
         <figure className="pw" style={{ left: '330px', top: '540px', width: '300px' }}>
           <span className="pw-in" style={{ '--r': '3deg' } as CSSProperties}>
-            <img src="/images/img-5b303193.png" alt="" style={{ width: '272px', height: '272px' }} />
+            <img src="/images/7e252fc0055d46.png" alt="" style={{ width: '272px', height: '272px' }} />
             <figcaption>Le rouge, presque orange</figcaption>
           </span>
         </figure>
         <figure className="pw" style={{ left: '700px', top: '520px', width: '320px' }}>
           <span className="pw-in" style={{ '--r': '-5deg' } as CSSProperties}>
-            <img src="/images/img-ff3fcf95.png" alt="" style={{ width: '292px', height: '292px' }} />
+            <img src="/images/2e238aa4803b68.png" alt="" style={{ width: '292px', height: '292px' }} />
             <figcaption>Le bureau du jour</figcaption>
           </span>
         </figure>
@@ -1481,7 +1481,7 @@ export function Desktop() {
       <MmVeilLive />
       <Hero />
       <HeroMedia />
-      <OnEstDeuxA />
+      <OnPasseNosJournees />
       <Mq />
       <Mq2 />
       <LesCoulissesEnPolaroids />

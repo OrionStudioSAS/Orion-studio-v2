@@ -105,7 +105,7 @@ function RWrap() {
     <div className="r-wrap">
       <Link to="/ressources/etre-cite-par-chatgpt-perplexity" className="r-feat" data-k="seo">
         <span className="r-im">
-          <img src="/images/img-b2b421e0.png" alt="" />
+          <img src="/images/8da8d8ba5e08da.png" alt="" />
         </span>
         <div className="r-feat-b">
           <div className="k">
@@ -139,7 +139,7 @@ function RGrid() {
         data-soon="Shopify, Webflow ou sur-mesure : comment choisir en 2026"
       >
         <span className="r-im">
-          <img src="/images/img-0294a67b.png" alt="" />
+          <img src="/images/015f650fa5e47b.png" alt="" />
         </span>
         <div className="k">
           <span>Guides</span>
@@ -154,7 +154,7 @@ function RGrid() {
         data-soon="Refonte de site : le cahier des charges en douze questions"
       >
         <span className="r-im">
-          <img src="/images/img-588fba6e.png" alt="" />
+          <img src="/images/aee46e2ea20958.png" alt="" />
         </span>
         <div className="k">
           <span>Méthode</span>
@@ -165,7 +165,7 @@ function RGrid() {
       </a>
       <a className="r-card" data-k="seo" data-soon="SEO local : les dix réglages de votre fiche Google">
         <span className="r-im">
-          <img src="/images/img-d67d96ba.png" alt="" />
+          <img src="/images/bf5c99b2affb23.png" alt="" />
         </span>
         <div className="k">
           <span>SEO & GEO</span>
@@ -180,7 +180,7 @@ function RGrid() {
         data-soon="Site de golf : ce que les joueurs regardent avant de réserver"
       >
         <span className="r-im">
-          <img src="/images/img-a97491bf.png" alt="" />
+          <img src="/images/43c1e04cd1ba76.png" alt="" />
         </span>
         <div className="k">
           <span>Golf</span>
@@ -191,7 +191,7 @@ function RGrid() {
       </a>
       <a className="r-card" data-k="auto" data-soon="Automatiser ses devis avec Make : un exemple pas à pas">
         <span className="r-im">
-          <img src="/images/img-2c68e65f.png" alt="" />
+          <img src="/images/8353e035bb2d3a.png" alt="" />
         </span>
         <div className="k">
           <span>Automatisations</span>
@@ -229,7 +229,7 @@ function RGrid() {
         data-soon="Google Ads pour une PME : par où commencer avec un petit budget"
       >
         <span className="r-im">
-          <img src="/images/img-eba41a20.png" alt="" />
+          <img src="/images/f963f77cbfab80.png" alt="" />
         </span>
         <div className="k">
           <span>Guides</span>
@@ -240,7 +240,7 @@ function RGrid() {
       </a>
       <a className="r-card" data-k="shop" data-soon="Fiches produits Shopify : anatomie d’une page qui vend">
         <span className="r-im">
-          <img src="/images/img-54ba4ddb.png" alt="" />
+          <img src="/images/514c26ed6ab15b.png" alt="" />
         </span>
         <div className="k">
           <span>E-commerce</span>
@@ -255,7 +255,7 @@ function RGrid() {
         data-soon="llms.txt : à quoi sert ce fichier, et faut-il l’ajouter ?"
       >
         <span className="r-im">
-          <img src="/images/img-ea281d04.png" alt="" />
+          <img src="/images/2140baa9120499.png" alt="" />
         </span>
         <div className="k">
           <span>SEO & GEO</span>
@@ -270,7 +270,7 @@ function RGrid() {
         data-soon="Indépendants : les cinq pages indispensables de votre site"
       >
         <span className="r-im">
-          <img src="/images/img-8b2fe8cc.png" alt="" />
+          <img src="/images/b177a26d522956.png" alt="" />
         </span>
         <div className="k">
           <span>Guides</span>
@@ -281,7 +281,7 @@ function RGrid() {
       </a>
       <a className="r-card" data-k="methode" data-soon="Espace client : quand faut-il en créer un ?">
         <span className="r-im">
-          <img src="/images/img-66a6a0f8.png" alt="" />
+          <img src="/images/bc4f84b8174216.png" alt="" />
         </span>
         <div className="k">
           <span>Méthode</span>
@@ -296,7 +296,7 @@ function RGrid() {
         data-soon="Vitesse de site : ce qui ralentit vraiment votre page d’accueil"
       >
         <span className="r-im">
-          <img src="/images/img-cecc2f45.png" alt="" />
+          <img src="/images/1fc3e456af0ef4.png" alt="" />
         </span>
         <div className="k">
           <span>Guides</span>
@@ -315,21 +315,6 @@ function REmpty() {
       <b>Aucun article ne correspond.</b>
       <p>Essayez un autre mot, ou parcourez tous les articles.</p>
       <a className="lnk r-reset">Voir tous les articles</a>
-    </div>
-  )
-}
-
-function RNl() {
-  return (
-    <div className="r-nl">
-      <div>
-        <b>La lettre d’Orion</b>
-        <p>Un e-mail par mois avec le meilleur de ces articles, et rien d’autre.</p>
-      </div>
-      <div className="nl-f r-nl-f">
-        <span>votre@email.fr</span>
-        <a>S’inscrire</a>
-      </div>
     </div>
   )
 }
@@ -369,7 +354,6 @@ export function Desktop() {
       <RWrap />
       <RGrid />
       <REmpty />
-      <RNl />
       <GCta />
     </section>
   )
