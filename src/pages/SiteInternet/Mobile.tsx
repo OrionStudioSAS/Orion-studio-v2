@@ -37,7 +37,7 @@ function MoMedia() {
       </div>
       <div className="mo-chat">
         <div className="mo-greet">
-          <img className="px omark" src="/px/omark-72fafdaa.svg" alt="" width={25} height={24} />
+          <img className="pxsvg omark" src="/px/omark-72fafdaa.svg" alt="" width={25} height={24} />
           <span>Quel site refait-on ce soir ?</span>
         </div>
         <div className="mo-comp">
@@ -110,19 +110,19 @@ function MoMedia() {
         </div>
         <div className="mo-sug">
           <span className="sg">
-            <img className="px picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
             <b>Refaire mon site vitrine</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
             <b>Vendre ou réserver en ligne</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
             <b>Remonter sur Google</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
             <b>Être cité par ChatGPT</b>
           </span>
         </div>
@@ -186,7 +186,7 @@ function TroisTypesDeSite() {
             </div>
           </div>
           <h3>
-            <img className="px picon" src="/px/picon-5d9e4e01.svg" alt="" width={20} height={20} />
+            <img className="pxsvg picon" src="/px/picon-5d9e4e01.svg" alt="" width={20} height={20} />
             Site vitrine
           </h3>
           <p className="serif">pour présenter et être contacté.</p>
@@ -231,7 +231,7 @@ function TroisTypesDeSite() {
             </div>
           </div>
           <h3>
-            <img className="px picon" src="/px/picon-c328b51d.svg" alt="" width={20} height={20} />
+            <img className="pxsvg picon" src="/px/picon-c328b51d.svg" alt="" width={20} height={20} />
             Site dynamique
           </h3>
           <p className="serif">pour vendre, réserver et gérer.</p>
@@ -284,7 +284,7 @@ function TroisTypesDeSite() {
             </div>
           </div>
           <h3>
-            <img className="px picon" src="/px/picon-ba26fc59.svg" alt="" width={20} height={20} />
+            <img className="pxsvg picon" src="/px/picon-ba26fc59.svg" alt="" width={20} height={20} />
             Site concept
           </h3>
           <p className="serif">pour marquer les esprits.</p>
@@ -484,21 +484,21 @@ function ExpertisesAssociees() {
           className="rl xpm-rl"
           data-exp="developpement-applications"
         >
-          <img className="px picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
           <div>
             <b>Développement d’applications</b>
             <span>Applications web, espaces clients, SaaS.</span>
           </div>
         </Link>
         <Link to="/expertises/seo" className="rl xpm-rl" data-exp="seo">
-          <img className="px picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
           <div>
             <b>SEO</b>
             <span>Remonter sur Google.</span>
           </div>
         </Link>
         <Link to="/expertises/automatisations" className="rl xpm-rl" data-exp="automatisations">
-          <img className="px picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
           <div>
             <b>Automatisations</b>
             <span>Vos tâches répétitives, automatisées.</span>
@@ -621,6 +621,53 @@ function VosQuestionsNosReponses() {
   )
 }
 
+function PresDeChezVous() {
+  return (
+    <section className="mo-sec">
+      <div className="mo-shead">
+        <h2 className="mo-h2">
+          Près de chez vous,<span className="serif">en Île-de-France.</span>
+        </h2>
+      </div>
+      <ul className="lc-links">
+        <li>
+          <Link
+            to="/creation-site-internet/versailles"
+            className="lnk"
+            data-pv="creation-site-internet-versailles"
+          >
+            Versailles
+          </Link>
+        </li>
+        <li>
+          <Link to="/creation-site-internet/cergy" className="lnk" data-pv="creation-site-internet-cergy">
+            Cergy
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/creation-site-internet/boulogne-billancourt"
+            className="lnk"
+            data-pv="creation-site-internet-boulogne-billancourt"
+          >
+            Boulogne-Billancourt
+          </Link>
+        </li>
+        <li>
+          <Link to="/creation-site-internet/meaux" className="lnk" data-pv="creation-site-internet-meaux">
+            Meaux
+          </Link>
+        </li>
+        <li>
+          <Link to="/creation-site-internet/massy" className="lnk" data-pv="creation-site-internet-massy">
+            Massy
+          </Link>
+        </li>
+      </ul>
+    </section>
+  )
+}
+
 export function Mobile() {
   return (
     <section className="artboard mo xp-page">
@@ -632,6 +679,7 @@ export function Mobile() {
       <MoCommentOnTravaille4 />
       <ExpertisesAssociees />
       <VosQuestionsNosReponses />
+      <PresDeChezVous />
       <MoFt2 />
     </section>
   )

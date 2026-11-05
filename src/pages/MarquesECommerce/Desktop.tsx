@@ -68,7 +68,7 @@ function HeroMedia() {
       </div>
       <div className="chat ch2">
         <div className="greet ch2-greet">
-          <img className="px omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
+          <img className="pxsvg omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
           <span>On regarde votre boutique ensemble ?</span>
         </div>
         <div className="composer ch2-comp">
@@ -124,7 +124,7 @@ function HeroMedia() {
                 </svg>
               </span>{' '}
               <span className="tg">
-                <img className="px omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
+                <img className="pxsvg omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
                 <b>Analyse complète</b>
               </span>
               <span className="cr">
@@ -183,19 +183,19 @@ function HeroMedia() {
         </div>
         <div className="ch2-sug">
           <span className="sg">
-            <img className="px picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
             <b>Refaire ma boutique</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
             <b>Lancer Google Ads</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
             <b>Remonter sur Google</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
             <b>Être cité par ChatGPT</b>
           </span>
         </div>
@@ -1041,7 +1041,7 @@ function LesExpertisesMobilisees() {
       </div>
       <div className="rls">
         <Link to="/expertises/site-internet" className="rl">
-          <img className="px picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
           <div>
             <b>Site internet</b>
             <span>Sites vitrines et refontes sur mesure.</span>
@@ -1049,7 +1049,7 @@ function LesExpertisesMobilisees() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/google-ads" className="rl">
-          <img className="px picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
           <div>
             <b>Google Ads</b>
             <span>Des campagnes qui rapportent des contacts.</span>
@@ -1057,7 +1057,7 @@ function LesExpertisesMobilisees() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/automatisations" className="rl">
-          <img className="px picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
           <div>
             <b>Automatisations</b>
             <span>Vos tâches répétitives, automatisées.</span>

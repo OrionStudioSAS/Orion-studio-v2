@@ -107,7 +107,7 @@ button {
   justify-content: center;
   padding: 0 12px;
 }
-.cl-in img:where(:not(.px)) {
+.cl-in img:where(:not(.pxsvg)) {
   display: block;
   max-width: 100%;
   object-fit: contain;
@@ -455,7 +455,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-.cf-ok :is(svg, :where(img.px)) {
+.cf-ok :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 .cf-done b {
@@ -498,7 +498,7 @@ button {
   transform-style: preserve-3d;
   will-change: transform;
 }
-.p-media > img:where(:not(.px)) {
+.p-media > img:where(:not(.pxsvg)) {
   transition: none;
 }
 .cell::before {
@@ -556,11 +556,11 @@ button {
   border-radius: 6px;
   margin-bottom: 20px;
 }
-.art-im img:where(:not(.px)) {
+.art-im img:where(:not(.pxsvg)) {
   margin: 0 !important;
   transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-.art:hover .art-im img:where(:not(.px)) {
+.art:hover .art-im img:where(:not(.pxsvg)) {
   transform: scale(1.06);
 }
 .art h3 {
@@ -692,7 +692,7 @@ button {
   transform-origin: 0 0;
   opacity: 0;
 }
-.bc-cur :is(svg, :where(img.px)) {
+.bc-cur :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 .fl-n {
@@ -760,7 +760,7 @@ button {
   justify-content: center;
   transform: scale(0);
 }
-.au-ck :is(svg, :where(img.px)) {
+.au-ck :is(svg, :where(img.pxsvg)) {
   display: block;
   width: 9px;
   height: 8px;

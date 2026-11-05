@@ -2,7 +2,7 @@
 .st-hero {
   height: 640px;
 }
-.st-hero > img:where(:not(.px)) {
+.st-hero > img:where(:not(.pxsvg)) {
   top: -180px;
   width: 1344px;
   height: 943px;
@@ -81,7 +81,7 @@
   gap: 20px;
   align-items: start;
 }
-.st-duo figure img:where(:not(.px)) {
+.st-duo figure img:where(:not(.pxsvg)) {
   display: block;
   width: 100%;
   height: auto;
@@ -220,7 +220,7 @@ figcaption {
   flex-direction: row;
   gap: 20px;
 }
-.st-pl-img img:where(:not(.px)) {
+.st-pl-img img:where(:not(.pxsvg)) {
   width: 150px;
   height: 150px;
   border-radius: 6px;
@@ -269,7 +269,7 @@ figcaption {
   overflow: hidden;
   position: relative;
 }
-.cl-w img:where(:not(.px)) {
+.cl-w img:where(:not(.pxsvg)) {
   display: block;
   width: 100%;
   height: auto;
@@ -284,7 +284,7 @@ figcaption {
   align-items: center;
   justify-content: center;
 }
-.cl-o :is(svg, :where(img.px)) {
+.cl-o :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 
@@ -365,7 +365,7 @@ figcaption {
   height: 390px;
   overflow: hidden;
 }
-.mo-sthero img:where(:not(.px)) {
+.mo-sthero img:where(:not(.pxsvg)) {
   display: block;
   width: 390px;
   height: 390px;
@@ -395,7 +395,7 @@ figcaption {
   gap: 12px;
   margin-top: 28px;
 }
-.mo-duo img:where(:not(.px)) {
+.mo-duo img:where(:not(.pxsvg)) {
   display: block;
   width: 100%;
   height: auto;
@@ -470,7 +470,7 @@ figcaption {
   display: flex;
   gap: 16px;
 }
-.mo-pl-i img:where(:not(.px)) {
+.mo-pl-i img:where(:not(.pxsvg)) {
   width: 96px;
   height: 96px;
   border-radius: 6px;
@@ -498,7 +498,7 @@ figcaption {
   font: 400 12px/1.4 'Geist Mono';
   color: var(--muted);
 }
-.mo-orio :is(svg, :where(img.px)) {
+.mo-orio :is(svg, :where(img.pxsvg)) {
   display: block;
   flex: none;
 }
@@ -544,7 +544,7 @@ figcaption {
   border-radius: 6px;
   padding: 7px 9px;
 }
-.mc-logo img:where(:not(.px)) {
+.mc-logo img:where(:not(.pxsvg)) {
   display: block;
   height: 40px;
   width: auto;
@@ -783,7 +783,7 @@ figcaption {
   overflow: hidden;
   border: 2px solid var(--acc);
 }
-.sv-av img:where(:not(.px)) {
+.sv-av img:where(:not(.pxsvg)) {
   width: 26px;
   height: auto;
   display: block;
@@ -1028,7 +1028,7 @@ figcaption {
 .cm.running .dg-in {
   animation: runHop 0.26s ease-in-out infinite;
 }
-.cm.flip .dg-in :is(svg, :where(img.px)) {
+.cm.flip .dg-in :is(svg, :where(img.pxsvg)) {
   transform: scaleX(-1);
 }
 @keyframes walkF {
@@ -1093,7 +1093,7 @@ figcaption {
   opacity: 1;
   transform: translate(-50%, 0) scale(1);
 }
-.cm-th :is(svg, :where(img.px)) {
+.cm-th :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 .cm-th-d {
@@ -1131,7 +1131,7 @@ figcaption {
 .fx {
   position: relative;
 }
-.fx :is(svg, :where(img.px)) {
+.fx :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 .fx-ring {
@@ -1190,7 +1190,7 @@ figcaption {
   overflow: hidden;
   box-shadow: 0 30px 60px -30px rgba(14, 14, 12, 0.5);
 }
-.st4-paris img:where(:not(.px)) {
+.st4-paris img:where(:not(.pxsvg)) {
   display: block;
 }
 .st4-pin {
@@ -1273,13 +1273,13 @@ figcaption {
   overflow: hidden;
   background: #fff;
 }
-.sx-b img:where(:not(.px)) {
+.sx-b img:where(:not(.pxsvg)) {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.sx-b.logo img:where(:not(.px)) {
+.sx-b.logo img:where(:not(.pxsvg)) {
   object-fit: contain;
   padding: 7px;
 }
@@ -1399,13 +1399,13 @@ figcaption {
   background: #fff;
   flex: none;
 }
-.sx-av img:where(:not(.px)) {
+.sx-av img:where(:not(.pxsvg)) {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.sx-av.logo img:where(:not(.px)) {
+.sx-av.logo img:where(:not(.pxsvg)) {
   object-fit: contain;
   padding: 3px;
 }
@@ -1549,7 +1549,7 @@ body.has-cur .sx * {
   overflow: hidden;
   background: var(--ink);
 }
-.st3-mmedia > img:where(:not(.px)) {
+.st3-mmedia > img:where(:not(.pxsvg)) {
   display: block;
   width: 390px;
   height: 380px;
@@ -1817,7 +1817,7 @@ body.has-cur .sx * {
   display: flex;
   align-items: center;
 }
-.mq-t i :is(svg, :where(img.px)) {
+.mq-t i :is(svg, :where(img.pxsvg)) {
   width: 22px;
   height: auto;
 }
@@ -1877,7 +1877,7 @@ body.has-cur .sx * {
     transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
     box-shadow 0.45s;
 }
-.pw-in img:where(:not(.px)) {
+.pw-in img:where(:not(.pxsvg)) {
   display: block;
   object-fit: cover;
 }
@@ -2061,7 +2061,7 @@ body.has-cur .sx * {
   overflow: hidden;
   background: var(--ink);
 }
-.st2-mhero img:where(:not(.px)) {
+.st2-mhero img:where(:not(.pxsvg)) {
   display: block;
   width: 390px;
   height: 300px;
@@ -2100,7 +2100,7 @@ body.has-cur .sx * {
   width: 250px;
   scroll-snap-align: start;
 }
-.pw-m img:where(:not(.px)) {
+.pw-m img:where(:not(.pxsvg)) {
   width: 222px;
   height: 222px;
 }
@@ -2159,7 +2159,7 @@ body.has-cur .sx * {
   padding: 24px 21px 8px;
   border-bottom: 1px solid var(--line);
 }
-.mg-proof img:where(:not(.px)) {
+.mg-proof img:where(:not(.pxsvg)) {
   height: 56px;
   width: auto;
   display: block;
@@ -2193,7 +2193,7 @@ body.has-cur .sx * {
 .mg-vis-shop {
   padding: 0;
 }
-.mg-vis-shop img:where(:not(.px)) {
+.mg-vis-shop img:where(:not(.pxsvg)) {
   display: block;
   width: 348px;
   height: 230px;
@@ -2284,15 +2284,15 @@ body.has-cur .sx * {
   align-items: center;
   justify-content: center;
 }
-.it-lg :is(svg, :where(img.px)),
-.it-lg img:where(:not(.px)) {
+.it-lg :is(svg, :where(img.pxsvg)),
+.it-lg img:where(:not(.pxsvg)) {
   display: block;
 }
 .it-fill {
   overflow: hidden;
   border: 0;
 }
-.it-fill img:where(:not(.px)) {
+.it-fill img:where(:not(.pxsvg)) {
   width: 100%;
   height: 100%;
 }
@@ -2445,7 +2445,7 @@ body.has-cur .sx * {
   gap: 40px;
   align-items: stretch;
 }
-.r-feat > img:where(:not(.px)) {
+.r-feat > img:where(:not(.pxsvg)) {
   width: 848px;
   height: 520px;
   border-radius: 8px;
@@ -2513,7 +2513,7 @@ body.has-cur .sx * {
   display: flex;
   flex-direction: column;
 }
-.r-card img:where(:not(.px)) {
+.r-card img:where(:not(.pxsvg)) {
   width: 416px;
   height: 260px;
   border-radius: 6px;
@@ -2662,7 +2662,7 @@ body.has-cur .sx * {
   border-radius: 8px;
   overflow: hidden;
 }
-.a-hero img:where(:not(.px)) {
+.a-hero img:where(:not(.pxsvg)) {
   width: 1344px;
   height: 600px;
   display: block;
@@ -2758,7 +2758,7 @@ body.has-cur .sx * {
   border-radius: 8px;
   overflow: hidden;
 }
-.a-fig-in > img:where(:not(.px)) {
+.a-fig-in > img:where(:not(.pxsvg)) {
   position: absolute;
   inset: 0;
   width: 680px;

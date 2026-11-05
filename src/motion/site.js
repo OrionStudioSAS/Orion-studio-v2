@@ -3,6 +3,7 @@ import { G, ST, $, $$, esc, resetPageScope, fit, goTo } from './core'
 import { sizeSparks, magnetic } from './effects'
 import { CL_LOGOS, CL_LOGOS_M, logoCycle, footerUI } from './footerUi'
 import { hero } from './hero'
+import { teamPrints, initVideoStories, videoStories } from './localPages'
 import { TITLES, go } from './nav'
 import { initOrio } from './orio'
 import { bindGo, initPage } from './pages'
@@ -41,6 +42,7 @@ function initSite() {
   initOrio()
   initLightbox()
   initStories()
+  initVideoStories()
   menuLinks(document)
   $$('[data-go]', $('#m-menu')).forEach((a) =>
     a.addEventListener('click', (e) => {
@@ -130,6 +132,8 @@ function initHome(R, mob) {
   bindGo(R)
   logoCycle($$(mob ? '.mo-cl-g > div' : '.clients > div:not(:first-child)', R), mob ? CL_LOGOS_M : CL_LOGOS)
   teamStage(R)
+  teamPrints(R)
+  videoStories(R)
 }
 
 /** Branche les animations d'une page montée. Renvoie la fonction de nettoyage. */

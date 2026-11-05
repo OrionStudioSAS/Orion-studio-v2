@@ -114,16 +114,16 @@ function HeroMedia() {
           <span className="dg pp pp-julien " role="button" tabIndex={0} aria-label="Julien" data-cur="Julien">
             <span className="dg-bub">Salut, moi c’est Julien.</span>
             <span className="dg-in">
-              <img className="px dg-f" src="/px/art-2fb1f1ca.svg" alt="" width={180} height={324} />
+              <img className="pxsvg dg-f" src="/px/art-2fb1f1ca.svg" alt="" width={180} height={324} />
               <img
-                className="px dg-f pp-blink"
+                className="pxsvg dg-f pp-blink"
                 src="/px/pp-blink-839f6700.svg"
                 alt=""
                 width={180}
                 height={324}
               />
               <img
-                className="px dg-f pp-walk"
+                className="pxsvg dg-f pp-walk"
                 src="/px/pp-walk-058adaa0.svg"
                 alt=""
                 width={180}
@@ -137,16 +137,16 @@ function HeroMedia() {
           <span className="dg pp pp-theo " role="button" tabIndex={0} aria-label="Théo" data-cur="Théo">
             <span className="dg-bub">Salut, moi c’est Théo.</span>
             <span className="dg-in">
-              <img className="px dg-f" src="/px/art-cd9804be.svg" alt="" width={180} height={324} />
+              <img className="pxsvg dg-f" src="/px/art-cd9804be.svg" alt="" width={180} height={324} />
               <img
-                className="px dg-f pp-blink"
+                className="pxsvg dg-f pp-blink"
                 src="/px/pp-blink-f3d664dc.svg"
                 alt=""
                 width={180}
                 height={324}
               />
               <img
-                className="px dg-f pp-walk"
+                className="pxsvg dg-f pp-walk"
                 src="/px/pp-walk-d0b828f3.svg"
                 alt=""
                 width={180}
@@ -170,21 +170,21 @@ function HeroMedia() {
             </span>
             <span className="dg-in">
               <img
-                className="px dg-f dg-base"
+                className="pxsvg dg-f dg-base"
                 src="/px/dg-base-a9f5ac2c.svg"
                 alt=""
                 width={182}
                 height={175}
               />
               <img
-                className="px dg-f dg-blink"
+                className="pxsvg dg-f dg-blink"
                 src="/px/dg-blink-e531291a.svg"
                 alt=""
                 width={182}
                 height={175}
               />
               <img
-                className="px dg-f dg-mouth"
+                className="pxsvg dg-f dg-mouth"
                 src="/px/dg-mouth-247de8d2.svg"
                 alt=""
                 width={182}
@@ -219,16 +219,16 @@ function OnPasseNosJournees() {
               data-cur="Julien"
             >
               <span className="dg-in">
-                <img className="px dg-f" src="/px/art-f77f6186.svg" alt="" width={52} height={93.6} />
+                <img className="pxsvg dg-f" src="/px/art-f77f6186.svg" alt="" width={52} height={93.6} />
                 <img
-                  className="px dg-f pp-blink"
+                  className="pxsvg dg-f pp-blink"
                   src="/px/pp-blink-507fc4b7.svg"
                   alt=""
                   width={52}
                   height={93.6}
                 />
                 <img
-                  className="px dg-f pp-walk"
+                  className="pxsvg dg-f pp-walk"
                   src="/px/pp-walk-653e1ffb.svg"
                   alt=""
                   width={52}
@@ -244,16 +244,16 @@ function OnPasseNosJournees() {
               data-cur="Théo"
             >
               <span className="dg-in">
-                <img className="px dg-f" src="/px/art-775ffe6b.svg" alt="" width={52} height={93.6} />
+                <img className="pxsvg dg-f" src="/px/art-775ffe6b.svg" alt="" width={52} height={93.6} />
                 <img
-                  className="px dg-f pp-blink"
+                  className="pxsvg dg-f pp-blink"
                   src="/px/pp-blink-4212c702.svg"
                   alt=""
                   width={52}
                   height={93.6}
                 />
                 <img
-                  className="px dg-f pp-walk"
+                  className="pxsvg dg-f pp-walk"
                   src="/px/pp-walk-61e2c805.svg"
                   alt=""
                   width={52}
@@ -263,7 +263,7 @@ function OnPasseNosJournees() {
             </span>
             <span className="mf-t ">à dessiner</span>
             <span className="mf-ui mf-figma" title="Figma">
-              <img className="px" src="/px/art-13e55d0a.svg" alt="" width={40} height={60} />
+              <img className="pxsvg" src="/px/art-13e55d0a.svg" alt="" width={40} height={60} />
             </span>
           </div>
           <div className="mf-l">
@@ -287,21 +287,21 @@ function OnPasseNosJournees() {
             >
               <span className="dg-in">
                 <img
-                  className="px dg-f dg-base"
+                  className="pxsvg dg-f dg-base"
                   src="/px/dg-base-1b6c94fb.svg"
                   alt=""
                   width={78}
                   height={75}
                 />
                 <img
-                  className="px dg-f dg-blink"
+                  className="pxsvg dg-f dg-blink"
                   src="/px/dg-blink-4f00ac9f.svg"
                   alt=""
                   width={78}
                   height={75}
                 />
                 <img
-                  className="px dg-f dg-mouth"
+                  className="pxsvg dg-f dg-mouth"
                   src="/px/dg-mouth-9d536c1b.svg"
                   alt=""
                   width={78}
@@ -1187,19 +1187,40 @@ function LesCoulissesEnPolaroids() {
         </figure>
         <figure className="pw" style={{ left: '500px', top: '160px', width: '330px' }}>
           <span className="pw-in" style={{ '--r': '5deg' } as CSSProperties}>
-            <img src="/images/4f470e228f8d42.png" alt="" style={{ width: '302px', height: '302px' }} />
+            <span className="pw-ph" style={{ width: '302px', height: '302px' }}>
+              <img
+                className="px"
+                src="/images/team-doggy-sq-px.png"
+                alt="Doggy, le chien du studio, en pixel"
+              />
+              <img className="o" src="/images/team-doggy-sq.jpg" alt="" loading="lazy" />
+            </span>
             <figcaption>Doggy, à l’accueil</figcaption>
           </span>
         </figure>
         <figure className="pw" style={{ left: '840px', top: '30px', width: '360px' }}>
           <span className="pw-in" style={{ '--r': '-3deg' } as CSSProperties}>
-            <img src="/images/569cf65d4427e1.png" alt="" style={{ width: '332px', height: '332px' }} />
+            <span className="pw-ph" style={{ width: '332px', height: '332px' }}>
+              <img
+                className="px"
+                src="/images/team-julien-sq-px.png"
+                alt="Julien, cofondateur d’Orion Studio, en pixel"
+              />
+              <img className="o" src="/images/team-julien-sq.jpg" alt="" loading="lazy" />
+            </span>
             <figcaption>Julien</figcaption>
           </span>
         </figure>
         <figure className="pw" style={{ left: '1080px', top: '200px', width: '340px' }}>
           <span className="pw-in" style={{ '--r': '4deg' } as CSSProperties}>
-            <img src="/images/23873003fe2522.png" alt="" style={{ width: '312px', height: '312px' }} />
+            <span className="pw-ph" style={{ width: '312px', height: '312px' }}>
+              <img
+                className="px"
+                src="/images/team-theo-sq-px.png"
+                alt="Théo, cofondateur d’Orion Studio, en pixel"
+              />
+              <img className="o" src="/images/team-theo-sq.jpg" alt="" loading="lazy" />
+            </span>
             <figcaption>Théo</figcaption>
           </span>
         </figure>
@@ -1244,16 +1265,22 @@ function CinqEtapesDoggyVous() {
             data-cur="Ouaf"
           >
             <span className="dg-in">
-              <img className="px dg-f dg-base" src="/px/dg-base-1b6c94fb.svg" alt="" width={78} height={75} />
               <img
-                className="px dg-f dg-blink"
+                className="pxsvg dg-f dg-base"
+                src="/px/dg-base-1b6c94fb.svg"
+                alt=""
+                width={78}
+                height={75}
+              />
+              <img
+                className="pxsvg dg-f dg-blink"
                 src="/px/dg-blink-4f00ac9f.svg"
                 alt=""
                 width={78}
                 height={75}
               />
               <img
-                className="px dg-f dg-mouth"
+                className="pxsvg dg-f dg-mouth"
                 src="/px/dg-mouth-9d536c1b.svg"
                 alt=""
                 width={78}
@@ -1378,7 +1405,7 @@ function BasesAParisOn() {
       <div className="st2-where">
         <div className="st2-map">
           <div className="fx" style={{ width: '512px', height: '504px' }}>
-            <img className="px" src="/px/art-0a9f4a5e.svg" alt="" width={512} height={504} />
+            <img className="pxsvg" src="/px/art-0a9f4a5e.svg" alt="" width={512} height={504} />
             <i className="fx-ring" style={{ left: '252px', top: '116px', animationDelay: '0.0s' }} />
             <i className="fx-ring" style={{ left: '252px', top: '116px', animationDelay: '0.9s' }} />
             <i className="fx-ring" style={{ left: '252px', top: '116px', animationDelay: '1.8s' }} />
@@ -1405,6 +1432,56 @@ function BasesAParisOn() {
               <a className="lnk">Réserver un appel</a>
             </div>
           </div>
+          <div className="st2-local">
+            <span className="lc-k">Création de site internet, près de chez vous</span>
+            <ul>
+              <li>
+                <Link
+                  to="/creation-site-internet/versailles"
+                  className="lnk"
+                  data-pv="creation-site-internet-versailles"
+                >
+                  Création de site internet à Versailles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/creation-site-internet/cergy"
+                  className="lnk"
+                  data-pv="creation-site-internet-cergy"
+                >
+                  Création de site internet à Cergy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/creation-site-internet/boulogne-billancourt"
+                  className="lnk"
+                  data-pv="creation-site-internet-boulogne-billancourt"
+                >
+                  Création de site internet à Boulogne-Billancourt
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/creation-site-internet/meaux"
+                  className="lnk"
+                  data-pv="creation-site-internet-meaux"
+                >
+                  Création de site internet à Meaux
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/creation-site-internet/massy"
+                  className="lnk"
+                  data-pv="creation-site-internet-massy"
+                >
+                  Création de site internet à Massy
+                </Link>
+              </li>
+            </ul>
+          </div>
           <div className="st2-call">
             <span
               className="dg dg-call"
@@ -1415,21 +1492,21 @@ function BasesAParisOn() {
             >
               <span className="dg-in">
                 <img
-                  className="px dg-f dg-base"
+                  className="pxsvg dg-f dg-base"
                   src="/px/dg-base-1b6c94fb.svg"
                   alt=""
                   width={78}
                   height={75}
                 />
                 <img
-                  className="px dg-f dg-blink"
+                  className="pxsvg dg-f dg-blink"
                   src="/px/dg-blink-4f00ac9f.svg"
                   alt=""
                   width={78}
                   height={75}
                 />
                 <img
-                  className="px dg-f dg-mouth"
+                  className="pxsvg dg-f dg-mouth"
                   src="/px/dg-mouth-9d536c1b.svg"
                   alt=""
                   width={78}

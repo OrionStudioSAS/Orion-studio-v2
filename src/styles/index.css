@@ -9,9 +9,10 @@
 @import './08-project-modal.css';
 @import './09-orio.css';
 @import './10-footer-cursor.css';
+@import './11-local-pages.css';
 
 /* Les pixel arts sont des fichiers SVG : ni rétrécis ni déplaçables comme des photos */
-img.px {
+img.pxsvg {
   max-width: none;
   -webkit-user-drag: none;
   user-select: none;

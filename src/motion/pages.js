@@ -5,6 +5,7 @@ import { faqPage } from './faqPage'
 import { CL_LOGOS, CL_LOGOS_M, logoCycle } from './footerUi'
 import { chatFlow } from './hero'
 import { legalPage, e4Page } from './legalPages'
+import { studioPrints, localHero, localVisuals, localMap } from './localPages'
 import { resPage } from './resourcesPage'
 import { sectorsPage } from './routing'
 import { manifesto, headings, projects, steps, faq, footer } from './sections'
@@ -279,6 +280,10 @@ function initPage(R, mob) {
   legalPage(R)
   e4Page(R)
   auPage(R, mob)
+  studioPrints(R)
+  localHero(R)
+  localVisuals(R)
+  localMap(R)
 }
 
 export { pageHero, ecosystem, filters, pageIntro, blocks, bindGo, initPage }

@@ -15,8 +15,8 @@ function initOrio() {
     const form = $('.ow-form', ow),
       input = $('#ow-in'),
       teaser = $('.ow-teaser', ow)
-    const AV = '<img class="px" src="/px/orio-0abc5d59.svg" alt="" width="29" height="28">',
-      THINK = '<img class="px" src="/px/orio-a7091ad5.svg" alt="" width="29" height="28">'
+    const AV = '<img class="pxsvg" src="/px/orio-0abc5d59.svg" alt="" width="29" height="28">',
+      THINK = '<img class="pxsvg" src="/px/orio-a7091ad5.svg" alt="" width="29" height="28">'
     let step = null,
       pending = '',
       started = false,

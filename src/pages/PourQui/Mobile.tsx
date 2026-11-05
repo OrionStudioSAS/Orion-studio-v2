@@ -55,7 +55,7 @@ function SxList() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-adc97f27.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -80,7 +80,7 @@ function SxList() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-e0dda6d2.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -237,7 +237,7 @@ function SxList() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-e6cc4a17.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -262,7 +262,7 @@ function SxList() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-b8783d94.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -287,7 +287,7 @@ function SxList() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-b70ac2f6.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -346,8 +346,8 @@ function MoFt() {
       </div>
       <div className="mo-ft-main">
         <span className="logo">
-          <img className="px logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
-          <img className="px logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
+          <img className="pxsvg logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
+          <img className="pxsvg logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
@@ -375,8 +375,6 @@ function MoFt() {
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
-            <a>Méthode</a>
-            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
@@ -421,7 +419,7 @@ function MoFt() {
         <div className="hm-layer">
           <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
-            className="px bigword"
+            className="pxsvg bigword"
             src="/px/bigword-a5329b0d.svg"
             alt=""
             width={416}
@@ -431,7 +429,7 @@ function MoFt() {
           <i className="betel" style={{ left: '193px', top: '88px' }} />
           <span className="orio" style={{ left: '91px', top: '34px' }} title="Orio et Bételgeuse">
             <span className="orio-in">
-              <img className="px" src="/px/art-c8610941.svg" alt="" width={88} height={92} />
+              <img className="pxsvg" src="/px/art-c8610941.svg" alt="" width={88} height={92} />
             </span>
           </span>
         </div>

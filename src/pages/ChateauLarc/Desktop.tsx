@@ -356,7 +356,7 @@ function ResultatsEtTemoignage() {
             <span>Témoignage</span>
             <span>Château l’Arc Golf Club</span>
           </div>
-          <img className="px av-q" src="/px/av-q-179751fb.svg" alt="" width={55} height={40} />
+          <img className="pxsvg av-q" src="/px/av-q-179751fb.svg" alt="" width={55} height={40} />
           <p className="av-txt cs-todo">
             « Témoignage à recueillir auprès de la direction du Château l’Arc Golf Club. »
           </p>

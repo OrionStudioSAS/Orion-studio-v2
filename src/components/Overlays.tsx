@@ -6,7 +6,7 @@ export function MobileMenu() {
       <div className="mo-mk">Expertises</div>
       <div className="mo-mg">
         <Link to="/expertises/site-internet" className="mo-mi" data-exp="site-internet">
-          <img className="px picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
           <span>Site internet</span>
         </Link>
         <Link to="/expertises/site-vitrine" className="mo-mi mo-msub" data-exp="site-vitrine">
@@ -23,42 +23,42 @@ export function MobileMenu() {
           className="mo-mi"
           data-exp="developpement-applications"
         >
-          <img className="px picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
           <span>Développement d’applications</span>
         </Link>
         <Link to="/expertises/automatisations" className="mo-mi" data-exp="automatisations">
-          <img className="px picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
           <span>Automatisations</span>
         </Link>
         <Link to="/expertises/seo" className="mo-mi" data-exp="seo">
-          <img className="px picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
           <span>SEO</span>
         </Link>
         <Link to="/expertises/geo" className="mo-mi" data-exp="geo">
-          <img className="px picon" src="/px/picon-84c912e7.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-84c912e7.svg" alt="" width={20} height={20} />
           <span>GEO</span>
         </Link>
         <Link to="/expertises/google-ads" className="mo-mi" data-exp="google-ads">
-          <img className="px picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
           <span>Google Ads</span>
         </Link>
       </div>
       <div className="mo-mk">Pour qui ?</div>
       <div className="mo-mg mo-mg-who">
         <Link to="/pour-qui/tpe-pme" className="mo-mi" data-sector="pme">
-          <img className="px picon" src="/px/picon-4780f153.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-4780f153.svg" alt="" width={20} height={20} />
           <span>TPE & PME</span>
         </Link>
         <Link to="/pour-qui/independants" className="mo-mi" data-sector="indep">
-          <img className="px picon" src="/px/picon-00814f13.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-00814f13.svg" alt="" width={20} height={20} />
           <span>Indépendants & micro-entrepreneurs</span>
         </Link>
         <Link to="/pour-qui/marques-e-commerce" className="mo-mi" data-sector="shop">
-          <img className="px picon" src="/px/picon-808b4de1.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-808b4de1.svg" alt="" width={20} height={20} />
           <span>Marques & e-commerçants</span>
         </Link>
         <Link to="/pour-qui/start-up" className="mo-mi" data-sector="startup">
-          <img className="px picon" src="/px/picon-f0c33abd.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-f0c33abd.svg" alt="" width={20} height={20} />
           <span>Start-up</span>
         </Link>
       </div>
@@ -68,7 +68,7 @@ export function MobileMenu() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-adc97f27.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -87,7 +87,7 @@ export function MobileMenu() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-e0dda6d2.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -196,7 +196,7 @@ export function MobileMenu() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-e6cc4a17.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -209,7 +209,7 @@ export function MobileMenu() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-b8783d94.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -222,7 +222,7 @@ export function MobileMenu() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-b70ac2f6.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -242,7 +242,7 @@ export function MobileMenu() {
             <span className="sec-mos">
               <i>
                 <img
-                  className="px"
+                  className="pxsvg"
                   src="/px/art-e0dda6d2.svg"
                   alt=""
                   style={{ width: '100%', height: '100%' }}
@@ -376,12 +376,35 @@ export function VideoLightbox() {
   )
 }
 
+export function VideoStoriesViewer() {
+  return (
+    <div className="avsv" id="avsv" hidden>
+      <div className="avsv-veil" data-x="" />
+      <div className="avsv-box" role="dialog" aria-modal="true" aria-label="Témoignages vidéo">
+        <div className="avsv-bars" />
+        <div className="avsv-top">
+          <span className="avs-av">
+            <img alt="" />
+          </span>
+          <b />
+          <button type="button" className="avsv-x" data-x="" aria-label="Fermer">
+            Fermer
+          </button>
+        </div>
+        <video className="avsv-v" playsInline />
+        <button type="button" className="avsv-prev" aria-label="Story précédente" />
+        <button type="button" className="avsv-next" aria-label="Story suivante" />
+      </div>
+    </div>
+  )
+}
+
 export function StoriesViewer() {
   return (
     <div className="sx" id="sx" hidden>
       <div className="sx-veil" data-close="" />
       <div className="sx-box" role="dialog" aria-modal="true" aria-label="Stories d’Orion Studio">
-        <div className="sx-g" data-set="studio" hidden>
+        <div className="sx-g" data-name="Shooting" data-set="studio" hidden>
           <span className="sx-th">
             <img src="/images/a608f4afa30e86.png" alt="" />
           </span>
@@ -402,7 +425,7 @@ export function StoriesViewer() {
             <img className="sx-fg" src="/images/f9ca0176950b2b.png" alt="Le rouge, presque orange." />
           </div>
         </div>
-        <div className="sx-g" data-set="studio" hidden>
+        <div className="sx-g" data-name="Doggy" data-set="studio" hidden>
           <span className="sx-th">
             <img src="/images/4f470e228f8d42.png" alt="" />
           </span>
@@ -419,7 +442,7 @@ export function StoriesViewer() {
             <img className="sx-fg" src="/images/529d056e5364c0.png" alt="Le plus calme du plateau." />
           </div>
         </div>
-        <div className="sx-g" data-set="studio" hidden>
+        <div className="sx-g" data-name="Stand-ING" data-set="studio" hidden>
           <span className="sx-th logo">
             <img src="/images/f929bc41088d4e.png" alt="" />
           </span>
@@ -440,7 +463,7 @@ export function StoriesViewer() {
             />
           </div>
         </div>
-        <div className="sx-g" data-set="studio" hidden>
+        <div className="sx-g" data-name="Le bureau" data-set="studio" hidden>
           <span className="sx-th">
             <img src="/images/2e238aa4803b68.png" alt="" />
           </span>
@@ -461,7 +484,7 @@ export function StoriesViewer() {
             <img className="sx-fg" src="/images/59d744e3bf52ec.png" alt="Le boîtier, toujours à portée." />
           </div>
         </div>
-        <div className="sx-g" data-set="studio" hidden>
+        <div className="sx-g" data-name="Château l’Arc" data-set="studio" hidden>
           <span className="sx-th logo">
             <img src="/images/a58f0039fd543e.png" alt="" />
           </span>
@@ -539,7 +562,7 @@ export function ProjectModal() {
           <img className="pj-sky" src="/images/729bb5e7cb4d36.png" alt="" />
           <div className="pj-side-in">
             <div className="pj-brand">
-              <img className="px omark" src="/px/omark-fb765945.svg" alt="" width={23} height={22} />
+              <img className="pxsvg omark" src="/px/omark-fb765945.svg" alt="" width={23} height={22} />
               <span>Orion Studio</span>
             </div>
             <h2 className="pj-h" id="pj-title">
@@ -602,7 +625,7 @@ export function ProjectModal() {
                 <label className="pj-card">
                   <input type="checkbox" name="type" value="Site internet" id="pj-type-site" />
                   <span className="pj-card-in">
-                    <img className="px picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
+                    <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
                     <b>Site internet</b>
                     <small>Vitrine, refonte ou sur-mesure</small>
                     <i className="pj-tick">
@@ -621,7 +644,7 @@ export function ProjectModal() {
                 <label className="pj-card">
                   <input type="checkbox" name="type" value="Boutique e-commerce" id="pj-type-shop" />
                   <span className="pj-card-in">
-                    <img className="px picon" src="/px/picon-808b4de1.svg" alt="" width={20} height={20} />
+                    <img className="pxsvg picon" src="/px/picon-808b4de1.svg" alt="" width={20} height={20} />
                     <b>Boutique e-commerce</b>
                     <small>Shopify, catalogue, paiement</small>
                     <i className="pj-tick">
@@ -640,7 +663,7 @@ export function ProjectModal() {
                 <label className="pj-card">
                   <input type="checkbox" name="type" value="Application web" id="pj-type-code" />
                   <span className="pj-card-in">
-                    <img className="px picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
+                    <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
                     <b>Application web</b>
                     <small>Espace client, outil métier, SaaS</small>
                     <i className="pj-tick">
@@ -659,7 +682,7 @@ export function ProjectModal() {
                 <label className="pj-card">
                   <input type="checkbox" name="type" value="Automatisations" id="pj-type-auto" />
                   <span className="pj-card-in">
-                    <img className="px picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
+                    <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
                     <b>Automatisations</b>
                     <small>Formulaires, CRM, devis, relances</small>
                     <i className="pj-tick">
@@ -678,7 +701,7 @@ export function ProjectModal() {
                 <label className="pj-card">
                   <input type="checkbox" name="type" value="Google Ads" id="pj-type-ads" />
                   <span className="pj-card-in">
-                    <img className="px picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
+                    <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
                     <b>Google Ads</b>
                     <small>Campagnes pilotées aux contacts</small>
                     <i className="pj-tick">
@@ -916,7 +939,7 @@ export function OrioWidget() {
       <section className="ow-panel" id="ow-panel" role="dialog" aria-label="Discuter avec Orio">
         <header className="ow-h">
           <span className="ow-av">
-            <img className="px" src="/px/art-2060558d.svg" alt="" width={43.5} height={42} />
+            <img className="pxsvg" src="/px/art-2060558d.svg" alt="" width={43.5} height={42} />
           </span>
           <div>
             <b>Orio</b>
@@ -956,10 +979,10 @@ export function OrioWidget() {
         aria-label="Discuter avec Orio"
       >
         <span className="ow-face ow-f-open">
-          <img className="px" src="/px/art-86489042.svg" alt="" width={50.75} height={49} />
+          <img className="pxsvg" src="/px/art-86489042.svg" alt="" width={50.75} height={49} />
         </span>
         <span className="ow-face ow-f-blink">
-          <img className="px" src="/px/art-92c2f53a.svg" alt="" width={50.75} height={49} />
+          <img className="pxsvg" src="/px/art-92c2f53a.svg" alt="" width={50.75} height={49} />
         </span>
         <i className="ow-dot" />
       </button>
@@ -989,6 +1012,7 @@ export function Overlays() {
     <>
       <MobileMenu />
       <VideoLightbox />
+      <VideoStoriesViewer />
       <StoriesViewer />
       <ProjectModal />
       <OrioWidget />

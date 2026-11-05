@@ -53,7 +53,7 @@
   height: 520px;
   border-radius: 8px;
 }
-.r-feat > .r-im img:where(:not(.px)) {
+.r-feat > .r-im img:where(:not(.pxsvg)) {
   width: 848px;
   height: 520px;
   border-radius: 0;
@@ -61,11 +61,11 @@
 .r-card .r-im {
   margin-bottom: 18px;
 }
-.r-card .r-im img:where(:not(.px)) {
+.r-card .r-im img:where(:not(.pxsvg)) {
   margin: 0;
   border-radius: 0;
 }
-.r-im img:where(:not(.px)) {
+.r-im img:where(:not(.pxsvg)) {
   transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 .r-card,
@@ -74,10 +74,10 @@
 .mr-feat {
   cursor: pointer;
 }
-.r-card:hover .r-im img:where(:not(.px)),
-.r-feat:hover .r-im img:where(:not(.px)),
-.mr-row:hover .r-im img:where(:not(.px)),
-.mr-feat:hover .r-im img:where(:not(.px)) {
+.r-card:hover .r-im img:where(:not(.pxsvg)),
+.r-feat:hover .r-im img:where(:not(.pxsvg)),
+.mr-row:hover .r-im img:where(:not(.pxsvg)),
+.mr-feat:hover .r-im img:where(:not(.pxsvg)) {
   transform: scale(1.045);
 }
 .r-card h3,
@@ -280,7 +280,7 @@
   height: 230px;
   border-radius: 8px;
 }
-.mr-feat .r-im img:where(:not(.px)) {
+.mr-feat .r-im img:where(:not(.pxsvg)) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -327,7 +327,7 @@
   height: 84px;
   border-radius: 5px;
 }
-.mr-row .r-im img:where(:not(.px)) {
+.mr-row .r-im img:where(:not(.pxsvg)) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -414,7 +414,7 @@
   border-radius: 8px;
   overflow: hidden;
 }
-.ma-hero img:where(:not(.px)) {
+.ma-hero img:where(:not(.pxsvg)) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -505,7 +505,7 @@
 .ma-txt .a-fig-in {
   height: 300px;
 }
-.ma-txt .a-fig-in > img:where(:not(.px)) {
+.ma-txt .a-fig-in > img:where(:not(.pxsvg)) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -716,7 +716,7 @@
   overflow: hidden;
   background: #fff;
 }
-.sec-av :is(svg, :where(img.px)) {
+.sec-av :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 .sec-st b {
@@ -803,7 +803,7 @@
   overflow: hidden;
   transition: transform 0.35s cubic-bezier(0.3, 1.5, 0.5, 1);
 }
-.sec-mos i :is(svg, :where(img.px)) {
+.sec-mos i :is(svg, :where(img.pxsvg)) {
   display: block;
   width: 100%;
   height: 100%;
@@ -851,7 +851,7 @@
 .sx-media {
   height: 680px;
 }
-.sx-media .hm-layer img:where(:not(.px)) {
+.sx-media .hm-layer img:where(:not(.pxsvg)) {
   width: 1344px;
   height: 680px;
   display: block;
@@ -1124,7 +1124,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-.mb-phones img:where(:not(.px)) {
+.mb-phones img:where(:not(.pxsvg)) {
   display: block;
   width: 100%;
   height: auto;
@@ -1170,7 +1170,7 @@
   aspect-ratio: 416/240;
   margin-bottom: 8px;
 }
-.sx-th > img:where(:not(.px)) {
+.sx-th > img:where(:not(.pxsvg)) {
   display: block;
   width: 100%;
   height: 100%;
@@ -1180,10 +1180,10 @@
 .sx-card .sx-th {
   overflow: visible;
 }
-.sx-card .sx-th > img:where(:not(.px)) {
+.sx-card .sx-th > img:where(:not(.pxsvg)) {
   border-radius: 10px 10px 0 0;
 }
-.sx-card:hover .sx-th > img:where(:not(.px)) {
+.sx-card:hover .sx-th > img:where(:not(.pxsvg)) {
   transform: none;
   filter: saturate(1.15);
 }
@@ -1208,7 +1208,7 @@
   width: 112px;
   margin: 0;
 }
-.sx-row .sx-th > img:where(:not(.px)) {
+.sx-row .sx-th > img:where(:not(.pxsvg)) {
   border-radius: 8px;
 }
 .sx-row .sx-th .sec-av {
@@ -1293,7 +1293,7 @@
   display: flex;
   gap: 18px;
 }
-.mdb-phones img:where(:not(.px)) {
+.mdb-phones img:where(:not(.pxsvg)) {
   display: block;
   width: calc(50% - 9px);
   height: auto;
@@ -1328,7 +1328,7 @@
 .xp-page .nav-links a.on {
   color: var(--ink);
 }
-.xp-media .hm-layer img:where(:not(.px)) {
+.xp-media .hm-layer img:where(:not(.pxsvg)) {
   image-rendering: pixelated;
 }
 .xp-media .ch2-send,
@@ -1430,7 +1430,7 @@
   grid-template-columns: 1fr 1fr;
   height: 200px;
 }
-.xp-vv img:where(:not(.px)) {
+.xp-vv img:where(:not(.pxsvg)) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1461,7 +1461,7 @@
   overflow: hidden;
   background: #0e0e0c;
 }
-.xp-cv img:where(:not(.px)) {
+.xp-cv img:where(:not(.pxsvg)) {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1511,7 +1511,7 @@
   width: 100%;
   padding-top: 8px;
 }
-.xp-orio :is(svg, :where(img.px)) {
+.xp-orio :is(svg, :where(img.pxsvg)) {
   display: block;
   max-width: 100%;
   height: auto;
@@ -1607,7 +1607,7 @@
 .ax-media {
   height: 640px;
 }
-.ax-media .hm-layer img:where(:not(.px)) {
+.ax-media .hm-layer img:where(:not(.pxsvg)) {
   width: 1344px;
   height: 640px;
   display: block;
@@ -2006,7 +2006,7 @@
 .ax-mmedia {
   height: 600px;
 }
-.ax-mmedia .hm-layer img:where(:not(.px)) {
+.ax-mmedia .hm-layer img:where(:not(.pxsvg)) {
   object-fit: cover;
   object-position: 28% 50%;
 }

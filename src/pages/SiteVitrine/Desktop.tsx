@@ -70,7 +70,7 @@ function HeroMedia() {
       </div>
       <div className="chat ch2">
         <div className="greet ch2-greet">
-          <img className="px omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
+          <img className="pxsvg omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
           <span>On regarde votre site vitrine ensemble ?</span>
         </div>
         <div className="composer ch2-comp">
@@ -126,7 +126,7 @@ function HeroMedia() {
                 </svg>
               </span>{' '}
               <span className="tg">
-                <img className="px omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
+                <img className="pxsvg omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
                 <b>Analyse complète</b>
               </span>
               <span className="cr">
@@ -185,19 +185,19 @@ function HeroMedia() {
         </div>
         <div className="ch2-sug">
           <span className="sg">
-            <img className="px picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
             <b>Refaire mon site vitrine</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
             <b>Remonter sur Google</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
             <b>Être cité par ChatGPT</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />
             <b>Recevoir des demandes de devis</b>
           </span>
         </div>
@@ -444,7 +444,7 @@ function ExpertisesAssociees() {
       </div>
       <div className="rls">
         <Link to="/expertises/site-dynamique" className="rl" data-exp="site-dynamique">
-          <img className="px picon" src="/px/picon-c328b51d.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-c328b51d.svg" alt="" width={20} height={20} />
           <div>
             <b>Site dynamique</b>
             <span>Vendre, réserver et gérer en ligne.</span>
@@ -452,7 +452,7 @@ function ExpertisesAssociees() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/site-concept" className="rl" data-exp="site-concept">
-          <img className="px picon" src="/px/picon-ba26fc59.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-ba26fc59.svg" alt="" width={20} height={20} />
           <div>
             <b>Site concept</b>
             <span>Une expérience pour marquer les esprits.</span>
@@ -460,7 +460,7 @@ function ExpertisesAssociees() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/seo" className="rl" data-exp="seo">
-          <img className="px picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
           <div>
             <b>SEO</b>
             <span>Remonter sur Google.</span>

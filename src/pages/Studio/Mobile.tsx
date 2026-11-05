@@ -76,16 +76,16 @@ function St3Mmedia() {
           <span className="dg pp pp-julien " role="button" tabIndex={0} aria-label="Julien" data-cur="Julien">
             <span className="dg-bub">Salut, moi c’est Julien.</span>
             <span className="dg-in">
-              <img className="px dg-f" src="/px/art-54a494fd.svg" alt="" width={90} height={162} />
+              <img className="pxsvg dg-f" src="/px/art-54a494fd.svg" alt="" width={90} height={162} />
               <img
-                className="px dg-f pp-blink"
+                className="pxsvg dg-f pp-blink"
                 src="/px/pp-blink-dd44e758.svg"
                 alt=""
                 width={90}
                 height={162}
               />
               <img
-                className="px dg-f pp-walk"
+                className="pxsvg dg-f pp-walk"
                 src="/px/pp-walk-76e3d706.svg"
                 alt=""
                 width={90}
@@ -99,16 +99,16 @@ function St3Mmedia() {
           <span className="dg pp pp-theo " role="button" tabIndex={0} aria-label="Théo" data-cur="Théo">
             <span className="dg-bub">Salut, moi c’est Théo.</span>
             <span className="dg-in">
-              <img className="px dg-f" src="/px/art-0e7b6027.svg" alt="" width={90} height={162} />
+              <img className="pxsvg dg-f" src="/px/art-0e7b6027.svg" alt="" width={90} height={162} />
               <img
-                className="px dg-f pp-blink"
+                className="pxsvg dg-f pp-blink"
                 src="/px/pp-blink-4e19e3ae.svg"
                 alt=""
                 width={90}
                 height={162}
               />
               <img
-                className="px dg-f pp-walk"
+                className="pxsvg dg-f pp-walk"
                 src="/px/pp-walk-4c89209e.svg"
                 alt=""
                 width={90}
@@ -132,21 +132,21 @@ function St3Mmedia() {
             </span>
             <span className="dg-in">
               <img
-                className="px dg-f dg-base"
+                className="pxsvg dg-f dg-base"
                 src="/px/dg-base-b568e77d.svg"
                 alt=""
                 width={91}
                 height={87.5}
               />
               <img
-                className="px dg-f dg-blink"
+                className="pxsvg dg-f dg-blink"
                 src="/px/dg-blink-56a2d1ca.svg"
                 alt=""
                 width={91}
                 height={87.5}
               />
               <img
-                className="px dg-f dg-mouth"
+                className="pxsvg dg-f dg-mouth"
                 src="/px/dg-mouth-a7699d51.svg"
                 alt=""
                 width={91}
@@ -179,15 +179,21 @@ function OnPasseNosJournees() {
             data-cur="Julien"
           >
             <span className="dg-in">
-              <img className="px dg-f" src="/px/art-40d3ca0b.svg" alt="" width={25} height={45} />
+              <img className="pxsvg dg-f" src="/px/art-40d3ca0b.svg" alt="" width={25} height={45} />
               <img
-                className="px dg-f pp-blink"
+                className="pxsvg dg-f pp-blink"
                 src="/px/pp-blink-d3c565dc.svg"
                 alt=""
                 width={25}
                 height={45}
               />
-              <img className="px dg-f pp-walk" src="/px/pp-walk-46ae6f5a.svg" alt="" width={25} height={45} />
+              <img
+                className="pxsvg dg-f pp-walk"
+                src="/px/pp-walk-46ae6f5a.svg"
+                alt=""
+                width={25}
+                height={45}
+              />
             </span>
           </span>
           <span
@@ -198,22 +204,28 @@ function OnPasseNosJournees() {
             data-cur="Théo"
           >
             <span className="dg-in">
-              <img className="px dg-f" src="/px/art-b0e8820d.svg" alt="" width={25} height={45} />
+              <img className="pxsvg dg-f" src="/px/art-b0e8820d.svg" alt="" width={25} height={45} />
               <img
-                className="px dg-f pp-blink"
+                className="pxsvg dg-f pp-blink"
                 src="/px/pp-blink-8b3f7609.svg"
                 alt=""
                 width={25}
                 height={45}
               />
-              <img className="px dg-f pp-walk" src="/px/pp-walk-24a231f1.svg" alt="" width={25} height={45} />
+              <img
+                className="pxsvg dg-f pp-walk"
+                src="/px/pp-walk-24a231f1.svg"
+                alt=""
+                width={25}
+                height={45}
+              />
             </span>
           </span>
         </div>
         <div className="mo-ml">
           <span className="mf-t mo-mt mf-m">à dessiner</span>
           <span className="mf-ui mf-figma mo-ui mo-fig" title="Figma">
-            <img className="px" src="/px/art-d5501567.svg" alt="" width={27.2} height={40.8} />
+            <img className="pxsvg" src="/px/art-d5501567.svg" alt="" width={27.2} height={40.8} />
           </span>
         </div>
         <div className="mo-ml">
@@ -241,16 +253,22 @@ function OnPasseNosJournees() {
             data-cur="Ouaf"
           >
             <span className="dg-in">
-              <img className="px dg-f dg-base" src="/px/dg-base-2a427feb.svg" alt="" width={52} height={50} />
               <img
-                className="px dg-f dg-blink"
+                className="pxsvg dg-f dg-base"
+                src="/px/dg-base-2a427feb.svg"
+                alt=""
+                width={52}
+                height={50}
+              />
+              <img
+                className="pxsvg dg-f dg-blink"
                 src="/px/dg-blink-378dd5fb.svg"
                 alt=""
                 width={52}
                 height={50}
               />
               <img
-                className="px dg-f dg-mouth"
+                className="pxsvg dg-f dg-mouth"
                 src="/px/dg-mouth-9bbfa566.svg"
                 alt=""
                 width={52}
@@ -706,19 +724,40 @@ function LesCoulissesEnPolaroids() {
           </figure>
           <figure className="pw-m">
             <span className="pw-in" style={{ '--r': '5deg' } as CSSProperties}>
-              <img src="/images/4f470e228f8d42.png" alt="" />
+              <span className="pw-ph">
+                <img
+                  className="px"
+                  src="/images/team-doggy-sq-px.png"
+                  alt="Doggy, le chien du studio, en pixel"
+                />
+                <img className="o" src="/images/team-doggy-sq.jpg" alt="" loading="lazy" />
+              </span>
               <figcaption>Doggy, à l’accueil</figcaption>
             </span>
           </figure>
           <figure className="pw-m">
             <span className="pw-in" style={{ '--r': '-3deg' } as CSSProperties}>
-              <img src="/images/569cf65d4427e1.png" alt="" />
+              <span className="pw-ph">
+                <img
+                  className="px"
+                  src="/images/team-julien-sq-px.png"
+                  alt="Julien, cofondateur d’Orion Studio, en pixel"
+                />
+                <img className="o" src="/images/team-julien-sq.jpg" alt="" loading="lazy" />
+              </span>
               <figcaption>Julien</figcaption>
             </span>
           </figure>
           <figure className="pw-m">
             <span className="pw-in" style={{ '--r': '4deg' } as CSSProperties}>
-              <img src="/images/23873003fe2522.png" alt="" />
+              <span className="pw-ph">
+                <img
+                  className="px"
+                  src="/images/team-theo-sq-px.png"
+                  alt="Théo, cofondateur d’Orion Studio, en pixel"
+                />
+                <img className="o" src="/images/team-theo-sq.jpg" alt="" loading="lazy" />
+              </span>
               <figcaption>Théo</figcaption>
             </span>
           </figure>
@@ -759,16 +798,22 @@ function CinqEtapesDoggyVous() {
             data-cur="Ouaf"
           >
             <span className="dg-in">
-              <img className="px dg-f dg-base" src="/px/dg-base-2a427feb.svg" alt="" width={52} height={50} />
               <img
-                className="px dg-f dg-blink"
+                className="pxsvg dg-f dg-base"
+                src="/px/dg-base-2a427feb.svg"
+                alt=""
+                width={52}
+                height={50}
+              />
+              <img
+                className="pxsvg dg-f dg-blink"
                 src="/px/dg-blink-378dd5fb.svg"
                 alt=""
                 width={52}
                 height={50}
               />
               <img
-                className="px dg-f dg-mouth"
+                className="pxsvg dg-f dg-mouth"
                 src="/px/dg-mouth-9bbfa566.svg"
                 alt=""
                 width={52}
@@ -873,7 +918,7 @@ function BasesAParisOn() {
       </div>
       <div className="st2-mmap">
         <div className="fx" style={{ width: '320px', height: '315px' }}>
-          <img className="px" src="/px/art-77080277.svg" alt="" width={320} height={315} />
+          <img className="pxsvg" src="/px/art-77080277.svg" alt="" width={320} height={315} />
           <i className="fx-ring" style={{ left: '157px', top: '72px', animationDelay: '0.0s' }} />
           <i className="fx-ring" style={{ left: '157px', top: '72px', animationDelay: '0.9s' }} />
           <i className="fx-ring" style={{ left: '157px', top: '72px', animationDelay: '1.8s' }} />
@@ -895,6 +940,44 @@ function BasesAParisOn() {
         </div>
       </div>
       <a className="btn btn-ink mo-btn mo-btn-full">Démarrer un projet</a>
+      <div className="st2-local st2-mlocal">
+        <span className="lc-k">Création de site internet, près de chez vous</span>
+        <ul>
+          <li>
+            <Link
+              to="/creation-site-internet/versailles"
+              className="lnk"
+              data-pv="creation-site-internet-versailles"
+            >
+              Création de site internet à Versailles
+            </Link>
+          </li>
+          <li>
+            <Link to="/creation-site-internet/cergy" className="lnk" data-pv="creation-site-internet-cergy">
+              Création de site internet à Cergy
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/creation-site-internet/boulogne-billancourt"
+              className="lnk"
+              data-pv="creation-site-internet-boulogne-billancourt"
+            >
+              Création de site internet à Boulogne-Billancourt
+            </Link>
+          </li>
+          <li>
+            <Link to="/creation-site-internet/meaux" className="lnk" data-pv="creation-site-internet-meaux">
+              Création de site internet à Meaux
+            </Link>
+          </li>
+          <li>
+            <Link to="/creation-site-internet/massy" className="lnk" data-pv="creation-site-internet-massy">
+              Création de site internet à Massy
+            </Link>
+          </li>
+        </ul>
+      </div>
     </section>
   )
 }
@@ -914,8 +997,8 @@ function MoFt() {
       </div>
       <div className="mo-ft-main">
         <span className="logo">
-          <img className="px logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
-          <img className="px logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
+          <img className="pxsvg logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
+          <img className="pxsvg logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
@@ -943,8 +1026,6 @@ function MoFt() {
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
-            <a>Méthode</a>
-            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
@@ -989,7 +1070,7 @@ function MoFt() {
         <div className="hm-layer">
           <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
-            className="px bigword"
+            className="pxsvg bigword"
             src="/px/bigword-a5329b0d.svg"
             alt=""
             width={416}
@@ -999,7 +1080,7 @@ function MoFt() {
           <i className="betel" style={{ left: '193px', top: '88px' }} />
           <span className="orio" style={{ left: '91px', top: '34px' }} title="Orio et Bételgeuse">
             <span className="orio-in">
-              <img className="px" src="/px/art-c8610941.svg" alt="" width={88} height={92} />
+              <img className="pxsvg" src="/px/art-c8610941.svg" alt="" width={88} height={92} />
             </span>
           </span>
         </div>

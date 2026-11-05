@@ -23,9 +23,28 @@ const esc = (s) =>
 /* ---------- écouteurs globaux liés à la page en cours (retirés quand elle se démonte) ---------- */
 let pageAC = new AbortController()
 const onWin = (type, fn, opts = {}) => addEventListener(type, fn, { ...opts, signal: pageAC.signal })
+const pageTimers = new Set()
+const pageEvery = (fn, ms) => {
+  const id = setInterval(fn, ms)
+  pageTimers.add(id)
+  return id
+}
+const pageAfter = (fn, ms) => {
+  const id = setTimeout(() => {
+    pageTimers.delete(id)
+    fn()
+  }, ms)
+  pageTimers.add(id)
+  return id
+}
+const pageClear = (id) => {
+  clearTimeout(id)
+  pageTimers.delete(id)
+}
 const resetPageScope = () => {
   pageAC.abort()
   pageAC = new AbortController()
+  pageTimers.forEach(pageClear)
 }
 
 /* ---------- mise à l'échelle ---------- */
@@ -220,6 +239,9 @@ export {
   root,
   esc,
   onWin,
+  pageEvery,
+  pageAfter,
+  pageClear,
   resetPageScope,
   fit,
   split,

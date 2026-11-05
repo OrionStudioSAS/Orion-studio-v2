@@ -67,7 +67,7 @@ function HeroMedia() {
       </div>
       <div className="chat ch2">
         <div className="greet ch2-greet">
-          <img className="px omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
+          <img className="pxsvg omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
           <span>On regarde le site de votre restaurant ?</span>
         </div>
         <div className="composer ch2-comp">
@@ -123,7 +123,7 @@ function HeroMedia() {
                 </svg>
               </span>{' '}
               <span className="tg">
-                <img className="px omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
+                <img className="pxsvg omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
                 <b>Analyse complète</b>
               </span>
               <span className="cr">
@@ -182,19 +182,19 @@ function HeroMedia() {
         </div>
         <div className="ch2-sug">
           <span className="sg">
-            <img className="px picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
             <b>Refaire le site du restaurant</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />
             <b>Prendre les réservations en ligne</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
             <b>Remonter sur Google</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
             <b>Être cité par ChatGPT</b>
           </span>
         </div>
@@ -456,7 +456,7 @@ function LesAutresSecteurs() {
             <span className="sec-av">
               <span>
                 <img
-                  className="px"
+                  className="pxsvg"
                   src="/px/art-adc97f27.svg"
                   alt=""
                   style={{ width: '100%', height: '100%' }}
@@ -475,7 +475,7 @@ function LesAutresSecteurs() {
             <span className="sec-av">
               <span>
                 <img
-                  className="px"
+                  className="pxsvg"
                   src="/px/art-e0dda6d2.svg"
                   alt=""
                   style={{ width: '100%', height: '100%' }}
@@ -553,7 +553,7 @@ function LesAutresSecteurs() {
             <span className="sec-av">
               <span>
                 <img
-                  className="px"
+                  className="pxsvg"
                   src="/px/art-e6cc4a17.svg"
                   alt=""
                   style={{ width: '100%', height: '100%' }}
@@ -566,7 +566,7 @@ function LesAutresSecteurs() {
             <span className="sec-av">
               <span>
                 <img
-                  className="px"
+                  className="pxsvg"
                   src="/px/art-b8783d94.svg"
                   alt=""
                   style={{ width: '100%', height: '100%' }}
@@ -579,7 +579,7 @@ function LesAutresSecteurs() {
             <span className="sec-av">
               <span>
                 <img
-                  className="px"
+                  className="pxsvg"
                   src="/px/art-b70ac2f6.svg"
                   alt=""
                   style={{ width: '100%', height: '100%' }}

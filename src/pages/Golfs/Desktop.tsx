@@ -67,7 +67,7 @@ function HeroMedia() {
       </div>
       <div className="chat ch2">
         <div className="greet ch2-greet">
-          <img className="px omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
+          <img className="pxsvg omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
           <span>On regarde le site de votre golf ?</span>
         </div>
         <div className="composer ch2-comp">
@@ -123,7 +123,7 @@ function HeroMedia() {
                 </svg>
               </span>{' '}
               <span className="tg">
-                <img className="px omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
+                <img className="pxsvg omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
                 <b>Analyse golf</b>
               </span>
               <span className="cr">
@@ -182,19 +182,19 @@ function HeroMedia() {
         </div>
         <div className="ch2-sug">
           <span className="sg">
-            <img className="px picon" src="/px/picon-268f2d78.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-268f2d78.svg" alt="" width={10} height={10} />
             <b>Refaire le site du club</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
             <b>Vendre au pro-shop en ligne</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
             <b>Remonter sur Google</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
             <b>Être cité par ChatGPT</b>
           </span>
         </div>
@@ -762,7 +762,7 @@ function VosOutilsUnSeul() {
           </div>
           <div className="it it-l" data-i="1" data-row="0" style={{ left: '0px', top: '106px' }}>
             <span className="it-lg">
-              <img className="px" src="/px/art-a2b3b32b.svg" alt="" width={22} height={22} />
+              <img className="pxsvg" src="/px/art-a2b3b32b.svg" alt="" width={22} height={22} />
             </span>
             <div>
               <b>Chronogolf</b>
@@ -800,7 +800,7 @@ function VosOutilsUnSeul() {
           </div>
           <div className="it it-l" data-i="4" data-row="1" style={{ left: '0px', top: '352px' }}>
             <span className="it-lg">
-              <img className="px" src="/px/art-c2d37bf4.svg" alt="" width={22} height={22} />
+              <img className="pxsvg" src="/px/art-c2d37bf4.svg" alt="" width={22} height={22} />
             </span>
             <div>
               <b>Shopify</b>
@@ -874,7 +874,7 @@ function VosOutilsUnSeul() {
           </div>
           <div className="it it-r" data-i="10" data-row="-1" style={{ left: '996px', top: '352px' }}>
             <span className="it-lg">
-              <img className="px" src="/px/art-fadc98b3.svg" alt="" width={22} height={22} />
+              <img className="pxsvg" src="/px/art-fadc98b3.svg" alt="" width={22} height={22} />
             </span>
             <div>
               <b>Calendly</b>
@@ -883,7 +883,7 @@ function VosOutilsUnSeul() {
           </div>
           <div className="it it-r" data-i="11" data-row="-1" style={{ left: '996px', top: '434px' }}>
             <span className="it-lg">
-              <img className="px" src="/px/art-de7cbfb0.svg" alt="" width={22} height={22} />
+              <img className="pxsvg" src="/px/art-de7cbfb0.svg" alt="" width={22} height={22} />
             </span>
             <div>
               <b>Axeptio</b>

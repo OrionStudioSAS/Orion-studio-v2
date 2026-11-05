@@ -8,8 +8,8 @@ export function Footer({ children }: { children: ReactNode }) {
       <div className="ft-main">
         <div className="ft-l">
           <span className="logo">
-            <img className="px logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
-            <img className="px logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
+            <img className="pxsvg logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
+            <img className="pxsvg logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
           </span>
           <p>
             Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications
@@ -38,8 +38,6 @@ export function Footer({ children }: { children: ReactNode }) {
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
-            <a>Méthode</a>
-            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="fc">
@@ -76,7 +74,7 @@ export function Footer({ children }: { children: ReactNode }) {
         <div className="hm-layer">
           <img src="/images/926133384353c5.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
-            className="px bigword"
+            className="pxsvg bigword"
             src="/px/bigword-b79decb3.svg"
             alt=""
             width={1530}
@@ -86,7 +84,7 @@ export function Footer({ children }: { children: ReactNode }) {
           <i className="betel" style={{ left: '746px', top: '78px' }} />
           <span className="orio" style={{ left: '588px', top: '62px' }} title="Orio et Bételgeuse">
             <span className="orio-in">
-              <img className="px" src="/px/art-7159fa31.svg" alt="" width={132} height={138} />
+              <img className="pxsvg" src="/px/art-7159fa31.svg" alt="" width={132} height={138} />
             </span>
           </span>
         </div>

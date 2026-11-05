@@ -37,7 +37,7 @@ function MoMedia() {
       </div>
       <div className="mo-chat">
         <div className="mo-greet">
-          <img className="px omark" src="/px/omark-72fafdaa.svg" alt="" width={25} height={24} />
+          <img className="pxsvg omark" src="/px/omark-72fafdaa.svg" alt="" width={25} height={24} />
           <span>
             On regarde votre site
             <br />
@@ -114,19 +114,19 @@ function MoMedia() {
         </div>
         <div className="mo-sug">
           <span className="sg">
-            <img className="px picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
             <b>Vendre en ligne</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />
             <b>Prendre des réservations</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-b6521826.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-b6521826.svg" alt="" width={10} height={10} />
             <b>Créer un espace client</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
             <b>Refaire mon site</b>
           </span>
         </div>
@@ -386,7 +386,7 @@ function ExpertisesAssociees() {
       </div>
       <div className="xpm-rel">
         <Link to="/expertises/site-vitrine" className="rl xpm-rl" data-exp="site-vitrine">
-          <img className="px picon" src="/px/picon-5d9e4e01.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-5d9e4e01.svg" alt="" width={20} height={20} />
           <div>
             <b>Site vitrine</b>
             <span>Présenter votre activité et être contacté.</span>
@@ -397,14 +397,14 @@ function ExpertisesAssociees() {
           className="rl xpm-rl"
           data-exp="developpement-applications"
         >
-          <img className="px picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
           <div>
             <b>Développement d’applications</b>
             <span>Applications web, espaces clients, SaaS.</span>
           </div>
         </Link>
         <Link to="/expertises/automatisations" className="rl xpm-rl" data-exp="automatisations">
-          <img className="px picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
           <div>
             <b>Automatisations</b>
             <span>Vos tâches répétitives, automatisées.</span>
@@ -541,8 +541,8 @@ function MoFt() {
       </div>
       <div className="mo-ft-main">
         <span className="logo">
-          <img className="px logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
-          <img className="px logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
+          <img className="pxsvg logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
+          <img className="pxsvg logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
@@ -570,8 +570,6 @@ function MoFt() {
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
-            <a>Méthode</a>
-            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
@@ -616,7 +614,7 @@ function MoFt() {
         <div className="hm-layer">
           <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
-            className="px bigword"
+            className="pxsvg bigword"
             src="/px/bigword-a5329b0d.svg"
             alt=""
             width={416}
@@ -626,7 +624,7 @@ function MoFt() {
           <i className="betel" style={{ left: '193px', top: '88px' }} />
           <span className="orio" style={{ left: '91px', top: '34px' }} title="Orio et Bételgeuse">
             <span className="orio-in">
-              <img className="px" src="/px/art-c8610941.svg" alt="" width={88} height={92} />
+              <img className="pxsvg" src="/px/art-c8610941.svg" alt="" width={88} height={92} />
             </span>
           </span>
         </div>

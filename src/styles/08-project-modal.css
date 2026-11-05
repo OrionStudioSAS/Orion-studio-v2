@@ -62,7 +62,7 @@
   font: 600 15px/1 'Geist';
   letter-spacing: -0.02em;
 }
-.pj-brand :is(svg, :where(img.px)) {
+.pj-brand :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 .pj-h {
@@ -128,7 +128,7 @@
   padding-top: 18px;
   border-top: 1px solid rgba(244, 244, 241, 0.16);
 }
-.pj-duo img:where(:not(.px)) {
+.pj-duo img:where(:not(.pxsvg)) {
   width: 64px;
   height: 40px;
   border-radius: 7px;
@@ -285,7 +285,7 @@
   transform: scale(0);
   transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-.pj-tick :is(svg, :where(img.px)) {
+.pj-tick :is(svg, :where(img.pxsvg)) {
   display: block;
   width: 10px;
   height: 9px;
@@ -570,7 +570,7 @@
   justify-content: center;
   margin-bottom: 18px;
 }
-.pj-ok :is(svg, :where(img.px)) {
+.pj-ok :is(svg, :where(img.pxsvg)) {
   width: 20px;
   height: 17px;
 }

@@ -15,8 +15,8 @@ export function MobileFooter() {
       </div>
       <div className="mo-ft-main">
         <span className="logo">
-          <img className="px logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
-          <img className="px logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
+          <img className="pxsvg logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
+          <img className="pxsvg logo-w" src="/px/logo-w-438c9e6d.svg" alt="" width={151} height={21} />
         </span>
         <p>
           Studio de design et de développement web basé à Paris. Sites sur-mesure, e-commerce, applications et
@@ -44,8 +44,6 @@ export function MobileFooter() {
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
             <Link to="/le-studio">Le studio</Link>
-            <a>Méthode</a>
-            <Link to="/realisations/orion-admin">Orion Admin</Link>
             <a>Contact</a>
           </div>
           <div className="mo-fc">
@@ -90,7 +88,7 @@ export function MobileFooter() {
         <div className="hm-layer">
           <img src="/images/bf5a322d7f4ded.png" alt="Le ciel et la constellation d’Orion, en pixels" />
           <img
-            className="px bigword"
+            className="pxsvg bigword"
             src="/px/bigword-a5329b0d.svg"
             alt=""
             width={416}
@@ -100,7 +98,7 @@ export function MobileFooter() {
           <i className="betel" style={{ left: '193px', top: '88px' }} />
           <span className="orio" style={{ left: '91px', top: '34px' }} title="Orio et Bételgeuse">
             <span className="orio-in">
-              <img className="px" src="/px/art-c8610941.svg" alt="" width={88} height={92} />
+              <img className="pxsvg" src="/px/art-c8610941.svg" alt="" width={88} height={92} />
             </span>
           </span>
         </div>

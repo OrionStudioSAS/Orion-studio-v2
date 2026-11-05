@@ -148,10 +148,10 @@ function E4() {
         </div>
         <div className="e4-orio" aria-hidden="true">
           <span className="e4-o e4-o1">
-            <img className="px" src="/px/art-b24b4a1a.svg" alt="" width={132} height={138} />
+            <img className="pxsvg" src="/px/art-b24b4a1a.svg" alt="" width={132} height={138} />
           </span>
           <span className="e4-o e4-o2">
-            <img className="px" src="/px/art-941396da.svg" alt="" width={132} height={138} />
+            <img className="pxsvg" src="/px/art-941396da.svg" alt="" width={132} height={138} />
           </span>
         </div>
       </div>

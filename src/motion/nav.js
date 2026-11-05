@@ -45,6 +45,11 @@ const PATHS = {
   'mentions-legales': '/mentions-legales',
   confidentialite: '/confidentialite',
   404: '*',
+  'creation-site-internet-versailles': '/creation-site-internet/versailles',
+  'creation-site-internet-cergy': '/creation-site-internet/cergy',
+  'creation-site-internet-boulogne-billancourt': '/creation-site-internet/boulogne-billancourt',
+  'creation-site-internet-meaux': '/creation-site-internet/meaux',
+  'creation-site-internet-massy': '/creation-site-internet/massy',
 }
 const TITLES = {
   accueil: 'Orion Studio — Agence de développement web à Paris',
@@ -58,6 +63,12 @@ const TITLES = {
   'etre-cite-par-les-ia': 'Être cité par ChatGPT et Perplexity — Orion Studio',
 }
 Object.assign(TITLES, {
+  'creation-site-internet-versailles': 'Création de site internet à Versailles — Orion Studio',
+  'creation-site-internet-cergy': 'Création de site internet à Cergy — Orion Studio',
+  'creation-site-internet-boulogne-billancourt':
+    'Création de site internet à Boulogne-Billancourt — Orion Studio',
+  'creation-site-internet-meaux': 'Création de site internet à Meaux — Orion Studio',
+  'creation-site-internet-massy': 'Création de site internet à Massy — Orion Studio',
   boulangeries: 'Boulangeries — Orion Studio',
   restaurants: 'Restaurants — Orion Studio',
   associations: 'Associations — Orion Studio',

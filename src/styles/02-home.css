@@ -88,7 +88,7 @@
   font: 400 13px/1 'Geist';
   color: var(--muted);
 }
-.proof :is(svg, :where(img.px)) {
+.proof :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 .hero-media {
@@ -99,7 +99,7 @@
   overflow: hidden;
   background: var(--ink);
 }
-.hero-media img:where(:not(.px)) {
+.hero-media img:where(:not(.pxsvg)) {
   position: absolute;
   inset: 0;
   width: 1344px;
@@ -363,7 +363,7 @@
 .p-d .p-media {
   height: 460px;
 }
-.p-media > img:where(:not(.px)) {
+.p-media > img:where(:not(.pxsvg)) {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1202,7 +1202,7 @@
   gap: 4px;
   margin: 18px 0 8px;
 }
-.q-stars :is(svg, :where(img.px)) {
+.q-stars :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 
@@ -1818,7 +1818,7 @@
   border-top: none;
   padding-top: 0;
 }
-.art img:where(:not(.px)) {
+.art img:where(:not(.pxsvg)) {
   width: 100%;
   height: 270px;
   border-radius: 6px;
@@ -1950,7 +1950,7 @@
   height: 400px;
   overflow: hidden;
 }
-.ft-sky img:where(:not(.px)) {
+.ft-sky img:where(:not(.pxsvg)) {
   position: absolute;
   left: 0;
   top: 0;
@@ -2095,7 +2095,7 @@
   display: flex;
   flex-direction: column;
 }
-.mm-feat img:where(:not(.px)) {
+.mm-feat img:where(:not(.pxsvg)) {
   width: 320px;
   height: 200px;
   border-radius: 8px;
@@ -2164,7 +2164,7 @@
   border-radius: 8px;
   overflow: hidden;
 }
-.fl-media > img:where(:not(.px)) {
+.fl-media > img:where(:not(.pxsvg)) {
   position: absolute;
   inset: 0;
   width: 680px;
@@ -2267,7 +2267,7 @@
   position: relative;
   margin: 4px auto 0;
 }
-.fm :is(svg, :where(img.px)) {
+.fm :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 .fm-l {

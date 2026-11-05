@@ -443,7 +443,7 @@ function RzAvs() {
             <span>Avis clients</span>
             <span>Ils en parlent mieux que nous</span>
           </div>
-          <img className="px av-q" src="/px/av-q-179751fb.svg" alt="" width={55} height={40} />
+          <img className="pxsvg av-q" src="/px/av-q-179751fb.svg" alt="" width={55} height={40} />
           <p className="av-txt">
             Leur expertise sur le développement sur-mesure est impressionnante. Une équipe à l’écoute,
             professionnelle, et qui livre dans les temps.

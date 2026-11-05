@@ -7,8 +7,8 @@ export function Nav() {
   return (
     <header className="nav">
       <Link to="/" className="logo">
-        <img className="px logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
-        <img className="px logo-w" src="/px/logo-w-ad3e722d.svg" alt="" width={151} height={21} />
+        <img className="pxsvg logo-m" src="/px/logo-m-3644e11a.svg" alt="" width={22} height={21} />
+        <img className="pxsvg logo-w" src="/px/logo-w-ad3e722d.svg" alt="" width={151} height={21} />
       </Link>
       <nav className="nav-links">
         <a data-mm="exp">
@@ -62,7 +62,7 @@ export function Nav() {
             <div className="mm-col">
               <div className="mm-k">Web & développement</div>
               <Link to="/expertises/site-internet" className="mm-it" data-exp="site-internet">
-                <img className="px picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
+                <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
                 <div>
                   <b>Site internet</b>
                   <span>
@@ -86,14 +86,14 @@ export function Nav() {
                 className="mm-it"
                 data-exp="developpement-applications"
               >
-                <img className="px picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
+                <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
                 <div>
                   <b>Développement d’applications</b>
                   <span>Applications web, espaces clients, outils métiers et SaaS.</span>
                 </div>
               </Link>
               <Link to="/expertises/automatisations" className="mm-it" data-exp="automatisations">
-                <img className="px picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
+                <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
                 <div>
                   <b>Automatisations</b>
                   <span>Formulaires, CRM, devis, relances : vos tâches répétitives, automatisées.</span>
@@ -103,21 +103,21 @@ export function Nav() {
             <div className="mm-col">
               <div className="mm-k">Marketing digital</div>
               <Link to="/expertises/seo" className="mm-it" data-exp="seo">
-                <img className="px picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
+                <img className="pxsvg picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
                 <div>
                   <b>SEO</b>
                   <span>Audit, technique et contenus pour remonter sur Google.</span>
                 </div>
               </Link>
               <Link to="/expertises/geo" className="mm-it" data-exp="geo">
-                <img className="px picon" src="/px/picon-84c912e7.svg" alt="" width={20} height={20} />
+                <img className="pxsvg picon" src="/px/picon-84c912e7.svg" alt="" width={20} height={20} />
                 <div>
                   <b>GEO</b>
                   <span>Être cité par ChatGPT, Perplexity et les réponses IA de Google.</span>
                 </div>
               </Link>
               <Link to="/expertises/google-ads" className="mm-it" data-exp="google-ads">
-                <img className="px picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
+                <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
                 <div>
                   <b>Google Ads</b>
                   <span>Campagnes Search et Performance Max, pilotées au nombre de contacts.</span>
@@ -147,7 +147,7 @@ export function Nav() {
               <div className="mm-k">Pour qui ?</div>
               <div className="mm-g3">
                 <Link to="/pour-qui/tpe-pme" className="mm-it mm-it-w" data-sector="pme">
-                  <img className="px picon" src="/px/picon-4780f153.svg" alt="" width={20} height={20} />
+                  <img className="pxsvg picon" src="/px/picon-4780f153.svg" alt="" width={20} height={20} />
                   <div>
                     <b>TPE & PME</b>
                     <span>Un site qui fait venir des demandes, sans y passer vos soirées.</span>
@@ -160,7 +160,7 @@ export function Nav() {
                   </div>
                 </Link>
                 <Link to="/pour-qui/independants" className="mm-it mm-it-w" data-sector="indep">
-                  <img className="px picon" src="/px/picon-00814f13.svg" alt="" width={20} height={20} />
+                  <img className="pxsvg picon" src="/px/picon-00814f13.svg" alt="" width={20} height={20} />
                   <div>
                     <b>Indépendants & micro-entrepreneurs</b>
                     <span>Une présence pro, rapide à lancer, avec un budget maîtrisé.</span>
@@ -173,7 +173,7 @@ export function Nav() {
                   </div>
                 </Link>
                 <Link to="/pour-qui/marques-e-commerce" className="mm-it mm-it-w" data-sector="shop">
-                  <img className="px picon" src="/px/picon-808b4de1.svg" alt="" width={20} height={20} />
+                  <img className="pxsvg picon" src="/px/picon-808b4de1.svg" alt="" width={20} height={20} />
                   <div>
                     <b>Marques & e-commerçants</b>
                     <span>Des boutiques Shopify qui vendent, et les outils pour grandir.</span>
@@ -186,7 +186,7 @@ export function Nav() {
                   </div>
                 </Link>
                 <Link to="/pour-qui/start-up" className="mm-it mm-it-w" data-sector="startup">
-                  <img className="px picon" src="/px/picon-f0c33abd.svg" alt="" width={20} height={20} />
+                  <img className="pxsvg picon" src="/px/picon-f0c33abd.svg" alt="" width={20} height={20} />
                   <div>
                     <b>Start-up</b>
                     <span>Un site qui fait comprendre votre produit et réserver des démos.</span>
@@ -205,7 +205,7 @@ export function Nav() {
                   <span className="sec-av">
                     <span>
                       <img
-                        className="px"
+                        className="pxsvg"
                         src="/px/art-adc97f27.svg"
                         alt=""
                         style={{ width: '100%', height: '100%' }}
@@ -224,7 +224,7 @@ export function Nav() {
                   <span className="sec-av">
                     <span>
                       <img
-                        className="px"
+                        className="pxsvg"
                         src="/px/art-e0dda6d2.svg"
                         alt=""
                         style={{ width: '100%', height: '100%' }}
@@ -357,7 +357,7 @@ export function Nav() {
                   <span className="sec-av">
                     <span>
                       <img
-                        className="px"
+                        className="pxsvg"
                         src="/px/art-e6cc4a17.svg"
                         alt=""
                         style={{ width: '100%', height: '100%' }}
@@ -376,7 +376,7 @@ export function Nav() {
                   <span className="sec-av">
                     <span>
                       <img
-                        className="px"
+                        className="pxsvg"
                         src="/px/art-b8783d94.svg"
                         alt=""
                         style={{ width: '100%', height: '100%' }}
@@ -395,7 +395,7 @@ export function Nav() {
                   <span className="sec-av">
                     <span>
                       <img
-                        className="px"
+                        className="pxsvg"
                         src="/px/art-b70ac2f6.svg"
                         alt=""
                         style={{ width: '100%', height: '100%' }}
@@ -415,7 +415,7 @@ export function Nav() {
                     <span className="sec-mos">
                       <i>
                         <img
-                          className="px"
+                          className="pxsvg"
                           src="/px/art-e0dda6d2.svg"
                           alt=""
                           style={{ width: '100%', height: '100%' }}

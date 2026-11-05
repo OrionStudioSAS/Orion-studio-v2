@@ -46,7 +46,7 @@
 .btn-ghost:hover {
   background: #e9e9e4;
 }
-.ft-l .logo :is(svg, :where(img.px)) {
+.ft-l .logo :is(svg, :where(img.pxsvg)) {
   transition: transform 0.5s cubic-bezier(0.3, 1.5, 0.5, 1);
 }
 .ft-l .logo:hover .logo-m,
@@ -1099,7 +1099,7 @@ body.cur-label .cur-dot i {
   justify-content: center;
   transition: opacity 0.4s;
 }
-.e4-o :is(svg, :where(img.px)) {
+.e4-o :is(svg, :where(img.pxsvg)) {
   display: block;
 }
 .e4-o2 {
@@ -1555,7 +1555,7 @@ body.cur-label .cur-dot i {
 .pp-more a {
   cursor: pointer;
 }
-.pp-page .cs-hero > img:where(:not(.px)),
+.pp-page .cs-hero > img:where(:not(.pxsvg)),
 .pp-page .mc-hero-bg {
   object-fit: cover;
 }
@@ -1605,4 +1605,388 @@ body.cur-label .cur-dot i {
 }
 .mm-feat {
   cursor: pointer;
+}
+
+/* équipe dans l'espace blanc du manifeste (remplace le panneau sombre) */
+.v-home .mf {
+  position: relative;
+}
+.mft {
+  position: absolute;
+  right: 72px;
+  top: 172px;
+  width: 408px;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 34px 70px -38px rgba(14, 14, 12, 0.42);
+}
+.mft-stage {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background: #e9e2d6;
+}
+.mft-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 100%;
+  display: block;
+  image-rendering: pixelated;
+}
+.mft .tm-capt {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font: 400 10.5px/1 'Geist Mono';
+  color: #f4f4f1;
+  background: rgba(14, 14, 12, 0.62);
+  border: 1px solid rgba(244, 244, 241, 0.14);
+  padding: 6px 8px;
+  border-radius: 5px;
+  z-index: 2;
+}
+.mft .tm-crew {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 18px;
+  padding: 0 18px;
+}
+.mft .tm-m {
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.mft .tm-d {
+  margin-left: 6px;
+}
+.mft .tm-j .dg-f,
+.mft .tm-t .dg-f {
+  width: 96px;
+  height: auto;
+}
+.mft .tm-d .dg-f {
+  width: 104px;
+  height: auto;
+}
+.mft .tm-m figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 5px 9px 6px;
+  border-radius: 5px;
+  background: rgba(14, 14, 12, 0.72);
+  border: 1px solid rgba(244, 244, 241, 0.14);
+  font: 600 12px/1.1 'Geist';
+  color: #f4f4f1;
+  letter-spacing: -0.01em;
+}
+.mft .tm-m figcaption span {
+  font: 400 9px/1.2 'Geist Mono';
+  color: rgba(244, 244, 241, 0.65);
+}
+.mft .tm-d figcaption b {
+  color: var(--acc);
+}
+.mft .dg-bub {
+  font-size: 12px;
+  padding: 8px 10px;
+  z-index: 3;
+}
+.mft .tm-d .dg-bub {
+  left: auto;
+  right: -4px;
+  transform: translate(0, 6px);
+  border-radius: 10px 10px 2px 10px;
+}
+.mft .tm-d .dg:hover .dg-bub,
+.mft .tm-d .dg.talk .dg-bub {
+  transform: translate(0, 0);
+}
+.mft-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px 14px 18px;
+  border-top: 1px solid var(--line);
+  background: #fff;
+}
+.mft-bar b {
+  display: block;
+  font: 600 15px/1.2 'Geist';
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.mft-bar span {
+  display: block;
+  margin-top: 3px;
+  font: 400 10.5px/1.3 'Geist Mono';
+  color: var(--muted);
+}
+.mft-btn {
+  height: 36px;
+  padding: 0 14px;
+  font-size: 13px;
+}
+.mft-mo {
+  position: relative;
+  right: auto;
+  top: auto;
+  width: auto;
+  height: auto;
+  margin-top: 32px;
+}
+.mft-mo .mft-stage {
+  flex: none;
+  height: 250px;
+}
+.mft-mo .tm-crew {
+  gap: 10px;
+  bottom: 10px;
+}
+.mft-mo .tm-j .dg-f,
+.mft-mo .tm-t .dg-f {
+  width: 72px;
+}
+.mft-mo .tm-d .dg-f {
+  width: 80px;
+}
+.mft-mo .tm-m figcaption {
+  font-size: 11px;
+  padding: 4px 7px 5px;
+}
+.mft-mo .tm-m figcaption span {
+  font-size: 8.5px;
+}
+.mft-mo .mft-bar {
+  padding: 12px 14px;
+}
+.mft-mo .mft-btn {
+  height: 34px;
+  padding: 0 12px;
+  font-size: 12.5px;
+}
+
+/* équipe en pixel, façon tirages posés en éventail dans l'espace blanc du manifeste */
+.mfp {
+  position: absolute;
+  right: 64px;
+  top: 196px;
+  width: 432px;
+  height: 372px;
+}
+.mfp-c {
+  position: absolute;
+  margin: 0;
+  padding: 9px 9px 0;
+  background: #fdfcf9;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 0 rgba(14, 14, 12, 0.06),
+    0 26px 50px -26px rgba(14, 14, 12, 0.5);
+  transform: rotate(var(--r));
+  transition:
+    transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.2),
+    box-shadow 0.4s;
+  cursor: pointer;
+  outline-offset: 6px;
+}
+.mfp-j {
+  left: 0;
+  top: 44px;
+  width: 152px;
+  --r: -5deg;
+  z-index: 1;
+}
+.mfp-t {
+  left: 140px;
+  top: 6px;
+  width: 152px;
+  --r: 3deg;
+  z-index: 2;
+}
+.mfp-d {
+  left: 280px;
+  top: 62px;
+  width: 152px;
+  --r: -3deg;
+  z-index: 3;
+}
+.mfp-c:hover,
+.mfp-c:focus-visible {
+  transform: rotate(0deg) translateY(-10px) scale(1.05);
+  z-index: 6;
+  box-shadow:
+    0 1px 0 rgba(14, 14, 12, 0.06),
+    0 40px 70px -30px rgba(14, 14, 12, 0.55);
+}
+.mfp-ph {
+  position: relative;
+  display: block;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background: #e8e3da;
+}
+.mfp-ph img:where(:not(.pxsvg)) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.mfp-ph .px {
+  image-rendering: pixelated;
+}
+.mfp-ph .o {
+  opacity: 0;
+  transition: opacity 0.45s steps(5);
+}
+.mfp-c:hover .o,
+.mfp-c:focus-visible .o,
+.mfp-c.on .o {
+  opacity: 1;
+}
+.mfp-c figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 9px 2px 11px;
+}
+.mfp-c figcaption b {
+  font: 400 italic 22px/1 'Instrument Serif';
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.mfp-c figcaption span {
+  font: 400 9.5px/1.2 'Geist Mono';
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+.mfp-d figcaption b {
+  color: var(--acc);
+}
+.mfp-tape {
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  width: 54px;
+  height: 19px;
+  margin-left: -27px;
+  background: rgba(222, 210, 188, 0.78);
+  transform: rotate(-4deg);
+  z-index: 2;
+}
+.mfp-t .mfp-tape {
+  background: rgba(255, 77, 26, 0.24);
+  transform: rotate(5deg);
+}
+.mfp-note {
+  position: absolute;
+  left: 6px;
+  top: 332px;
+  font: 400 10.5px/1.45 'Geist Mono';
+  color: var(--muted);
+}
+.mfp-note br {
+  display: none;
+}
+.mfp-mo {
+  position: relative;
+  right: auto;
+  top: auto;
+  width: auto;
+  height: 262px;
+  margin-top: 34px;
+}
+.mfp-mo .mfp-c {
+  padding: 7px 7px 0;
+  width: 116px;
+}
+.mfp-mo .mfp-j {
+  left: 0;
+  top: 30px;
+}
+.mfp-mo .mfp-t {
+  left: 50%;
+  margin-left: -58px;
+  top: 4px;
+}
+.mfp-mo .mfp-d {
+  left: auto;
+  right: 0;
+  top: 40px;
+}
+.mfp-mo .mfp-c figcaption {
+  padding: 7px 1px 9px;
+  gap: 3px;
+}
+.mfp-mo .mfp-c figcaption b {
+  font-size: 18px;
+}
+.mfp-mo .mfp-c figcaption span {
+  font-size: 8px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .mfp-c {
+    transition: none;
+  }
+  .mfp-ph .o {
+    transition: none;
+  }
+}
+
+/* page Le studio : vraies photos de Julien, Théo et Doggy, en pixel, révélées au survol */
+.pw-ph {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #e8e3da;
+}
+.pw-m .pw-ph {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.pw-ph img:where(:not(.pxsvg)) {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  display: block;
+}
+.pw-ph .px {
+  image-rendering: pixelated;
+}
+.pw-ph .o {
+  opacity: 0;
+  transition: opacity 0.45s steps(5);
+}
+.pw:hover .pw-ph .o,
+.pw-m:hover .pw-ph .o,
+.pw-in.on .pw-ph .o {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pw-ph .o {
+    transition: none;
+  }
 }

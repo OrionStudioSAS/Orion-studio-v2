@@ -39,7 +39,7 @@ function MoMedia() {
       </div>
       <div className="mo-chat">
         <div className="mo-greet">
-          <img className="px omark" src="/px/omark-72fafdaa.svg" alt="" width={25} height={24} />
+          <img className="pxsvg omark" src="/px/omark-72fafdaa.svg" alt="" width={25} height={24} />
           <span>
             On regarde votre site vitrine
             <br />
@@ -116,19 +116,19 @@ function MoMedia() {
         </div>
         <div className="mo-sug">
           <span className="sg">
-            <img className="px picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
             <b>Refaire mon site vitrine</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
             <b>Remonter sur Google</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
             <b>Être cité par ChatGPT</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />
             <b>Recevoir des demandes de devis</b>
           </span>
         </div>
@@ -349,21 +349,21 @@ function ExpertisesAssociees() {
       </div>
       <div className="xpm-rel">
         <Link to="/expertises/site-dynamique" className="rl xpm-rl" data-exp="site-dynamique">
-          <img className="px picon" src="/px/picon-c328b51d.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-c328b51d.svg" alt="" width={20} height={20} />
           <div>
             <b>Site dynamique</b>
             <span>Vendre, réserver et gérer en ligne.</span>
           </div>
         </Link>
         <Link to="/expertises/site-concept" className="rl xpm-rl" data-exp="site-concept">
-          <img className="px picon" src="/px/picon-ba26fc59.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-ba26fc59.svg" alt="" width={20} height={20} />
           <div>
             <b>Site concept</b>
             <span>Une expérience pour marquer les esprits.</span>
           </div>
         </Link>
         <Link to="/expertises/seo" className="rl xpm-rl" data-exp="seo">
-          <img className="px picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
           <div>
             <b>SEO</b>
             <span>Remonter sur Google.</span>

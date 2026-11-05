@@ -69,7 +69,7 @@ function HeroMedia() {
       </div>
       <div className="chat ch2">
         <div className="greet ch2-greet">
-          <img className="px omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
+          <img className="pxsvg omark" src="/px/omark-eff2793b.svg" alt="" width={31} height={30} />
           <span>On regarde votre site ensemble ?</span>
         </div>
         <div className="composer ch2-comp">
@@ -125,7 +125,7 @@ function HeroMedia() {
                 </svg>
               </span>{' '}
               <span className="tg">
-                <img className="px omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
+                <img className="pxsvg omark" src="/px/omark-214dbacb.svg" alt="" width={14} height={14} />
                 <b>Analyse complète</b>
               </span>
               <span className="cr">
@@ -184,19 +184,19 @@ function HeroMedia() {
         </div>
         <div className="ch2-sug">
           <span className="sg">
-            <img className="px picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
             <b>Lancer une nouvelle marque</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
             <b>Créer une page de campagne</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
             <b>Refaire mon site</b>
           </span>
           <span className="sg">
-            <img className="px picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
+            <img className="pxsvg picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
             <b>Être cité par ChatGPT</b>
           </span>
         </div>
@@ -344,7 +344,7 @@ function CeQuOnLivre() {
           <div className="gc-ui">
             <div className="gcu">
               <div className="xp-orio">
-                <img className="px" src="/px/art-3a97b3a2.svg" alt="" width={220} height={230} />
+                <img className="pxsvg" src="/px/art-3a97b3a2.svg" alt="" width={220} height={230} />
               </div>
             </div>
           </div>
@@ -522,7 +522,7 @@ function ExpertisesAssociees() {
       </div>
       <div className="rls">
         <Link to="/expertises/site-vitrine" className="rl" data-exp="site-vitrine">
-          <img className="px picon" src="/px/picon-5d9e4e01.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-5d9e4e01.svg" alt="" width={20} height={20} />
           <div>
             <b>Site vitrine</b>
             <span>Présenter votre activité et être contacté.</span>
@@ -530,7 +530,7 @@ function ExpertisesAssociees() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/site-dynamique" className="rl" data-exp="site-dynamique">
-          <img className="px picon" src="/px/picon-c328b51d.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-c328b51d.svg" alt="" width={20} height={20} />
           <div>
             <b>Site dynamique</b>
             <span>Vendre, réserver et gérer en ligne.</span>
@@ -538,7 +538,7 @@ function ExpertisesAssociees() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/google-ads" className="rl" data-exp="google-ads">
-          <img className="px picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
           <div>
             <b>Google Ads</b>
             <span>Des campagnes qui rapportent des contacts.</span>

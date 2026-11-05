@@ -81,7 +81,7 @@ function SxGrid() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-adc97f27.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -105,7 +105,7 @@ function SxGrid() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-e0dda6d2.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -258,7 +258,7 @@ function SxGrid() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-e6cc4a17.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -282,7 +282,7 @@ function SxGrid() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-b8783d94.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}
@@ -306,7 +306,7 @@ function SxGrid() {
           <span className="sec-av">
             <span>
               <img
-                className="px"
+                className="pxsvg"
                 src="/px/art-b70ac2f6.svg"
                 alt=""
                 style={{ width: '100%', height: '100%' }}

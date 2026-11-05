@@ -926,7 +926,7 @@ function ExpertisesAssociees() {
       </div>
       <div className="rls">
         <Link to="/expertises/developpement-applications" className="rl">
-          <img className="px picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
           <div>
             <b>Développement d’applications</b>
             <span>Applications web, espaces clients, SaaS.</span>
@@ -934,7 +934,7 @@ function ExpertisesAssociees() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/site-internet" className="rl">
-          <img className="px picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
           <div>
             <b>Site internet</b>
             <span>Sites vitrines et refontes sur mesure.</span>
@@ -942,7 +942,7 @@ function ExpertisesAssociees() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/google-ads" className="rl">
-          <img className="px picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
           <div>
             <b>Google Ads</b>
             <span>Des campagnes qui rapportent des contacts.</span>

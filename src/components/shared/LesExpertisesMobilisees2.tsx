@@ -8,7 +8,7 @@ export function LesExpertisesMobilisees2() {
       </div>
       <div className="rls">
         <Link to="/expertises/site-internet" className="rl">
-          <img className="px picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
           <div>
             <b>Site internet</b>
             <span>Sites vitrines et refontes sur mesure.</span>
@@ -16,7 +16,7 @@ export function LesExpertisesMobilisees2() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/seo" className="rl">
-          <img className="px picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
           <div>
             <b>SEO</b>
             <span>Remonter sur Google.</span>
@@ -24,7 +24,7 @@ export function LesExpertisesMobilisees2() {
           <span className="lnk">Découvrir</span>
         </Link>
         <Link to="/expertises/google-ads" className="rl">
-          <img className="px picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
+          <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
           <div>
             <b>Google Ads</b>
             <span>Des campagnes qui rapportent des contacts.</span>

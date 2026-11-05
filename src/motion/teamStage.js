@@ -3,7 +3,7 @@ import { doggyInit } from './studio'
 
 /* ---------- accueil : Julien et Théo entrent en marchant, Doggy court depuis la droite ---------- */
 function teamStage(R) {
-  const st = $('.tm-stage', R)
+  const st = $('.mft-stage', R)
   if (!st || st.dataset.ok) return
   st.dataset.ok = 1
   doggyInit(st)
