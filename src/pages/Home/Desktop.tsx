@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Nav } from '../../components/shared/Nav'
 import { MmVeilLive } from '../../components/shared/MmVeilLive'
 import { ClientsBlock } from './ClientsBlock'
+import { OrioSteps } from './OrioSteps'
 import { WorkPanels } from './WorkPanels'
 import { Footer } from '../../components/shared/Footer'
 
@@ -626,113 +627,7 @@ function CinqEtapesZeroZone() {
           sa complexité et le rythme des échanges.
         </p>
       </div>
-      <div className="steps">
-        <div className="pixbar">
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-on" />
-          <span className="pb-cur" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-        </div>
-        <div className="st-row">
-          <div className="st ">
-            <h3>
-              <i />
-              Cadrer
-            </h3>
-            <p>
-              Atelier, objectifs, arborescence et devis ferme. On sait ce qu’on construit avant de dessiner.
-            </p>
-          </div>
-          <div className="st ">
-            <h3>
-              <i />
-              Designer
-            </h3>
-            <p>Direction artistique, maquettes Figma et prototype cliquable, validés écran par écran.</p>
-          </div>
-          <div className="st cur">
-            <h3>
-              <i />
-              Développer
-            </h3>
-            <p>Intégration, CMS ou Shopify, automatisations. Une préprod ouverte pour tester en continu.</p>
-          </div>
-          <div className="st todo">
-            <h3>
-              <i />
-              Lancer
-            </h3>
-            <p>Mise en ligne, redirections, SEO technique et prise en main par votre équipe.</p>
-          </div>
-          <div className="st todo">
-            <h3>
-              <i />
-              Faire grandir
-            </h3>
-            <p>Mesure, tests et évolutions au fil de l’eau, quand vous en avez besoin.</p>
-          </div>
-        </div>
-      </div>
-      <div className="steps-note">
-        Ici, un projet en cours de développement. <b>Vous suivez chaque étape en direct dans Orion Admin</b>,
-        avec une préprod pour tester avant la mise en ligne.
-      </div>
+      <OrioSteps />
     </section>
   )
 }

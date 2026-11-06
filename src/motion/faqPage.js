@@ -1,9 +1,8 @@
 import { RM, G, ST, anim, $, $$, onWin, up, pixelate } from './core'
 import { sparkle } from './effects'
-import { OW } from './orio'
 import { norm } from './resourcesPage'
 
-/* ---------- FAQ : recherche en direct, thèmes qui suivent la lecture, question à Orio ---------- */
+/* ---------- FAQ : recherche en direct, thèmes qui suivent la lecture, question par e-mail ---------- */
 function faqPage(R, mob) {
   const page = $('.q-page', R)
   if (!page) return
@@ -115,19 +114,13 @@ function faqPage(R, mob) {
       }
     })
   })
-  // Orio
+  // une question sans réponse : on l'envoie au studio par e-mail, déjà rédigée
   $$('.q-ask', page).forEach((b) =>
     b.addEventListener('click', (e) => {
       e.preventDefault()
-      if (!OW.open) return
-      OW.open()
       const v = q.value.trim(),
-        inp = $('#ow-in')
-      if (v && inp)
-        setTimeout(() => {
-          inp.value = v.endsWith('?') ? v : v + ' ?'
-          inp.focus({ preventScroll: true })
-        }, 380)
+        body = v ? `&body=${encodeURIComponent(v.endsWith('?') ? v : v + ' ?')}` : ''
+      location.href = `mailto:hello@orion-studio.io?subject=${encodeURIComponent('Question depuis la FAQ')}${body}`
     }),
   )
   // thème courant

@@ -1,4 +1,5 @@
 import { clientsBlock, workPanels } from './homeBlocks'
+import { stepWalk } from './studio'
 import { header, megaFor, mobileMenu, burgers, cursor, menuSet } from './chrome'
 import { G, ST, $, $$, esc, resetPageScope, fit, goTo } from './core'
 import { sizeSparks, magnetic } from './effects'
@@ -6,7 +7,6 @@ import { CL_LOGOS, CL_LOGOS_M, logoCycle, footerUI } from './footerUi'
 import { hero } from './hero'
 import { teamPrints, initVideoStories, videoStories } from './localPages'
 import { TITLES, go } from './nav'
-import { initOrio } from './orio'
 import { bindGo, initPage } from './pages'
 import { initProjectModal } from './projectModal'
 import { toast } from './resourcesPage'
@@ -40,7 +40,6 @@ function initSite() {
   mobileMenu()
   cursor()
   initProjectModal()
-  initOrio()
   initLightbox()
   initStories()
   initVideoStories()
@@ -78,7 +77,7 @@ function initSite() {
 
   document.addEventListener('click', (e) => {
     const t = e.target
-    if (t.closest('.pj, .ow, .pj-box, .sv-lb, .sv-phone, .sx')) {
+    if (t.closest('.pj, .pj-box, .sv-lb, .sv-phone, .sx')) {
       return
     }
     const ring = t.closest('.sx-b')
@@ -134,6 +133,7 @@ function initHome(R, mob) {
   logoCycle($$(mob ? '.mo-cl-g > div' : '.clients > div:not(:first-child)', R), mob ? CL_LOGOS_M : CL_LOGOS)
   teamStage(R)
   clientsBlock(R)
+  stepWalk(R)
   workPanels(R, mob)
   teamPrints(R)
   videoStories(R)

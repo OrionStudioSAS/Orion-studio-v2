@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MobileFooter } from '../../components/shared/MobileFooter'
 import { ClientsBlock } from './ClientsBlock'
+import { OrioSteps } from './OrioSteps'
 import { WorkPanels } from './WorkPanels'
 
 function MoNav() {
@@ -681,83 +682,7 @@ function CinqEtapesZeroZone() {
           sa complexité et le rythme des échanges.
         </p>
       </div>
-      <div className="pixbar mo-pbar">
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-on" />
-        <span className="pb-cur" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-        <span className="pb-off" />
-      </div>
-      <div className="mo-steps">
-        <div className="mo-st ">
-          <i />
-          <div>
-            <h3>Cadrer</h3>
-            <p>
-              Atelier, objectifs, arborescence et devis ferme. On sait ce qu’on construit avant de dessiner.
-            </p>
-          </div>
-        </div>
-        <div className="mo-st ">
-          <i />
-          <div>
-            <h3>Designer</h3>
-            <p>Direction artistique, maquettes Figma et prototype cliquable, validés écran par écran.</p>
-          </div>
-        </div>
-        <div className="mo-st cur">
-          <i />
-          <div>
-            <h3>
-              Développer<em>En cours</em>
-            </h3>
-            <p>Intégration, CMS ou Shopify, automatisations. Une préprod ouverte pour tester en continu.</p>
-          </div>
-        </div>
-        <div className="mo-st todo">
-          <i />
-          <div>
-            <h3>Lancer</h3>
-            <p>Mise en ligne, redirections, SEO technique et prise en main par votre équipe.</p>
-          </div>
-        </div>
-        <div className="mo-st todo">
-          <i />
-          <div>
-            <h3>Faire grandir</h3>
-            <p>Mesure, tests et évolutions au fil de l’eau, quand vous en avez besoin.</p>
-          </div>
-        </div>
-      </div>
-      <p className="mo-note">
-        Ici, un projet en cours de développement. <b>Vous suivez chaque étape en direct dans Orion Admin</b>,
-        avec une préprod pour tester avant la mise en ligne.
-      </p>
+      <OrioSteps mobile />
     </section>
   )
 }

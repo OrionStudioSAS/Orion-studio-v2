@@ -302,8 +302,8 @@ function FqBody() {
         </div>
         <div className="q-empty" hidden>
           <b>Pas de réponse à cette question… pour l’instant.</b>
-          <p>Orio, notre assistant, peut vous répondre ou transmettre votre question à Julien et Théo.</p>
-          <a className="btn btn-ink btn-s q-ask">Demander à Orio</a>
+          <p>Écrivez-nous : Julien et Théo vous répondent directement.</p>
+          <a className="btn btn-ink btn-s q-ask">Poser ma question</a>
         </div>
       </div>
     </div>

@@ -77,6 +77,7 @@ function stepWalk(R) {
     })
     const w = bar.offsetWidth - dg.offsetWidth
     dg.style.transform = `translate(${p * w}px, ${-Math.abs(Math.sin(p * Math.PI * 14)) * 18}px)`
+    dg.dataset.f = Math.floor(p * 56) % 2 // Orio : une jambe puis l'autre, au rythme du défilement
   }
   if (!anim) {
     set(1)

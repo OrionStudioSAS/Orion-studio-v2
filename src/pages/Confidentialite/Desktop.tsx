@@ -75,10 +75,6 @@ function LgBody() {
             indicatif, votre message et le créneau choisi.
           </p>
           <p>
-            <b>Orio, l’assistant du site</b> : les messages échangés et, si vous la laissez, votre adresse
-            e-mail.
-          </p>
-          <p>
             <b>E-mails</b> : le contenu des messages que vous nous envoyez.
           </p>
         </section>

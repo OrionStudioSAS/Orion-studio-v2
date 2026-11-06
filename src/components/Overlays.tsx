@@ -924,72 +924,6 @@ export function ProjectModal() {
   )
 }
 
-export function OrioWidget() {
-  return (
-    <div className="ow" id="ow">
-      <div className="ow-teaser" hidden>
-        <button type="button" className="ow-tx" aria-label="Masquer le message">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" strokeWidth="1.5" />
-          </svg>
-        </button>{' '}
-        <b>Bonjour, moi c’est Orio.</b>
-        <span>Une question sur votre site ou sur le studio ? Je vous réponds ici.</span>
-      </div>
-      <section className="ow-panel" id="ow-panel" role="dialog" aria-label="Discuter avec Orio">
-        <header className="ow-h">
-          <span className="ow-av">
-            <img className="pxsvg" src="/px/art-2060558d.svg" alt="" width={43.5} height={42} />
-          </span>
-          <div>
-            <b>Orio</b>
-            <span>
-              <i />
-              Assistant d’Orion Studio
-            </span>
-          </div>
-          <button type="button" className="ow-close" aria-label="Fermer la discussion">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" strokeWidth="1.5" />
-            </svg>
-          </button>
-        </header>
-        <div className="ow-log" aria-live="polite" />
-        <div className="ow-quick" />
-        <form className="ow-form" noValidate>
-          <label className="ow-sr" htmlFor="ow-in">
-            Votre message
-          </label>
-          <input id="ow-in" name="ow-in" autoComplete="off" placeholder="Écrivez à Orio…" />
-          <button type="submit" className="ow-send" aria-label="Envoyer">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 1H9V5H13V9H9V13H5V9H1V5H5V1Z" fill="#0E0E0C" />
-            </svg>
-          </button>
-        </form>
-        <div className="ow-foot">
-          Orio répond avec les infos du studio · Julien ou Théo prennent le relais
-        </div>
-      </section>
-      <button
-        type="button"
-        className="ow-btn"
-        aria-expanded="false"
-        aria-controls="ow-panel"
-        aria-label="Discuter avec Orio"
-      >
-        <span className="ow-face ow-f-open">
-          <img className="pxsvg" src="/px/art-86489042.svg" alt="" width={50.75} height={49} />
-        </span>
-        <span className="ow-face ow-f-blink">
-          <img className="pxsvg" src="/px/art-92c2f53a.svg" alt="" width={50.75} height={49} />
-        </span>
-        <i className="ow-dot" />
-      </button>
-    </div>
-  )
-}
-
 export function CursorDot() {
   return (
     <div className="cur-dot" aria-hidden="true">
@@ -1006,7 +940,7 @@ export function CursorRing() {
   )
 }
 
-/** Calques communs à toutes les pages (menu mobile, pop-up projet, stories, Orio, curseur). */
+/** Calques communs à toutes les pages (menu mobile, pop-up projet, stories, curseur). */
 export function Overlays() {
   return (
     <>
@@ -1015,7 +949,6 @@ export function Overlays() {
       <VideoStoriesViewer />
       <StoriesViewer />
       <ProjectModal />
-      <OrioWidget />
       <CursorDot />
       <CursorRing />
     </>

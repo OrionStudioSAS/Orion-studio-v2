@@ -177,7 +177,7 @@ document.addEventListener(
   'click',
   (e) => {
     const t = e.target
-    if (t.closest('.pj, .ow, .pj-box, .sv-lb, .sx')) return
+    if (t.closest('.pj, .pj-box, .sv-lb, .sx')) return
     const x = t.closest('[data-exp]')
     if (x) {
       e.preventDefault()
@@ -232,7 +232,7 @@ addEventListener(
   'click',
   (e) => {
     const t = e.target
-    if (!t.closest || t.closest('.pj, .ow, .sx')) return
+    if (!t.closest || t.closest('.pj, .sx')) return
     const card = t.closest('.rz-card, .mo-proj, .proj-grid article, .cs-next')
     const p =
       t.closest('[data-proj]:not([data-proj=""])') ||

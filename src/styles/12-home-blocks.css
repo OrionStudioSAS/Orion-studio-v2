@@ -316,3 +316,52 @@
     transition: none;
   }
 }
+
+/* ---------- Cinq étapes : Orio avance sur la barre ---------- */
+.s2-orio {
+  padding-bottom: 96px;
+}
+.s2-orio .s2-dog {
+  height: 134px;
+}
+.s2-orio .dg {
+  display: block;
+  cursor: default;
+  width: 126px;
+  height: 129px;
+}
+.s2-orio .dg-f {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 126px;
+  height: 129px;
+  image-rendering: pixelated;
+}
+.s2-orio .o-b,
+.s2-orio .dg[data-f='1'] .o-a {
+  visibility: hidden;
+}
+.s2-orio .dg[data-f='1'] .o-b {
+  visibility: visible;
+}
+.s2-note {
+  margin-top: 40px;
+  font: 400 14px/1.5 'Geist';
+  color: var(--muted);
+}
+.s2-note b {
+  color: var(--ink);
+  font-weight: 500;
+}
+.s2-m.s2-orio {
+  padding-bottom: 0;
+}
+.s2-m.s2-orio .s2-dog {
+  height: 90px;
+}
+.s2-m.s2-orio .dg,
+.s2-m.s2-orio .dg-f {
+  width: 84px;
+  height: 86px;
+}

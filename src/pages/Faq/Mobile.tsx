@@ -622,8 +622,8 @@ function MqBody() {
       </div>
       <div className="q-empty mq-empty" hidden>
         <b>Pas de réponse à cette question… pour l’instant.</b>
-        <p>Orio, notre assistant, peut vous répondre ou transmettre votre question à Julien et Théo.</p>
-        <a className="btn btn-ink btn-s q-ask">Demander à Orio</a>
+        <p>Écrivez-nous : Julien et Théo vous répondent directement.</p>
+        <a className="btn btn-ink btn-s q-ask">Poser ma question</a>
       </div>
     </div>
   )
@@ -633,7 +633,7 @@ function MrNl() {
   return (
     <div className="mr-nl mq-help">
       <b className="q-total">25 réponses, et la vôtre ?</b>
-      <p>Si votre question n’est pas là, Orio vous répond, ou la transmet à Julien et Théo.</p>
+      <p>Si votre question n’est pas là, on vous répond directement.</p>
       <a className="btn btn-ink mo-btn q-ask">Poser ma question</a>
     </div>
   )
