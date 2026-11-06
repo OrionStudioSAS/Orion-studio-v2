@@ -170,6 +170,7 @@ function E4() {
       <div className="e4-links">
         <span>Ou filez vers</span>
         <Link to="/realisations">Réalisations</Link>
+        <Link to="/orion-admin">Orion Admin</Link>
         <Link to="/le-studio">Le studio</Link>
         <Link to="/ressources">Ressources</Link>
         <Link to="/faq">Questions fréquentes</Link>

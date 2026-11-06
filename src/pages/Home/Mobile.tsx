@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 import { MobileFooter } from '../../components/shared/MobileFooter'
 import { ClientsBlock } from './ClientsBlock'
-import { OrioSteps } from './OrioSteps'
-import { WorkPanels } from './WorkPanels'
+import { AdminBlock } from '../../components/shared/AdminBlock'
+import { OrioSteps } from '../../components/shared/OrioSteps'
+import { ReviewsBlock } from '../../components/shared/ReviewsBlock'
+import { WorkTrack } from '../../components/shared/WorkTrack'
 
 function MoNav() {
   return (
@@ -12,9 +14,6 @@ function MoNav() {
         <img className="pxsvg logo-w" src="/px/logo-w-ad3e722d.svg" alt="" width={151} height={21} />
       </Link>
       <div className="mo-nav-r">
-        <span className="lang">
-          <b>FR</b> / EN
-        </span>{' '}
         <button
           className="mo-burger"
           type="button"
@@ -324,28 +323,6 @@ function OrionStudioCEst() {
           Voir nos réalisations
         </Link>
       </div>
-    </section>
-  )
-}
-
-function RealisationsRecentes() {
-  return (
-    <section className="mo-sec" id="m-work">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Réalisations<span className="serif">récentes.</span>
-        </h2>
-        <p className="mo-lead">
-          Sites sur-mesure, boutiques et outils métiers, conçus et développés de bout en bout par le studio.
-        </p>
-      </div>
-      <WorkPanels mobile />
-      <div className="mo-ixf">
-        <span className="mono">11 projets</span>
-      </div>
-      <Link to="/realisations" className="btn btn-ink mo-btn mo-btn-full">
-        Toutes les réalisations
-      </Link>
     </section>
   )
 }
@@ -687,324 +664,6 @@ function CinqEtapesZeroZone() {
   )
 }
 
-function MoAv() {
-  return (
-    <section className="mo-sec mo-av">
-      <div className="mo-avc">
-        <img className="mo-av-bg" src="/images/729bb5e7cb4d36.png" alt="" />
-        <div className="mo-av-veil" />
-        <div className="mo-av-in">
-          <div className="av-k mo-av-k">
-            <span>Avis clients</span>
-            <span>Ils en parlent mieux que nous</span>
-          </div>
-          <img className="pxsvg av-q" src="/px/av-q-4a640bcb.svg" alt="" width={44} height={32} />
-          <p className="mo-av-txt">
-            Leur expertise sur le développement sur-mesure est impressionnante. Une équipe à l’écoute,
-            professionnelle, et qui livre dans les temps.
-          </p>
-          <div className="mo-av-by">
-            <span className="av-logo mo-av-logo">
-              <img src="/images/4261b99ecbbc3b.png" alt="Association des Entrepreneurs du Vexin" />
-            </span>
-            <div>
-              <b>Thierry Cordier</b>
-              <span>Association des Entrepreneurs du Vexin · Site vitrine</span>
-            </div>
-          </div>
-          <div className="mo-av-r">
-            <div>
-              <div className="av-rk">Note Google</div>
-              <div className="av-score mo-score">
-                <b>5,0</b>
-                <span>/ 5</span>
-              </div>
-            </div>
-            <div className="mo-av-stars">
-              <svg
-                className="pxstar"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-                shapeRendering="crispEdges"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="8" y="0" width="2" height="2" fill="#FF4D1A" />
-                <rect x="6" y="2" width="6" height="2" fill="#FF4D1A" />
-                <rect x="6" y="4" width="6" height="2" fill="#FF4D1A" />
-                <rect x="0" y="6" width="18" height="2" fill="#FF4D1A" />
-                <rect x="2" y="8" width="14" height="2" fill="#FF4D1A" />
-                <rect x="4" y="10" width="10" height="2" fill="#FF4D1A" />
-                <rect x="2" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="10" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="2" y="14" width="4" height="2" fill="#FF4D1A" />
-                <rect x="12" y="14" width="4" height="2" fill="#FF4D1A" />
-              </svg>
-              <svg
-                className="pxstar"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-                shapeRendering="crispEdges"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="8" y="0" width="2" height="2" fill="#FF4D1A" />
-                <rect x="6" y="2" width="6" height="2" fill="#FF4D1A" />
-                <rect x="6" y="4" width="6" height="2" fill="#FF4D1A" />
-                <rect x="0" y="6" width="18" height="2" fill="#FF4D1A" />
-                <rect x="2" y="8" width="14" height="2" fill="#FF4D1A" />
-                <rect x="4" y="10" width="10" height="2" fill="#FF4D1A" />
-                <rect x="2" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="10" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="2" y="14" width="4" height="2" fill="#FF4D1A" />
-                <rect x="12" y="14" width="4" height="2" fill="#FF4D1A" />
-              </svg>
-              <svg
-                className="pxstar"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-                shapeRendering="crispEdges"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="8" y="0" width="2" height="2" fill="#FF4D1A" />
-                <rect x="6" y="2" width="6" height="2" fill="#FF4D1A" />
-                <rect x="6" y="4" width="6" height="2" fill="#FF4D1A" />
-                <rect x="0" y="6" width="18" height="2" fill="#FF4D1A" />
-                <rect x="2" y="8" width="14" height="2" fill="#FF4D1A" />
-                <rect x="4" y="10" width="10" height="2" fill="#FF4D1A" />
-                <rect x="2" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="10" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="2" y="14" width="4" height="2" fill="#FF4D1A" />
-                <rect x="12" y="14" width="4" height="2" fill="#FF4D1A" />
-              </svg>
-              <svg
-                className="pxstar"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-                shapeRendering="crispEdges"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="8" y="0" width="2" height="2" fill="#FF4D1A" />
-                <rect x="6" y="2" width="6" height="2" fill="#FF4D1A" />
-                <rect x="6" y="4" width="6" height="2" fill="#FF4D1A" />
-                <rect x="0" y="6" width="18" height="2" fill="#FF4D1A" />
-                <rect x="2" y="8" width="14" height="2" fill="#FF4D1A" />
-                <rect x="4" y="10" width="10" height="2" fill="#FF4D1A" />
-                <rect x="2" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="10" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="2" y="14" width="4" height="2" fill="#FF4D1A" />
-                <rect x="12" y="14" width="4" height="2" fill="#FF4D1A" />
-              </svg>
-              <svg
-                className="pxstar"
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-                shapeRendering="crispEdges"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="8" y="0" width="2" height="2" fill="#FF4D1A" />
-                <rect x="6" y="2" width="6" height="2" fill="#FF4D1A" />
-                <rect x="6" y="4" width="6" height="2" fill="#FF4D1A" />
-                <rect x="0" y="6" width="18" height="2" fill="#FF4D1A" />
-                <rect x="2" y="8" width="14" height="2" fill="#FF4D1A" />
-                <rect x="4" y="10" width="10" height="2" fill="#FF4D1A" />
-                <rect x="2" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="10" y="12" width="6" height="2" fill="#FF4D1A" />
-                <rect x="2" y="14" width="4" height="2" fill="#FF4D1A" />
-                <rect x="12" y="14" width="4" height="2" fill="#FF4D1A" />
-              </svg>
-            </div>
-          </div>
-          <p className="mo-av-p">
-            Les avis laissés par nos clients sur notre fiche Google, après la mise en ligne de leur projet.
-          </p>
-          <a className="btn av-btn mo-btn">Lire les avis Google</a>{' '}
-          <a className="av-lnk mo-av-lnk">Voir le projet AEV</a>
-        </div>
-      </div>
-      <div className="avs avs-mo">
-        <div className="avs-h">
-          <div>
-            <span className="avs-k">En vidéo</span>
-            <h3 className="avs-t">
-              Nos clients racontent leur projet,<span className="serif">en story.</span>
-            </h3>
-          </div>
-          <p className="avs-p">
-            Des témoignages filmés, au format vertical : touchez une story pour la lancer, passez à la
-            suivante comme sur Instagram.
-          </p>
-        </div>
-        <div className="avs-row">
-          <button
-            type="button"
-            className="avs-c"
-            data-src=""
-            data-name="Stand-ING"
-            data-logo="/images/f929bc41088d4e.png"
-            aria-label="Témoignage vidéo de Stand-ING"
-          >
-            <img className="avs-poster" src="/images/2c63fe08cd774a.png" alt="" />
-            <span className="avs-veil" />
-            <span className="avs-bars">
-              <i />
-            </span>
-            <span className="avs-top">
-              <span className="avs-av">
-                <img src="/images/f929bc41088d4e.png" alt="" />
-              </span>
-              <span className="avs-who">
-                <b>Stand-ING</b>
-                <em>Configurateur 3D</em>
-              </span>
-            </span>
-            <span className="avs-play">
-              <svg viewBox="0 0 7 8" width="14" height="16" shapeRendering="crispEdges" aria-hidden="true">
-                <path d="M0 0h2v1h2v1h2v1h1v2H6v1H4v1H2v1H0z" fill="currentColor" />
-              </svg>
-            </span>
-            <span className="avs-bot">
-              <span className="avs-soon">Vidéo à venir</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            className="avs-c"
-            data-src=""
-            data-name="Château l’Arc Golf Club"
-            data-logo="/images/a58f0039fd543e.png"
-            aria-label="Témoignage vidéo de Château l’Arc Golf Club"
-          >
-            <img className="avs-poster" src="/images/55a80d70f3d20a.png" alt="" />
-            <span className="avs-veil" />
-            <span className="avs-bars">
-              <i />
-            </span>
-            <span className="avs-top">
-              <span className="avs-av">
-                <img src="/images/a58f0039fd543e.png" alt="" />
-              </span>
-              <span className="avs-who">
-                <b>Château l’Arc Golf Club</b>
-                <em>Site + back-office</em>
-              </span>
-            </span>
-            <span className="avs-play">
-              <svg viewBox="0 0 7 8" width="14" height="16" shapeRendering="crispEdges" aria-hidden="true">
-                <path d="M0 0h2v1h2v1h2v1h1v2H6v1H4v1H2v1H0z" fill="currentColor" />
-              </svg>
-            </span>
-            <span className="avs-bot">
-              <span className="avs-soon">Vidéo à venir</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            className="avs-c"
-            data-src=""
-            data-name="Le Moulin de Balme"
-            data-logo="/images/407078ca1be0b8.png"
-            aria-label="Témoignage vidéo de Le Moulin de Balme"
-          >
-            <img className="avs-poster" src="/images/4a723a9387332c.png" alt="" />
-            <span className="avs-veil" />
-            <span className="avs-bars">
-              <i />
-            </span>
-            <span className="avs-top">
-              <span className="avs-av">
-                <img src="/images/407078ca1be0b8.png" alt="" />
-              </span>
-              <span className="avs-who">
-                <b>Le Moulin de Balme</b>
-                <em>Site + click & collect</em>
-              </span>
-            </span>
-            <span className="avs-play">
-              <svg viewBox="0 0 7 8" width="14" height="16" shapeRendering="crispEdges" aria-hidden="true">
-                <path d="M0 0h2v1h2v1h2v1h1v2H6v1H4v1H2v1H0z" fill="currentColor" />
-              </svg>
-            </span>
-            <span className="avs-bot">
-              <span className="avs-soon">Vidéo à venir</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            className="avs-c"
-            data-src=""
-            data-name="Swing Call"
-            data-logo="/images/c89d8692d26a0a.png"
-            aria-label="Témoignage vidéo de Swing Call"
-          >
-            <img className="avs-poster" src="/images/6cb0d8d4f25c2a.png" alt="" />
-            <span className="avs-veil" />
-            <span className="avs-bars">
-              <i />
-            </span>
-            <span className="avs-top">
-              <span className="avs-av">
-                <img src="/images/c89d8692d26a0a.png" alt="" />
-              </span>
-              <span className="avs-who">
-                <b>Swing Call</b>
-                <em>Site produit</em>
-              </span>
-            </span>
-            <span className="avs-play">
-              <svg viewBox="0 0 7 8" width="14" height="16" shapeRendering="crispEdges" aria-hidden="true">
-                <path d="M0 0h2v1h2v1h2v1h1v2H6v1H4v1H2v1H0z" fill="currentColor" />
-              </svg>
-            </span>
-            <span className="avs-bot">
-              <span className="avs-soon">Vidéo à venir</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            className="avs-c"
-            data-src=""
-            data-name="Association des Entrepreneurs du Vexin"
-            data-logo="/images/4261b99ecbbc3b.png"
-            aria-label="Témoignage vidéo de Association des Entrepreneurs du Vexin"
-          >
-            <img className="avs-poster" src="/images/17682ce2f50cef.png" alt="" />
-            <span className="avs-veil" />
-            <span className="avs-bars">
-              <i />
-            </span>
-            <span className="avs-top">
-              <span className="avs-av">
-                <img src="/images/4261b99ecbbc3b.png" alt="" />
-              </span>
-              <span className="avs-who">
-                <b>AEV</b>
-                <em>Site + espace membres</em>
-              </span>
-            </span>
-            <span className="avs-play">
-              <svg viewBox="0 0 7 8" width="14" height="16" shapeRendering="crispEdges" aria-hidden="true">
-                <path d="M0 0h2v1h2v1h2v1h1v2H6v1H4v1H2v1H0z" fill="currentColor" />
-              </svg>
-            </span>
-            <span className="avs-bot">
-              <span className="avs-soon">Vidéo à venir</span>
-            </span>
-          </button>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function LesQuestionsQuOn() {
   return (
     <section className="mo-sec">
@@ -1171,11 +830,12 @@ export function Mobile() {
       <MoMedia />
       <ClientsBlock mobile />
       <OrionStudioCEst />
-      <RealisationsRecentes />
+      <WorkTrack mobile />
       <DuCroquisAuCode />
       <PourQui />
       <CinqEtapesZeroZone />
-      <MoAv />
+      <AdminBlock mobile />
+      <ReviewsBlock mobile />
       <LesQuestionsQuOn />
       <Ressources />
       <MobileFooter />

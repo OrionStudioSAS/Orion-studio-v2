@@ -1,4 +1,4 @@
-import { RM, G, ST, anim, $, $$, onView } from './core'
+import { RM, G, ST, anim, $, $$, onView, smoothTo } from './core'
 import { PJ } from './projectModal'
 
 /* ---------- Automatisations : notes de visite, heures gagnées, liste pour l'audit ---------- */
@@ -87,7 +87,7 @@ function auPage(R, mob) {
       const k = a.dataset.au
       if (k === 'pay') {
         const el = $(mob ? '#ax-mpay' : '#ax-pay', R)
-        scrollTo({ top: el.getBoundingClientRect().top + scrollY - 60, behavior: RM ? 'auto' : 'smooth' })
+        smoothTo(el.getBoundingClientRect().top + scrollY - 60)
         return
       }
       audit(k === 'list')

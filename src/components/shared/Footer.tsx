@@ -37,6 +37,7 @@ export function Footer({ children }: { children: ReactNode }) {
           <div className="fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -93,10 +94,6 @@ export function Footer({ children }: { children: ReactNode }) {
           <div>
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>
-          </div>
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
           </div>
         </div>
       </div>

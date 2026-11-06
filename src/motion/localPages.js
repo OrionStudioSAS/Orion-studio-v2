@@ -1,4 +1,4 @@
-import { RM, G, $, onWin, pageEvery, pageAfter, pageClear } from './core'
+import { RM, G, $, onWin, pageEvery, pageAfter, pageClear, smoothTo } from './core'
 import { toast } from './resourcesPage'
 
 /* Pages locales, tirages de l'équipe et témoignages vidéo. L'export lançait ces scripts une fois
@@ -83,7 +83,7 @@ function localHero(R) {
       e.preventDefault()
       var v = a.closest('.site-d, .site-m'),
         c = v && v.querySelector('.hero-media, .mo-media')
-      if (c) scrollTo({ top: c.getBoundingClientRect().top + scrollY - 40, behavior: 'smooth' })
+      if (c) smoothTo(c.getBoundingClientRect().top + scrollY - 40)
     })
   })
 }

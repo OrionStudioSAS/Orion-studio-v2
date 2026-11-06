@@ -1,7 +1,8 @@
-import { clientsBlock, workPanels } from './homeBlocks'
+import { adminBlock } from './adminPage'
+import { clientsBlock, workTrack, reviewsBlock } from './homeBlocks'
 import { stepWalk } from './studio'
 import { header, megaFor, mobileMenu, burgers, cursor, menuSet } from './chrome'
-import { G, ST, $, $$, esc, resetPageScope, fit, goTo } from './core'
+import { G, ST, $, $$, esc, resetPageScope, fit, goTo, initSmooth } from './core'
 import { sizeSparks, magnetic } from './effects'
 import { CL_LOGOS, CL_LOGOS_M, logoCycle, footerUI } from './footerUi'
 import { hero } from './hero'
@@ -19,7 +20,6 @@ import {
   whoDesk,
   whoMob,
   steps,
-  reviews,
   faq,
   resources,
   footer,
@@ -37,6 +37,7 @@ let firstLoad = true
 function initSite() {
   if (booted) return
   booted = true
+  initSmooth()
   mobileMenu()
   cursor()
   initProjectModal()
@@ -124,7 +125,8 @@ function initHome(R, mob) {
   projects(R, mob)
   expertises(R, mob)
   steps(R, mob)
-  reviews(R, mob)
+  reviewsBlock(R, mob)
+  adminBlock(R)
   faq(R, mob)
   resources(R, mob)
   footer(R, mob)
@@ -134,7 +136,7 @@ function initHome(R, mob) {
   teamStage(R)
   clientsBlock(R)
   stepWalk(R)
-  workPanels(R, mob)
+  workTrack(R, mob)
   teamPrints(R)
   videoStories(R)
 }

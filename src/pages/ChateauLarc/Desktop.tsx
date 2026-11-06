@@ -276,10 +276,9 @@ function LeBackOfficeDans() {
         <div className="cs-bo-r">
           <h3>Le tableau de bord du club</h3>
           <p>
-            Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit. Pour le
-            Château l’Arc, il sert aussi de back-office au quotidien.
+            Pour le Château l’Arc, Orion Admin est le back-office du quotidien : chiffres du site, installations, tarifs, pop-up et compétitions.
           </p>
-          <Link to="/realisations/orion-admin" className="btn btn-acc">
+          <Link to="/orion-admin" className="btn btn-acc">
             Découvrir Orion Admin
           </Link>
         </div>

@@ -77,7 +77,7 @@ function logoCycle(cells, extra = CL_LOGOS) {
   })
 }
 
-/* ---------- footer : lettre d'Orion et langue ---------- */
+/* ---------- footer : lettre d'Orion ---------- */
 function footerUI(R) {
   $$('.nl-f', R).forEach((f, i) => {
     if (f.dataset.ok) return
@@ -110,13 +110,6 @@ function footerUI(R) {
       if (anim) G.from(msg, { y: 8, opacity: 0, duration: 0.45, ease: 'power3.out' })
     })
   })
-  $$('.ft-lang', R).forEach((l) =>
-    $$('span', l).forEach((sp) => {
-      sp.setAttribute('role', 'button')
-      sp.tabIndex = 0
-      sp.addEventListener('click', () => $$('span', l).forEach((x) => x.classList.toggle('on', x === sp)))
-    }),
-  )
 }
 
 export { CL_LOGOS, CL_LOGOS_M, logoCycle, footerUI }

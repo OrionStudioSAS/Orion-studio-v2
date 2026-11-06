@@ -211,8 +211,7 @@ function FqBody() {
           <div className="fq-q">
             <h3>Le SEO est-il inclus dans la création de site ?</h3>
             <p>
-              Les bases, oui : structure, balises, redirections, données structurées et vitesse. Un
-              accompagnement SEO dans la durée (contenus, suivi des positions) se fait à part.
+              Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.
             </p>
           </div>
           <div className="fq-q">

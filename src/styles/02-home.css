@@ -34,15 +34,6 @@
   align-items: center;
   gap: 20px;
 }
-.lang {
-  font: 500 12px/1 'Geist Mono';
-  color: var(--muted);
-  letter-spacing: 0.02em;
-}
-.lang b {
-  color: var(--ink);
-  font-weight: 500;
-}
 
 /* hero */
 .hero {
@@ -1465,9 +1456,6 @@
 .nav-r {
   gap: 10px;
 }
-.lang {
-  margin-right: 10px;
-}
 .nav-links a.on {
   color: var(--ink);
 }
@@ -1977,20 +1965,6 @@
 .ft-legal div {
   display: flex;
   gap: 24px;
-}
-.ft-lang {
-  background: #0e0e0c;
-  border-radius: 6px;
-  padding: 3px;
-  gap: 0 !important;
-}
-.ft-lang span {
-  padding: 7px 10px;
-  border-radius: 4px;
-}
-.ft-lang .on {
-  background: #f4f4f1;
-  color: var(--ink);
 }
 
 /* méga-menus */

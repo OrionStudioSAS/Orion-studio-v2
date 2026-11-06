@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MobileNav } from '../../components/shared/MobileNav'
+import { ServiceSections } from '../../components/services/ServiceSections'
 
 function MoHero() {
   return (
@@ -13,7 +14,8 @@ function MoHero() {
         / <b>Site dynamique</b>
       </div>
       <h1 className="mo-h1">
-        Site dynamique<span className="serif">que votre équipe fait vivre chaque jour.</span>
+        Site dynamique
+        <span className="serif">que votre équipe fait vivre chaque jour.</span>
       </h1>
       <p className="mo-lead">
         Boutique en ligne, click & collect, réservation, espace client ou espace membres : un site relié à un
@@ -150,386 +152,13 @@ function MoMedia() {
   )
 }
 
-function CeQuUnSite() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’un site dynamique<span className="serif">change au quotidien.</span>
-        </h2>
-      </div>
-      <div className="sxm-ocs">
-        <div className="sxm-oc">
-          <h3>Vendre et réserver en ligne</h3>
-          <p>
-            Commandes, réservations et rendez-vous pris sur le site à toute heure, avec la confirmation
-            envoyée au client.
-          </p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Un back-office à votre main</h3>
-          <p>
-            Produits, horaires, offres, actualités : votre équipe met à jour ce qui change, depuis un
-            ordinateur ou un téléphone.
-          </p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Des outils qui se parlent</h3>
-          <p>Paiement, e-mails, agenda ou logiciel métier reliés au site, pour ne rien ressaisir.</p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function CeQuOnLivre() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’on livre<span className="serif">concrètement.</span>
-        </h2>
-        <p className="mo-lead">
-          Chaque projet assemble les briques dont vous avez besoin, pas une de plus. Les écrans ci-dessous
-          sont des exemples.
-        </p>
-      </div>
-      <div className="sxm-cards">
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="win win-shot sx-real">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">moulin-de-balme.fr</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img
-                  className="shot"
-                  src="/images/87791a3fdc31ca.jpg"
-                  alt="Capture du site du Moulin de Balme"
-                />
-              </div>
-            </div>
-          </div>
-          <h3>Boutique & click & collect</h3>
-          <p>Panier, paiement et retrait en boutique. Ici, le site du Moulin de Balme.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ui-sl">
-              <div className="ul-h">Réservation · samedi</div>
-              <div className="rs-s sl-g">
-                <span className="off">9:00</span>
-                <span className="">9:30</span>
-                <span className="on">10:00</span>
-                <span className="off">10:30</span>
-                <span className="">11:00</span>
-                <span className="">11:30</span>
-              </div>
-              <div className="shop-cta">Réserver ce créneau</div>
-            </div>
-          </div>
-          <h3>Réservation en ligne</h3>
-          <p>Un créneau choisi en quelques touches, confirmé par e-mail.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="win win-shot sx-real">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">Le Moulin de Balme — Administration</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img
-                  className="shot"
-                  src="/images/d89e25eb5f99ba.jpg"
-                  alt="Écran du back-office du Moulin de Balme"
-                />
-              </div>
-            </div>
-          </div>
-          <h3>Back-office</h3>
-          <p>Les écrans de votre équipe : produits, commandes, contenus. Ici, celui du Moulin de Balme.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Espace membres</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Mes réservations</span>
-                <b>2 à venir</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Mes factures</span>
-                <b>PDF</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Mon abonnement</span>
-                <b>Actif</b>
-              </div>
-            </div>
-          </div>
-          <h3>Espace client ou membres</h3>
-          <p>Documents, commandes et informations réservés à ceux qui se connectent.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Contenus du site</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Pages</span>
-                <b>12</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Actualités</span>
-                <b>24</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Événements</span>
-                <b>6</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Offre du mois</span>
-                <b>Brouillon</b>
-              </div>
-              <div className="shop-cta ul-btn">Modifier une page</div>
-            </div>
-          </div>
-          <h3>Actualités & contenus</h3>
-          <p>Pages, actualités et événements publiés par votre équipe.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="auto u-bare">
-              <div className="au-n">
-                <b>Commande en ligne</b>
-                <span>Payée</span>
-              </div>
-              <span className="au-l" />
-              <div className="au-n">
-                <b>Back-office</b>
-                <span>En préparation</span>
-              </div>
-              <span className="au-l" />
-              <div className="au-n au-on">
-                <b>E-mail client</b>
-                <span>Envoyé</span>
-              </div>
-            </div>
-          </div>
-          <h3>Connexion à vos outils</h3>
-          <p>
-            Paiement, e-mails ou logiciel métier reliés au site. La connexion est vérifiée au cadrage, avant
-            le devis.
-          </p>
-        </article>
-      </div>
-    </section>
-  )
-}
-
-function CommentOnTravaille() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Comment<span className="serif">on travaille.</span>
-        </h2>
-        <p className="mo-lead">Une seule équipe du premier échange à la mise en ligne.</p>
-      </div>
-      <ol className="sxm-steps">
-        <li>
-          <b>Cadrer</b>
-          <span>Fonctionnalités, contenus, outils à connecter et devis ferme.</span>
-        </li>
-        <li>
-          <b>Designer</b>
-          <span>Maquettes du site et des écrans du back-office.</span>
-        </li>
-        <li>
-          <b>Développer</b>
-          <span>Intégration, back-office et préprod ouverte pour tester.</span>
-        </li>
-        <li>
-          <b>Lancer</b>
-          <span>Mise en ligne, formation de votre équipe.</span>
-        </li>
-      </ol>
-    </section>
-  )
-}
-
-function ExpertisesAssociees() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Expertises<span className="serif">associées.</span>
-        </h2>
-      </div>
-      <div className="xpm-rel">
-        <Link to="/expertises/site-vitrine" className="rl xpm-rl" data-exp="site-vitrine">
-          <img className="pxsvg picon" src="/px/picon-5d9e4e01.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Site vitrine</b>
-            <span>Présenter votre activité et être contacté.</span>
-          </div>
-        </Link>
-        <Link
-          to="/expertises/developpement-applications"
-          className="rl xpm-rl"
-          data-exp="developpement-applications"
-        >
-          <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Développement d’applications</b>
-            <span>Applications web, espaces clients, SaaS.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/automatisations" className="rl xpm-rl" data-exp="automatisations">
-          <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Automatisations</b>
-            <span>Vos tâches répétitives, automatisées.</span>
-          </div>
-        </Link>
-      </div>
-    </section>
-  )
-}
-
-function VosQuestionsNosReponses() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Vos questions,<span className="serif">nos réponses.</span>
-        </h2>
-      </div>
-      <div className="mo-faq">
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Combien coûte un site dynamique ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Chaque projet est chiffré sur devis après un premier échange, gratuit et sans engagement. Le prix
-            dépend des fonctionnalités (boutique, réservation, espace client) et des outils à connecter.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Combien de temps pour être en ligne ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Un site avec boutique, réservation ou espace client demande davantage qu’un site vitrine (4 à 8
-            semaines en moyenne) : le planning est fixé dans le devis.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Pourrai-je modifier mon site seul ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Oui. On vous livre un back-office adapté et on vous forme à son utilisation. Textes, images, pages
-            et actualités se modifient sans connaissances techniques.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Pouvez-vous connecter nos outils ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Oui, si l’outil le permet : la connexion (API, widget ou export) est vérifiée au cadrage, avant le
-            devis.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Où mon site est-il hébergé ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Selon la technologie : chez Webflow ou Shopify, ou sur un hébergeur adapté pour le code sur
-            mesure. On vous recommande la solution la plus simple et la plus fiable pour votre cas.
-          </p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function MoFt() {
   return (
     <footer className="mo-ft">
       <div className="mo-cta">
         <h2>
-          Et si votre site<span className="serif">prenait les commandes à votre place ?</span>
+          Et si votre site
+          <span className="serif">prenait les commandes à votre place ?</span>
         </h2>
         <a className="btn btn-acc mo-btn">Analyser mon site</a>{' '}
         <Link to="/realisations" className="btn btn-line mo-btn">
@@ -569,6 +198,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -629,10 +259,6 @@ function MoFt() {
           </span>
         </div>
         <div className="mo-legal">
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
-          </div>
           <div className="mo-legal-l">
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>
@@ -650,11 +276,7 @@ export function Mobile() {
       <MobileNav />
       <MoHero />
       <MoMedia />
-      <CeQuUnSite />
-      <CeQuOnLivre />
-      <CommentOnTravaille />
-      <ExpertisesAssociees />
-      <VosQuestionsNosReponses />
+      <ServiceSections id="site-dynamique" mobile />
       <MoFt />
     </section>
   )

@@ -200,10 +200,10 @@ function OrionAdmin() {
           <span className="p-tag">Projet suivant</span>
           <h2 className="h2">Orion Admin</h2>
           <p className="lead">
-            Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit.
+            L’interface faite sur mesure pour piloter son site : chiffres, contenus, langues et tout ce que l’activité demande.
           </p>
           <div className="cs-nx-b">
-            <Link to="/realisations/orion-admin" className="btn btn-ink" data-proj="orion-admin">
+            <Link to="/orion-admin" className="btn btn-ink" data-proj="orion-admin">
               Voir le projet
             </Link>
             <Link to="/realisations" className="lnk" data-pv="realisations">

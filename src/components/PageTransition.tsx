@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { flushSync } from 'react-dom'
 import { useLocation, useNavigationType, type Location } from 'react-router-dom'
+import { jumpTo, smoothTo } from '../motion/core'
 import { runPendingAfter } from '../motion/nav'
 import { findRoute, isMobileViewport, loadPage, pageId } from '../pageLoader'
 
@@ -90,7 +91,7 @@ export function PageTransition({ children }: { children: (location: Location) =>
       flushSync(() => setShown(next))
       // Retour / avance du navigateur : on retrouve l'endroit où l'on était
       const top = typeRef.current === 'POP' ? scrollByKey.current.get(next.key) ?? 0 : 0
-      scrollTo({ top, behavior: 'instant' })
+      jumpTo(top)
       setTimeout(runPendingAfter, 80)
     }
     const run = () => {
@@ -112,7 +113,7 @@ export function PageTransition({ children }: { children: (location: Location) =>
       // Lien vers la page déjà affichée : retour en haut
       if (location.key !== shownRef.current.key && !busyRef.current) {
         shownRef.current = location
-        scrollTo({ top: 0, behavior: reducedMotion() ? 'auto' : 'smooth' })
+        smoothTo(0)
         runPendingAfter()
       }
       return

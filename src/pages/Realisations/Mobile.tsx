@@ -372,10 +372,10 @@ function MoRzs() {
           </div>
           <div className="mo-pmeta">
             <h3>Orion Admin</h3>
-            <span>Espace client · inclus dans chaque projet</span>
+            <span>Interface d’administration · sur mesure</span>
           </div>
-          <p>Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit.</p>
-          <Link to="/realisations/orion-admin" className="lnk mo-more" data-proj="orion-admin">
+          <p>L’interface faite sur mesure pour piloter son site : chiffres, contenus, langues et tout ce que l’activité demande.</p>
+          <Link to="/orion-admin" className="lnk mo-more" data-proj="orion-admin">
             Voir le projet
           </Link>
         </article>

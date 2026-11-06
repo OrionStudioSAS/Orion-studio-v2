@@ -1,4 +1,6 @@
 import { auPage } from './automationsPage'
+import { adminBlock, adminPage } from './adminPage'
+import { servicePage } from './servicePage'
 import { RM, G, ST, anim, $, $$, split, onView, up, pixelate, goTo } from './core'
 import { sparkle, magnetic } from './effects'
 import { faqPage } from './faqPage'
@@ -280,6 +282,9 @@ function initPage(R, mob) {
   legalPage(R)
   e4Page(R)
   auPage(R, mob)
+  servicePage(R, mob)
+  adminBlock(R)
+  adminPage(R)
   studioPrints(R)
   localHero(R)
   localVisuals(R)

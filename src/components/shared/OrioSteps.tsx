@@ -1,4 +1,6 @@
-const STEPS = [
+import type { ReactNode } from 'react'
+
+const STEPS: readonly (readonly [string, string])[] = [
   [
     'Cadrer',
     'Atelier, objectifs, arborescence et devis ferme. On sait ce qu’on construit avant de dessiner.',
@@ -10,7 +12,15 @@ const STEPS = [
 ]
 
 /** Même fonctionnement que la page Le studio : la barre suit le défilement, Orio avance dessus. */
-export function OrioSteps({ mobile = false }: { mobile?: boolean }) {
+export function OrioSteps({
+  mobile = false,
+  steps = STEPS,
+  note,
+}: {
+  mobile?: boolean
+  steps?: readonly (readonly [string, string])[]
+  note?: ReactNode
+}) {
   const cells = Array.from({ length: mobile ? 40 : 64 })
   return (
     <div className={mobile ? 's2-track s2-m s2-orio' : 's2-track s2-orio'}>
@@ -25,8 +35,8 @@ export function OrioSteps({ mobile = false }: { mobile?: boolean }) {
           <span key={i} />
         ))}
       </div>
-      <div className="s2-row">
-        {STEPS.map(([title, text], i) => (
+      <div className={steps.length === 4 && !mobile ? 's2-row s2-row4' : 's2-row'}>
+        {steps.map(([title, text], i) => (
           <div className="s2-st" data-i={i} key={title}>
             <b>
               <i />
@@ -37,8 +47,12 @@ export function OrioSteps({ mobile = false }: { mobile?: boolean }) {
         ))}
       </div>
       <p className="s2-note">
-        <b>Vous suivez chaque étape en direct dans Orion Admin</b>, avec une préprod pour tester avant la mise
-        en ligne.
+        {note ?? (
+          <>
+            <b>Vous suivez chaque étape en direct dans Orion Admin</b>, avec une préprod pour tester avant la
+            mise en ligne.
+          </>
+        )}
       </p>
     </div>
   )

@@ -43,6 +43,7 @@ export function MoFt3() {
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -103,10 +104,6 @@ export function MoFt3() {
           </span>
         </div>
         <div className="mo-legal">
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
-          </div>
           <div className="mo-legal-l">
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>

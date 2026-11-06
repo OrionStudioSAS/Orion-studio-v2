@@ -383,14 +383,14 @@ function RzGrid() {
         </div>
         <div className="p-meta">
           <h3 className="p-name">
-            <Link to="/realisations/chateau-larc">Orion Admin</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
           </h3>
-          <span className="p-tag">Espace client · inclus dans chaque projet</span>
+          <span className="p-tag">Interface d’administration · sur mesure</span>
         </div>
         <p className="p-desc">
-          Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit.
+          L’interface faite sur mesure pour piloter son site : chiffres, contenus, langues et tout ce que l’activité demande.
         </p>
-        <Link to="/realisations/orion-admin" className="lnk rz-more" data-proj="orion-admin">
+        <Link to="/orion-admin" className="lnk rz-more" data-proj="orion-admin">
           Voir le projet
         </Link>
       </article>

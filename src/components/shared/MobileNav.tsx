@@ -8,9 +8,6 @@ export function MobileNav() {
         <img className="pxsvg logo-w" src="/px/logo-w-ad3e722d.svg" alt="" width={151} height={21} />
       </Link>
       <div className="mo-nav-r">
-        <span className="lang">
-          <b>FR</b> / EN
-        </span>
         <button
           className="mo-burger"
           type="button"

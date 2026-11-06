@@ -15,7 +15,7 @@ const PATHS = {
   'swing-call': '/realisations/swing-call',
   'entrepreneurs-du-vexin': '/realisations/entrepreneurs-du-vexin',
   'housses-taxi': '/realisations/housses-taxi',
-  'orion-admin': '/realisations/orion-admin',
+  'orion-admin': '/orion-admin',
   secteurs: '/pour-qui',
   golf: '/pour-qui/golfs',
   boulangeries: '/pour-qui/boulangeries',

@@ -73,7 +73,6 @@ export function ClientsBlock({ mobile = false }: { mobile?: boolean }) {
   const list = mobile ? CLIENTS.slice(0, 6) : CLIENTS
   return (
     <section className={mobile ? 'hc hc-m' : 'hc'}>
-      <Mq mobile={mobile} />
       <div className="hc-in">
         <div className="hc-h">
           {mobile ? (
@@ -110,6 +109,7 @@ export function ClientsBlock({ mobile = false }: { mobile?: boolean }) {
           ))}
         </div>
       </div>
+      <Mq mobile={mobile} />
       <Mq2 mobile={mobile} />
     </section>
   )

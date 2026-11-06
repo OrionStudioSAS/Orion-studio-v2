@@ -668,7 +668,7 @@ function VousSuivezTout() {
           </div>
           <div className="p-meta">
             <h3 className="p-name">Orion Admin</h3>
-            <span className="p-tag">Espace client · inclus dans chaque projet</span>
+            <span className="p-tag">Interface d’administration · sur mesure</span>
           </div>
           <p className="p-desc">Échanges, documents et étapes de votre projet réunis dans Orion Admin.</p>
         </article>

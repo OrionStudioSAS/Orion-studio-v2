@@ -1,5 +1,7 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Lenis from 'lenis'
+import 'lenis/dist/lenis.css'
 
 import { go } from './nav'
 import { PJ } from './projectModal'
@@ -50,12 +52,43 @@ const resetPageScope = () => {
 /* ---------- mise à l'échelle ---------- */
 function fit() {
   const w = document.body.clientWidth
-  $$('.site-d').forEach((d) => {
-    d.style.zoom = w / 1440
+  const apply = (el, base) => {
+    const z = w / base
+    el.style.zoom = z
+    // hauteur de l'écran dans l'échelle de la maquette, pour les sections qui restent à l'écran
+    el.style.setProperty('--zvh', innerHeight / z + 'px')
+  }
+  $$('.site-d').forEach((d) => apply(d, 1440))
+  $$('.site-m').forEach((m) => apply(m, 390))
+  dispatchEvent(new Event('site:fit'))
+}
+
+/* ---------- défilement fluide (molette et trackpad ; au doigt, le défilement natif reste) ---------- */
+let lenis = null
+function initSmooth() {
+  if (RM || lenis) return
+  lenis = new Lenis({
+    autoRaf: false,
+    lerp: 0.11,
+    allowNestedScroll: true,
+    // fenêtre verrouillée (pop-up, menu, lecteur) : on ne touche à rien
+    virtualScroll: () => document.documentElement.style.overflow !== 'hidden',
   })
-  $$('.site-m').forEach((m) => {
-    m.style.zoom = w / 390
-  })
+  lenis.on('scroll', ScrollTrigger.update)
+  gsap.ticker.add((t) => lenis.raf(t * 1000))
+  gsap.ticker.lagSmoothing(0)
+}
+/** Défile en douceur jusqu'à une position. */
+function smoothTo(top) {
+  if (lenis) lenis.scrollTo(top, { duration: 1.1, force: true })
+  else scrollTo({ top, behavior: RM ? 'auto' : 'smooth' })
+}
+/** Saute à une position sans animation (changement de page, retour navigateur). */
+function jumpTo(top) {
+  if (lenis) {
+    lenis.resize()
+    lenis.scrollTo(top, { immediate: true, force: true })
+  } else scrollTo({ top, behavior: 'instant' })
 }
 
 /* ---------- aides ---------- */
@@ -214,7 +247,7 @@ function goTo(where) {
         : $('.hero-media, .mo-media', R)
   if (!el) return
   const top = el.getBoundingClientRect().top + scrollY - (where === 'hero' ? 40 : 70)
-  scrollTo({ top, behavior: RM ? 'auto' : 'smooth' })
+  smoothTo(top)
   if (where === 'hero') {
     const c = $('.ch2-comp, .mo-comp', R)
     if (c && anim)
@@ -239,6 +272,9 @@ export {
   root,
   esc,
   onWin,
+  initSmooth,
+  smoothTo,
+  jumpTo,
   pageEvery,
   pageAfter,
   pageClear,

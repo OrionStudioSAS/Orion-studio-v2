@@ -1,4 +1,4 @@
-import { RM, G, anim, $, $$, onWin } from './core'
+import { RM, G, anim, $, $$, onWin, smoothTo } from './core'
 import { go } from './nav'
 
 /* ---------- pages légales : sommaire ; 404 : ciel pixel, étoiles à rallumer ---------- */
@@ -10,7 +10,7 @@ function legalPage(R) {
       const f = () => {
         const s = secs[+a.dataset.lg]
         if (s)
-          scrollTo({ top: s.getBoundingClientRect().top + scrollY - 96, behavior: RM ? 'auto' : 'smooth' })
+          smoothTo(s.getBoundingClientRect().top + scrollY - 96)
       }
       a.onclick = f
       a.onkeydown = (e) => {

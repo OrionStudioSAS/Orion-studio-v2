@@ -1,4 +1,4 @@
-import { RM, G, ST, anim, $, $$, root, onWin, onView, up, pixelate } from './core'
+import { RM, G, ST, anim, $, $$, root, onWin, onView, up, pixelate, smoothTo } from './core'
 import { hero } from './hero'
 import { steps } from './sections'
 
@@ -139,10 +139,7 @@ function resArticle(R, mob) {
   const goS = (i) => {
     const h = hs[i]
     if (!h) return
-    scrollTo({
-      top: h.getBoundingClientRect().top + scrollY - (mob ? 76 : 96),
-      behavior: RM ? 'auto' : 'smooth',
-    })
+    smoothTo(h.getBoundingClientRect().top + scrollY - (mob ? 76 : 96))
   }
   links.forEach((a) => {
     const f = () => {

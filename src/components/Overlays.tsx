@@ -337,6 +337,7 @@ export function MobileMenu() {
       </div>
       <div className="mo-ml2">
         <Link to="/realisations">Réalisations</Link>
+        <Link to="/orion-admin">Orion Admin</Link>
         <Link to="/le-studio">Le studio</Link>
         <Link to="/ressources">Ressources</Link>
       </div>

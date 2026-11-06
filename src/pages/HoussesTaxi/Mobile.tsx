@@ -212,10 +212,10 @@ function McNk() {
         </div>
         <div className="mo-pmeta">
           <h3>Orion Admin</h3>
-          <span>Espace client · inclus dans chaque projet</span>
+          <span>Interface d’administration · sur mesure</span>
         </div>
-        <p>Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit.</p>
-        <Link to="/realisations/orion-admin" className="lnk mo-more" data-proj="orion-admin">
+        <p>L’interface faite sur mesure pour piloter son site : chiffres, contenus, langues et tout ce que l’activité demande.</p>
+        <Link to="/orion-admin" className="lnk mo-more" data-proj="orion-admin">
           Voir le projet
         </Link>
       </article>
@@ -269,6 +269,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -329,10 +330,6 @@ function MoFt() {
           </span>
         </div>
         <div className="mo-legal">
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
-          </div>
           <div className="mo-legal-l">
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>

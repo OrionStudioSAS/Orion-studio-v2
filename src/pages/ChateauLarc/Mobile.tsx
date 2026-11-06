@@ -288,10 +288,9 @@ function LeBackOfficeDans() {
         </div>
         <h3 className="mc-boh">Le tableau de bord du club</h3>
         <p className="mc-bop">
-          Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit. Pour le
-          Château l’Arc, il sert aussi de back-office au quotidien.
+          Pour le Château l’Arc, Orion Admin est le back-office du quotidien : chiffres du site, installations, tarifs, pop-up et compétitions.
         </p>
-        <Link to="/realisations/orion-admin" className="btn btn-acc mo-btn">
+        <Link to="/orion-admin" className="btn btn-acc mo-btn">
           Découvrir Orion Admin
         </Link>
       </div>
@@ -480,6 +479,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -540,10 +540,6 @@ function MoFt() {
           </span>
         </div>
         <div className="mo-legal">
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
-          </div>
           <div className="mo-legal-l">
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>

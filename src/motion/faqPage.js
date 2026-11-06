@@ -1,4 +1,4 @@
-import { RM, G, ST, anim, $, $$, onWin, up, pixelate } from './core'
+import { RM, G, ST, anim, $, $$, onWin, up, pixelate, smoothTo } from './core'
 import { sparkle } from './effects'
 import { norm } from './resourcesPage'
 
@@ -19,10 +19,7 @@ function faqPage(R, mob) {
   const goC = (i) => {
     const c = cats[i]
     if (!c) return
-    scrollTo({
-      top: c.getBoundingClientRect().top + scrollY - (mob ? 76 : 96),
-      behavior: RM ? 'auto' : 'smooth',
-    })
+    smoothTo(c.getBoundingClientRect().top + scrollY - (mob ? 76 : 96))
   }
   const mark = (html, s) => {
     if (!s) return html

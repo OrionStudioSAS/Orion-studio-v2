@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MobileNav } from '../../components/shared/MobileNav'
+import { ServiceSections } from '../../components/services/ServiceSections'
 
 function MoHero() {
   return (
@@ -10,7 +11,8 @@ function MoHero() {
         </Link>
       </div>
       <h1 className="mo-h1">
-        Développement d’applications web<span className="serif">taillées pour votre métier.</span>
+        Développement d’applications web
+        <span className="serif">taillées pour votre métier.</span>
       </h1>
       <p className="mo-lead">
         Espaces clients, outils internes, back-offices, plateformes SaaS : on développe des applications web
@@ -134,357 +136,13 @@ function MoMedia() {
   )
 }
 
-function CeQuUnBon() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’un bon outil<span className="serif">change au quotidien.</span>
-        </h2>
-      </div>
-      <div className="sxm-ocs">
-        <div className="sxm-oc">
-          <h3>Moins de ressaisie</h3>
-          <p>L’information est saisie une fois, au bon endroit, et suit son chemin toute seule.</p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Tout au même endroit</h3>
-          <p>Clients, commandes, documents et échanges réunis dans une interface claire.</p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Un outil qui grandit avec vous</h3>
-          <p>Une base de code propre, documentée, prête pour les évolutions de demain.</p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function CeQuOnLivre() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’on livre<span className="serif">concrètement.</span>
-        </h2>
-        <p className="mo-lead">
-          Chaque projet assemble les briques dont vous avez besoin, pas une de plus. Les écrans ci-dessous
-          sont des exemples.
-        </p>
-      </div>
-      <div className="sxm-cards">
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="u-bare um">
-              <div className="msg msg-l">
-                <b>Julien</b>La facture de novembre est disponible dans votre espace.
-              </div>
-              <div className="msg msg-r">
-                <b>Vous</b>Merci, je la transmets à la compta.
-              </div>
-            </div>
-          </div>
-          <h3>Espaces clients</h3>
-          <p>Suivi, documents, messagerie : vos clients trouvent tout sans vous appeler.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Commandes du jour</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>#2291 · Atelier Morel</span>
-                <b>Expédiée</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>#2292 · SARL Ducret</span>
-                <b>En préparation</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq" />
-                <span>#2293 · Maison Vidal</span>
-                <b>À valider</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>#2294 · Hôtel Belles Rives</span>
-                <b>Expédiée</b>
-              </div>
-            </div>
-          </div>
-          <h3>Outils internes & back-offices</h3>
-          <p>Des écrans pensés pour vos équipes, pas pour un tableur.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ub">
-              <div className="ul-h">Utilisateurs actifs</div>
-              <div className="bars">
-                <i style={{ height: '28px' }} />
-                <i style={{ height: '44px' }} />
-                <i style={{ height: '36px' }} />
-                <i style={{ height: '60px' }} />
-                <i style={{ height: '52px' }} />
-                <i style={{ height: '76px' }} />
-                <i style={{ height: '68px' }} />
-                <i style={{ height: '92px' }} />
-                <i style={{ height: '84px' }} />
-                <i style={{ height: '108px' }} />
-              </div>
-            </div>
-          </div>
-          <h3>Plateformes SaaS</h3>
-          <p>Comptes, abonnements, rôles et tableaux de bord, de la V1 à la montée en charge.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="code u-bare">
-              <div>
-                <span className="c-k">POST</span> <span className="c-f">/api/orders</span>
-              </div>
-              <div>
-                <span className="c-k">→</span> ERP <span className="c-s">synchronisé</span>
-              </div>
-              <div>
-                <span className="c-k">→</span> Facture <span className="c-s">générée</span>
-              </div>
-              <div>
-                <span className="c-k">→</span> E-mail client <span className="c-s">envoyé</span>
-              </div>
-              <div>
-                <span className="c-ok">
-                  <i />
-                  200 OK — 184 ms
-                </span>
-              </div>
-            </div>
-          </div>
-          <h3>API & intégrations</h3>
-          <p>On relie votre application à vos outils : ERP, CRM, paiement, logistique.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Configurateur de stand</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Structure</span>
-                <b>Arche</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Comptoir</span>
-                <b>Avec réserve</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Écran</span>
-                <b>55 pouces</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Surface</span>
-                <b>18 m²</b>
-              </div>
-              <div className="shop-cta ul-btn">Recevoir mon devis</div>
-            </div>
-          </div>
-          <h3>Configurateurs</h3>
-          <p>Le client compose son produit, voit le résultat et reçoit son devis.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Journal des versions</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>v2.4 · Export comptable</span>
-                <b>En ligne</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>v2.3 · Rôles utilisateurs</span>
-                <b>En ligne</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>v2.5 · Application mobile</span>
-                <b>En cours</b>
-              </div>
-            </div>
-          </div>
-          <h3>Maintenance & évolutions</h3>
-          <p>Mises à jour, sécurité, nouvelles fonctionnalités : on reste à vos côtés.</p>
-        </article>
-      </div>
-    </section>
-  )
-}
-
-function CommentOnTravaille() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Comment<span className="serif">on travaille.</span>
-        </h2>
-        <p className="mo-lead">Une seule équipe du premier échange à la mise en ligne.</p>
-      </div>
-      <ol className="sxm-steps">
-        <li>
-          <b>Cadrer</b>
-          <span>Ateliers métier, parcours et périmètre de la V1.</span>
-        </li>
-        <li>
-          <b>Designer</b>
-          <span>Prototype cliquable testé avec vos équipes.</span>
-        </li>
-        <li>
-          <b>Développer</b>
-          <span>Livraisons régulières sur une préprod.</span>
-        </li>
-        <li>
-          <b>Lancer & faire grandir</b>
-          <span>Mise en production, suivi et évolutions.</span>
-        </li>
-      </ol>
-    </section>
-  )
-}
-
-function ExpertisesAssociees() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Expertises<span className="serif">associées.</span>
-        </h2>
-      </div>
-      <div className="xpm-rel">
-        <Link to="/expertises/automatisations" className="rl xpm-rl" data-exp="automatisations">
-          <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Automatisations</b>
-            <span>Vos tâches répétitives, automatisées.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/site-internet" className="rl xpm-rl" data-exp="site-internet">
-          <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Site internet</b>
-            <span>Vitrine, dynamique ou concept.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/geo" className="rl xpm-rl" data-exp="geo">
-          <img className="pxsvg picon" src="/px/picon-84c912e7.svg" alt="" width={20} height={20} />
-          <div>
-            <b>GEO</b>
-            <span>Être cité par les IA.</span>
-          </div>
-        </Link>
-      </div>
-    </section>
-  )
-}
-
-function VosQuestionsNosReponses() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Vos questions,<span className="serif">nos réponses.</span>
-        </h2>
-      </div>
-      <div className="mo-faq">
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Quelles technologies utilisez-vous ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Principalement Next.js, React et Node.js, avec une base de données adaptée au projet. On choisit
-            des technologies répandues et bien documentées, pour que votre application reste maintenable par
-            n’importe quelle équipe.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Proposez-vous une maintenance ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Oui : mises à jour, sauvegardes, surveillance et petites évolutions. Le contenu de la maintenance
-            dépend de la technologie de votre site et vous est proposé au devis.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Le prix peut-il changer en cours de projet ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Non, pas sans votre accord. Le devis fixe un périmètre ; si vous souhaitez ajouter une
-            fonctionnalité en route, on vous chiffre l’ajout avant de le réaliser.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Comment suis-je informé de l’avancement ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Dans Orion Admin, l’espace client inclus dans chaque projet : étapes, documents, messages et
-            validations au même endroit.
-          </p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function MoFt() {
   return (
     <footer className="mo-ft">
       <div className="mo-cta">
         <h2>
-          Un outil métier en tête ?<span className="serif">Dessinons-le ensemble.</span>
+          Un outil métier en tête ?
+          <span className="serif">Dessinons-le ensemble.</span>
         </h2>
         <a className="btn btn-acc mo-btn">Analyser mon site</a>{' '}
         <Link to="/realisations" className="btn btn-line mo-btn">
@@ -524,6 +182,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -584,10 +243,6 @@ function MoFt() {
           </span>
         </div>
         <div className="mo-legal">
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
-          </div>
           <div className="mo-legal-l">
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>
@@ -605,11 +260,7 @@ export function Mobile() {
       <MobileNav />
       <MoHero />
       <MoMedia />
-      <CeQuUnBon />
-      <CeQuOnLivre />
-      <CommentOnTravaille />
-      <ExpertisesAssociees />
-      <VosQuestionsNosReponses />
+      <ServiceSections id="developpement-applications" mobile />
       <MoFt />
     </section>
   )

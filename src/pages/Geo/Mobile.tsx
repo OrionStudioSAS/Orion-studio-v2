@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MobileNav } from '../../components/shared/MobileNav'
+import { ServiceSections } from '../../components/services/ServiceSections'
 
 function MoHero() {
   return (
@@ -10,7 +11,8 @@ function MoHero() {
         </Link>
       </div>
       <h1 className="mo-h1">
-        GEO : être cité<span className="serif">par ChatGPT, Perplexity et Google.</span>
+        GEO : être cité
+        <span className="serif">par ChatGPT, Perplexity et Google.</span>
       </h1>
       <p className="mo-lead">
         Vos clients posent désormais leurs questions aux IA. On structure votre site et vos contenus pour que
@@ -143,308 +145,13 @@ function MoMedia() {
   )
 }
 
-function CeQueLeGeo() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce que le GEO<span className="serif">change pour votre marque.</span>
-        </h2>
-      </div>
-      <div className="sxm-ocs">
-        <div className="sxm-oc">
-          <h3>Être dans la réponse</h3>
-          <p>Quand un client demande « quelle entreprise pour… », votre nom fait partie de la réponse.</p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Une marque bien décrite</h3>
-          <p>Les IA reprennent les bons faits : ce que vous faites, pour qui, où et à quel prix.</p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Des visiteurs déjà convaincus</h3>
-          <p>Ceux qui arrivent depuis une IA ont déjà comparé : ils sont prêts à vous contacter.</p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function CeQuOnLivre() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’on livre<span className="serif">concrètement.</span>
-        </h2>
-        <p className="mo-lead">
-          Chaque projet assemble les briques dont vous avez besoin, pas une de plus. Les écrans ci-dessous
-          sont des exemples.
-        </p>
-      </div>
-      <div className="sxm-cards">
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Requête : « agence web golf »</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>ChatGPT</span>
-                <b>Cité</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq" />
-                <span>Perplexity</span>
-                <b>Non cité</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Gemini</span>
-                <b>Mentionné</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq" />
-                <span>Google · Aperçu IA</span>
-                <b>Non cité</b>
-              </div>
-            </div>
-          </div>
-          <h3>Audit de visibilité IA</h3>
-          <p>On interroge les IA sur vos requêtes clés et on note qui est cité.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ai u-bare">
-              <div className="ai-q">Quelle agence pour refondre notre boutique ?</div>
-              <div className="ai-a">
-                <span className="ai-dot" />
-                <div>
-                  Pour une refonte Shopify, plusieurs studios se distinguent par…
-                  <span className="ai-cite">votre-marque.fr</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h3>Contenus citables</h3>
-          <p>Des réponses courtes, factuelles et sourcées, faciles à reprendre.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="code u-bare">
-              <div>{'{'}</div>
-              <div>
-                <span className="c-a">"@type"</span>: <span className="c-s">"ProfessionalService"</span>,
-              </div>
-              <div>
-                <span className="c-a">"areaServed"</span>: <span className="c-s">"France"</span>,
-              </div>
-              <div>
-                <span className="c-a">"knowsLanguage"</span>: [<span className="c-s">"fr"</span>,{' '}
-                <span className="c-s">"en"</span>]
-              </div>
-              <div>{'}'}</div>
-            </div>
-          </div>
-          <h3>Données structurées</h3>
-          <p>Organisation, services, FAQ, avis : votre site parle aux machines.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="code u-bare">
-              <div>
-                <span className="c-f"># Votre marque</span>
-              </div>
-              <div>{'> Ce que vous faites, en une phrase.'}</div>
-              <div>
-                <span className="c-k">## Pages clés</span>
-              </div>
-              <div>- [Services](/services)</div>
-              <div>- [Tarifs](/tarifs)</div>
-              <div>- [FAQ](/faq)</div>
-            </div>
-          </div>
-          <h3>llms.txt & pages clés</h3>
-          <p>Un fichier qui résume votre activité pour les modèles de langage.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Où les IA lisent votre marque</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Site internet</span>
-                <b>À jour</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Google Business Profile</span>
-                <b>À jour</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>LinkedIn</span>
-                <b>Description différente</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq" />
-                <span>Annuaires professionnels</span>
-                <b>Incomplets</b>
-              </div>
-            </div>
-          </div>
-          <h3>Cohérence de l’entité</h3>
-          <p>Le même récit partout : site, LinkedIn, Google, annuaires.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ub">
-              <div className="ul-h">Requêtes où votre marque est citée</div>
-              <div className="bars">
-                <i style={{ height: '12px' }} />
-                <i style={{ height: '18px' }} />
-                <i style={{ height: '16px' }} />
-                <i style={{ height: '28px' }} />
-                <i style={{ height: '34px' }} />
-                <i style={{ height: '40px' }} />
-                <i style={{ height: '52px' }} />
-                <i style={{ height: '58px' }} />
-                <i style={{ height: '66px' }} />
-                <i style={{ height: '78px' }} />
-              </div>
-            </div>
-          </div>
-          <h3>Suivi des citations</h3>
-          <p>Chaque mois, l’évolution de votre présence dans les réponses.</p>
-        </article>
-      </div>
-    </section>
-  )
-}
-
-function CommentOnTravaille() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Comment<span className="serif">on travaille.</span>
-        </h2>
-        <p className="mo-lead">Une seule équipe du premier échange à la mise en ligne.</p>
-      </div>
-      <ol className="sxm-steps">
-        <li>
-          <b>Auditer</b>
-          <span>Ce que les IA disent de vous et de vos concurrents.</span>
-        </li>
-        <li>
-          <b>Structurer</b>
-          <span>Données structurées, llms.txt, pages clés.</span>
-        </li>
-        <li>
-          <b>Rédiger</b>
-          <span>Contenus factuels et citables.</span>
-        </li>
-        <li>
-          <b>Suivre</b>
-          <span>Citations mesurées chaque mois.</span>
-        </li>
-      </ol>
-    </section>
-  )
-}
-
-function ExpertisesAssociees() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Expertises<span className="serif">associées.</span>
-        </h2>
-      </div>
-      <div className="xpm-rel">
-        <Link to="/expertises/seo" className="rl xpm-rl" data-exp="seo">
-          <img className="pxsvg picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
-          <div>
-            <b>SEO</b>
-            <span>Remonter sur Google.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/site-internet" className="rl xpm-rl" data-exp="site-internet">
-          <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Site internet</b>
-            <span>Vitrine, dynamique ou concept.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/google-ads" className="rl xpm-rl" data-exp="google-ads">
-          <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Google Ads</b>
-            <span>Des campagnes qui rapportent des contacts.</span>
-          </div>
-        </Link>
-      </div>
-    </section>
-  )
-}
-
-function VosQuestionsNosReponses() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Vos questions,<span className="serif">nos réponses.</span>
-        </h2>
-      </div>
-      <div className="mo-faq">
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Qu’est-ce que le GEO ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Le GEO (Generative Engine Optimization) regroupe les actions qui aident les IA génératives, comme
-            ChatGPT, Perplexity ou les aperçus IA de Google, à comprendre votre activité et à citer votre
-            marque dans leurs réponses.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Le SEO est-il inclus dans la création de site ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Les bases, oui : structure, balises, redirections, données structurées et vitesse. Un
-            accompagnement SEO dans la durée (contenus, suivi des positions) se fait à part.
-          </p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function MoFt() {
   return (
     <footer className="mo-ft">
       <div className="mo-cta">
         <h2>
-          Demain, vos clients demanderont à une IA.<span className="serif">Soyez dans la réponse.</span>
+          Demain, vos clients demanderont à une IA.
+          <span className="serif">Soyez dans la réponse.</span>
         </h2>
         <a className="btn btn-acc mo-btn">Analyser mon site</a>{' '}
         <Link to="/realisations" className="btn btn-line mo-btn">
@@ -484,6 +191,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -544,10 +252,6 @@ function MoFt() {
           </span>
         </div>
         <div className="mo-legal">
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
-          </div>
           <div className="mo-legal-l">
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>
@@ -565,11 +269,7 @@ export function Mobile() {
       <MobileNav />
       <MoHero />
       <MoMedia />
-      <CeQueLeGeo />
-      <CeQuOnLivre />
-      <CommentOnTravaille />
-      <ExpertisesAssociees />
-      <VosQuestionsNosReponses />
+      <ServiceSections id="geo" mobile />
       <MoFt />
     </section>
   )

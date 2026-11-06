@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MobileNav } from '../../components/shared/MobileNav'
+import { ServiceSections } from '../../components/services/ServiceSections'
 
 function MoHero() {
   return (
@@ -10,7 +11,8 @@ function MoHero() {
         </Link>
       </div>
       <h1 className="mo-h1">
-        Campagnes Google Ads<span className="serif">pilotées au nombre de contacts.</span>
+        Campagnes Google Ads
+        <span className="serif">pilotées au nombre de contacts.</span>
       </h1>
       <p className="mo-lead">
         Search, Performance Max, campagnes locales : on construit et on pilote vos campagnes pour qu’elles
@@ -137,326 +139,13 @@ function MoMedia() {
   )
 }
 
-function CeQuUneCampagne() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’une campagne bien pilotée<span className="serif">vous apporte.</span>
-        </h2>
-      </div>
-      <div className="sxm-ocs">
-        <div className="sxm-oc">
-          <h3>Chaque euro suivi</h3>
-          <p>Conversions mesurées de l’annonce jusqu’à la demande de devis ou la vente.</p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Des pages qui convertissent</h3>
-          <p>Des pages d’atterrissage dédiées, rapides et pensées pour chaque campagne.</p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Des rapports lisibles</h3>
-          <p>Ce que vous avez dépensé, ce que ça a rapporté, ce qu’on change le mois suivant.</p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function CeQuOnLivre() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’on livre<span className="serif">concrètement.</span>
-        </h2>
-        <p className="mo-lead">
-          Chaque projet assemble les briques dont vous avez besoin, pas une de plus. Les écrans ci-dessous
-          sont des exemples.
-        </p>
-      </div>
-      <div className="sxm-cards">
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Audit · compte Google Ads</div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Suivi des conversions</span>
-                <b>Incomplet</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq" />
-                <span>Mots-clés négatifs</span>
-                <b>Absents</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Annonces responsives</span>
-                <b>OK</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Ciblage géographique</span>
-                <b>Trop large</b>
-              </div>
-            </div>
-          </div>
-          <h3>Audit de compte</h3>
-          <p>Ce qui coûte sans rapporter, et ce qu’il faut couper tout de suite.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="adp u-bare">
-              <span className="adp-k">Sponsorisé</span>
-              <span className="serp-u">votre-site.fr</span>
-              <b>Devis en 24 h — Menuisier à Nantes</b>
-              <span className="serp-d">
-                Fenêtres, portes et agencement sur mesure. Intervention dans l’agglomération nantaise.
-              </span>
-              <div className="adp-s">
-                <span>Demander un devis</span>
-                <span>Nos réalisations</span>
-              </div>
-            </div>
-          </div>
-          <h3>Campagnes Search</h3>
-          <p>Des annonces précises sur les recherches de vos futurs clients.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Éléments de la campagne</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Titres</span>
-                <b>15 rédigés</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Visuels</span>
-                <b>12 formats</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Vidéo</span>
-                <b>À produire</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Signaux d’audience</span>
-                <b>Clients actuels</b>
-              </div>
-            </div>
-          </div>
-          <h3>Performance Max</h3>
-          <p>Une campagne sur tous les réseaux Google, nourrie par vos meilleurs visuels.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="win u-win">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">votre-site.fr/devis-menuiserie</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <div className="wire" style={{ border: 'none', padding: '0' }}>
-                  <i style={{ width: '70%' }} />
-                  <i style={{ width: '45%' }} />
-                  <i className="blk" />
-                  <i style={{ width: '60%' }} />
-                </div>
-              </div>
-            </div>
-          </div>
-          <h3>Pages d’atterrissage</h3>
-          <p>Une page par intention, avec le bon message et un formulaire court.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Événements suivis</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Formulaire envoyé</span>
-                <b>Actif</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Clic sur le téléphone</span>
-                <b>Actif</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Achat</span>
-                <b>Actif</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Prise de rendez-vous</span>
-                <b>À installer</b>
-              </div>
-            </div>
-          </div>
-          <h3>Suivi des conversions</h3>
-          <p>Appels, formulaires, achats : chaque contact remonte dans GA4 et Google Ads.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ub">
-              <div className="ul-h">Contacts générés par mois</div>
-              <div className="bars">
-                <i style={{ height: '20px' }} />
-                <i style={{ height: '26px' }} />
-                <i style={{ height: '24px' }} />
-                <i style={{ height: '38px' }} />
-                <i style={{ height: '44px' }} />
-                <i style={{ height: '40px' }} />
-                <i style={{ height: '56px' }} />
-                <i style={{ height: '60px' }} />
-                <i style={{ height: '72px' }} />
-                <i style={{ height: '80px' }} />
-              </div>
-            </div>
-          </div>
-          <h3>Rapport mensuel</h3>
-          <p>Un rapport court, en euros et en contacts, pas en jargon.</p>
-        </article>
-      </div>
-    </section>
-  )
-}
-
-function CommentOnTravaille() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Comment<span className="serif">on travaille.</span>
-        </h2>
-        <p className="mo-lead">Une seule équipe du premier échange à la mise en ligne.</p>
-      </div>
-      <ol className="sxm-steps">
-        <li>
-          <b>Auditer</b>
-          <span>Compte, suivi, concurrence et budget.</span>
-        </li>
-        <li>
-          <b>Construire</b>
-          <span>Campagnes, annonces et pages d’atterrissage.</span>
-        </li>
-        <li>
-          <b>Lancer</b>
-          <span>Mise en ligne et premiers ajustements serrés.</span>
-        </li>
-        <li>
-          <b>Optimiser</b>
-          <span>Chaque mois, on coupe ce qui ne rapporte pas.</span>
-        </li>
-      </ol>
-    </section>
-  )
-}
-
-function ExpertisesAssociees() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Expertises<span className="serif">associées.</span>
-        </h2>
-      </div>
-      <div className="xpm-rel">
-        <Link to="/expertises/seo" className="rl xpm-rl" data-exp="seo">
-          <img className="pxsvg picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
-          <div>
-            <b>SEO</b>
-            <span>Remonter sur Google.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/site-internet" className="rl xpm-rl" data-exp="site-internet">
-          <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Site internet</b>
-            <span>Vitrine, dynamique ou concept.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/automatisations" className="rl xpm-rl" data-exp="automatisations">
-          <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Automatisations</b>
-            <span>Vos tâches répétitives, automatisées.</span>
-          </div>
-        </Link>
-      </div>
-    </section>
-  )
-}
-
-function VosQuestionsNosReponses() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Vos questions,<span className="serif">nos réponses.</span>
-        </h2>
-      </div>
-      <div className="mo-faq">
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Quel budget prévoir pour Google Ads ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Cela dépend de votre secteur, de votre zone et de la concurrence sur vos mots-clés. On l’estime
-            ensemble à partir du coût par clic constaté et du nombre de contacts visés, avant de lancer quoi
-            que ce soit.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Gérez-vous les campagnes Google Ads ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Oui : audit, création des campagnes, pages d’atterrissage et pilotage mensuel, avec un suivi des
-            conversions de l’annonce jusqu’à la demande.
-          </p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function MoFt() {
   return (
     <footer className="mo-ft">
       <div className="mo-cta">
         <h2>
-          Vos annonces dépensent déjà.<span className="serif">Faisons-les rapporter.</span>
+          Vos annonces dépensent déjà.
+          <span className="serif">Faisons-les rapporter.</span>
         </h2>
         <a className="btn btn-acc mo-btn">Analyser mon site</a>{' '}
         <Link to="/realisations" className="btn btn-line mo-btn">
@@ -496,6 +185,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -556,10 +246,6 @@ function MoFt() {
           </span>
         </div>
         <div className="mo-legal">
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
-          </div>
           <div className="mo-legal-l">
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>
@@ -577,11 +263,7 @@ export function Mobile() {
       <MobileNav />
       <MoHero />
       <MoMedia />
-      <CeQuUneCampagne />
-      <CeQuOnLivre />
-      <CommentOnTravaille />
-      <ExpertisesAssociees />
-      <VosQuestionsNosReponses />
+      <ServiceSections id="google-ads" mobile />
       <MoFt />
     </section>
   )

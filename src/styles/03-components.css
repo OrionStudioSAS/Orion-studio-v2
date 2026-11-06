@@ -2764,9 +2764,6 @@
   flex-wrap: wrap;
   gap: 6px 16px;
 }
-.mo-legal .ft-lang {
-  align-self: flex-start;
-}
 .mo-home {
   position: absolute;
   left: 0;

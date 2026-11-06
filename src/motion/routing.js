@@ -1,5 +1,5 @@
 import { menuSet } from './chrome'
-import { RM, ST, anim, $, $$, esc, goTo } from './core'
+import { RM, ST, anim, $, $$, esc, goTo, smoothTo } from './core'
 import { PATHS, go } from './nav'
 import { PJ } from './projectModal'
 import { norm, toast } from './resourcesPage'
@@ -144,7 +144,7 @@ document.addEventListener(
       const t = [document.getElementById(base), document.getElementById('m-' + base)].find(
         (x) => x && x.offsetParent,
       )
-      if (t) scrollTo({ top: t.getBoundingClientRect().top + scrollY - 80, behavior: RM ? 'auto' : 'smooth' })
+      if (t) smoothTo(t.getBoundingClientRect().top + scrollY - 80)
     })
   },
   true,

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MobileNav } from '../../components/shared/MobileNav'
+import { ServiceSections } from '../../components/services/ServiceSections'
 
 function MoHero() {
   return (
@@ -10,7 +11,8 @@ function MoHero() {
         </Link>
       </div>
       <h1 className="mo-h1">
-        Référencement naturel (SEO)<span className="serif">pour être trouvé au bon moment.</span>
+        Référencement naturel (SEO)
+        <span className="serif">pour être trouvé au bon moment.</span>
       </h1>
       <p className="mo-lead">
         Audit, SEO technique, contenus et référencement local : on fait remonter votre site sur les recherches
@@ -143,384 +145,6 @@ function MoMedia() {
   )
 }
 
-function CeQueLeSeo() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce que le SEO<span className="serif">vous apporte.</span>
-        </h2>
-      </div>
-      <div className="sxm-ocs">
-        <div className="sxm-oc">
-          <h3>Les bonnes recherches</h3>
-          <p>On cible les requêtes de vos futurs clients, pas celles qui flattent les statistiques.</p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Un site irréprochable</h3>
-          <p>Vitesse, structure, balises, indexation : Google comprend et aime votre site.</p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Une présence locale forte</h3>
-          <p>Fiche Google, avis et pages locales pour être trouvé près de chez vous.</p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function CeQuOnLivre() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’on livre<span className="serif">concrètement.</span>
-        </h2>
-        <p className="mo-lead">
-          Chaque projet assemble les briques dont vous avez besoin, pas une de plus. Les écrans ci-dessous
-          sont des exemples.
-        </p>
-      </div>
-      <div className="sxm-cards">
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Audit · votre-site.fr</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Pages indexées</span>
-                <b>OK</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Balises title en double</span>
-                <b>À corriger</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Pages lentes sur mobile</span>
-                <b>À corriger</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq" />
-                <span>Données structurées</span>
-                <b>Absentes</b>
-              </div>
-            </div>
-          </div>
-          <h3>Audit SEO</h3>
-          <p>Un état des lieux complet, priorisé, en français clair.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="code u-bare">
-              <div>
-                <span className="c-k">{'<title>'}</span>Menuiserie sur mesure à Nantes
-                <span className="c-k">{'</title>'}</span>
-              </div>
-              <div>
-                <span className="c-k">{'<link'}</span> <span className="c-a">rel</span>=
-                <span className="c-s">"canonical"</span> <span className="c-k">{'/>'}</span>
-              </div>
-              <div>
-                <span className="c-k">{'<script'}</span> <span className="c-a">type</span>=
-                <span className="c-s">"application/ld+json"</span>
-                <span className="c-k">{'>'}</span>
-              </div>
-              <div>
-                <span className="c-ok">
-                  <i />
-                  Sitemap envoyé à Google
-                </span>
-              </div>
-            </div>
-          </div>
-          <h3>SEO technique</h3>
-          <p>Vitesse, maillage, redirections, sitemap : les fondations.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Calendrier éditorial</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Guide · Choisir ses fenêtres</span>
-                <b>Publié</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Page · Menuiserie Antibes</span>
-                <b>Publiée</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Article · Aides à la rénovation</span>
-                <b>En rédaction</b>
-              </div>
-            </div>
-          </div>
-          <h3>Stratégie de contenus</h3>
-          <p>Les pages et les articles qui répondent aux questions de vos clients.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="gbp">
-              <div className="gbp-n">Votre entreprise</div>
-              <div className="gbp-s">
-                <b>5,0</b>
-                <svg
-                  width="11"
-                  height="11"
-                  viewBox="0 0 11 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M4 0H7V4H11V7H7V11H4V7H0V4H4V0Z" fill="#FF4D1A" />
-                </svg>
-                <svg
-                  width="11"
-                  height="11"
-                  viewBox="0 0 11 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M4 0H7V4H11V7H7V11H4V7H0V4H4V0Z" fill="#FF4D1A" />
-                </svg>
-                <svg
-                  width="11"
-                  height="11"
-                  viewBox="0 0 11 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M4 0H7V4H11V7H7V11H4V7H0V4H4V0Z" fill="#FF4D1A" />
-                </svg>
-                <svg
-                  width="11"
-                  height="11"
-                  viewBox="0 0 11 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M4 0H7V4H11V7H7V11H4V7H0V4H4V0Z" fill="#FF4D1A" />
-                </svg>
-                <svg
-                  width="11"
-                  height="11"
-                  viewBox="0 0 11 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M4 0H7V4H11V7H7V11H4V7H0V4H4V0Z" fill="#FF4D1A" />
-                </svg>
-                <span>Avis Google</span>
-              </div>
-              <div className="gbp-m">Menuisier · Nantes · Ouvert jusqu’à 18 h</div>
-              <div className="gbp-b">
-                <span>Itinéraire</span>
-                <span>Appeler</span>
-                <span>Site web</span>
-              </div>
-            </div>
-          </div>
-          <h3>SEO local</h3>
-          <p>Fiche Google optimisée, avis et pages par ville.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ub">
-              <div className="ul-h">Visites depuis Google</div>
-              <div className="bars">
-                <i style={{ height: '30px' }} />
-                <i style={{ height: '34px' }} />
-                <i style={{ height: '42px' }} />
-                <i style={{ height: '40px' }} />
-                <i style={{ height: '55px' }} />
-                <i style={{ height: '62px' }} />
-                <i style={{ height: '60px' }} />
-                <i style={{ height: '74px' }} />
-                <i style={{ height: '82px' }} />
-                <i style={{ height: '96px' }} />
-              </div>
-            </div>
-          </div>
-          <h3>Suivi des positions</h3>
-          <p>Un rapport mensuel lisible : positions, trafic, demandes.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="serp u-bare">
-              <div className="serp-q">
-                <svg
-                  className="c-ic"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="9" cy="9" r="7.4" stroke="#77776F" strokeWidth="1.2" />
-                  <path
-                    d="M1.6 9H16.4M9 1.6C11 3.6 11.9 6.2 11.9 9C11.9 11.8 11 14.4 9 16.4M9 1.6C7 3.6 6.1 6.2 6.1 9C6.1 11.8 7 14.4 9 16.4"
-                    stroke="#77776F"
-                    strokeWidth="1.2"
-                  />
-                </svg>
-                <span>menuisier nantes</span>
-              </div>
-              <div className="serp-r">
-                <span className="serp-u">votre-site.fr › menuiserie</span>
-                <b>Menuiserie sur mesure à Nantes — Votre entreprise</b>
-                <span className="serp-d">Fenêtres, portes et agencement. Devis gratuit sous 48 h.</span>
-              </div>
-            </div>
-          </div>
-          <h3>Résultats de recherche</h3>
-          <p>Des titres et descriptions qui donnent envie de cliquer.</p>
-        </article>
-      </div>
-    </section>
-  )
-}
-
-function CommentOnTravaille() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Comment<span className="serif">on travaille.</span>
-        </h2>
-        <p className="mo-lead">Une seule équipe du premier échange à la mise en ligne.</p>
-      </div>
-      <ol className="sxm-steps">
-        <li>
-          <b>Auditer</b>
-          <span>Technique, contenus, concurrence et mots-clés.</span>
-        </li>
-        <li>
-          <b>Corriger</b>
-          <span>Les chantiers techniques en priorité.</span>
-        </li>
-        <li>
-          <b>Produire</b>
-          <span>Pages et contenus qui répondent aux recherches.</span>
-        </li>
-        <li>
-          <b>Mesurer</b>
-          <span>Positions, trafic et demandes chaque mois.</span>
-        </li>
-      </ol>
-    </section>
-  )
-}
-
-function ExpertisesAssociees() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Expertises<span className="serif">associées.</span>
-        </h2>
-      </div>
-      <div className="xpm-rel">
-        <Link to="/expertises/geo" className="rl xpm-rl" data-exp="geo">
-          <img className="pxsvg picon" src="/px/picon-84c912e7.svg" alt="" width={20} height={20} />
-          <div>
-            <b>GEO</b>
-            <span>Être cité par les IA.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/google-ads" className="rl xpm-rl" data-exp="google-ads">
-          <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Google Ads</b>
-            <span>Des campagnes qui rapportent des contacts.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/site-internet" className="rl xpm-rl" data-exp="site-internet">
-          <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Site internet</b>
-            <span>Vitrine, dynamique ou concept.</span>
-          </div>
-        </Link>
-      </div>
-    </section>
-  )
-}
-
-function VosQuestionsNosReponses() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Vos questions,<span className="serif">nos réponses.</span>
-        </h2>
-      </div>
-      <div className="mo-faq">
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Combien de temps pour voir des résultats en SEO ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Les corrections techniques produisent souvent leurs effets en quelques semaines ; les contenus et
-            la notoriété prennent généralement plusieurs mois. On vous montre l’évolution chaque mois, requête
-            par requête.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Garantissez-vous la première position sur Google ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Non, et personne ne peut le garantir honnêtement. On s’engage sur un travail mesurable :
-            corrections, contenus et suivi mensuel des positions et des demandes.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Le SEO est-il inclus dans la création de site ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Les bases, oui : structure, balises, redirections, données structurées et vitesse. Un
-            accompagnement SEO dans la durée (contenus, suivi des positions) se fait à part.
-          </p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function MoFt() {
   return (
     <footer className="mo-ft">
@@ -567,6 +191,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -627,10 +252,6 @@ function MoFt() {
           </span>
         </div>
         <div className="mo-legal">
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
-          </div>
           <div className="mo-legal-l">
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>
@@ -648,11 +269,7 @@ export function Mobile() {
       <MobileNav />
       <MoHero />
       <MoMedia />
-      <CeQueLeSeo />
-      <CeQuOnLivre />
-      <CommentOnTravaille />
-      <ExpertisesAssociees />
-      <VosQuestionsNosReponses />
+      <ServiceSections id="seo" mobile />
       <MoFt />
     </section>
   )

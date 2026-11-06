@@ -4,6 +4,9 @@ import { App } from './App'
 import { findRoute, isMobileViewport, loadPage } from './pageLoader'
 import './styles/index.css'
 
+// Ancienne adresse de la page Orion Admin
+if (location.pathname === '/realisations/orion-admin') history.replaceState(null, '', '/orion-admin')
+
 // La position de défilement est gérée par PageTransition (derrière le rideau de pixels).
 history.scrollRestoration = 'manual'
 

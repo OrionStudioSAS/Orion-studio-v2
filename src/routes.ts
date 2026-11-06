@@ -55,6 +55,6 @@ export const ROUTES: SiteRoute[] = [
   { view: "swing-call", path: "/realisations/swing-call", wrap: "view v-pg", Desktop: () => import('./pages/SwingCall/Desktop').then((m) => m.Desktop), Mobile: () => import('./pages/SwingCall/Mobile').then((m) => m.Mobile) },
   { view: "entrepreneurs-du-vexin", path: "/realisations/entrepreneurs-du-vexin", wrap: "view v-pg", Desktop: () => import('./pages/EntrepreneursDuVexin/Desktop').then((m) => m.Desktop), Mobile: () => import('./pages/EntrepreneursDuVexin/Mobile').then((m) => m.Mobile) },
   { view: "housses-taxi", path: "/realisations/housses-taxi", wrap: "view v-pg", Desktop: () => import('./pages/HoussesTaxi/Desktop').then((m) => m.Desktop), Mobile: () => import('./pages/HoussesTaxi/Mobile').then((m) => m.Mobile) },
-  { view: "orion-admin", path: "/realisations/orion-admin", wrap: "view v-pg", Desktop: () => import('./pages/OrionAdmin/Desktop').then((m) => m.Desktop), Mobile: () => import('./pages/OrionAdmin/Mobile').then((m) => m.Mobile) },
+  { view: "orion-admin", path: "/orion-admin", wrap: "view v-pg", Desktop: () => import('./pages/OrionAdmin/Desktop').then((m) => m.Desktop), Mobile: () => import('./pages/OrionAdmin/Mobile').then((m) => m.Mobile) },
   { view: "studio", path: "/le-studio", wrap: "view v-pg", Desktop: () => import('./pages/Studio/Desktop').then((m) => m.Desktop), Mobile: () => import('./pages/Studio/Mobile').then((m) => m.Mobile) },
 ]

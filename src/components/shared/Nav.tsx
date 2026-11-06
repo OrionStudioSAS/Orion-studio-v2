@@ -40,6 +40,9 @@ export function Nav() {
         <NavLink to="/realisations" className={navClass}>
           Réalisations
         </NavLink>
+        <NavLink to="/orion-admin" className={navClass}>
+          Orion Admin
+        </NavLink>
         <NavLink to="/le-studio" className={navClass}>
           Le studio
         </NavLink>
@@ -48,9 +51,6 @@ export function Nav() {
         </NavLink>
       </nav>
       <div className="nav-r">
-        <span className="lang">
-          <b>FR</b> / EN
-        </span>
         <a className="btn btn-ghost btn-s">Analyser mon site</a>{' '}
         <a className="btn btn-ink btn-s">
           Démarrer un projet <span className="kbd">P</span>

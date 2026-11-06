@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MobileNav } from '../../components/shared/MobileNav'
+import { ServiceSections } from '../../components/services/ServiceSections'
 
 function MoHero() {
   return (
@@ -13,7 +14,8 @@ function MoHero() {
         / <b>Site concept</b>
       </div>
       <h1 className="mo-h1">
-        Site concept<span className="serif">pour une marque qu’on n’oublie pas.</span>
+        Site concept
+        <span className="serif">pour une marque qu’on n’oublie pas.</span>
       </h1>
       <p className="mo-lead">
         Lancement, nouvelle marque, campagne : un site pensé comme une expérience, avec une direction
@@ -150,351 +152,13 @@ function MoMedia() {
   )
 }
 
-function CeQuUnSite() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’un site concept<span className="serif">apporte à votre marque.</span>
-        </h2>
-      </div>
-      <div className="sxm-ocs">
-        <div className="sxm-oc">
-          <h3>Une première impression forte</h3>
-          <p>Une direction artistique propre à votre marque, qui la distingue dès le premier écran.</p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Un récit qui se lit jusqu’au bout</h3>
-          <p>
-            Le scroll raconte votre histoire étape par étape : chaque section donne envie de voir la suivante.
-          </p>
-        </div>
-        <div className="sxm-oc">
-          <h3>Une expérience qui reste rapide</h3>
-          <p>Des animations légères, pensées pour le téléphone et pour Google.</p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function CeQuOnLivre() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Ce qu’on livre<span className="serif">concrètement.</span>
-        </h2>
-        <p className="mo-lead">
-          Chaque projet assemble les briques dont vous avez besoin, pas une de plus. Les écrans ci-dessous
-          sont des exemples.
-        </p>
-      </div>
-      <div className="sxm-cards">
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="spec u-bare">
-              <span className="spec-aa">Aa</span>
-              <span className="spec-it">Aa</span>
-              <div className="sw">
-                <i style={{ background: '#0E0E0C' }} />
-                <i style={{ background: '#77776F' }} />
-                <i style={{ background: '#E3E3DE' }} />
-                <i style={{ background: '#FF4D1A' }} />
-              </div>
-            </div>
-          </div>
-          <h3>Direction artistique</h3>
-          <p>Typographies, couleurs, illustrations : une identité qui se reconnaît en un écran.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="flow u-bare">
-              <span className="fl-n">Ouverture</span>
-              <span className="fl-l" />
-              <span className="fl-n">Récit</span>
-              <span className="fl-l" />
-              <span className="fl-n fl-on">Appel</span>
-              <div className="wire">
-                <i style={{ width: '70%' }} />
-                <i style={{ width: '45%' }} />
-                <i className="blk" />
-              </div>
-            </div>
-          </div>
-          <h3>Storyboard & prototype</h3>
-          <p>Chaque scène dessinée puis animée dans un prototype, validé avant le développement.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Scènes de la page</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Ouverture · titre animé</span>
-                <b>Validée</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Récit · quatre étapes</span>
-                <b>Validée</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-wa" />
-                <span>Galerie · transition</span>
-                <b>En cours</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq" />
-                <span>Appel à l’action</span>
-                <b>À faire</b>
-              </div>
-            </div>
-          </div>
-          <h3>Animations au scroll</h3>
-          <p>Titres, images et transitions qui suivent la lecture, sans gêner la navigation.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="xp-orio">
-              <img className="pxsvg" src="/px/art-3a97b3a2.svg" alt="" width={220} height={230} />
-            </div>
-          </div>
-          <h3>Illustrations & personnages</h3>
-          <p>Illustrations, pixel art ou mascotte : des images faites pour votre marque.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="uf">
-              <div className="ul-h">Être prévenu du lancement</div>
-              <div className="uf-g">
-                <label className="fld fld-f">
-                  <span>Prénom</span>
-                  <b>Claire</b>
-                </label>
-                <label className="fld">
-                  <span>E-mail</span>
-                  <b>claire@exemple.fr</b>
-                </label>
-              </div>
-              <div className="shop-cta">M’inscrire</div>
-            </div>
-          </div>
-          <h3>Page de lancement</h3>
-          <p>Liste d’attente, précommande ou inscription : la page qui accompagne votre lancement.</p>
-        </article>
-        <article className="sxm-card">
-          <div className="sxm-ui">
-            <div className="ul">
-              <div className="ul-h">Contrôle avant mise en ligne</div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Images optimisées</span>
-                <b>OK</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Animations réduites si demandé</span>
-                <b>OK</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Navigation au clavier</span>
-                <b>OK</b>
-              </div>
-              <div className="ul-r">
-                <i className="sq sq-ok" />
-                <span>Temps de chargement</span>
-                <b>Rapide</b>
-              </div>
-            </div>
-          </div>
-          <h3>Performance & accessibilité</h3>
-          <p>Animations légères et images optimisées : l’expérience reste rapide et lisible par tous.</p>
-        </article>
-      </div>
-    </section>
-  )
-}
-
-function CommentOnTravaille() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Comment<span className="serif">on travaille.</span>
-        </h2>
-        <p className="mo-lead">Une seule équipe du premier échange à la mise en ligne.</p>
-      </div>
-      <ol className="sxm-steps">
-        <li>
-          <b>Cadrer</b>
-          <span>Message, public et ce que la page doit déclencher.</span>
-        </li>
-        <li>
-          <b>Imaginer</b>
-          <span>Direction artistique et storyboard, scène par scène.</span>
-        </li>
-        <li>
-          <b>Animer & développer</b>
-          <span>Prototype animé, puis intégration sur une préprod.</span>
-        </li>
-        <li>
-          <b>Lancer</b>
-          <span>Mise en ligne et ajustements.</span>
-        </li>
-      </ol>
-    </section>
-  )
-}
-
-function ExpertisesAssociees() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Expertises<span className="serif">associées.</span>
-        </h2>
-      </div>
-      <div className="xpm-rel">
-        <Link to="/expertises/site-vitrine" className="rl xpm-rl" data-exp="site-vitrine">
-          <img className="pxsvg picon" src="/px/picon-5d9e4e01.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Site vitrine</b>
-            <span>Présenter votre activité et être contacté.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/site-dynamique" className="rl xpm-rl" data-exp="site-dynamique">
-          <img className="pxsvg picon" src="/px/picon-c328b51d.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Site dynamique</b>
-            <span>Vendre, réserver et gérer en ligne.</span>
-          </div>
-        </Link>
-        <Link to="/expertises/google-ads" className="rl xpm-rl" data-exp="google-ads">
-          <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
-          <div>
-            <b>Google Ads</b>
-            <span>Des campagnes qui rapportent des contacts.</span>
-          </div>
-        </Link>
-      </div>
-    </section>
-  )
-}
-
-function VosQuestionsNosReponses() {
-  return (
-    <section className="mo-sec">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Vos questions,<span className="serif">nos réponses.</span>
-        </h2>
-      </div>
-      <div className="mo-faq">
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Combien coûte un site concept ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Chaque projet est chiffré sur devis après un premier échange, gratuit et sans engagement. Le prix
-            dépend du nombre de scènes, des animations et des illustrations à créer.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Combien de temps faut-il ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>Le planning dépend du nombre de scènes et d’illustrations : il est fixé dans le devis.</p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Le site sera-t-il rapide et accessible ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Oui. Images optimisées, code léger, contrastes lisibles et navigation au clavier sont vérifiés
-            avant chaque mise en ligne.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Le SEO est-il inclus dans la création de site ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Les bases, oui : structure, balises, redirections, données structurées et vitesse. Un
-            accompagnement SEO dans la durée (contenus, suivi des positions) se fait à part.
-          </p>
-        </div>
-        <div className="mo-q">
-          <div className="mo-q-h">
-            <span>Pourrai-je modifier mon site seul ?</span>
-            <svg
-              className="plus"
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 0V12M0 6H12" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
-          </div>
-          <p>
-            Oui. On vous livre un back-office adapté et on vous forme à son utilisation. Textes, images, pages
-            et actualités se modifient sans connaissances techniques.
-          </p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function MoFt() {
   return (
     <footer className="mo-ft">
       <div className="mo-cta">
         <h2>
-          Un lancement en vue ?<span className="serif">Racontons-le en grand.</span>
+          Un lancement en vue ?
+          <span className="serif">Racontons-le en grand.</span>
         </h2>
         <a className="btn btn-acc mo-btn">Analyser mon site</a>{' '}
         <Link to="/realisations" className="btn btn-line mo-btn">
@@ -534,6 +198,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Studio</div>
             <Link to="/realisations">Réalisations</Link>
+            <Link to="/orion-admin">Orion Admin</Link>
             <Link to="/le-studio">Le studio</Link>
             <a>Contact</a>
           </div>
@@ -594,10 +259,6 @@ function MoFt() {
           </span>
         </div>
         <div className="mo-legal">
-          <div className="ft-lang">
-            <span className="on">Français</span>
-            <span>English</span>
-          </div>
           <div className="mo-legal-l">
             <Link to="/mentions-legales">Mentions légales</Link>
             <Link to="/confidentialite">Confidentialité</Link>
@@ -615,11 +276,7 @@ export function Mobile() {
       <MobileNav />
       <MoHero />
       <MoMedia />
-      <CeQuUnSite />
-      <CeQuOnLivre />
-      <CommentOnTravaille />
-      <ExpertisesAssociees />
-      <VosQuestionsNosReponses />
+      <ServiceSections id="site-concept" mobile />
       <MoFt />
     </section>
   )

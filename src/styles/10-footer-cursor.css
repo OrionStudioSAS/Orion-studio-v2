@@ -198,23 +198,13 @@
   transition: color 0.25s;
   color: inherit;
 }
-.ft-legal div:not(.ft-lang) a:hover,
+.ft-legal div a:hover,
 .mo-legal-l a:hover,
-.ft-legal div:not(.ft-lang) span:hover,
+.ft-legal div span:hover,
 .mo-legal-l span:hover {
   color: #ffffff;
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-.ft-lang span {
-  cursor: pointer;
-  transition:
-    background 0.25s,
-    color 0.25s;
-}
-.ft-lang span:not(.on):hover {
-  color: #ffffff;
-  background: #1f1f1c;
 }
 .ft-sky .bigword,
 .mo-sky .bigword {
