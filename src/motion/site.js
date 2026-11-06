@@ -1,3 +1,4 @@
+import { clientsBlock, workPanels } from './homeBlocks'
 import { header, megaFor, mobileMenu, burgers, cursor, menuSet } from './chrome'
 import { G, ST, $, $$, esc, resetPageScope, fit, goTo } from './core'
 import { sizeSparks, magnetic } from './effects'
@@ -132,6 +133,8 @@ function initHome(R, mob) {
   bindGo(R)
   logoCycle($$(mob ? '.mo-cl-g > div' : '.clients > div:not(:first-child)', R), mob ? CL_LOGOS_M : CL_LOGOS)
   teamStage(R)
+  clientsBlock(R)
+  workPanels(R, mob)
   teamPrints(R)
   videoStories(R)
 }

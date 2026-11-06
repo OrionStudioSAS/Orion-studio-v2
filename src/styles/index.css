@@ -10,6 +10,7 @@
 @import './09-orio.css';
 @import './10-footer-cursor.css';
 @import './11-local-pages.css';
+@import './12-home-blocks.css';
 
 /* Les pixel arts sont des fichiers SVG : ni rétrécis ni déplaçables comme des photos */
 img.pxsvg {

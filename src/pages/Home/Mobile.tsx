@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MobileFooter } from '../../components/shared/MobileFooter'
+import { ClientsBlock } from './ClientsBlock'
+import { WorkPanels } from './WorkPanels'
 
 function MoNav() {
   return (
@@ -104,7 +106,7 @@ function MoMedia() {
               https://www.maison-arlette.fr
               <span className="caret" />
             </span>{' '}
-            <span className="ch2-hint">Collez l’adresse de votre site, ou décrivez votre projet</span>
+            <span className="ch2-hint">Collez l’adresse de votre site</span>
           </div>
           <div className="mo-crit">
             <span className="cr">
@@ -167,19 +169,7 @@ function MoMedia() {
           </div>
         </div>
         <div className="mo-sug">
-          <span className="sg">
-            <img className="pxsvg picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
-            <b>Refaire mon site</b>
-          </span>
-          <span className="sg">
-            <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
-            <b>Remonter sur Google</b>
-          </span>
-          <span className="sg">
-            <img className="pxsvg picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
-            <b>Être cité par ChatGPT</b>
-          </span>
-          <span className="sg">
+          <span className="sg" data-pj>
             <img className="pxsvg picon" src="/px/picon-2c356b90.svg" alt="" width={10} height={10} />
             <b>Je n’ai pas encore de site</b>
           </span>
@@ -200,31 +190,6 @@ function MoMedia() {
       </div>
       <div className="mo-capt">
         22 h 40 — <b>Bételgeuse</b>, l’étoile rouge d’Orion
-      </div>
-    </div>
-  )
-}
-
-function MoClients() {
-  return (
-    <div className="mo-clients">
-      <div className="mo-cl-k">Ils nous ont confié leurs projets</div>
-      <div className="mo-cl-g">
-        <div>
-          <img src="/images/a58f0039fd543e.png" alt="Château l’Arc Golf Club" style={{ height: '54px' }} />
-        </div>
-        <div>
-          <img src="/images/f929bc41088d4e.png" alt="Stand-ING" style={{ height: '34px' }} />
-        </div>
-        <div>
-          <img src="/images/407078ca1be0b8.png" alt="Le Moulin de Balme" style={{ height: '56px' }} />
-        </div>
-        <div>
-          <img src="/images/682cb609d42336.png" alt="DATHY" style={{ height: '44px' }} />
-        </div>
-        <div>
-          <img src="/images/c89d8692d26a0a.png" alt="Swing Call" style={{ height: '22px' }} />
-        </div>
       </div>
     </div>
   )
@@ -373,141 +338,7 @@ function RealisationsRecentes() {
           Sites sur-mesure, boutiques et outils métiers, conçus et développés de bout en bout par le studio.
         </p>
       </div>
-      <div className="mo-projs">
-        <article className="mo-proj" data-to="/realisations/chateau-larc">
-          <div className="mo-pm">
-            <img className="mo-pm-bg" src="/images/e70252f225f7d4.png" alt="" />
-            <div className="win win-shot mo-win">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">chateaularcgolfclub.com</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img className="shot" src="/images/661531aedb86a4.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="mo-pmeta">
-            <h3>
-              <Link to="/realisations/chateau-larc">Château l’Arc Golf Club</Link>
-            </h3>
-            <span>Golf · Site + back-office · 2026</span>
-          </div>
-          <p>
-            Un site qui donne envie de venir jouer, et un back-office pour gérer départs, offres et
-            événements.
-          </p>
-        </article>
-        <article className="mo-proj" data-to="/realisations/stand-ing">
-          <div className="mo-pm">
-            <img className="mo-pm-bg" src="/images/b07c317bbc84a7.png" alt="" />
-            <div className="win win-shot mo-win">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">Stand-ING — Configurateur</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img className="cfg-shot" src="/images/cfe60288d854b0.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="mo-pmeta">
-            <h3>
-              <Link to="/realisations/stand-ing">Stand-ING</Link>
-            </h3>
-            <span>Configurateur 3D · 2026</span>
-          </div>
-          <p>Un configurateur de stands en ligne : le client compose, visualise et reçoit son devis.</p>
-        </article>
-        <article className="mo-proj" data-proj="les-bocaux-du-vexin">
-          <div className="mo-pm">
-            <img className="mo-pm-bg" src="/images/ba943c5909c9cc.png" alt="" />
-            <div className="win win-shot mo-win">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">lesbocauxduvexin.fr</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img
-                  className="shot"
-                  src="/images/4decbda594bb3c.jpg"
-                  alt="La boutique Les Bocaux du Vexin"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="mo-pmeta">
-            <h3>Les Bocaux du Vexin</h3>
-            <span>E-commerce · Shopify · 2026</span>
-          </div>
-          <p>Une boutique Shopify simple à tenir au quotidien pour une conserverie locale.</p>
-        </article>
-        <article className="mo-proj" data-proj="orion-admin">
-          <div className="mo-pm">
-            <img className="mo-pm-bg" src="/images/0c6fffca9924a1.png" alt="" />
-            <div className="win win-shot mo-win">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">Orion Admin</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img className="shot" src="/images/94f1f7140db692.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="mo-pmeta">
-            <h3>Orion Admin</h3>
-            <span>Espace client · inclus dans chaque projet</span>
-          </div>
-          <p>Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit.</p>
-        </article>
-      </div>
-      <div className="mo-index">
-        <div className="mo-ix" data-proj="osmose-nutrition">
-          <b>Osmose Nutrition</b>
-          <span>E-commerce · Abonnements · 2025</span>
-        </div>
-        <div className="mo-ix" data-proj="ocha-and-co">
-          <b>Ocha & Co.</b>
-          <span>E-commerce · Shopify ·</span>
-        </div>
-        <div className="mo-ix" data-proj="moulin-de-balme">
-          <b>Le Moulin de Balme</b>
-          <span>Boulangerie · Site + back-office ·</span>
-        </div>
-        <div className="mo-ix" data-proj="dathy">
-          <b>DATHY</b>
-          <span>AMO bâtiment & TP · Site vitrine ·</span>
-        </div>
-        <div className="mo-ix" data-proj="housses-taxi">
-          <b>Housses Taxi</b>
-          <span>Fabricant · Site vitrine ·</span>
-        </div>
-        <div className="mo-ix" data-proj="swing-call">
-          <b>Swing Call</b>
-          <span>Start-up · Site produit ·</span>
-        </div>
-      </div>
+      <WorkPanels mobile />
       <div className="mo-ixf">
         <span className="mono">11 projets</span>
       </div>
@@ -1413,7 +1244,7 @@ export function Mobile() {
       <MoNav />
       <MoHero />
       <MoMedia />
-      <MoClients />
+      <ClientsBlock mobile />
       <OrionStudioCEst />
       <RealisationsRecentes />
       <DuCroquisAuCode />

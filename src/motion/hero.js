@@ -1,5 +1,6 @@
 import { NBSP, FINE, G, ST, anim, $, $$, esc, onWin, split, pixelate, typeIn, local } from './core'
 import { sparkle } from './effects'
+import { PJ } from './projectModal'
 
 /* ---------- parcours « Analyser mon site » ---------- */
 const IC_OK =
@@ -350,6 +351,18 @@ function chatFlow(chat, pfx) {
   sugs.forEach((s) => {
     s.setAttribute('role', 'button')
     s.tabIndex = 0
+    // accueil : pas de site à analyser, on ouvre le formulaire « Démarrer un projet »
+    if (s.hasAttribute('data-pj')) {
+      s.setAttribute('aria-haspopup', 'dialog')
+      s.onclick = () => PJ.open()
+      s.onkeydown = (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          PJ.open()
+        }
+      }
+      return
+    }
     s.setAttribute('aria-pressed', 'false')
     const f = () => {
       if (comp.classList.contains('step2') || comp.classList.contains('isdone')) resetAll()
@@ -546,26 +559,6 @@ function hero(R, mob, firstLoad) {
   const url = $('.ch2-url', chat),
     urlText = url ? url.firstChild.textContent : ''
   chatFlow(chat, mob ? 'm' : 'd')
-  if (!mob) {
-    const orig = $('.hero-orig', R),
-      tg = $$('.toggle span', R)
-    const setV = (v) => {
-      tg.forEach((t) => t.classList.toggle('on', t.dataset.v === v))
-      anim
-        ? G.to(orig, { opacity: v === 'orig' ? 1 : 0, duration: 0.7, ease: 'power2.out' })
-        : (orig.style.opacity = v === 'orig' ? 1 : 0)
-      if (v === 'px') pixelate($('.hm-layer', media), '#0E0E0C', 16, 0.55)
-    }
-    tg.forEach((t) => {
-      t.onclick = () => setV(t.dataset.v)
-      t.onkeydown = (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault()
-          setV(t.dataset.v)
-        }
-      }
-    })
-  }
   sparkle(media)
   if (!anim) return
   G.set(imgs, { scale: 1.1, transformOrigin: '50% 40%' })

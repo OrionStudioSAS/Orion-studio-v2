@@ -10,7 +10,7 @@ function manifesto(R, mob) {
   if (!anim) return
   up($$(mob ? '.mo-mf .mo-k' : '.mf-k', R), null, { y: 16 })
   const items = $$('.w, .mf-pic, .mo-pic, .mf-ui', h)
-  const tl = G.timeline({ scrollTrigger: { trigger: h, start: 'top 82%', end: 'bottom 48%', scrub: 0.7 } })
+  const tl = G.timeline({ scrollTrigger: { trigger: h, start: 'top 82%', end: 'bottom 88%', scrub: 0.7 } })
   items.forEach((it, i) => {
     if (it.classList.contains('w'))
       tl.fromTo(it, { opacity: 0.13 }, { opacity: 1, duration: 0.3, ease: 'none' }, i * 0.1)

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { Nav } from '../../components/shared/Nav'
 import { MmVeilLive } from '../../components/shared/MmVeilLive'
-import { Clients } from '../../components/shared/Clients'
+import { ClientsBlock } from './ClientsBlock'
+import { WorkPanels } from './WorkPanels'
 import { Footer } from '../../components/shared/Footer'
 
 function Hero() {
@@ -65,7 +66,6 @@ function HeroMedia() {
           src="/images/e6d0322ad0257f.png"
           alt="Une baie la nuit sous la constellation d’Orion, en pixel art"
         />
-        <img className="hero-orig" src="/images/c209a53cbba40f.jpg" alt="La même scène, peinture d’origine" />
         <i className="betel" style={{ left: '698px', top: '106px' }} />
       </div>
       <div className="chat ch2">
@@ -79,7 +79,7 @@ function HeroMedia() {
               https://www.maison-arlette.fr
               <span className="caret" />
             </span>{' '}
-            <span className="ch2-hint">Collez l’adresse de votre site, ou décrivez votre projet</span>
+            <span className="ch2-hint">Collez l’adresse de votre site</span>
           </div>
           <div className="ch2-foot">
             <div className="ch2-l">
@@ -184,19 +184,7 @@ function HeroMedia() {
           </div>
         </div>
         <div className="ch2-sug">
-          <span className="sg">
-            <img className="pxsvg picon" src="/px/picon-66b9ea70.svg" alt="" width={10} height={10} />
-            <b>Refaire mon site</b>
-          </span>
-          <span className="sg">
-            <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
-            <b>Remonter sur Google</b>
-          </span>
-          <span className="sg">
-            <img className="pxsvg picon" src="/px/picon-92b066cf.svg" alt="" width={10} height={10} />
-            <b>Être cité par ChatGPT</b>
-          </span>
-          <span className="sg">
+          <span className="sg" data-pj>
             <img className="pxsvg picon" src="/px/picon-2c356b90.svg" alt="" width={10} height={10} />
             <b>Je n’ai pas encore de site</b>
           </span>
@@ -214,16 +202,6 @@ function HeroMedia() {
             Gratuit et sans engagement. Analyse et maquette envoyées par e-mail sous quelques jours.
           </span>
         </div>
-      </div>
-      <div className="toggle" role="group" aria-label="Rendu de l’image">
-        <span className="on" data-v="px" role="button" tabIndex={0}>
-          <i />
-          PIXEL
-        </span>
-        <span data-v="orig" role="button" tabIndex={0}>
-          <i />
-          ORIGINAL
-        </span>
       </div>
       <div className="capt">
         22 h 40 — <b>Bételgeuse</b>, l’étoile rouge d’Orion
@@ -369,172 +347,7 @@ function RealisationsRecentes() {
           Sites sur-mesure, boutiques et outils métiers, conçus et développés de bout en bout par le studio.
         </p>
       </div>
-      <div className="proj-grid">
-        <article className="p-a" data-to="/realisations/chateau-larc">
-          <div className="p-media">
-            <img src="/images/55a80d70f3d20a.png" alt="" />
-            <div className="win win-shot win-golf">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">chateaularcgolfclub.com</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img
-                  className="shot"
-                  src="/images/661531aedb86a4.jpg"
-                  alt="Page d’accueil du site du Château l’Arc Golf Club"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="p-meta">
-            <h3 className="p-name">
-              <Link to="/realisations/chateau-larc">Château l’Arc Golf Club</Link>
-            </h3>
-            <span className="p-tag">Golf · Site + back-office · 2026</span>
-          </div>
-          <p className="p-desc">
-            Un site qui donne envie de venir jouer, et un back-office pour gérer départs, offres et
-            événements.
-          </p>
-        </article>
-        <article className="p-b" data-to="/realisations/stand-ing">
-          <div className="p-media">
-            <img src="/images/2c63fe08cd774a.png" alt="" />
-            <div className="win win-stand">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">Stand-ING — Configurateur de stand 3D</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img
-                  className="cfg-shot"
-                  src="/images/cfe60288d854b0.png"
-                  alt="Configurateur de stand 3D Stand-ING"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="p-meta">
-            <h3 className="p-name">
-              <Link to="/realisations/stand-ing">Stand-ING</Link>
-            </h3>
-            <span className="p-tag">Configurateur 3D · 2026</span>
-          </div>
-          <p className="p-desc">
-            Un configurateur de stands en ligne : le client compose, visualise et reçoit son devis.
-          </p>
-        </article>
-        <article className="p-c" data-proj="les-bocaux-du-vexin" style={{ cursor: 'pointer' }}>
-          <div className="p-media">
-            <img src="/images/07246a74f6555c.png" alt="" />
-            <div className="win win-shot win-golf win-bv">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">lesbocauxduvexin.fr</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img
-                  className="shot"
-                  src="/images/4decbda594bb3c.jpg"
-                  alt="La boutique Les Bocaux du Vexin"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="p-meta">
-            <h3 className="p-name">Les Bocaux du Vexin</h3>
-            <span className="p-tag">E-commerce · Shopify · 2026</span>
-          </div>
-          <p className="p-desc">
-            Une boutique Shopify simple à tenir au quotidien pour une conserverie locale.
-          </p>
-        </article>
-        <article
-          className="p-d"
-          data-proj="orion-admin"
-          style={{ cursor: 'pointer' }}
-          data-to="/realisations/chateau-larc"
-        >
-          <div className="p-media">
-            <img src="/images/4b8094654fed91.png" alt="" />
-            <div className="win win-shot win-adm">
-              <div className="win-bar">
-                <span className="dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <span className="win-title">Orion Admin — Château l’Arc Golf Club</span>
-                <span className="win-sp" />
-              </div>
-              <div className="win-body">
-                <img
-                  className="shot"
-                  src="/images/94f1f7140db692.jpg"
-                  alt="Accueil d’Orion Admin pour le Château l’Arc Golf Club"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="p-meta">
-            <h3 className="p-name">
-              <Link to="/realisations/chateau-larc">Orion Admin</Link>
-            </h3>
-            <span className="p-tag">Espace client · inclus dans chaque projet</span>
-          </div>
-          <p className="p-desc">
-            Notre outil : suivi du projet, documents, messagerie et gestion du site au même endroit.
-          </p>
-        </article>
-      </div>
-      <div className="index">
-        <div className="ix-row" data-proj="osmose-nutrition">
-          <span className="n">Osmose Nutrition</span>
-          <span className="t">E-commerce · Abonnements</span>
-          <span className="y">2025</span>
-        </div>
-        <div className="ix-row" data-proj="ocha-and-co">
-          <span className="n">Ocha & Co.</span>
-          <span className="t">E-commerce · Shopify</span>
-          <span className="y" />
-        </div>
-        <div className="ix-row" data-proj="moulin-de-balme">
-          <span className="n">Le Moulin de Balme</span>
-          <span className="t">Boulangerie · Site + back-office</span>
-          <span className="y" />
-        </div>
-        <div className="ix-row" data-proj="dathy">
-          <span className="n">DATHY</span>
-          <span className="t">AMO bâtiment & TP · Site vitrine</span>
-          <span className="y" />
-        </div>
-        <div className="ix-row" data-proj="housses-taxi">
-          <span className="n">Housses Taxi</span>
-          <span className="t">Fabricant · Site vitrine</span>
-          <span className="y" />
-        </div>
-        <div className="ix-row" data-proj="swing-call">
-          <span className="n">Swing Call</span>
-          <span className="t">Start-up · Site produit</span>
-          <span className="y" />
-        </div>
-      </div>
+      <WorkPanels />
       <div className="ix-foot">
         <span className="mono">11 projets</span>
         <Link to="/realisations" className="btn btn-ink">
@@ -1541,7 +1354,7 @@ export function Desktop() {
       <MmVeilLive />
       <Hero />
       <HeroMedia />
-      <Clients />
+      <ClientsBlock />
       <OrionStudioCEst />
       <RealisationsRecentes />
       <DuCroquisAuCode />

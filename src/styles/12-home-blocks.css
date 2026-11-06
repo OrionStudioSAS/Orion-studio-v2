@@ -1,0 +1,318 @@
+/* Accueil : le paragraphe du studio reste noir de bout en bout */
+.v-home .mf-m,
+.v-home .mf-s {
+  color: var(--ink);
+}
+
+/* ---------- Ils nous ont confié leurs projets ---------- */
+.hc {
+  margin-top: 56px;
+}
+.hc .mq-a {
+  border-top: 0;
+}
+.hc-in {
+  display: grid;
+  grid-template-columns: 372px 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 64px 72px;
+}
+.hc-h p {
+  margin-top: 20px;
+  max-width: 320px;
+  font: 400 16px/1.45 'Geist';
+  letter-spacing: -0.01em;
+  color: var(--muted);
+}
+.hc-g {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.hc-c {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 164px;
+  overflow: hidden;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+.hc-logo {
+  max-width: 72%;
+  object-fit: contain;
+  transition: opacity 0.3s steps(4);
+}
+.hc-shot {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+  opacity: 0;
+  transform: scale(1.06);
+  transition:
+    opacity 0.45s steps(5),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hc-cap {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: rgba(14, 14, 12, 0.86);
+  color: #f4f4f1;
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.25s,
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hc-cap b {
+  font: 600 13px/1.2 'Geist';
+  letter-spacing: -0.02em;
+}
+.hc-cap small {
+  font: 400 10px/1.2 'Geist Mono';
+  color: rgba(244, 244, 241, 0.65);
+}
+.hc-c:hover .hc-shot,
+.hc-c:focus-visible .hc-shot,
+.hc-c.on .hc-shot {
+  opacity: 1;
+  transform: scale(1);
+}
+.hc-c:hover .hc-logo,
+.hc-c:focus-visible .hc-logo,
+.hc-c.on .hc-logo {
+  opacity: 0;
+}
+.hc-c:hover .hc-cap,
+.hc-c:focus-visible .hc-cap,
+.hc-c.on .hc-cap {
+  opacity: 1;
+  transform: none;
+}
+.hc-m {
+  margin-top: 0;
+}
+.hc-m .hc-in {
+  display: block;
+  padding: 48px 21px;
+}
+.hc-m .hc-h p {
+  margin: 12px 0 24px;
+  max-width: none;
+  font-size: 15px;
+}
+.hc-m .hc-g {
+  grid-template-columns: repeat(2, 1fr);
+}
+.hc-m .hc-c {
+  height: 112px;
+}
+
+/* ---------- Réalisations : quatre panneaux ---------- */
+.rx {
+  display: flex;
+  gap: 12px;
+  height: 560px;
+  padding: 0 72px;
+}
+.rx-p {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--ink);
+  cursor: pointer;
+  transition: flex-grow 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.rx-p.on {
+  flex-grow: 5.2;
+}
+.rx-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.rx-p.on .rx-bg {
+  transform: none;
+}
+.rx-p::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 14, 12, 0.18) 0%,
+    rgba(14, 14, 12, 0.3) 45%,
+    rgba(14, 14, 12, 0.88) 100%
+  );
+  pointer-events: none;
+}
+.rx-v {
+  position: absolute;
+  inset: 20px 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4f4f1;
+  transition: opacity 0.35s;
+}
+.rx-v i {
+  font: 400 12px/1 'Geist Mono';
+  font-style: normal;
+}
+.rx-v b {
+  /* texte horizontal tourné : l’apostrophe de « l’Arc » reste dessinée correctement */
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  font: 600 24px/1 'Geist';
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+.rx-p.on .rx-v {
+  opacity: 0;
+}
+.rx-open {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 0;
+  width: 760px;
+  height: 100%;
+  margin-left: -380px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.25s,
+    visibility 0s 0.25s;
+}
+.rx-p.on .rx-open {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.45s 0.2s,
+    visibility 0s;
+}
+.rx-win {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 36px;
+  height: 372px;
+}
+.rx-shot {
+  display: block;
+  width: 100%;
+  height: calc(100% - 34px);
+  object-fit: cover;
+  object-position: 50% 0;
+}
+.rx-cap {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: end;
+  color: #f4f4f1;
+}
+.rx-cap h3 {
+  font: 600 26px/1.1 'Geist';
+  letter-spacing: -0.03em;
+}
+.rx-cap h3 a {
+  color: inherit;
+}
+.rx-cap span {
+  display: block;
+  margin-top: 6px;
+  font: 400 11px/1.3 'Geist Mono';
+  color: rgba(244, 244, 241, 0.7);
+}
+.rx-cap p {
+  font: 400 14px/1.4 'Geist';
+  color: rgba(244, 244, 241, 0.85);
+}
+
+/* mobile : rail horizontal */
+.rx-m {
+  height: auto;
+  margin: 0 -21px;
+  padding: 0 21px 4px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 21px;
+  scrollbar-width: none;
+}
+.rx-m::-webkit-scrollbar {
+  display: none;
+}
+.rx-m .rx-p {
+  flex: 0 0 316px;
+  height: 452px;
+  scroll-snap-align: start;
+  transition: none;
+}
+.rx-m .rx-v {
+  display: none;
+}
+.rx-m .rx-open {
+  left: 0;
+  width: 100%;
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.rx-m .rx-win {
+  left: 14px;
+  right: 14px;
+  top: 14px;
+  height: 220px;
+}
+.rx-m .rx-cap {
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  display: block;
+}
+.rx-m .rx-cap h3 {
+  font-size: 22px;
+}
+.rx-m .rx-cap p {
+  margin-top: 10px;
+  font-size: 13.5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rx-p,
+  .rx-bg,
+  .hc-shot,
+  .hc-cap,
+  .hc-logo {
+    transition: none;
+  }
+}
