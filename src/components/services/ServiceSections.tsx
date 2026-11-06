@@ -3,11 +3,13 @@ import { AdminBlock } from '../shared/AdminBlock'
 import { OrioSteps } from '../shared/OrioSteps'
 import { ReviewsBlock } from '../shared/ReviewsBlock'
 import { WorkTrack, type WorkItem } from '../shared/WorkTrack'
+import { VisibleBlock } from './VisibleBlock'
 import {
   PROJECTS,
   SERVICES,
   SERVICE_LINKS,
   SITE_PAGES,
+  VISIBLE_PAGES,
   afterOf,
   type Point,
   type Ref,
@@ -107,6 +109,7 @@ export function ServiceSections({
           <p className="xs-lead">{s.what.lead}</p>
           <Points items={s.what.points} />
         </section>
+        {VISIBLE_PAGES.includes(id) && <VisibleBlock id={id} mobile />}
         <section className="mo-sec">
           <div className="mo-shead">
             <h2 className="mo-h2">
@@ -188,6 +191,7 @@ export function ServiceSections({
           <Points items={s.what.points} />
         </div>
       </section>
+      {VISIBLE_PAGES.includes(id) && <VisibleBlock id={id} />}
       <section className="sec" style={{ padding: 0 }}>
         <div className="shead" style={head}>
           <h2 className="h2">

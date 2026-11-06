@@ -23,7 +23,7 @@ function Hero() {
         <p className="lead">
           Lancement, nouvelle marque, campagne : un site pensé comme une expérience, avec une direction
           artistique forte, des animations et un récit qui se déroule au scroll. Une seule page suffit
-          parfois.
+          parfois. Votre site est référencé sur Google et par les IA.
         </p>
         <div className="hero-cta">
           <div className="hero-btns">

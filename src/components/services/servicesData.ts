@@ -6,6 +6,7 @@ export type ServiceId =
   | 'site-vitrine'
   | 'site-dynamique'
   | 'site-concept'
+  | 'e-commerce'
   | 'developpement-applications'
   | 'seo'
   | 'geo'
@@ -76,6 +77,30 @@ export const PROJECTS = {
     pixel: '/images/2c63fe08cd774a.png',
     real: '/images/cfe60288d854b0.png',
   },
+  bocaux: {
+    name: 'Les Bocaux du Vexin',
+    tag: 'E-commerce · Shopify · 2026',
+    desc: 'Une boutique Shopify simple à tenir au quotidien pour une conserverie locale.',
+    to: '/realisations/les-bocaux-du-vexin',
+    pixel: '/images/07246a74f6555c.png',
+    real: '/images/4decbda594bb3c.jpg',
+  },
+  ocha: {
+    name: 'Ocha & Co.',
+    tag: 'E-commerce · Shopify',
+    desc: 'La boutique en ligne d’une maison de thé japonaise : matchas et thés bio, quiz pour trouver le sien.',
+    to: '/realisations/ocha-and-co',
+    pixel: '/images/881de3b40197db.png',
+    real: '/images/71eb80b3e243f6.jpg',
+  },
+  osmose: {
+    name: 'Osmose Nutrition',
+    tag: 'E-commerce · Refonte UX/CRO · 2025',
+    desc: 'La refonte de la boutique d’un fabricant de compléments alimentaires : diagnostic, routine sur mesure, abonnements.',
+    to: '/realisations/osmose-nutrition',
+    pixel: '/images/5e44d143820ccb.png',
+    real: '/images/b351708a31fde9.jpg',
+  },
   admin: {
     name: 'Orion Admin',
     tag: 'Interface d’administration · sur mesure',
@@ -86,12 +111,12 @@ export const PROJECTS = {
   },
 }
 
-/** Les 9 services, dans l'ordre du menu. */
+/** Les 10 services, dans l'ordre du menu. */
 export const SERVICE_LINKS = [
   {
     id: 'site-internet',
     name: 'Site internet',
-    d: 'Vitrine, dynamique ou concept.',
+    d: 'Vitrine, dynamique, concept ou boutique.',
     icon: '/px/picon-89906f55.svg',
   },
   {
@@ -103,7 +128,7 @@ export const SERVICE_LINKS = [
   {
     id: 'site-dynamique',
     name: 'Site dynamique',
-    d: 'Vendre, réserver et gérer en ligne.',
+    d: 'Blog, réservation, espace compte.',
     icon: '/px/picon-c328b51d.svg',
   },
   {
@@ -111,6 +136,12 @@ export const SERVICE_LINKS = [
     name: 'Site concept',
     d: 'Une expérience pour marquer les esprits.',
     icon: '/px/picon-ba26fc59.svg',
+  },
+  {
+    id: 'e-commerce',
+    name: 'E-commerce',
+    d: 'Votre boutique en ligne, sur Shopify.',
+    icon: '/px/picon-808b4de1.svg',
   },
   {
     id: 'developpement-applications',
@@ -148,6 +179,10 @@ const ALONE: Faq = {
   q: 'Pourrai-je modifier mon site seul ?',
   a: 'Oui. On vous livre un outil simple et on vous montre comment l’utiliser. Vous changez vos textes, vos images et vos pages sans connaissances techniques.',
 }
+const ACCESS: Point = {
+  t: 'Votre projet reste à vous',
+  d: 'Le nom de domaine, les contenus et les accès sont à votre nom, et le projet est facile à reprendre si besoin.',
+}
 const SEO_GEO: Point = {
   t: 'SEO et GEO inclus dans le devis',
   d: 'Pour chacun de nos clients, on pousse le référencement : sur Google avec le SEO, et auprès des IA comme ChatGPT avec le GEO.',
@@ -171,7 +206,7 @@ export const SERVICES: Record<ServiceId, Service> = {
   'site-internet': {
     what: {
       title: 'un site internet ?',
-      lead: 'C’est votre adresse sur internet : un endroit ouvert jour et nuit, où vos clients vous trouvent et découvrent ce que vous faites. Selon ce qu’il doit faire pour vous, il prend l’une de ces trois formes.',
+      lead: 'C’est votre adresse sur internet : un endroit ouvert jour et nuit, où vos clients vous trouvent et découvrent ce que vous faites. Selon ce qu’il doit faire pour vous, il prend l’une de ces formes.',
       points: [
         {
           t: 'Le site vitrine',
@@ -179,11 +214,15 @@ export const SERVICES: Record<ServiceId, Service> = {
         },
         {
           t: 'Le site dynamique',
-          d: 'Pour vendre, réserver ou gérer en ligne, chaque jour.',
+          d: 'Pour publier un blog, prendre des réservations ou ouvrir un espace compte.',
         },
         {
           t: 'Le site concept',
           d: 'Pour marquer les esprits lors d’un lancement ou d’une campagne.',
+        },
+        {
+          t: 'Le site e-commerce',
+          d: 'Pour vendre vos produits en ligne, sur Shopify.',
         },
       ],
     },
@@ -299,19 +338,19 @@ export const SERVICES: Record<ServiceId, Service> = {
   'site-dynamique': {
     what: {
       title: 'un site dynamique ?',
-      lead: 'C’est un site qui ne se contente pas de présenter : on peut y acheter, réserver ou se connecter. Votre équipe le fait vivre chaque jour depuis un espace de gestion simple.',
+      lead: 'C’est un site qui ne se contente pas de présenter : on peut y lire un blog, réserver ou se connecter à son compte. Votre équipe le fait vivre chaque jour depuis un espace de gestion simple.',
       points: [
         {
           t: 'À quoi ça sert',
-          d: 'À vendre, à prendre des réservations ou des rendez-vous à toute heure, sans passer par le téléphone.',
+          d: 'À publier vos actualités, à prendre des réservations à toute heure et à offrir un espace compte à vos clients ou à vos membres.',
         },
         {
           t: 'Pour qui',
-          d: 'Les commerces, les restaurants, les hôtels, les clubs et les réseaux avec des membres.',
+          d: 'Les restaurants, les hôtels, les clubs, les associations et les réseaux avec des membres.',
         },
         {
           t: 'Un exemple',
-          d: 'Une boulangerie reçoit les commandes sur son site et prépare les retraits depuis le fournil.',
+          d: 'Un club publie ses actualités, et ses membres retrouvent leurs informations dans leur espace.',
         },
       ],
     },
@@ -333,7 +372,7 @@ export const SERVICES: Record<ServiceId, Service> = {
     after: [
       {
         t: 'Votre équipe prend la main',
-        d: 'Produits, horaires, offres, actualités : elle les met à jour depuis un ordinateur ou un téléphone.',
+        d: 'Horaires, offres, articles, actualités : elle les met à jour depuis un ordinateur ou un téléphone.',
       },
       MAINT,
       {
@@ -341,11 +380,18 @@ export const SERVICES: Record<ServiceId, Service> = {
         d: 'Un nouveau service, un nouvel outil à relier : on l’ajoute quand vous en avez besoin.',
       },
     ],
-    refs: [{ p: 'moulin' }, { p: 'chateau' }, { p: 'entrepreneurs' }],
+    refs: [
+      { p: 'entrepreneurs' },
+      { p: 'chateau' },
+      {
+        p: 'moulin',
+        note: 'Une boulangerie à Brive : un site et un back-office pour tout gérer depuis le fournil.',
+      },
+    ],
     faq: [
       {
         q: 'Combien coûte un site dynamique ?',
-        a: 'Chaque projet est chiffré sur devis après un premier échange, gratuit et sans engagement. Le prix dépend des fonctions (boutique, réservation, espace client) et des outils à relier.',
+        a: 'Chaque projet est chiffré sur devis après un premier échange, gratuit et sans engagement. Le prix dépend des fonctions (blog, réservation, espace compte) et des outils à relier.',
       },
       {
         q: 'Combien de temps faut-il ?',
@@ -359,6 +405,85 @@ export const SERVICES: Record<ServiceId, Service> = {
       {
         q: 'Où mon site est-il hébergé ?',
         a: 'Cela dépend de la technologie choisie. On vous recommande la solution la plus simple et la plus fiable pour votre cas.',
+      },
+    ],
+  },
+  'e-commerce': {
+    what: {
+      title: 'un site e-commerce ?',
+      lead: 'C’est une boutique ouverte jour et nuit : vos clients choisissent, paient en ligne, et vous recevez la commande. On la construit sur Shopify, qui gère pour vous l’hébergement, la sécurité et les paiements.',
+      points: [
+        {
+          t: 'À quoi ça sert',
+          d: 'À vendre vos produits partout et à toute heure, et à gérer vos stocks et vos commandes au même endroit.',
+        },
+        {
+          t: 'Pour qui',
+          d: 'Les marques, les artisans, les producteurs et les commerçants qui veulent vendre en ligne.',
+        },
+        {
+          t: 'Un exemple',
+          d: 'Une conserverie locale vend ses bocaux en ligne et tient sa boutique au quotidien, sans nous appeler.',
+        },
+      ],
+    },
+    steps: [
+      [
+        'On fait connaissance',
+        'On parle de vos produits, de la livraison et du paiement. Vous recevez un devis clair.',
+      ],
+      [
+        'On dessine votre boutique',
+        'Vous voyez l’accueil, les fiches produits et le panier, et vous validez chaque écran.',
+      ],
+      [
+        'On la construit',
+        'Un thème sur mesure sur Shopify, vos produits et le paiement. Vous l’essayez avant tout le monde.',
+      ],
+      [
+        'On la met en ligne',
+        'La boutique est publiée et on vous montre comment gérer vos produits, vos stocks et vos commandes.',
+      ],
+    ],
+    after: [
+      {
+        t: 'Vous gérez votre boutique',
+        d: 'Produits, stocks et commandes : vous les gérez au quotidien, sans dépendre de nous.',
+      },
+      {
+        t: 'Shopify s’occupe du technique',
+        d: 'L’hébergement, la sécurité et les paiements sont gérés par Shopify.',
+      },
+      {
+        t: 'Votre boutique évolue',
+        d: 'Une nouvelle gamme, une application, une livraison à l’international : on l’ajoute quand vous en avez besoin.',
+      },
+    ],
+    refs: [{ p: 'bocaux' }, { p: 'ocha' }, { p: 'osmose' }],
+    faq: [
+      {
+        q: 'Combien coûte un site e-commerce ?',
+        a: 'Chaque projet est chiffré sur devis après un premier échange, gratuit et sans engagement. Le prix dépend du nombre de produits, de la livraison et des applications à relier.',
+      },
+      {
+        q: 'Pourquoi Shopify ?',
+        a: 'Shopify gère pour vous l’hébergement, la sécurité et les paiements, et dispose d’un très large choix d’applications. C’est la base la plus sereine pour la plupart des marques.',
+      },
+      {
+        q: 'Y a-t-il un abonnement Shopify ?',
+        a: 'Oui. Shopify facture un abonnement mensuel, à payer directement, en plus de la création de la boutique. On vous aide à choisir la formule adaptée.',
+      },
+      {
+        q: 'Pourrai-je gérer ma boutique seul ?',
+        a: 'Oui. Produits, stocks et commandes se gèrent sans connaissances techniques, et on vous montre comment faire à la mise en ligne.',
+      },
+      {
+        q: 'Pouvez-vous reprendre ma boutique existante ?',
+        a: 'Oui, après un audit. On vous dit franchement s’il vaut mieux la faire évoluer ou repartir de zéro, et pourquoi.',
+      },
+      {
+        q: 'Ma boutique sera-t-elle visible sur Google ?',
+        a: 'Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.',
       },
     ],
   },
@@ -748,13 +873,24 @@ export const SERVICES: Record<ServiceId, Service> = {
   },
 }
 
+/** Les pages qui vendent un site : on y met en avant le référencement. */
+const SHOP_PAGES: readonly ServiceId[] = [
+  'site-internet',
+  'site-vitrine',
+  'site-dynamique',
+  'site-concept',
+  'e-commerce',
+]
+export const VISIBLE_PAGES = SHOP_PAGES
+
 /** Et après : le contenu de la page, puis ce qu'on propose à tous les clients (sans renvoyer vers la page en cours). */
 export const afterOf = (id: ServiceId): Point[] => [
   ...SERVICES[id].after,
+  ...(SHOP_PAGES.includes(id) ? [ACCESS] : []),
   ...(id === 'seo' || id === 'geo' ? [ADS] : id === 'google-ads' ? [SEO_GEO] : [SEO_GEO, ADS]),
 ]
 
-/** Les pages où le bloc Orion Admin a du sens : celles qui vendent un site. */
+/** Les pages où le bloc Orion Admin a du sens : pas la boutique, qui se gère dans Shopify. */
 export const SITE_PAGES: readonly ServiceId[] = [
   'site-internet',
   'site-vitrine',

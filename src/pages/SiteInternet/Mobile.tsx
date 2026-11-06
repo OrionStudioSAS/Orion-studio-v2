@@ -16,9 +16,9 @@ function MoHero() {
         <span className="serif">qui travaille pour votre entreprise.</span>
       </h1>
       <p className="mo-lead">
-        Site vitrine, site dynamique ou site concept : on conçoit, on code et on met en ligne le site qui
-        correspond à ce que vous devez faire en ligne, rapide, simple à mettre à jour et pensé pour faire
-        venir des demandes.
+        Site vitrine, site dynamique, site concept ou boutique en ligne : on conçoit, on code et on met en
+        ligne le site qui correspond à ce que vous devez faire en ligne, rapide, simple à mettre à jour et
+        pensé pour faire venir des demandes. Votre site est référencé sur Google et par les IA.
       </p>
       <div className="mo-btns">
         <a className="btn btn-ink mo-btn">Analyser mon site</a>

@@ -23,7 +23,7 @@ function Hero() {
         <p className="lead">
           Artisans, cabinets, commerces, indépendants : vos services, vos réalisations et vos avis présentés
           clairement, un formulaire qui pose les bonnes questions, et un site que vous mettez à jour
-          vous-même.
+          vous-même. Votre site est référencé sur Google et par les IA.
         </p>
         <div className="hero-cta">
           <div className="hero-btns">

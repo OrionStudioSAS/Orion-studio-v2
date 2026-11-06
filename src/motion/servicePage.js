@@ -1,4 +1,4 @@
-import { G, ST, anim, $, $$, onView, split, up } from './core'
+import { G, ST, anim, $, $$, onView, split, typeIn, up } from './core'
 import { reviewsBlock, workTrack } from './homeBlocks'
 import { videoStories } from './localPages'
 
@@ -78,10 +78,30 @@ function afterBlock(R) {
   })
 }
 
+/* ---------- référencement : votre site remonte au scroll, la recherche et la réponse s'écrivent ---------- */
+function visibleBlock(R) {
+  const box = $('.xv', R)
+  if (!box) return
+  up($$('.xv-t, .xv-c, .xv-n', box), $('.xv-g', box), { y: 28, s: 0.1 })
+  if (!anim) return
+  const you = $('.xv-you', box),
+    others = $$('.xv-o', box),
+    h = you.offsetHeight
+  G.timeline({ scrollTrigger: { trigger: $('.xv-g', box), start: 'top 82%', end: 'top 34%', scrub: 0.5 } })
+    .fromTo(you, { y: h * others.length }, { y: 0, ease: 'none' }, 0)
+    .fromTo(others, { y: -h }, { y: 0, ease: 'none' }, 0)
+  $$('[data-t]', box).forEach((el) => {
+    const text = el.dataset.t
+    el.textContent = ''
+    onView(el, () => typeIn(el, text, el.classList.contains('xv-ans') ? 0.016 : 0.04), 'top 78%')
+  })
+}
+
 /* ---------- pages Expertises ---------- */
 function servicePage(R, mob) {
   if (!$('.xs-what', R)) return
   whatBlock(R)
+  visibleBlock(R)
   afterBlock(R)
   up($$(mob ? '.xpm-rl' : '.xs-sv', R), $(mob ? '.xpm-rel' : '.xs-rls', R), { y: 22, s: 0.05 })
   workTrack(R, mob)

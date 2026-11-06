@@ -21,6 +21,7 @@ function MoHero() {
       <p className="mo-lead">
         Artisans, cabinets, commerces, indépendants : vos services, vos réalisations et vos avis présentés
         clairement, un formulaire qui pose les bonnes questions, et un site que vous mettez à jour vous-même.
+        Votre site est référencé sur Google et par les IA.
       </p>
       <div className="mo-btns">
         <a className="btn btn-ink mo-btn">Analyser mon site</a>

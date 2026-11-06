@@ -20,6 +20,7 @@ function MoHero() {
       <p className="mo-lead">
         Lancement, nouvelle marque, campagne : un site pensé comme une expérience, avec une direction
         artistique forte, des animations et un récit qui se déroule au scroll. Une seule page suffit parfois.
+        Votre site est référencé sur Google et par les IA.
       </p>
       <div className="mo-btns">
         <a className="btn btn-ink mo-btn">Analyser mon site</a>
@@ -181,6 +182,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
             <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/e-commerce">E-commerce</Link>
             <Link to="/expertises/developpement-applications">Développement d’applications</Link>
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>

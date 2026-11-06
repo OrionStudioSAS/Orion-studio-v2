@@ -28,6 +28,7 @@ export function MoFt2() {
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
             <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/e-commerce">E-commerce</Link>
             <Link to="/expertises/developpement-applications">Développement d’applications</Link>
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>

@@ -21,8 +21,8 @@ function Hero() {
       </h1>
       <div className="hero-row">
         <p className="lead">
-          Boutique en ligne, click & collect, réservation, espace client ou espace membres : un site relié à
-          un back-office, où vos contenus, vos produits et vos demandes se gèrent sans nous appeler.
+          Blog, réservation, espace client ou espace membres : un site relié à un back-office, où vos contenus
+          et vos demandes se gèrent sans nous appeler. Votre site est référencé sur Google et par les IA.
         </p>
         <div className="hero-cta">
           <div className="hero-btns">
@@ -149,7 +149,7 @@ function HeroMedia() {
                 >
                   <path d="M1 5.2L4.3 8.5L11 1.5" stroke="#FF4D1A" strokeWidth="1.8" />
                 </svg>
-                Paiement
+                Espace compte
               </span>
               <span className="cr">
                 <svg
@@ -184,7 +184,7 @@ function HeroMedia() {
         <div className="ch2-sug">
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
-            <b>Vendre en ligne</b>
+            <b>Publier un blog</b>
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />

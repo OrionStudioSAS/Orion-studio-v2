@@ -18,6 +18,10 @@ export function MobileMenu() {
         <Link to="/expertises/site-concept" className="mo-mi mo-msub" data-exp="site-concept">
           <span>Site concept</span>
         </Link>
+        <Link to="/expertises/e-commerce" className="mo-mi" data-exp="e-commerce">
+          <img className="pxsvg picon" src="/px/picon-808b4de1.svg" alt="" width={20} height={20} />
+          <span>E-commerce</span>
+        </Link>
         <Link
           to="/expertises/developpement-applications"
           className="mo-mi"
@@ -337,7 +341,6 @@ export function MobileMenu() {
       </div>
       <div className="mo-ml2">
         <Link to="/realisations">Réalisations</Link>
-        <Link to="/orion-admin">Orion Admin</Link>
         <Link to="/le-studio">Le studio</Link>
         <Link to="/ressources">Ressources</Link>
       </div>

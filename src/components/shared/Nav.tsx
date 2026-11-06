@@ -40,9 +40,6 @@ export function Nav() {
         <NavLink to="/realisations" className={navClass}>
           Réalisations
         </NavLink>
-        <NavLink to="/orion-admin" className={navClass}>
-          Orion Admin
-        </NavLink>
         <NavLink to="/le-studio" className={navClass}>
           Le studio
         </NavLink>
@@ -81,6 +78,13 @@ export function Nav() {
                   Site concept
                 </Link>
               </div>
+              <Link to="/expertises/e-commerce" className="mm-it" data-exp="e-commerce">
+                <img className="pxsvg picon" src="/px/picon-808b4de1.svg" alt="" width={20} height={20} />
+                <div>
+                  <b>E-commerce</b>
+                  <span>Votre boutique en ligne sur Shopify, simple à gérer au quotidien.</span>
+                </div>
+              </Link>
               <Link
                 to="/expertises/developpement-applications"
                 className="mm-it"

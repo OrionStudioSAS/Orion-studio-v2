@@ -157,6 +157,7 @@ const EXP_PAGE = {
   'Site vitrine': 'site-vitrine',
   'Site dynamique': 'site-dynamique',
   'Site concept': 'site-concept',
+  'E-commerce': 'e-commerce',
   'Développement d’applications': 'developpement-applications',
   Automatisations: 'automatisations',
   SEO: 'seo',

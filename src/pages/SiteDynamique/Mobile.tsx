@@ -18,8 +18,8 @@ function MoHero() {
         <span className="serif">que votre équipe fait vivre chaque jour.</span>
       </h1>
       <p className="mo-lead">
-        Boutique en ligne, click & collect, réservation, espace client ou espace membres : un site relié à un
-        back-office, où vos contenus, vos produits et vos demandes se gèrent sans nous appeler.
+        Blog, réservation, espace client ou espace membres : un site relié à un back-office, où vos contenus
+        et vos demandes se gèrent sans nous appeler. Votre site est référencé sur Google et par les IA.
       </p>
       <div className="mo-btns">
         <a className="btn btn-ink mo-btn">Analyser mon site</a>
@@ -65,7 +65,7 @@ function MoMedia() {
               <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 5.2L4.3 8.5L11 1.5" stroke="#FF4D1A" strokeWidth="1.8" />
               </svg>
-              Paiement
+              Espace compte
             </span>
             <span className="cr">
               <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +117,7 @@ function MoMedia() {
         <div className="mo-sug">
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-ca3eed21.svg" alt="" width={10} height={10} />
-            <b>Vendre en ligne</b>
+            <b>Publier un blog</b>
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-909d41ec.svg" alt="" width={10} height={10} />
@@ -181,6 +181,7 @@ function MoFt() {
           <div className="mo-fc">
             <div className="fc-k">Expertises</div>
             <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/e-commerce">E-commerce</Link>
             <Link to="/expertises/developpement-applications">Développement d’applications</Link>
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>
