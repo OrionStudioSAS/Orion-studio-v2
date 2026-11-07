@@ -540,7 +540,7 @@ function CommentOnTravaille() {
           <span className="serif">on travaille.</span>
         </h2>
         <p className="lead">
-          Une seule équipe du premier échange à la mise en ligne. Vous suivez chaque étape dans Orion Admin.
+          Une seule équipe du premier échange à la mise en ligne. Vous savez toujours où en est votre projet.
         </p>
       </div>
       <div className="steps s-steps">
@@ -698,7 +698,7 @@ function QuestionsFrequentes() {
               </svg>
             </div>
             <p>
-              Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.
+              Oui. Un SEO complet (technique, contenus, suivi des positions) et un GEO complet (réponses claires, données structurées, suivi dans les IA) sont inclus dans le devis de chacun de nos clients.
             </p>
           </div>
           <div className="q">

@@ -385,7 +385,7 @@ function RzGrid() {
           <h3 className="p-name">
             <Link to="/orion-admin">Orion Admin</Link>
           </h3>
-          <span className="p-tag">Interface d’administration · sur mesure</span>
+          <span className="p-tag">Interface d’administration · en option</span>
         </div>
         <p className="p-desc">
           L’interface faite sur mesure pour piloter son site : chiffres, contenus, langues et tout ce que l’activité demande.

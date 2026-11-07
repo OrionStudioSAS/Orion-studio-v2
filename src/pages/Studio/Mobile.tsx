@@ -786,7 +786,7 @@ function CinqEtapesDoggyVous() {
         <h2 className="mo-h2">
           Cinq étapes,<span className="serif">Doggy vous montre le chemin.</span>
         </h2>
-        <p className="mo-lead">Du premier échange à la mise en ligne, vous suivez tout dans Orion Admin.</p>
+        <p className="mo-lead">Du premier échange à la mise en ligne, vous savez toujours où en est votre projet.</p>
       </div>
       <div className="s2-track s2-m">
         <div className="s2-dog">

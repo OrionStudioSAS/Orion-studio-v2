@@ -103,7 +103,7 @@ export const PROJECTS = {
   },
   admin: {
     name: 'Orion Admin',
-    tag: 'Interface d’administration · sur mesure',
+    tag: 'Interface d’administration · en option',
     desc: 'L’interface faite sur mesure pour piloter son site : chiffres, contenus, langues et tout ce que l’activité demande.',
     to: '/orion-admin',
     pixel: '/images/4b8094654fed91.png',
@@ -184,8 +184,8 @@ const ACCESS: Point = {
   d: 'Le nom de domaine, les contenus et les accès sont à votre nom, et le projet est facile à reprendre si besoin.',
 }
 const SEO_GEO: Point = {
-  t: 'SEO et GEO inclus dans le devis',
-  d: 'Pour chacun de nos clients, on pousse le référencement : sur Google avec le SEO, et auprès des IA comme ChatGPT avec le GEO.',
+  t: 'SEO et GEO complets, inclus dans le devis',
+  d: 'Pour chacun de nos clients : technique, contenus et suivi des positions pour Google, réponses claires et données structurées pour les IA comme ChatGPT.',
   links: [
     { to: '/expertises/seo', label: 'Le SEO' },
     { to: '/expertises/geo', label: 'Le GEO' },
@@ -327,7 +327,7 @@ export const SERVICES: Record<ServiceId, Service> = {
       ALONE,
       {
         q: 'Mon site sera-t-il visible sur Google ?',
-        a: 'Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.',
+        a: 'Oui. Un SEO complet (technique, contenus, suivi des positions) et un GEO complet (réponses claires, données structurées, suivi dans les IA) sont inclus dans le devis de chacun de nos clients.',
       },
       {
         q: 'Reprenez-vous un site existant ?',
@@ -483,7 +483,7 @@ export const SERVICES: Record<ServiceId, Service> = {
       },
       {
         q: 'Ma boutique sera-t-elle visible sur Google ?',
-        a: 'Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.',
+        a: 'Oui. Un SEO complet (technique, contenus, suivi des positions) et un GEO complet (réponses claires, données structurées, suivi dans les IA) sont inclus dans le devis de chacun de nos clients.',
       },
     ],
   },
@@ -542,7 +542,7 @@ export const SERVICES: Record<ServiceId, Service> = {
       },
       {
         q: 'Sera-t-il visible sur Google ?',
-        a: 'Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.',
+        a: 'Oui. Un SEO complet (technique, contenus, suivi des positions) et un GEO complet (réponses claires, données structurées, suivi dans les IA) sont inclus dans le devis de chacun de nos clients.',
       },
       ALONE,
     ],
@@ -608,7 +608,7 @@ export const SERVICES: Record<ServiceId, Service> = {
       },
       {
         q: 'Comment suis-je informé de l’avancement ?',
-        a: 'Dans Orion Admin, l’espace client inclus dans chaque projet : étapes, documents, messages et validations au même endroit.',
+        a: 'On vous tient au courant à chaque étape : vous voyez où en est le projet et vous validez avant qu’on passe à la suite.',
       },
     ],
   },
@@ -668,7 +668,7 @@ export const SERVICES: Record<ServiceId, Service> = {
       },
       {
         q: 'Le SEO est-il inclus dans la création de site ?',
-        a: 'Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.',
+        a: 'Oui. Un SEO complet (technique, contenus, suivi des positions) et un GEO complet (réponses claires, données structurées, suivi dans les IA) sont inclus dans le devis de chacun de nos clients.',
       },
     ],
   },
@@ -734,7 +734,7 @@ export const SERVICES: Record<ServiceId, Service> = {
       },
       {
         q: 'Le SEO est-il inclus dans la création de site ?',
-        a: 'Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.',
+        a: 'Oui. Un SEO complet (technique, contenus, suivi des positions) et un GEO complet (réponses claires, données structurées, suivi dans les IA) sont inclus dans le devis de chacun de nos clients.',
       },
     ],
   },
@@ -780,13 +780,13 @@ export const SERVICES: Record<ServiceId, Service> = {
       },
       {
         t: 'Tout est au même endroit',
-        d: 'Rapports, échanges et prochaines actions sont partagés dans Orion Admin, votre espace client.',
+        d: 'Rapports, échanges et prochaines actions sont partagés au même endroit.',
       },
     ],
     refs: [
       {
         p: 'admin',
-        note: 'Rapports, échanges et prochaines actions sont partagés dans Orion Admin, votre espace client.',
+        note: 'En option, vos chiffres et vos campagnes peuvent se retrouver dans Orion Admin, votre interface sur mesure.',
       },
     ],
     faq: [

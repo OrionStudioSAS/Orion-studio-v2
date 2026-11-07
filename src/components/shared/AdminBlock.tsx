@@ -21,7 +21,7 @@ const TABS = [
 /** Orion Admin en une section : les onglets changent l'écran au survol ou au toucher. */
 export function AdminBlock({ mobile = false }: { mobile?: boolean }) {
   const lead =
-    'L’interface d’administration de votre site, faite sur mesure : vous voyez tout, vous changez tout.'
+    'En option : l’interface d’administration de votre site, faite sur mesure. Vous voyez tout, vous changez tout.'
   return (
     <section className={mobile ? 'adb adb-m' : 'adb'}>
       <div className="adb-l">

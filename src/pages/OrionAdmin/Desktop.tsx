@@ -14,7 +14,7 @@ function Hero() {
       <div className="hero-row">
         <p className="lead">
           Vos chiffres, vos textes, vos images, vos traductions : tout au même endroit, sur une interface
-          faite sur mesure pour votre site.
+          faite sur mesure pour votre site. Une option à ajouter à votre projet.
         </p>
         <div className="hero-cta">
           <div className="hero-btns">

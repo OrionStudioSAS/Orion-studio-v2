@@ -545,7 +545,7 @@ function CommentOnTravaille() {
           <span className="serif">on travaille.</span>
         </h2>
         <p className="lead">
-          Une seule équipe du premier échange à la mise en ligne. Vous suivez chaque étape dans Orion Admin.
+          Une seule équipe du premier échange à la mise en ligne. Vous savez toujours où en est votre projet.
         </p>
       </div>
       <div className="steps s-steps">
@@ -668,9 +668,9 @@ function VousSuivezTout() {
           </div>
           <div className="p-meta">
             <h3 className="p-name">Orion Admin</h3>
-            <span className="p-tag">Interface d’administration · sur mesure</span>
+            <span className="p-tag">Interface d’administration · en option</span>
           </div>
-          <p className="p-desc">Échanges, documents et étapes de votre projet réunis dans Orion Admin.</p>
+          <p className="p-desc">Échanges, documents et étapes de votre projet réunis au même endroit.</p>
         </article>
         <div className="rv pf-q">
           <p className="rv-q">

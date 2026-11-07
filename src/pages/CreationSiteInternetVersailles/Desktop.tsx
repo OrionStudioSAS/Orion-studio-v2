@@ -1269,7 +1269,7 @@ function VosQuestionsAVersailles() {
             </div>
             <p>
               Non. Le studio est à Paris, dans le 8e : on peut se voir à Versailles pour lancer le projet,
-              puis tout avance en visio et dans Orion Admin, votre espace de suivi.
+              puis tout avance en visio et par message.
             </p>
           </div>
           <div className="q">

@@ -68,19 +68,19 @@ const FAQ = [
   },
   {
     q: 'Est-ce le même outil pour tout le monde ?',
-    a: 'Non. Orion Admin est construit sur mesure pour chaque site. Un golf, une boulangerie et un cabinet n’ont pas besoin des mêmes écrans.',
+    a: 'Non. Orion Admin est construit sur mesure pour chaque site qui le choisit. Un golf, une boulangerie et un cabinet n’ont pas besoin des mêmes écrans.',
   },
   {
     q: 'Que peut-on y faire exactement ?',
     a: 'Cela dépend de votre activité. On part de ce que vous faites chaque semaine, et on construit les écrans qui vous font gagner du temps.',
   },
   {
-    q: 'Combien ça coûte ?',
-    a: 'Orion Admin se prévoit avec votre site et il est chiffré dans le devis, après un premier échange gratuit et sans engagement.',
+    q: 'Est-ce inclus avec mon site ?',
+    a: 'Non, c’est une option. On vous le propose quand votre site en a besoin. Sans Orion Admin, vous pouvez toujours modifier votre site vous-même.',
   },
   {
-    q: 'Et pendant la création du site ?',
-    a: 'Vous y suivez votre projet : les étapes, les documents, les messages et les validations sont au même endroit.',
+    q: 'Combien ça coûte ?',
+    a: 'Cela dépend de ce que vous voulez y mettre. C’est chiffré dans le devis de votre site, après un premier échange gratuit et sans engagement.',
   },
 ]
 
@@ -107,8 +107,8 @@ export function AdminContent({ mobile = false }: { mobile?: boolean }) {
         </div>
         <div className="xs-what-r">
           <p className="xs-lead">
-            C’est l’interface d’administration de votre site, construite sur mesure par le studio. Vous y
-            voyez ce qui se passe sur votre site, et vous le modifiez vous-même.
+            C’est l’interface d’administration de votre site, construite sur mesure par le studio, en option.
+            Vous y voyez ce qui se passe sur votre site, et vous le modifiez vous-même.
           </p>
           <div className="xs-pts">
             {POINTS.map((p) => (

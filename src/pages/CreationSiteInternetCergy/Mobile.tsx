@@ -1226,8 +1226,7 @@ function VosQuestionsNosReponses() {
             </svg>
           </div>
           <p>
-            Non. On peut se voir à Cergy pour lancer le projet, puis tout avance en visio et dans Orion Admin,
-            votre espace de suivi.
+            Non. On peut se voir à Cergy pour lancer le projet, puis tout avance en visio et par message.
           </p>
         </div>
         <div className="mo-q">

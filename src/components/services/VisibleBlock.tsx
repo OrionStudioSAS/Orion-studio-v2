@@ -29,7 +29,8 @@ export function VisibleBlock({ id, mobile = false }: { id: ServiceId; mobile?: b
         <div className="xv-t">
           <p>
             Vos clients vous cherchent sur Google, et ils posent aussi la question à ChatGPT. Votre site est
-            construit pour répondre aux deux. C’est inclus dans le devis, pour chacun de nos clients.
+            construit pour répondre aux deux. Un SEO complet et un GEO complet sont inclus dans le devis, pour
+            chacun de nos clients.
           </p>
           <div className="xv-l">
             <Link to="/expertises/seo" className="lnk">
@@ -44,6 +45,9 @@ export function VisibleBlock({ id, mobile = false }: { id: ServiceId; mobile?: b
       <div className="xv-g">
         <div className="xv-c">
           <div className="xv-k">Sur Google</div>
+          <div className="xv-w">
+            SEO complet : technique, vitesse, contenus, fiche Google, suivi des positions.
+          </div>
           <div className="xv-q" data-t={query}>
             {query}
           </div>
@@ -64,6 +68,9 @@ export function VisibleBlock({ id, mobile = false }: { id: ServiceId; mobile?: b
         </div>
         <div className="xv-c">
           <div className="xv-k">Sur les IA</div>
+          <div className="xv-w">
+            GEO complet : réponses claires, données structurées, sources citées, suivi dans les IA.
+          </div>
           <div className="xv-ask">{ask}</div>
           <div
             className="xv-ans"

@@ -212,7 +212,7 @@ function McNk() {
         </div>
         <div className="mo-pmeta">
           <h3>Orion Admin</h3>
-          <span>Interface d’administration · sur mesure</span>
+          <span>Interface d’administration · en option</span>
         </div>
         <p>L’interface faite sur mesure pour piloter son site : chiffres, contenus, langues et tout ce que l’activité demande.</p>
         <Link to="/orion-admin" className="lnk mo-more" data-proj="orion-admin">

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MobileFooter } from '../../components/shared/MobileFooter'
 import { ClientsBlock } from './ClientsBlock'
+import { ServicesIndex } from './ServicesIndex'
 import { AdminBlock } from '../../components/shared/AdminBlock'
 import { OrioSteps } from '../../components/shared/OrioSteps'
 import { ReviewsBlock } from '../../components/shared/ReviewsBlock'
@@ -327,207 +328,6 @@ function OrionStudioCEst() {
   )
 }
 
-function DuCroquisAuCode() {
-  return (
-    <section className="mo-sec mo-exp">
-      <div className="mo-shead">
-        <h2 className="mo-h2">
-          Du croquis au code,<span className="serif">sans relais.</span>
-        </h2>
-        <p className="mo-lead">
-          Six métiers portés par les mêmes personnes : ce qu’on dessine, on le construit, composant par
-          composant.
-        </p>
-      </div>
-      <div className="mo-tabs">
-        <span className="on">Site internet</span>
-        <span className="">Développement d’applications</span>
-        <span className="">Automatisations</span>
-        <span className="">SEO</span>
-        <span className="">GEO</span>
-        <span className="">Google Ads</span>
-      </div>
-      <div className="mo-rail">
-        <div className="mo-track">
-          <div className="mo-cell">
-            <img className="pxsvg picon" src="/px/picon-89906f55.svg" alt="" width={20} height={20} />
-            <h3>Site internet</h3>
-            <p>
-              <b>Sites vitrines et refontes sur-mesure</b>, rapides, accessibles et simples à mettre à jour.
-            </p>
-            <div className="mo-vis">
-              <div className="flow">
-                <span className="fl-n">Accueil</span>
-                <span className="fl-l" />
-                <span className="fl-n">Services</span>
-                <span className="fl-l" />
-                <span className="fl-n fl-on">Contact</span>
-                <div className="wire">
-                  <i style={{ width: '70%' }} />
-                  <i style={{ width: '45%' }} />
-                  <i className="blk" />
-                  <i style={{ width: '60%' }} />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mo-cell">
-            <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
-            <h3>Développement d’applications</h3>
-            <p>
-              <b>Applications web, espaces clients et outils métiers</b> qui tiennent la charge.
-            </p>
-            <div className="mo-vis">
-              <div className="code">
-                <div>
-                  <span className="c-k">export function</span> <span className="c-f">ProjectCard</span>
-                  {'({ project }) {'}
-                </div>
-                <div className="i1">
-                  <span className="c-k">return</span> {'<'}
-                  <span className="c-t">article</span> <span className="c-a">className</span>=
-                  <span className="c-s">"card"</span>
-                  {'>'}
-                </div>
-                <div className="i2">
-                  {'<'}
-                  <span className="c-t">h3</span>
-                  {'>{project.name}</'}
-                  <span className="c-t">h3</span>
-                  {'>'}
-                </div>
-                <div className="i1">
-                  {'</'}
-                  <span className="c-t">article</span>
-                  {'>'}
-                </div>
-                <div>{'}'}</div>
-                <div className="c-ok">
-                  <i />
-                  Build réussi — déployé en production
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mo-cell">
-            <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
-            <h3>Automatisations</h3>
-            <p>
-              <b>Moins de copier-coller, plus de temps utile.</b> Formulaires, CRM, devis et relances reliés
-              entre eux.
-            </p>
-            <div className="mo-vis">
-              <div className="auto">
-                <div className="au-n">
-                  <b>Formulaire de contact</b>
-                  <span>Nouvelle demande</span>
-                </div>
-                <span className="au-l" />
-                <div className="au-n">
-                  <b>CRM</b>
-                  <span>Fiche créée, devis préparé</span>
-                </div>
-                <span className="au-l" />
-                <div className="au-n au-on">
-                  <b>E-mail + relance J+3</b>
-                  <span>Envoyé automatiquement</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mo-cell">
-            <img className="pxsvg picon" src="/px/picon-43178318.svg" alt="" width={20} height={20} />
-            <h3>SEO</h3>
-            <p>
-              <b>Remonter sur Google</b> avec un site rapide, bien structuré et des contenus utiles.
-            </p>
-            <div className="mo-vis">
-              <div className="serp">
-                <div className="serp-q">
-                  <svg
-                    className="c-ic"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="9" cy="9" r="7.4" stroke="#77776F" strokeWidth="1.2" />
-                    <path
-                      d="M1.6 9H16.4M9 1.6C11 3.6 11.9 6.2 11.9 9C11.9 11.8 11 14.4 9 16.4M9 1.6C7 3.6 6.1 6.2 6.1 9C6.1 11.8 7 14.4 9 16.4"
-                      stroke="#77776F"
-                      strokeWidth="1.2"
-                    />
-                  </svg>
-                  <span>agence web cannes</span>
-                </div>
-                <div className="serp-r">
-                  <span className="serp-u">votre-site.fr › services</span>
-                  <b>Votre entreprise — le titre qui donne envie de cliquer</b>{' '}
-                  <span className="serp-d">
-                    Une description claire, la bonne requête, et des avis visibles dans les résultats.
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mo-cell">
-            <img className="pxsvg picon" src="/px/picon-84c912e7.svg" alt="" width={20} height={20} />
-            <h3>GEO</h3>
-            <p>
-              <b>Être cité par les IA</b> : ChatGPT, Perplexity et les réponses générées de Google.
-            </p>
-            <div className="mo-vis">
-              <div className="ai">
-                <div className="ai-q">Quelle agence pour refondre notre boutique ?</div>
-                <div className="ai-a">
-                  <span className="ai-dot" />
-                  <div>
-                    Pour une refonte Shopify, plusieurs studios se distinguent par…
-                    <span className="ai-cite">votre-marque.fr</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mo-cell">
-            <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
-            <h3>Google Ads</h3>
-            <p>
-              <b>Des campagnes pilotées au nombre de contacts</b>, pas aux clics.
-            </p>
-            <div className="mo-vis">
-              <div className="adp">
-                <span className="adp-k">Sponsorisé</span>
-                <span className="serp-u">votre-site.fr</span>{' '}
-                <b>Devis en 24 h — Artisan menuisier à Cannes</b>
-                <span className="serp-d">
-                  Fenêtres, portes et agencement sur-mesure. Intervention dans les Alpes-Maritimes.
-                </span>
-                <div className="adp-s">
-                  <span>Demander un devis</span>
-                  <span>Nos réalisations</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mo-count">
-        <span>1 / 6</span>
-        <div className="pixbar mo-pb">
-          <span className="pb-on" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-          <span className="pb-off" />
-        </div>
-      </div>
-    </section>
-  )
-}
-
 function PourQui() {
   return (
     <section className="mo-sec">
@@ -831,7 +631,7 @@ export function Mobile() {
       <ClientsBlock mobile />
       <OrionStudioCEst />
       <WorkTrack mobile />
-      <DuCroquisAuCode />
+      <ServicesIndex mobile />
       <PourQui />
       <CinqEtapesZeroZone />
       <AdminBlock mobile />

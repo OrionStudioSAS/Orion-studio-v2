@@ -1,5 +1,5 @@
 import { adminBlock } from './adminPage'
-import { clientsBlock, workTrack, reviewsBlock } from './homeBlocks'
+import { clientsBlock, servicesIndex, workTrack, reviewsBlock } from './homeBlocks'
 import { stepWalk } from './studio'
 import { header, megaFor, mobileMenu, burgers, cursor, menuSet } from './chrome'
 import { G, ST, $, $$, esc, resetPageScope, fit, goTo, initSmooth } from './core'
@@ -16,7 +16,6 @@ import {
   manifesto,
   headings,
   projects,
-  expertises,
   whoDesk,
   whoMob,
   steps,
@@ -123,7 +122,7 @@ function initHome(R, mob) {
   manifesto(R, mob)
   headings(R, mob)
   projects(R, mob)
-  expertises(R, mob)
+  servicesIndex(R, mob)
   steps(R, mob)
   reviewsBlock(R, mob)
   adminBlock(R)

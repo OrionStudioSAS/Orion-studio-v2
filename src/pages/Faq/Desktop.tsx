@@ -155,8 +155,7 @@ function FqBody() {
           <div className="fq-q">
             <h3>Comment suis-je informé de l’avancement ?</h3>
             <p>
-              Dans Orion Admin, l’espace client inclus dans chaque projet : étapes, documents, messages et
-              validations au même endroit.
+              On vous tient au courant à chaque étape : vous voyez où en est le projet et vous validez avant qu’on passe à la suite.
             </p>
           </div>
           <div className="fq-q">
@@ -211,7 +210,7 @@ function FqBody() {
           <div className="fq-q">
             <h3>Le SEO est-il inclus dans la création de site ?</h3>
             <p>
-              Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.
+              Oui. Un SEO complet (technique, contenus, suivi des positions) et un GEO complet (réponses claires, données structurées, suivi dans les IA) sont inclus dans le devis de chacun de nos clients.
             </p>
           </div>
           <div className="fq-q">

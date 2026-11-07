@@ -406,7 +406,7 @@ function CinqEtapesDoggyVous() {
           <span className="serif">Doggy vous montre le chemin.</span>
         </h2>
         <p className="lead">
-          Du premier échange à la mise en ligne, vous suivez tout dans Orion Admin. Un site vitrine prend en
+          Du premier échange à la mise en ligne, vous savez toujours où en est votre projet. Un site vitrine prend en
           moyenne 4 à 8 semaines.
         </p>
       </div>

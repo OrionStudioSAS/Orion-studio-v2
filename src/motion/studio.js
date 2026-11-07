@@ -78,7 +78,15 @@ function stepWalk(R) {
     const w = bar.offsetWidth - dg.offsetWidth
     dg.style.transform = `translate(${p * w}px, ${-Math.abs(Math.sin(p * Math.PI * 14)) * 18}px)`
     dg.dataset.f = Math.floor(p * 56) % 2 // Orio : une jambe puis l'autre, au rythme du défilement
+    dg.classList.toggle('flip', p > 0.5) // sa bulle reste du côté où il y a la place
   }
+  // au doigt, pas de survol : Orio se présente quand on le touche
+  if ($('.dg-say', dg))
+    dg.addEventListener('click', () => {
+      dg.classList.add('say')
+      clearTimeout(dg._say)
+      dg._say = setTimeout(() => dg.classList.remove('say'), 2400)
+    })
   if (!anim) {
     set(1)
     return

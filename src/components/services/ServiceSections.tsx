@@ -116,11 +116,7 @@ export function ServiceSections({
               Comment ça se passe,<span className="serif">en 4 étapes.</span>
             </h2>
           </div>
-          <OrioSteps
-            mobile
-            steps={s.steps}
-            note={<b>Vous suivez chaque étape dans Orion Admin, votre espace client.</b>}
-          />
+          <OrioSteps mobile steps={s.steps} note={<b>Vous savez toujours où en est votre projet.</b>} />
         </section>
         <section className="xs-after xs-after-m">
           <div className="xs-after-c">
@@ -200,10 +196,7 @@ export function ServiceSections({
             <span className="serif">en 4 étapes.</span>
           </h2>
         </div>
-        <OrioSteps
-          steps={s.steps}
-          note={<b>Vous suivez chaque étape dans Orion Admin, votre espace client.</b>}
-        />
+        <OrioSteps steps={s.steps} note={<b>Vous savez toujours où en est votre projet.</b>} />
       </section>
       <section className="xs-after">
         <div className="xs-after-c">

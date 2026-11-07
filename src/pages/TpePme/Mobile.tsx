@@ -439,7 +439,7 @@ function VosQuestionsNosReponses() {
             </svg>
           </div>
           <p>
-            Oui. Un SEO poussé pour Google et un travail GEO pour les IA sont inclus dans le devis de chacun de nos clients.
+            Oui. Un SEO complet (technique, contenus, suivi des positions) et un GEO complet (réponses claires, données structurées, suivi dans les IA) sont inclus dans le devis de chacun de nos clients.
           </p>
         </div>
         <div className="mo-q">

@@ -28,6 +28,9 @@ export function OrioSteps({
         <span className="dg" role="img" aria-label="Orio, la mascotte du studio, avec son ordinateur">
           <img className="pxsvg dg-f o-a" src="/px/orio-ordi-a.svg" alt="" />
           <img className="pxsvg dg-f o-b" src="/px/orio-ordi-b.svg" alt="" />
+          <span className="dg-say" aria-hidden="true">
+            Salut ! Moi c’est Orio.
+          </span>
         </span>
       </div>
       <div className="s2-bar">
@@ -49,8 +52,7 @@ export function OrioSteps({
       <p className="s2-note">
         {note ?? (
           <>
-            <b>Vous suivez chaque étape en direct dans Orion Admin</b>, avec une préprod pour tester avant la
-            mise en ligne.
+            <b>Vous suivez chaque étape en direct</b>, avec une préprod pour tester avant la mise en ligne.
           </>
         )}
       </p>

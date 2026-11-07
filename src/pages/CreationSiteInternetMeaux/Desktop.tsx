@@ -1245,8 +1245,7 @@ function VosQuestionsAMeaux() {
               </svg>
             </div>
             <p>
-              Oui. Le studio est à Paris : on peut se voir à Meaux pour lancer le projet, puis tout avance en
-              visio et dans Orion Admin, votre espace de suivi.
+              Oui. Le studio est à Paris : on peut se voir à Meaux pour lancer le projet, puis tout avance en visio et par message.
             </p>
           </div>
           <div className="q">

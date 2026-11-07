@@ -36,7 +36,7 @@ const WORK: readonly WorkItem[] = [
   },
   {
     name: 'Orion Admin',
-    tag: 'Interface d’administration · sur mesure',
+    tag: 'Interface d’administration · en option',
     desc: 'L’interface faite sur mesure pour piloter son site : chiffres, contenus, langues et tout ce que l’activité demande.',
     to: '/orion-admin',
     pixel: '/images/4b8094654fed91.png',
