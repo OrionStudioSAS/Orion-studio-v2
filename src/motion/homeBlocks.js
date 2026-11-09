@@ -216,135 +216,177 @@ function reviewsBlock(R) {
     )
 }
 
-/* ---------- nos services : chaque ligne entre quand on l'atteint, la barre suit le défilement ---------- */
+/* ---------- nos services : la liste se lit, l'écran collant montre le service en cours ---------- */
 function servicesIndex(R, mob) {
   const box = $('.si-g', R)
   if (!box) return
-  $$('.si-col', box).forEach((col) => {
-    const cells = $$('.si-rail span', col)
-    const fill = (p) => {
-      const n = Math.round(p * cells.length)
-      cells.forEach((c, i) => {
-        c.className = i < n - 1 ? 'on' : i === n - 1 ? 'cur' : ''
-      })
-    }
+  const st = $('.si-st', box),
+    list = $('.si-list', box),
+    rows = $$('.si-r', box),
+    shots = $$('.si-shot', box),
+    bars = $$('.si-bar span', box),
+    grp = $('.si-grp', box),
+    nm = $('.si-nm', box),
+    cn = $('.si-cn', box),
+    mk = $('.si-mk', box)
+  const names = rows.map((r) => $('b', r).textContent.trim()),
+    groups = rows.map((r) => $('.si-k', r.closest('.si-col')).textContent.trim())
+  const t = (s) => (anim ? s : 0)
+  let cur = 0,
+    z = 1,
+    seen = 0,
+    hov = false
+
+  // le fond clair glisse jusqu'à la ligne active
+  const mark = (now) =>
+    G.to(mk, {
+      y: rows[cur].offsetTop,
+      height: rows[cur].offsetHeight,
+      opacity: 1,
+      duration: now ? 0 : t(0.55),
+      ease: 'power3.out',
+      overwrite: 'auto',
+    })
+  // l'ancien texte sort par le haut, le nouveau entre par le bas (ou l'inverse en remontant)
+  const swap = (el, text, dir) => {
+    const old = el.lastElementChild
+    if (old && old.textContent === text) return
+    const nu = document.createElement('span')
+    nu.textContent = text
+    el.append(nu)
+    const drop = () => old && old.parentNode && old.parentNode.removeChild(old)
     if (!anim) {
-      fill(1)
+      drop()
       return
     }
-    fill(0)
-    ST.create({
-      trigger: col,
-      start: 'top 72%',
-      end: 'bottom 62%',
-      onUpdate: (s) => fill(s.progress),
-      onRefresh: (s) => fill(s.progress),
-    })
-    const k = $('.si-k', col)
+    if (old)
+      G.to(old, { yPercent: -100 * dir, opacity: 0, duration: 0.35, ease: 'power2.in', onComplete: drop })
     G.fromTo(
-      k,
-      { '--d': 0 },
-      { '--d': 1, ease: 'none', scrollTrigger: { trigger: k, start: 'top 90%', end: 'top 60%', scrub: 0.4 } },
+      nu,
+      { yPercent: 100 * dir, opacity: 0 },
+      { yPercent: 0, opacity: 1, duration: 0.6, ease: 'expo.out', delay: 0.08 },
     )
-    $$('.si-it', col).forEach((it) =>
+  }
+  const set = (i) => {
+    if (i === cur) return
+    const dir = i > cur ? 1 : -1
+    cur = i
+    rows.forEach((r, k) => r.classList.toggle('on', k === i))
+    bars.forEach((b, k) => (b.className = k < i ? 'on' : k === i ? 'cur' : ''))
+    const s = shots[i]
+    s.style.zIndex = ++z
+    G.fromTo(
+      s,
+      { clipPath: dir > 0 ? 'inset(100% 0% 0% 0%)' : 'inset(0% 0% 100% 0%)', scale: 1.18 },
+      { clipPath: 'inset(0% 0% 0% 0%)', scale: 1, duration: t(0.9), ease: 'expo.inOut', overwrite: true },
+    )
+    swap(nm, names[i], dir)
+    swap(cn, String(i + 1).padStart(2, '0'), dir)
+    if (grp.textContent !== groups[i]) {
+      grp.textContent = groups[i]
+      if (anim) G.fromTo(grp, { opacity: 0, x: -10 }, { opacity: 1, x: 0, duration: 0.5, ease: 'power3.out' })
+    }
+    mark()
+  }
+  // les textes de départ passent dans un span pour pouvoir glisser
+  ;[nm, cn].forEach((el) => {
+    if (!el.firstElementChild) el.innerHTML = `<span>${el.textContent}</span>`
+  })
+  rows[0].classList.add('on')
+  bars[0].className = 'cur'
+
+  // la ligne qui passe au niveau de lecture devient la ligne active
+  // (la dernière ligne passée : un défilement rapide ne saute jamais l'écran)
+  const pick = () => {
+    const y = innerHeight * (mob ? 0.64 : 0.52)
+    let i = 0
+    rows.forEach((r, k) => {
+      if (r.getBoundingClientRect().top <= y) i = k
+    })
+    seen = i
+    if (!hov) set(i)
+  }
+  ST.create({
+    trigger: list,
+    start: 'top bottom',
+    end: 'bottom top',
+    onUpdate: pick,
+    onRefresh: () => {
+      mark(true)
+      pick()
+    },
+  })
+  mark(true)
+
+  if (mob)
+    ST.create({
+      trigger: st,
+      start: 'top 76px',
+      endTrigger: list,
+      end: 'bottom top',
+      toggleClass: 'pin',
+    })
+
+  // un clic sur l'écran ouvre le service affiché
+  st.addEventListener('click', () => rows[cur].click())
+
+  if (anim) {
+    $$('.si-k', box).forEach((k) =>
       G.fromTo(
-        it,
+        k,
         { '--d': 0 },
         {
           '--d': 1,
           ease: 'none',
-          scrollTrigger: { trigger: it, start: 'bottom 92%', end: 'bottom 58%', scrub: 0.4 },
+          scrollTrigger: { trigger: k, start: 'top 90%', end: 'top 62%', scrub: 0.4 },
         },
       ),
     )
-    $$('.si-subs', col).forEach((s) =>
-      G.fromTo(
-        s,
-        { '--l': 0 },
-        {
-          '--l': 1,
-          ease: 'none',
-          scrollTrigger: { trigger: s, start: 'top 88%', end: 'bottom 70%', scrub: 0.4 },
-        },
-      ),
-    )
-    $$('.si-r', col).forEach((r) => {
-      const ico = $('.picon', r),
-        txt = [$('b', r), $(':scope > div > span', r)],
-        th = $('.si-th', r)
-      G.set(txt, { y: 16, opacity: 0 })
-      if (ico) G.set(ico, { scale: 0, rotate: -14 })
+    rows.forEach((r) => {
+      const parts = [$('.si-n', r), $('b', r), $(':scope > div > span', r)]
+      G.set(parts, { y: 18, opacity: 0 })
       onView(
         r,
-        () => {
-          G.to(txt, { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', stagger: 0.06 })
-          if (ico) G.to(ico, { scale: 1, rotate: 0, duration: 0.6, ease: 'back.out(2.4)' })
-          if (th) pixelate(th, '#F4F4F1', 8, 0.7)
-        },
-        'top 90%',
+        () => G.to(parts, { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', stagger: 0.06 }),
+        'top 92%',
       )
     })
-  })
-  if (!anim || mob || !FINE) return
+    // l'écran s'ouvre en arrivant, puis l'image glisse doucement pendant la lecture
+    // (sur mobile on découpe l'image seule : l'écran garde sa bande blanche)
+    G.fromTo(
+      mob ? $('.si-scr', st) : st,
+      { clipPath: 'inset(10% 12% 10% 12% round 14px)' },
+      {
+        clipPath: 'inset(0% 0% 0% 0% round 14px)',
+        ease: 'none',
+        scrollTrigger: { trigger: box, start: 'top 95%', end: 'top 45%', scrub: 0.5 },
+      },
+    )
+    G.fromTo(
+      $('.si-scr', st),
+      { yPercent: -4, scale: 1.1 },
+      {
+        yPercent: 4,
+        scale: 1.1,
+        ease: 'none',
+        scrollTrigger: { trigger: box, start: 'top bottom', end: 'bottom top', scrub: true },
+      },
+    )
+  }
+  if (mob || !FINE) return
 
-  // survol : l'illustration du service suit la souris
-  const pv = $('.si-pv', box),
-    img = $('img', pv)
-  const W = pv.offsetWidth,
-    H = pv.offsetHeight
-  const toX = G.quickTo(pv, 'x', { duration: 0.45, ease: 'power3.out' }),
-    toY = G.quickTo(pv, 'y', { duration: 0.45, ease: 'power3.out' }),
-    toR = G.quickTo(pv, 'rotate', { duration: 0.6, ease: 'power3.out' })
-  $$('.si-r', box).forEach((r) => {
-    new Image().src = r.dataset.img
+  // survol : l'écran montre tout de suite la ligne pointée, puis reprend le fil du défilement
+  rows.forEach((r, i) =>
+    r.addEventListener('pointerenter', (e) => {
+      if (e.pointerType !== 'mouse') return
+      hov = true
+      set(i)
+    }),
+  )
+  list.addEventListener('pointerleave', () => {
+    hov = false
+    set(seen)
   })
-  let on = false,
-    last = 0
-  // l'image s'affiche sur l'autre colonne : elle ne cache jamais la ligne qu'on est en train de lire
-  const place = (e, r) => {
-    const q = local(box, e),
-      col = r.closest('.si-col'),
-      other = $$('.si-col', box).find((c) => c !== col),
-      x =
-        other.offsetLeft + (other.offsetWidth - W) / 2 + (q.x - col.offsetLeft - col.offsetWidth / 2) * 0.08,
-      y = Math.min(q.h - H, Math.max(0, q.y - H / 2))
-    if (!on) {
-      G.set(pv, { x, y })
-      return
-    }
-    toX(x)
-    toY(y)
-    toR(clamp((q.y - last) * 0.25, -4, 4))
-    last = q.y
-  }
-  const hide = () => {
-    if (!on) return
-    on = false
-    G.to(pv, { opacity: 0, scale: 0.9, duration: 0.2, ease: 'power2.in', overwrite: 'auto' })
-  }
-  box.addEventListener('pointermove', (e) => {
-    if (e.pointerType !== 'mouse') return
-    const r = e.target.closest('.si-r')
-    if (!r) {
-      hide()
-      return
-    }
-    place(e, r)
-    const src = r.dataset.img
-    if (!on) {
-      on = true
-      last = local(box, e).y
-      img.src = src
-      G.to(pv, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.8)', overwrite: 'auto' })
-      pixelate(pv, '#0E0E0C', 16, 0.4)
-    } else if (!img.src.endsWith(src)) {
-      img.src = src
-      pixelate(pv, '#0E0E0C', 16, 0.4)
-    }
-  })
-  box.addEventListener('pointerleave', hide)
-  // on défile : l'image s'efface pour laisser lire
-  onWin('scroll', hide, { passive: true })
 }
 
 export { clientsBlock, servicesIndex, workTrack, reviewsBlock }

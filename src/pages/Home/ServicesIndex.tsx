@@ -88,31 +88,43 @@ const IMAGES: Record<string, string> = {
   'google-ads': '/images/17166791ed4c03.png',
 }
 
-const Row = ({ item, sub = false, mobile }: { item: Item; sub?: boolean; mobile: boolean }) => (
+type Flat = Item & { n: number; group: string; sub: boolean }
+// Les dix services dans l'ordre de lecture, numérotés une seule fois.
+const FLAT: Flat[] = []
+GROUPS.forEach((g) =>
+  g.items.forEach((it) => {
+    FLAT.push({ ...it, n: FLAT.length + 1, group: g.title, sub: false })
+    it.subs?.forEach((s) => FLAT.push({ ...s, n: FLAT.length + 1, group: g.title, sub: true }))
+  }),
+)
+const pad = (n: number) => String(n).padStart(2, '0')
+
+const Row = ({ item }: { item: Flat }) => (
   <Link
     to={`/expertises/${item.id}`}
-    className={sub ? 'si-r si-sub' : 'si-r'}
+    className={item.sub ? 'si-r si-sub' : 'si-r'}
     data-exp={item.id}
-    data-img={IMAGES[item.id]}
+    data-i={item.n - 1}
   >
-    {item.icon && <img className="pxsvg picon" src={item.icon} alt="" width={24} height={24} />}
+    <em className="si-n">{pad(item.n)}</em>
     <div>
-      <b>{item.name}</b>
+      <b>
+        {item.icon && <img className="pxsvg picon" src={item.icon} alt="" width={20} height={20} />}
+        {item.name}
+      </b>
       <span>{item.d}</span>
     </div>
-    {mobile ? (
-      <span className="si-th">
-        <img src={IMAGES[item.id]} alt="" loading="lazy" />
-      </span>
-    ) : (
-      <i aria-hidden="true">→</i>
-    )}
+    <i aria-hidden="true">→</i>
   </Link>
 )
 
-/** Tous les services d'un coup d'œil : tout est visible, rien à ouvrir. */
+/**
+ * Tous les services d'un coup d'œil : la liste reste lisible en entier,
+ * et l'écran collant montre l'univers du service qu'on est en train de lire.
+ */
 export function ServicesIndex({ mobile = false }: { mobile?: boolean }) {
-  const lead = 'Tous nos métiers, portés par les mêmes personnes : ce qu’on dessine, on le construit.'
+  const lead = 'Tous nos métiers, portés par les mêmes personnes : ce qu’on dessine, on le construit.'
+  const first = FLAT[0]
   return (
     <section className={mobile ? 'mo-sec si si-m' : 'sec si'} style={mobile ? undefined : { padding: 0 }}>
       {mobile ? (
@@ -133,33 +145,47 @@ export function ServicesIndex({ mobile = false }: { mobile?: boolean }) {
         </div>
       )}
       <div className="si-g">
-        {GROUPS.map((g) => (
-          <div className="si-col" key={g.title}>
-            <div className="si-rail" aria-hidden="true">
-              {Array.from({ length: 34 }).map((_, i) => (
-                <span key={i} />
-              ))}
-            </div>
-            <h3 className="si-k">{g.title}</h3>
-            {g.items.map((it) => (
-              <div className="si-it" key={it.id}>
-                <Row item={it} mobile={mobile} />
-                {it.subs && (
-                  <div className="si-subs">
-                    {it.subs.map((s) => (
-                      <Row item={s} sub mobile={mobile} key={s.id} />
-                    ))}
-                  </div>
-                )}
-              </div>
+        <div className="si-st" aria-hidden="true">
+          <div className="si-scr">
+            {FLAT.map((f, i) => (
+              <img
+                className={i === 0 ? 'si-shot on' : 'si-shot'}
+                src={IMAGES[f.id]}
+                alt=""
+                loading={i < 2 ? 'eager' : 'lazy'}
+                key={f.id}
+              />
             ))}
           </div>
-        ))}
-        {!mobile && (
-          <div className="si-pv" aria-hidden="true">
-            <img alt="" />
+          <div className="si-bar">
+            {FLAT.map((f, i) => (
+              <span className={i === 0 ? 'on' : ''} key={f.id} />
+            ))}
           </div>
-        )}
+          <div className="si-cap">
+            <small className="si-grp">{first.group}</small>
+            <strong className="si-nm">
+              <span>{first.name}</span>
+            </strong>
+            <small className="si-ct">
+              <span className="si-cn">{pad(1)}</span> / {pad(FLAT.length)}
+            </small>
+          </div>
+          <span className="si-go">
+            Voir le service <i>→</i>
+          </span>
+        </div>
+        <div className="si-list">
+          <span className="si-mk" aria-hidden="true" />
+          {GROUPS.map((g) => (
+            <div className="si-col" key={g.title}>
+              <h3 className="si-k">{g.title}</h3>
+              {FLAT.filter((f) => f.group === g.title).map((f) => (
+                <Row item={f} key={f.id} />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
