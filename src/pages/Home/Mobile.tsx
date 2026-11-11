@@ -44,7 +44,8 @@ function MoHero() {
       </h1>
       <p className="mo-lead">
         Orion Studio conçoit et développe des sites sur-mesure, des boutiques Shopify et des applications web.
-        Une équipe à taille humaine basée à Paris, du premier croquis à la mise en ligne, sans intermédiaire.
+        Une équipe à taille humaine basée à Paris, qui travaille partout en France en visio, du premier croquis
+        à la mise en ligne.
       </p>
       <div className="mo-btns">
         <a className="btn btn-ink mo-btn" data-go="cta">

@@ -1,5 +1,6 @@
 import { menuSet } from './chrome'
 import { expertises } from './sections'
+import { TITLES } from '../seo'
 
 /* Pont entre les modules d'animation et le routeur React. */
 const PATHS = {
@@ -53,66 +54,7 @@ const PATHS = {
   'creation-site-internet-meaux': '/creation-site-internet/meaux',
   'creation-site-internet-massy': '/creation-site-internet/massy',
 }
-const TITLES = {
-  accueil: 'Orion Studio — Agence de développement web à Paris',
-  realisations: 'Réalisations — Orion Studio',
-  'chateau-larc': 'Château l’Arc Golf Club — Orion Studio',
-  standing: 'Stand-ING — Orion Studio',
-  golf: 'Golfs — Orion Studio',
-  studio: 'Le studio — Orion Studio',
-  ressources: 'Ressources — Orion Studio',
-  faq: 'Questions fréquentes — Orion Studio',
-  'etre-cite-par-les-ia': 'Être cité par ChatGPT et Perplexity — Orion Studio',
-}
-Object.assign(TITLES, {
-  'creation-site-internet-versailles': 'Création de site internet à Versailles — Orion Studio',
-  'creation-site-internet-cergy': 'Création de site internet à Cergy — Orion Studio',
-  'creation-site-internet-boulogne-billancourt':
-    'Création de site internet à Boulogne-Billancourt — Orion Studio',
-  'creation-site-internet-meaux': 'Création de site internet à Meaux — Orion Studio',
-  'creation-site-internet-massy': 'Création de site internet à Massy — Orion Studio',
-  boulangeries: 'Boulangeries — Orion Studio',
-  restaurants: 'Restaurants — Orion Studio',
-  associations: 'Associations — Orion Studio',
-  artisans: 'Artisans — Orion Studio',
-  'hotels-gites': 'Hôtels & gîtes — Orion Studio',
-  coiffeurs: 'Coiffeurs — Orion Studio',
-  immobilier: 'Immobilier — Orion Studio',
-  'tpe-pme': 'TPE & PME — Orion Studio',
-  independants: 'Indépendants — Orion Studio',
-  'marques-e-commerce': 'Marques & e-commerçants — Orion Studio',
-  'start-up': 'Start-up — Orion Studio',
-  secteurs: 'Tous les secteurs — Orion Studio',
-  'moulin-de-balme': 'Le Moulin de Balme — Orion Studio',
-})
-Object.assign(TITLES, {
-  'mentions-legales': 'Mentions légales — Orion Studio',
-  confidentialite: 'Confidentialité — Orion Studio',
-  404: 'Page introuvable — Orion Studio',
-})
-Object.assign(TITLES, {
-  'site-internet': 'Site internet — Orion Studio',
-  'site-vitrine': 'Site vitrine — Orion Studio',
-  'site-dynamique': 'Site dynamique — Orion Studio',
-  'site-concept': 'Site concept — Orion Studio',
-  'e-commerce': 'Site e-commerce — Orion Studio',
-  'developpement-applications': 'Développement d’applications — Orion Studio',
-  saas: 'SaaS — Orion Studio',
-  seo: 'SEO — Orion Studio',
-  geo: 'GEO — Orion Studio',
-  'sea': 'SEA — Orion Studio',
-})
-TITLES['automatisations'] = 'Automatisations — Orion Studio'
-Object.assign(TITLES, {
-  dathy: 'DATHY — Orion Studio',
-  'les-bocaux-du-vexin': 'Les Bocaux du Vexin — Orion Studio',
-  'osmose-nutrition': 'Osmose Nutrition — Orion Studio',
-  'ocha-and-co': 'Ocha & Co. — Orion Studio',
-  'swing-call': 'Swing Call — Orion Studio',
-  'entrepreneurs-du-vexin': 'Association des Entrepreneurs du Vexin — Orion Studio',
-  'housses-taxi': 'Housses Taxi — Orion Studio',
-  'orion-admin': 'Orion Admin — Orion Studio',
-})
+// les titres des pages viennent de seo.ts, partagés avec le pré-rendu
 let navigate = null
 let pendingAfter = null
 const setNavigate = (fn) => {
