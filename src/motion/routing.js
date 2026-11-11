@@ -159,6 +159,7 @@ const EXP_PAGE = {
   'Site concept': 'site-concept',
   'E-commerce': 'e-commerce',
   'Développement d’applications': 'developpement-applications',
+  SaaS: 'saas',
   Automatisations: 'automatisations',
   SEO: 'seo',
   GEO: 'geo',

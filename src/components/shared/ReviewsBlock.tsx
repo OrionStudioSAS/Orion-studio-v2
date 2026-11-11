@@ -100,20 +100,22 @@ export function ReviewsBlock({ mobile = false }: { mobile?: boolean }) {
                 </div>
               ))}
             </div>
-            <div className="crv-tabs" role="tablist" aria-label="Choisir un client">
-              {REVIEWS.map((r, i) => (
-                <button
-                  key={r.to}
-                  type="button"
-                  role="tab"
-                  aria-selected={i === 0}
-                  className={i === 0 ? 'crv-t on' : 'crv-t'}
-                  aria-label={r.name}
-                  title={r.name}
-                >
-                  <img src={r.logo} alt="" />
-                </button>
-              ))}
+            {/* des flèches et un compteur : on voit tout de suite qu'il y a d'autres avis */}
+            <div className="crv-nav">
+              <button type="button" className="crv-ar" data-d="-1" aria-label="Avis précédent">
+                ←
+              </button>
+              <span className="crv-n" aria-live="polite">
+                <b>01</b> / {String(REVIEWS.length).padStart(2, '0')}
+              </span>
+              <button type="button" className="crv-ar" data-d="1" aria-label="Avis suivant">
+                →
+              </button>
+              <span className="crv-dots" aria-hidden="true">
+                {REVIEWS.map((r, i) => (
+                  <i className={i === 0 ? 'on' : undefined} key={r.to} />
+                ))}
+              </span>
             </div>
             <div className="crv-score">
               <b>5,0</b>

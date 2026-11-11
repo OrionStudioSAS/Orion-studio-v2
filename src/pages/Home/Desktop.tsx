@@ -207,9 +207,6 @@ function HeroMedia() {
           </span>
         </div>
       </div>
-      <div className="capt">
-        22 h 40 — <b>Bételgeuse</b>, l’étoile rouge d’Orion
-      </div>
     </div>
   )
 }
@@ -387,23 +384,9 @@ function PourQui() {
               Site de golf, réservation de départs en ligne, espace membres, boutique du pro-shop et
               back-office pour les événements : tout ce qu’un club gère au quotidien, au même endroit.
             </p>
-            <div className="who-cols">
-              <div>
-                <div className="who-k">Ce qu’on livre</div>
-                <ul>
-                  <li>Site et réservation de départs</li>
-                  <li>Espace membres et abonnements</li>
-                  <li>Back-office événements et offres</li>
-                </ul>
-              </div>
-              <div>
-                <div className="who-k">Projet de référence</div>
-                <div className="who-ref">
-                  Château l’Arc Golf Club
-                  <small>Un site qui donne envie de venir jouer, géré par l’équipe du club.</small>
-                </div>
-              </div>
-            </div>
+            <a className="lnk who-go" data-who-go="golfs">
+              Voir la page
+            </a>
           </div>
         </div>
       </div>

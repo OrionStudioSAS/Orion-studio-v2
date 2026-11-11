@@ -20,8 +20,12 @@ export function Footer({ children }: { children: ReactNode }) {
           <div className="fc">
             <div className="fc-k">Expertises</div>
             <Link to="/expertises/site-internet">Site internet</Link>
+            <Link to="/expertises/site-vitrine">Site vitrine</Link>
+            <Link to="/expertises/site-dynamique">Site dynamique</Link>
+            <Link to="/expertises/site-concept">Site concept</Link>
             <Link to="/expertises/e-commerce">E-commerce</Link>
             <Link to="/expertises/developpement-applications">Développement d’applications</Link>
+            <Link to="/expertises/saas">SaaS</Link>
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>
             <Link to="/expertises/geo">GEO</Link>
@@ -55,11 +59,6 @@ export function Footer({ children }: { children: ReactNode }) {
           <b>Paris</b>
           <span>60 rue François Ier, 75008</span>
           <a>Itinéraire</a>
-        </div>
-        <div>
-          <b>Partout ailleurs</b>
-          <span>En France et à l’international, en visio ou sur place</span>
-          <a>Réserver un appel</a>
         </div>
         <div>
           <b>Un appel ?</b>

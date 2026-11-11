@@ -1034,6 +1034,10 @@
   margin-top: 16px;
   font-size: 17px;
 }
+.who-p .who-go {
+  align-self: flex-start;
+  margin-top: 24px;
+}
 .who-cols {
   display: flex;
   gap: 40px;
@@ -1797,6 +1801,7 @@
   padding: 32px 40px 36px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex: 1;
 }
 
@@ -1903,7 +1908,7 @@
 }
 .ft-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 0 48px;
   border-bottom: 1px solid #262623;
 }

@@ -30,6 +30,10 @@ export function MobileMenu() {
           <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
           <span>Développement d’applications</span>
         </Link>
+        <Link to="/expertises/saas" className="mo-mi" data-exp="saas">
+          <img className="pxsvg picon" src="/px/picon-saas.svg" alt="" width={20} height={20} />
+          <span>SaaS</span>
+        </Link>
         <Link to="/expertises/automatisations" className="mo-mi" data-exp="automatisations">
           <img className="pxsvg picon" src="/px/picon-163f1643.svg" alt="" width={20} height={20} />
           <span>Automatisations</span>

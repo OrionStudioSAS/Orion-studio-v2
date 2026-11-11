@@ -93,7 +93,14 @@ export function Nav() {
                 <img className="pxsvg picon" src="/px/picon-8236c841.svg" alt="" width={20} height={20} />
                 <div>
                   <b>Développement d’applications</b>
-                  <span>Applications web, espaces clients, outils métiers et SaaS.</span>
+                  <span>Applications web, espaces clients et outils métiers.</span>
+                </div>
+              </Link>
+              <Link to="/expertises/saas" className="mm-it" data-exp="saas">
+                <img className="pxsvg picon" src="/px/picon-saas.svg" alt="" width={20} height={20} />
+                <div>
+                  <b>SaaS</b>
+                  <span>Votre logiciel en ligne, de la première version au lancement.</span>
                 </div>
               </Link>
               <Link to="/expertises/automatisations" className="mm-it" data-exp="automatisations">

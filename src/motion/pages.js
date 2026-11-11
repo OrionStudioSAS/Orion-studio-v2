@@ -211,13 +211,14 @@ function pageIntro(R, mob) {
     R,
   )
   const media = $(mob ? '.mo-sthero, .mo-cshero, .st2-mhero' : '.hero-media, .st2-hero', R)
+  // le cache pixel couvre l'image dès l'arrivée sur la page, puis se dissipe
+  if (media) pixelate(media, '#0E0E0C', mob ? 18 : 28, 1.2, 1.1)
   const tl = G.timeline({ defaults: { ease: 'expo.out' }, delay: 0.55 })
   tl.from(words, { yPercent: 110, duration: 1.1, stagger: 0.05 }).from(
     after,
     { y: 22, opacity: 0, duration: 0.8, stagger: 0.07, ease: 'power3.out' },
     '-=.8',
   )
-  if (media) tl.add(() => pixelate(media, '#0E0E0C', mob ? 18 : 28, 1.2), '-=.7')
   const cm = $$('.crew .cm', R)
   if (cm.length)
     tl.from(cm, { y: 90, opacity: 0, duration: 0.9, stagger: 0.14, ease: 'back.out(1.8)' }, '-=.3')

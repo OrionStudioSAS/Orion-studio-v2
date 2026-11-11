@@ -8,6 +8,7 @@ export type ServiceId =
   | 'site-concept'
   | 'e-commerce'
   | 'developpement-applications'
+  | 'saas'
   | 'seo'
   | 'geo'
   | 'google-ads'
@@ -148,6 +149,12 @@ export const SERVICE_LINKS = [
     name: 'Développement d’applications',
     d: 'Des outils sur mesure pour votre métier.',
     icon: '/px/picon-8236c841.svg',
+  },
+  {
+    id: 'saas',
+    name: 'SaaS',
+    d: 'Votre logiciel en ligne, prêt à lancer.',
+    icon: '/px/picon-saas.svg',
   },
   {
     id: 'seo',
@@ -609,6 +616,79 @@ export const SERVICES: Record<ServiceId, Service> = {
       {
         q: 'Comment suis-je informé de l’avancement ?',
         a: 'On vous tient au courant à chaque étape : vous voyez où en est le projet et vous validez avant qu’on passe à la suite.',
+      },
+    ],
+  },
+  saas: {
+    what: {
+      title: 'un SaaS ?',
+      lead: 'C’est un logiciel qu’on utilise en ligne, avec un compte, sans rien installer. Vos utilisateurs s’y connectent, et chaque amélioration arrive chez tout le monde en même temps.',
+      points: [
+        {
+          t: 'À quoi ça sert',
+          d: 'À lancer un produit numérique, ou à proposer à vos clients un service en ligne avec leurs comptes, leurs droits et, si besoin, un abonnement.',
+        },
+        {
+          t: 'Pour qui',
+          d: 'Les start-up qui lancent leur produit, et les entreprises qui veulent offrir un outil en ligne à leurs clients.',
+        },
+        {
+          t: 'Un exemple',
+          d: 'Chez Stand-ING, chaque exposant se connecte avec son code, compose son stand en 3D et reçoit son bon de commande, sans appeler personne.',
+        },
+      ],
+    },
+    steps: [
+      [
+        'On cadre la première version',
+        'On décide avec vous de ce que le produit doit faire au lancement, et de ce qui peut attendre. Le devis fixe le périmètre.',
+      ],
+      [
+        'On dessine le parcours',
+        'Vos futurs utilisateurs testent une maquette cliquable, avant la moindre ligne de code.',
+      ],
+      [
+        'On le développe',
+        'Comptes, droits, paiement si besoin : on livre par étapes, sur une version de test que vous pouvez essayer.',
+      ],
+      ['On le lance', 'Le produit est mis en ligne, et on suit avec vous ses premiers utilisateurs.'],
+    ],
+    after: [
+      {
+        t: 'Le produit évolue avec vos utilisateurs',
+        d: 'Chaque nouvelle fonction se chiffre avant d’être réalisée, à partir de ce que vos utilisateurs demandent.',
+      },
+      {
+        t: 'Il reste disponible',
+        d: 'Hébergement, sauvegardes, surveillance et mises à jour de sécurité.',
+      },
+      {
+        t: 'Le code est à vous',
+        d: 'Des technologies répandues et un code documenté : n’importe quelle équipe peut reprendre le produit.',
+      },
+    ],
+    refs: [
+      {
+        p: 'standing',
+        note: 'Un configurateur en ligne : chaque exposant se connecte, compose son stand en 3D et reçoit son bon de commande.',
+      },
+    ],
+    faq: [
+      {
+        q: 'Par quoi commencer ?',
+        a: 'Par une première version volontairement réduite, qui fait bien une seule chose. On la met entre les mains de vrais utilisateurs, puis on ajoute ce qu’ils demandent.',
+      },
+      {
+        q: 'Peut-on gérer des abonnements et des paiements ?',
+        a: 'Oui, quand le produit en a besoin : paiement en ligne, abonnements et factures, avec des solutions de paiement reconnues.',
+      },
+      {
+        q: 'À qui appartiennent le code et les données ?',
+        a: 'À vous. Le code, les données et les accès sont à votre nom, et le projet est facile à reprendre si besoin.',
+      },
+      {
+        q: 'Proposez-vous une maintenance ?',
+        a: 'Oui : hébergement, mises à jour, sauvegardes, surveillance et petites évolutions. Son contenu vous est proposé dans le devis.',
       },
     ],
   },

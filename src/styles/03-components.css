@@ -194,6 +194,15 @@
   left: 302px;
   top: 96px;
   width: 740px;
+  /* décalage calculé au défilement : le bloc suit le centre de l'écran sans sortir de l'image */
+  translate: 0 var(--fy, 0px);
+}
+/* le choix des points à analyser se fait à l'étape suivante : le champ reste simple */
+.ch2-l .tg,
+.ch2-l .cr,
+.ch2-l .ib + .ib,
+.mo-crit {
+  display: none;
 }
 .ch2-greet {
   font-size: 48px;

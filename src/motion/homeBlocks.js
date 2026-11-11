@@ -1,4 +1,18 @@
-import { FINE, G, ST, anim, $, $$, local, onView, onWin, pageEvery, pageClear, pixelate, up } from './core'
+import {
+  G,
+  ST,
+  anim,
+  $,
+  $$,
+  local,
+  onView,
+  onWin,
+  pageEvery,
+  pageClear,
+  pixelate,
+  smoothTo,
+  up,
+} from './core'
 
 /* ---------- logos clients : chacun leur tour, ils laissent voir le site réalisé ---------- */
 function clientsBlock(R) {
@@ -173,18 +187,17 @@ function workTrack(R, mob) {
 function reviewsBlock(R) {
   const box = $('.crv', R)
   if (!box) return
-  const tabs = $$('.crv-t', box),
-    stories = $$('.avs-c', box),
+  const stories = $$('.avs-c', box),
     quotes = $$('.crv-q', box),
-    sq = $('.crv-qs', box)
+    sq = $('.crv-qs', box),
+    num = $('.crv-n b', box),
+    dots = $$('.crv-dots i', box)
   let cur = 0
-  const show = (i) => {
+  const show = (i, dir = 1) => {
     if (i === cur) return
     cur = i
-    tabs.forEach((t, k) => {
-      t.classList.toggle('on', k === i)
-      t.setAttribute('aria-selected', k === i)
-    })
+    num.textContent = String(i + 1).padStart(2, '0')
+    dots.forEach((d, k) => d.classList.toggle('on', k === i))
     stories.forEach((c, k) => {
       c.hidden = k !== i
     })
@@ -195,12 +208,18 @@ function reviewsBlock(R) {
       pixelate($('.crv-story', box), '#0E0E0C', 16, 0.55)
       G.fromTo(
         sq,
-        { opacity: 0, y: 14 },
-        { opacity: 1, y: 0, duration: 0.5, ease: 'power3.out', overwrite: true },
+        { opacity: 0, x: 24 * dir },
+        { opacity: 1, x: 0, duration: 0.5, ease: 'power3.out', overwrite: true },
       )
     }
   }
-  tabs.forEach((t, i) => t.addEventListener('click', () => show(i)))
+  // flèches : l'avis précédent ou suivant, en boucle
+  $$('.crv-ar', box).forEach((b) =>
+    b.addEventListener('click', () => {
+      const d = Number(b.dataset.d)
+      show((cur + d + stories.length) % stories.length, d)
+    }),
+  )
   up([$('.crv-card', box)], box, { y: 60, d: 1.1 })
   const bg = $('.crv-bg', box)
   if (anim)
@@ -216,37 +235,69 @@ function reviewsBlock(R) {
     )
 }
 
-/* ---------- nos services : la liste se lit, l'écran collant montre le service en cours ---------- */
+/* ---------- nos services : la liste choisit, l'écran (ou la carte sur mobile) montre le service ---------- */
+
+// le fond clair glisse jusqu'à la ligne active
+const band = (mk, rows) => (i, now) =>
+  G.to(mk, {
+    y: rows[i].offsetTop,
+    height: rows[i].offsetHeight,
+    opacity: 1,
+    duration: now || !anim ? 0 : 0.55,
+    ease: 'power3.out',
+    overwrite: 'auto',
+  })
+
+// les titres de groupe se tracent, les lignes entrent une à une
+function listIn(sec, rows) {
+  if (!anim) return
+  $$('.si-k', sec).forEach((k) =>
+    G.fromTo(
+      k,
+      { '--d': 0 },
+      { '--d': 1, ease: 'none', scrollTrigger: { trigger: k, start: 'top 90%', end: 'top 62%', scrub: 0.4 } },
+    ),
+  )
+  rows.forEach((r) => {
+    const parts = [$('.si-n', r), $('b', r), $(':scope > div > span', r)]
+    G.set(parts, { y: 18, opacity: 0 })
+    onView(
+      r,
+      () => G.to(parts, { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', stagger: 0.06 }),
+      'top 92%',
+    )
+  })
+}
+
+// un clic garde le Cmd/Ctrl-clic pour ouvrir la page dans un nouvel onglet
+const plainClick = (e) => !(e.metaKey || e.ctrlKey || e.shiftKey || e.button)
+
 function servicesIndex(R, mob) {
-  const box = $('.si-g', R)
-  if (!box) return
+  const sec = $('.si', R)
+  if (!sec) return
+  if (mob) {
+    servicesCards(sec)
+    return
+  }
+  const box = $('.si-g', sec)
   const st = $('.si-st', box),
     list = $('.si-list', box),
     rows = $$('.si-r', box),
     shots = $$('.si-shot', box),
     bars = $$('.si-bar span', box),
+    gos = $$('.si-go', box),
     grp = $('.si-grp', box),
     nm = $('.si-nm', box),
+    ld = $('.si-ld', box),
     cn = $('.si-cn', box),
-    mk = $('.si-mk', box)
+    mark = band($('.si-mk', box), rows)
   const names = rows.map((r) => $('b', r).textContent.trim()),
-    groups = rows.map((r) => $('.si-k', r.closest('.si-col')).textContent.trim())
+    groups = rows.map((r) => $('.si-k', r.closest('.si-col')).textContent.trim()),
+    leads = rows.map((r) => r.dataset.lead || '')
   const t = (s) => (anim ? s : 0)
   let cur = 0,
-    z = 1,
-    seen = 0,
-    hov = false
+    z = 1
 
-  // le fond clair glisse jusqu'à la ligne active
-  const mark = (now) =>
-    G.to(mk, {
-      y: rows[cur].offsetTop,
-      height: rows[cur].offsetHeight,
-      opacity: 1,
-      duration: now ? 0 : t(0.55),
-      ease: 'power3.out',
-      overwrite: 'auto',
-    })
   // l'ancien texte sort par le haut, le nouveau entre par le bas (ou l'inverse en remontant)
   const swap = (el, text, dir) => {
     const old = el.lastElementChild
@@ -273,6 +324,10 @@ function servicesIndex(R, mob) {
     cur = i
     rows.forEach((r, k) => r.classList.toggle('on', k === i))
     bars.forEach((b, k) => (b.className = k < i ? 'on' : k === i ? 'cur' : ''))
+    gos.forEach((g, k) => {
+      g.classList.toggle('on', k === i)
+      g.tabIndex = k === i ? 0 : -1
+    })
     const s = shots[i]
     s.style.zIndex = ++z
     G.fromTo(
@@ -280,113 +335,158 @@ function servicesIndex(R, mob) {
       { clipPath: dir > 0 ? 'inset(100% 0% 0% 0%)' : 'inset(0% 0% 100% 0%)', scale: 1.18 },
       { clipPath: 'inset(0% 0% 0% 0%)', scale: 1, duration: t(0.9), ease: 'expo.inOut', overwrite: true },
     )
+    shots.forEach((x, k) => x.classList.toggle('go', k === i))
     swap(nm, names[i], dir)
+    swap(ld, leads[i], dir)
     swap(cn, String(i + 1).padStart(2, '0'), dir)
     if (grp.textContent !== groups[i]) {
       grp.textContent = groups[i]
       if (anim) G.fromTo(grp, { opacity: 0, x: -10 }, { opacity: 1, x: 0, duration: 0.5, ease: 'power3.out' })
     }
-    mark()
+    mark(i)
   }
   // les textes de départ passent dans un span pour pouvoir glisser
-  ;[nm, cn].forEach((el) => {
+  ;[nm, ld, cn].forEach((el) => {
     if (!el.firstElementChild) el.innerHTML = `<span>${el.textContent}</span>`
   })
   rows[0].classList.add('on')
-  bars[0].className = 'cur'
 
-  // la ligne qui passe au niveau de lecture devient la ligne active
-  // (la dernière ligne passée : un défilement rapide ne saute jamais l'écran)
-  const pick = () => {
-    const y = innerHeight * (mob ? 0.64 : 0.52)
-    let i = 0
-    rows.forEach((r, k) => {
-      if (r.getBoundingClientRect().top <= y) i = k
-    })
-    seen = i
-    if (!hov) set(i)
-  }
-  ST.create({
+  // le défilement ne change de service que pendant que l'écran est collé :
+  // les services se partagent ce trajet, le dernier arrive à 85 % pour rester à l'écran
+  const k = () => st.getBoundingClientRect().height / st.offsetHeight || 1,
+    top = () => parseFloat(getComputedStyle(st).top) || 0,
+    last = rows.length - 1
+  let lock = false,
+    lockT = 0
+  const pick = (p) => !lock && set(Math.max(0, Math.min(last, Math.floor((p / 0.85) * last))))
+  const tr = ST.create({
     trigger: list,
-    start: 'top bottom',
-    end: 'bottom top',
-    onUpdate: pick,
-    onRefresh: () => {
-      mark(true)
-      pick()
+    start: () => `top ${top() * k()}px`,
+    end: () => `bottom ${(top() + st.offsetHeight) * k()}px`,
+    onUpdate: (s) => pick(s.progress),
+    onRefresh: (s) => {
+      pick(s.progress)
+      mark(cur, true)
     },
   })
-  mark(true)
+  mark(0, true)
 
-  if (mob)
-    ST.create({
-      trigger: st,
-      start: 'top 76px',
-      endTrigger: list,
-      end: 'bottom top',
-      toggleClass: 'pin',
-    })
-
-  // un clic sur l'écran ouvre le service affiché
-  st.addEventListener('click', () => rows[cur].click())
-
-  if (anim) {
-    $$('.si-k', box).forEach((k) =>
-      G.fromTo(
-        k,
-        { '--d': 0 },
-        {
-          '--d': 1,
-          ease: 'none',
-          scrollTrigger: { trigger: k, start: 'top 90%', end: 'top 62%', scrub: 0.4 },
-        },
-      ),
-    )
-    rows.forEach((r) => {
-      const parts = [$('.si-n', r), $('b', r), $(':scope > div > span', r)]
-      G.set(parts, { y: 18, opacity: 0 })
-      onView(
-        r,
-        () => G.to(parts, { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out', stagger: 0.06 }),
-        'top 92%',
-      )
-    })
-    // l'écran s'ouvre en arrivant, puis l'image glisse doucement pendant la lecture
-    // (sur mobile on découpe l'image seule : l'écran garde sa bande blanche)
-    G.fromTo(
-      mob ? $('.si-scr', st) : st,
-      { clipPath: 'inset(10% 12% 10% 12% round 14px)' },
-      {
-        clipPath: 'inset(0% 0% 0% 0% round 14px)',
-        ease: 'none',
-        scrollTrigger: { trigger: box, start: 'top 95%', end: 'top 45%', scrub: 0.5 },
-      },
-    )
-    G.fromTo(
-      $('.si-scr', st),
-      { yPercent: -4, scale: 1.1 },
-      {
-        yPercent: 4,
-        scale: 1.1,
-        ease: 'none',
-        scrollTrigger: { trigger: box, start: 'top bottom', end: 'bottom top', scrub: true },
-      },
-    )
-  }
-  if (mob || !FINE) return
-
-  // survol : l'écran montre tout de suite la ligne pointée, puis reprend le fil du défilement
+  // un service de la liste fonctionne comme une ancre : la page glisse jusqu'à lui et l'écran l'affiche
   rows.forEach((r, i) =>
-    r.addEventListener('pointerenter', (e) => {
-      if (e.pointerType !== 'mouse') return
-      hov = true
+    r.addEventListener('click', (e) => {
+      if (!plainClick(e)) return
+      e.preventDefault()
+      e.stopPropagation()
+      lock = true
       set(i)
+      const p = i === last ? 0.93 : ((i + 0.5) / last) * 0.85
+      smoothTo(tr.start + p * (tr.end - tr.start))
+      clearTimeout(lockT)
+      lockT = setTimeout(() => {
+        lock = false
+        pick(tr.progress)
+      }, 1300)
     }),
   )
-  list.addEventListener('pointerleave', () => {
-    hov = false
-    set(seen)
+  // c'est l'écran qui mène à la page du service affiché
+  st.addEventListener('click', (e) => {
+    if (e.target.closest('.si-go')) return
+    gos[cur].click()
   })
+
+  // les captures se chargent un peu avant que la section arrive
+  ST.create({
+    trigger: box,
+    start: 'top bottom+=1200',
+    once: true,
+    onEnter: () => $$('img', st).forEach((im) => (im.loading = 'eager')),
+  })
+
+  listIn(sec, rows)
+  if (!anim) return
+  // l'écran s'ouvre en arrivant
+  G.fromTo(
+    st,
+    { clipPath: 'inset(10% 12% 10% 12% round 14px)' },
+    {
+      clipPath: 'inset(0% 0% 0% 0% round 14px)',
+      ease: 'none',
+      scrollTrigger: { trigger: box, start: 'top 95%', end: 'top 45%', scrub: 0.5 },
+    },
+  )
+  // la scène du premier service se joue quand l'écran arrive, pas pendant le chargement
+  onView(
+    st,
+    () => {
+      const s = shots[cur]
+      s.classList.remove('go')
+      void s.offsetWidth
+      s.classList.add('go')
+    },
+    'top 70%',
+  )
+}
+
+/* mobile : les services défilent en cartes au-dessus de la liste, la liste choisit la carte */
+function servicesCards(sec) {
+  const car = $('.si-car', sec),
+    cards = $$('.si-card', sec),
+    rows = $$('.si-r', sec),
+    bars = $$('.si-bar span', sec),
+    mark = band($('.si-mk', sec), rows)
+  let cur = 0
+  const set = (i) => {
+    if (i === cur) return
+    cur = i
+    rows.forEach((r, k) => r.classList.toggle('on', k === i))
+    bars.forEach((b, k) => (b.className = k < i ? 'on' : k === i ? 'cur' : ''))
+    cards.forEach((c, k) => c.classList.toggle('go', k === i))
+    mark(i)
+  }
+  rows[0].classList.add('on')
+  mark(0, true)
+  ST.create({ trigger: sec, start: 'top bottom', onRefresh: () => mark(cur, true) })
+
+  // la carte la plus centrée devient la carte active
+  let raf = 0
+  car.addEventListener(
+    'scroll',
+    () => {
+      cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        const c = car.scrollLeft + car.clientWidth / 2
+        let best = 0,
+          d = Infinity
+        cards.forEach((el, i) => {
+          const dd = Math.abs(el.offsetLeft + el.offsetWidth / 2 - c)
+          if (dd < d) {
+            d = dd
+            best = i
+          }
+        })
+        set(best)
+      })
+    },
+    { passive: true },
+  )
+  // toucher un service de la liste remonte à sa carte
+  rows.forEach((r, i) =>
+    r.addEventListener('click', (e) => {
+      if (!plainClick(e)) return
+      e.preventDefault()
+      e.stopPropagation()
+      const c = cards[i]
+      car.scrollTo({
+        left: c.offsetLeft - (car.clientWidth - c.offsetWidth) / 2,
+        behavior: anim ? 'smooth' : 'auto',
+      })
+      set(i)
+      smoothTo(scrollY + car.getBoundingClientRect().top - 90)
+    }),
+  )
+
+  listIn(sec, rows)
+  if (anim) up(cards.slice(0, 2), car, { y: 30, s: 0.1 })
 }
 
 export { clientsBlock, servicesIndex, workTrack, reviewsBlock }

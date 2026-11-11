@@ -361,17 +361,6 @@ function PourQui() {
                 Artisans, cabinets, commerces, entreprises de services : un site professionnel, rapide et bien
                 référencé, que vous mettez à jour vous-même, sans y passer vos soirées.
               </p>
-              <div className="who-k">Ce qu’on livre</div>
-              <ul>
-                <li>Site vitrine sur mesure</li>
-                <li>Formulaire de devis</li>
-                <li>Fiche Google & avis</li>
-              </ul>
-              <div className="who-k">Projet de référence</div>
-              <div className="mo-ref">
-                Housses Taxi
-                <small>Un atelier du Val-d’Oise qui fabrique des housses sur mesure pour taxis et VTC.</small>
-              </div>
               <Link to="/pour-qui/tpe-pme" className="lnk who-go" data-who-go="tpe-pme">
                 Voir la page
               </Link>

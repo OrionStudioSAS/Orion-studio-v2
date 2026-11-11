@@ -17,16 +17,17 @@ function chatFlow(chat, pfx) {
   const send = $('.send', comp),
     sendTxt = [...send.childNodes].find((n) => n.nodeType === 3),
     send0 = sendTxt ? sendTxt.textContent : ''
-  const crBox = $('.ch2-l, .mo-crit', comp),
-    tg = $('.tg', comp),
+  // les points à analyser se choisissent à l'étape 2 : le champ ne garde que l'adresse
+  $$('.cr, .tg, .mo-crit', comp).forEach((c) => c.parentNode && c.parentNode.removeChild(c))
+  const crBox = null,
+    tg = null,
     ibs = $$('.ib', comp),
     plus = ibs[0],
-    tune = ibs[1]
+    tune = null
   const sugs = $$('.sg', chat)
-  const crits0 = $$('.cr', comp),
-    CHECK = crits0[0] ? crits0[0].querySelector('svg').outerHTML : ''
-  const BASE = crits0.map((c) => c.textContent.trim())
-  const OPTS = [...BASE, ...['Visibilité IA', 'Accessibilité'].filter((x) => !BASE.includes(x))]
+  const CHECK = IC_OK
+  const OPTS = ['SEO', 'Design', 'Vitesse', 'Conversion', 'Visibilité IA']
+  const BASE = OPTS
   const DESC = {
     Design: 'Image, lisibilité, cohérence de la marque',
     Mobile: 'Affichage et parcours sur téléphone',
@@ -451,21 +452,18 @@ function chatFlow(chat, pfx) {
   function step2(d) {
     data = d
     comp.classList.add('step2')
-    const tags = [
-      ...(d.site || projD ? OPTS.filter((o) => sel.has(o)) : []),
-      ...(need ? [need] : []),
-      ...(file ? ['Pièce jointe : ' + file] : []),
-    ]
+    const tags = [...(need ? [need] : []), ...(file ? ['Pièce jointe : ' + file] : [])]
     form = document.createElement('form')
     form.className = 'cf'
     form.noValidate = true
     form.innerHTML = `<div class="cf-k">${d.site ? 'Analyse de <b>' + esc(d.site) + '</b>' : 'Votre projet : <b>' + esc(d.project.length > 70 ? d.project.slice(0, 67) + '…' : d.project) + '</b>'}<span>Étape 2 sur 2 · À qui envoie-t-on ${d.site ? 'l’analyse' : 'notre réponse'}${NBSP}?</span></div>
       ${tags.length ? `<div class="cf-tags">${tags.map((t) => `<span>${esc(t)}</span>`).join('')}</div>` : ''}
+      ${d.site ? `<div class="cf-what"><span>Que regarde-t-on${NBSP}? <em>Tout est coché, retirez ce qui ne vous intéresse pas.</em></span><div class="cf-opts">${OPTS.map((o) => `<button type="button" class="cf-o${sel.has(o) ? ' on' : ''}" aria-pressed="${sel.has(o)}" data-o="${esc(o)}">${CHECK}${esc(o)}</button>`).join('')}</div></div>` : ''}
       <div class="cf-g">${fld('prenom', 'Prénom', 'given-name')}${fld('nom', 'Nom', 'family-name')}${fld('email', 'E-mail', 'email', 'email')}${fld('tel', 'Téléphone', 'tel', 'tel', true)}</div>
       <div class="cf-f"><button type="button" class="cf-back">Modifier</button><button type="submit" class="send cf-send">${d.site ? 'Recevoir mon analyse' : 'Envoyer ma demande'}</button></div>`
     comp.append(form)
     if (anim)
-      G.from($$('.cf-k, .cf-tags, .cf-i, .cf-f', form), {
+      G.from($$('.cf-k, .cf-tags, .cf-what, .cf-i, .cf-f', form), {
         y: 12,
         opacity: 0,
         duration: 0.5,
@@ -473,6 +471,19 @@ function chatFlow(chat, pfx) {
         ease: 'power3.out',
       })
     $('.cf-back', form).onclick = back
+    // les points à analyser : chacun se coche ou se décoche, il en reste toujours un
+    $$('.cf-o', form).forEach((b) => {
+      b.onclick = () => {
+        const o = b.dataset.o
+        if (sel.has(o) && sel.size === 1) {
+          if (anim) G.fromTo(b, { x: -4 }, { x: 0, duration: 0.4, ease: 'elastic.out(1,.3)' })
+          return
+        }
+        sel.has(o) ? sel.delete(o) : sel.add(o)
+        b.classList.toggle('on', sel.has(o))
+        b.setAttribute('aria-pressed', sel.has(o))
+      }
+    })
     const fe = (id, m) => {
       const i = $(`#${pfx}-${id}`, form),
         l = i.closest('.cf-i'),
@@ -547,6 +558,21 @@ function chatFlow(chat, pfx) {
     if (projD) comp.classList.remove('proj')
   }
   renderCrit()
+  follow(chat)
+}
+
+/* le bloc part du haut de l'image puis suit le centre de l'écran au défilement, sans jamais en sortir */
+function follow(chat) {
+  const media = chat.closest('.hero-media')
+  if (!media || !anim) return
+  const upd = () => {
+    const r = media.getBoundingClientRect(),
+      k = r.height / media.offsetHeight || 1,
+      max = media.offsetHeight - chat.offsetTop - chat.offsetHeight - 32,
+      want = (innerHeight / 2 - r.top) / k - chat.offsetTop - chat.offsetHeight / 2
+    chat.style.setProperty('--fy', Math.max(0, Math.min(max, want)) + 'px')
+  }
+  ST.create({ trigger: media, start: 'top bottom', end: 'bottom top', onUpdate: upd, onRefresh: upd })
 }
 
 /* ---------- héro ---------- */
@@ -573,12 +599,13 @@ function hero(R, mob, firstLoad) {
     logos = mob ? $$('.mo-cl-k, .mo-cl-g > div', R) : $$('.clients > div', R)
   if (url) url.firstChild.textContent = ''
   rotator(h1)
+  // le cache pixel couvre l'image tout de suite, puis se dissipe : elle n'apparaît jamais nette avant lui
+  pixelate(media, '#0E0E0C', mob ? 18 : 28, 1.25, firstLoad ? 0.75 : 1.2)
   const tl = G.timeline({ defaults: { ease: 'expo.out' }, delay: firstLoad ? 0.1 : 0.55 }) // après une transition, on attend que l'écran se découvre
   tl.from(nav, { y: -24, opacity: 0, duration: 0.8, clearProps: 'transform,opacity' })
     .from(words, { yPercent: 110, duration: 1.15, stagger: 0.05 }, '-=.45')
     .from(after, { y: 22, opacity: 0, duration: 0.9, stagger: 0.07, ease: 'power3.out' }, '-=.85')
-    .add(() => pixelate(media, '#0E0E0C', mob ? 18 : 28, 1.25), '-=.75')
-    .fromTo(imgs, { scale: 1.25 }, { scale: 1.1, duration: 2.4, ease: 'power2.out' }, '<')
+    .fromTo(imgs, { scale: 1.25 }, { scale: 1.1, duration: 2.4, ease: 'power2.out' }, '-=.75')
     .from(greet, { y: 22, opacity: 0, duration: 0.9 }, '-=1.6')
     .from(comp, { y: 34, opacity: 0, scale: 0.97, duration: 1.1 }, '-=.75')
     .add(() => typeIn(url, urlText), '-=.5')

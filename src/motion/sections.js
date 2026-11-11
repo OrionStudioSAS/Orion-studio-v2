@@ -161,19 +161,14 @@ function whoDesk(R) {
   const im = $('.who-img', p),
     h3 = $('.who-pin h3', p),
     lead = $('.who-pin .lead', p),
-    ul = $('.who-cols ul', p),
-    ref = $('.who-ref', p),
-    cols = $('.who-cols', p)
+    cols = $('.who-go', p)
   let cur = list[0].dataset.k
   const apply = (d) => {
     im.src = d.img
     h3.innerHTML = d.h3
     lead.innerHTML = d.lead
-    ul.innerHTML = d.items.map((x) => `<li>${x}</li>`).join('')
-    ref.innerHTML =
-      d.ref +
-      (d.small ? `<small>${d.small}</small>` : '') +
-      (d.view ? `<a class="lnk who-go" data-who-go="${d.view}">Voir la page</a>` : '')
+    cols.dataset.whoGo = d.view || ''
+    cols.hidden = !d.view
   }
   apply(WHO[cur])
   const show = (k) => {
@@ -230,8 +225,6 @@ function whoMob(R) {
     $('.mo-who-img', panel).src = d.mimg
     $('.mo-who-b h3', panel).innerHTML = d.h3
     $('.mo-who-b p', panel).innerHTML = d.lead
-    $('.mo-who-b ul', panel).innerHTML = d.items.map((x) => `<li>${x}</li>`).join('')
-    $('.mo-ref', panel).innerHTML = d.ref + (d.small ? `<small>${d.small}</small>` : '')
     const g = $('.who-go', panel)
     if (g) g.dataset.whoGo = d.view || ''
   }

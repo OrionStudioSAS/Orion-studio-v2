@@ -1,39 +1,61 @@
-import { FINE, G, anim, $, $$, onView, pixelate, typeIn, up } from './core'
+import { FINE, G, anim, $, $$, onView, typeIn, up } from './core'
 
-/* ---------- bloc Orion Admin : l'onglet survolé ou touché change l'écran ---------- */
+/* ---------- bloc Orion Admin : chaque point montre son écran, qui monte au défilement ---------- */
 function adminBlock(R) {
   const box = $('.adb', R)
   if (!box) return
-  const tabs = $$('.adb-t', box),
-    imgs = $$('.adb-body img', box),
-    body = $('.adb-body', box)
-  let cur = 0
+  const pts = $$('.adb-pt', box),
+    imgs = $$('.adb-r img', box)
+  let cur = 0,
+    run = null,
+    auto = anim
   const show = (i) => {
-    if (i === cur) return
-    cur = i
-    tabs.forEach((t, k) => {
-      t.classList.toggle('on', k === i)
-      t.setAttribute('aria-selected', k === i)
-    })
-    imgs.forEach((im, k) => {
-      im.hidden = k !== i
-    })
-    pixelate(body, '#0E0E0C', 18, 0.45)
+    if (i !== cur) {
+      cur = i
+      pts.forEach((p, k) => {
+        p.classList.toggle('on', k === i)
+        p.setAttribute('aria-selected', String(k === i))
+      })
+      imgs.forEach((im, k) => im.classList.toggle('on', k === i))
+    }
+    if (run) run.kill()
+    const bar = $('.adb-pg', pts[i])
+    if (auto) G.set(bar, { '--p': 0 })
+    // tant que personne n'a choisi, les écrans défilent seuls : la barre montre qu'ils se changent
+    // une fois choisi, l'onglet garde sa barre pleine : elle ne disparaît plus au survol
+    if (!auto) G.set(bar, { '--p': 1 })
+    else
+      run = G.to(bar, {
+        '--p': 1,
+        duration: 5,
+        ease: 'none',
+        onComplete: () => box.isConnected && show((i + 1) % pts.length),
+      })
   }
-  tabs.forEach((t, i) => {
-    t.addEventListener('click', () => show(i))
-    if (FINE) t.addEventListener('pointerenter', (e) => e.pointerType === 'mouse' && show(i))
+  // dès qu'on choisit un onglet (survol sur ordinateur, toucher sur mobile), le défilement s'arrête
+  const pickTab = (i) => {
+    auto = false
+    show(i)
+  }
+  pts.forEach((p, i) => {
+    p.addEventListener('click', () => pickTab(i))
+    if (FINE) p.addEventListener('pointerenter', (e) => e.pointerType === 'mouse' && pickTab(i))
   })
-  up([$('.adb-lead', box), ...tabs, $('.adb-go', box)], $('.adb-lead', box), { y: 20, s: 0.07 })
+  onView(box, () => auto && show(cur), 'top 60%')
+  // le texte entre une fois, l'écran monte doucement dans la carte au défilement
+  up([$('.adb-tag', box), $('.adb-lead', box), ...pts, $('.adb-go', box)], box, {
+    y: 20,
+    s: 0.07,
+    start: 'top 75%',
+  })
   if (anim)
     G.fromTo(
-      $('.adb-win', box),
-      { y: 70, rotate: 1.5 },
+      imgs,
+      { y: 90 },
       {
         y: 0,
-        rotate: 0,
         ease: 'none',
-        scrollTrigger: { trigger: box, start: 'top 92%', end: 'top 30%', scrub: 0.5 },
+        scrollTrigger: { trigger: box, start: 'top 95%', end: 'top 25%', scrub: 0.5 },
       },
     )
 }
