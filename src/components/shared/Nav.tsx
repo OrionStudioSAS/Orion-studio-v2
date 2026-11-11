@@ -2,6 +2,87 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const navClass = ({ isActive }: { isActive: boolean }) => (isActive ? 'on' : '')
 
+/** Julien, Théo et Doggy dans le studio en pixel : remplace le guide et l'étude de cas des méga menus. */
+function MmCrew({ shape, title, line }: { shape: 'tall' | 'square'; title: string; line: string }) {
+  return (
+    <div className={`mm-crew mm-crew-${shape}`}>
+      <div className="mm-crew-st">
+        <img className="mm-crew-bg" src="/images/bc42c16dc85167.png" alt="" />
+        <div className="mm-crew-row">
+          <figure className="mm-cm">
+            <span className="dg pp pp-julien">
+              <span className="dg-bub">Salut, moi c’est Julien.</span>
+              <span className="dg-in">
+                <img className="pxsvg dg-f" src="/px/art-2fb1f1ca.svg" alt="" width={180} height={324} />
+                <img
+                  className="pxsvg dg-f pp-blink"
+                  src="/px/pp-blink-839f6700.svg"
+                  alt=""
+                  width={180}
+                  height={324}
+                />
+              </span>
+            </span>
+            <figcaption>Julien</figcaption>
+          </figure>
+          <figure className="mm-cm">
+            <span className="dg pp pp-theo">
+              <span className="dg-bub">Salut, moi c’est Théo.</span>
+              <span className="dg-in">
+                <img className="pxsvg dg-f" src="/px/art-cd9804be.svg" alt="" width={180} height={324} />
+                <img
+                  className="pxsvg dg-f pp-blink"
+                  src="/px/pp-blink-f3d664dc.svg"
+                  alt=""
+                  width={180}
+                  height={324}
+                />
+              </span>
+            </span>
+            <figcaption>Théo</figcaption>
+          </figure>
+          <figure className="mm-cm mm-cm-d">
+            <span className="dg">
+              <span className="dg-bub">Ouaf !</span>
+              <span className="dg-in">
+                <img
+                  className="pxsvg dg-f dg-base"
+                  src="/px/dg-base-a9f5ac2c.svg"
+                  alt=""
+                  width={182}
+                  height={175}
+                />
+                <img
+                  className="pxsvg dg-f dg-blink"
+                  src="/px/dg-blink-e531291a.svg"
+                  alt=""
+                  width={182}
+                  height={175}
+                />
+                <img
+                  className="pxsvg dg-f dg-mouth"
+                  src="/px/dg-mouth-247de8d2.svg"
+                  alt=""
+                  width={182}
+                  height={175}
+                />
+              </span>
+            </span>
+            <figcaption>Doggy</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div className="mm-crew-bar">
+        <div>
+          <b>{title}</b>
+          <span>{line}</span>
+        </div>
+        <a className="btn btn-ink btn-s">Démarrer un projet</a>
+      </div>
+    </div>
+  )
+}
+
 export function Nav() {
   const { pathname } = useLocation()
   return (
@@ -127,20 +208,19 @@ export function Nav() {
                   <span>Être cité par ChatGPT, Perplexity et les réponses IA de Google.</span>
                 </div>
               </Link>
-              <Link to="/expertises/google-ads" className="mm-it" data-exp="google-ads">
+              <Link to="/expertises/sea" className="mm-it" data-exp="sea">
                 <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
                 <div>
-                  <b>Google Ads</b>
+                  <b>SEA</b>
                   <span>Campagnes Search et Performance Max, pilotées au nombre de contacts.</span>
                 </div>
               </Link>
             </div>
-            <Link to="/ressources/etre-cite-par-chatgpt-perplexity" className="mm-feat">
-              <img src="/images/637d3d958bb9f3.png" alt="" />
-              <div className="mm-fk">Guide · 11 min</div>
-              <b>Être cité par ChatGPT et Perplexity : ce qui marche vraiment</b>
-              <span className="lnk">Lire le guide</span>
-            </Link>
+            <MmCrew
+              shape="tall"
+              title="Un projet en tête ?"
+              line="Julien et Théo vous répondent eux-mêmes, sans intermédiaire."
+            />
           </div>
           <div className="mm-foot">
             <span>
@@ -162,12 +242,6 @@ export function Nav() {
                   <div>
                     <b>TPE & PME</b>
                     <span>Un site qui fait venir des demandes, sans y passer vos soirées.</span>
-                    <small>
-                      Ex.{' '}
-                      <span className="mm-ex" data-proj="housses-taxi">
-                        Housses Taxi
-                      </span>
-                    </small>
                   </div>
                 </Link>
                 <Link to="/pour-qui/independants" className="mm-it mm-it-w" data-sector="indep">
@@ -175,12 +249,6 @@ export function Nav() {
                   <div>
                     <b>Indépendants & micro-entrepreneurs</b>
                     <span>Une présence pro, rapide à lancer, avec un budget maîtrisé.</span>
-                    <small>
-                      Ex.{' '}
-                      <span className="mm-ex" data-proj="dathy">
-                        DATHY
-                      </span>
-                    </small>
                   </div>
                 </Link>
                 <Link to="/pour-qui/marques-e-commerce" className="mm-it mm-it-w" data-sector="shop">
@@ -188,12 +256,6 @@ export function Nav() {
                   <div>
                     <b>Marques & e-commerçants</b>
                     <span>Des boutiques Shopify qui vendent, et les outils pour grandir.</span>
-                    <small>
-                      Ex.{' '}
-                      <span className="mm-ex" data-proj="les-bocaux-du-vexin">
-                        Les Bocaux du Vexin
-                      </span>
-                    </small>
                   </div>
                 </Link>
                 <Link to="/pour-qui/start-up" className="mm-it mm-it-w" data-sector="startup">
@@ -201,12 +263,6 @@ export function Nav() {
                   <div>
                     <b>Start-up</b>
                     <span>Un site qui fait comprendre votre produit et réserver des démos.</span>
-                    <small>
-                      Ex.{' '}
-                      <span className="mm-ex" data-proj="swing-call">
-                        Swing Call
-                      </span>
-                    </small>
                   </div>
                 </Link>
               </div>
@@ -520,12 +576,11 @@ export function Nav() {
                 </Link>
               </div>
             </div>
-            <Link to="/realisations/chateau-larc" className="mm-feat">
-              <img src="/images/516331ca28cc7a.png" alt="" />
-              <div className="mm-fk">Étude de cas · Golf</div>
-              <b>Château l’Arc Golf Club : un site et un back-office pour remplir les départs</b>
-              <span className="lnk">Voir le projet</span>
-            </Link>
+            <MmCrew
+              shape="square"
+              title="Parlons de votre activité"
+              line="On s’adapte à votre métier."
+            />
           </div>
           <div className="mm-foot">
             <span>Votre secteur n’est pas dans la liste ? On s’adapte : parlons de votre projet.</span>

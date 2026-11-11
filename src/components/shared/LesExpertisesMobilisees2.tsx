@@ -23,10 +23,10 @@ export function LesExpertisesMobilisees2() {
           </div>
           <span className="lnk">Découvrir</span>
         </Link>
-        <Link to="/expertises/google-ads" className="rl">
+        <Link to="/expertises/sea" className="rl">
           <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
           <div>
-            <b>Google Ads</b>
+            <b>SEA</b>
             <span>Des campagnes qui rapportent des contacts.</span>
           </div>
           <span className="lnk">Découvrir</span>

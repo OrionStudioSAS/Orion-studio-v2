@@ -188,7 +188,7 @@ function HeroMedia() {
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
-            <b>Lancer Google Ads</b>
+            <b>Lancer une campagne SEA</b>
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
@@ -1048,10 +1048,10 @@ function LesExpertisesMobilisees() {
           </div>
           <span className="lnk">Découvrir</span>
         </Link>
-        <Link to="/expertises/google-ads" className="rl">
+        <Link to="/expertises/sea" className="rl">
           <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
           <div>
-            <b>Google Ads</b>
+            <b>SEA</b>
             <span>Des campagnes qui rapportent des contacts.</span>
           </div>
           <span className="lnk">Découvrir</span>

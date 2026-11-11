@@ -59,7 +59,7 @@ function FqHero() {
             Refonte
           </span>
           <span role="button" tabIndex={0}>
-            Google Ads
+            SEA
           </span>
         </div>
       </div>
@@ -226,7 +226,7 @@ function RGrid() {
       <a
         className="r-card"
         data-k="guides"
-        data-soon="Google Ads pour une PME : par où commencer avec un petit budget"
+        data-soon="Le SEA pour une PME : par où commencer avec un petit budget"
       >
         <span className="r-im">
           <img src="/images/f963f77cbfab80.png" alt="" />
@@ -235,7 +235,7 @@ function RGrid() {
           <span>Guides</span>
           <span>8 min de lecture</span>
         </div>
-        <h3>Google Ads pour une PME : par où commencer avec un petit budget</h3>
+        <h3>Le SEA pour une PME : par où commencer avec un petit budget</h3>
         <span className="r-date">16 septembre 2026</span>
       </a>
       <a className="r-card" data-k="shop" data-soon="Fiches produits Shopify : anatomie d’une page qui vend">

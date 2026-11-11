@@ -122,7 +122,7 @@ function MoMedia() {
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
-            <b>Lancer Google Ads</b>
+            <b>Lancer une campagne SEA</b>
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-6fc0fa75.svg" alt="" width={10} height={10} />
@@ -607,7 +607,7 @@ function MoFt() {
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>
             <Link to="/expertises/geo">GEO</Link>
-            <Link to="/expertises/google-ads">Google Ads</Link>
+            <Link to="/expertises/sea">SEA</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>

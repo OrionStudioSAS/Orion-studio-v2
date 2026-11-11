@@ -200,7 +200,7 @@ function MrList() {
       <a
         className="mr-row"
         data-k="guides"
-        data-soon="Google Ads pour une PME : par où commencer avec un petit budget"
+        data-soon="Le SEA pour une PME : par où commencer avec un petit budget"
       >
         <span className="r-im">
           <img src="/images/f963f77cbfab80.png" alt="" />
@@ -210,7 +210,7 @@ function MrList() {
             <span>Guides</span>
             <span>8 min</span>
           </div>
-          <h3>Google Ads pour une PME : par où commencer avec un petit budget</h3>
+          <h3>Le SEA pour une PME : par où commencer avec un petit budget</h3>
           <span className="r-date">16 septembre 2026</span>
         </div>
       </a>
@@ -340,7 +340,7 @@ function MoFt() {
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>
             <Link to="/expertises/geo">GEO</Link>
-            <Link to="/expertises/google-ads">Google Ads</Link>
+            <Link to="/expertises/sea">SEA</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>

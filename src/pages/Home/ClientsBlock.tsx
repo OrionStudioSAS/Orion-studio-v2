@@ -103,10 +103,6 @@ export function ClientsBlock({ mobile = false }: { mobile?: boolean }) {
                 style={{ height: mobile ? Math.round(c.h * 0.72) : c.h }}
               />
               <img className="hc-shot" src={c.shot} alt="" loading="lazy" />
-              <span className="hc-cap">
-                <b>{c.name}</b>
-                <small>{c.tag}</small>
-              </span>
             </Link>
           ))}
         </div>

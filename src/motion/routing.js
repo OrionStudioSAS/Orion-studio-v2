@@ -163,7 +163,7 @@ const EXP_PAGE = {
   Automatisations: 'automatisations',
   SEO: 'seo',
   GEO: 'geo',
-  'Google Ads': 'google-ads',
+  'SEA': 'sea',
 }
 
 function expGo(v, label) {

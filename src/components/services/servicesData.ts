@@ -11,7 +11,7 @@ export type ServiceId =
   | 'saas'
   | 'seo'
   | 'geo'
-  | 'google-ads'
+  | 'sea'
   | 'automatisations'
 export type Service = {
   what: { title: string; lead: string; points: Point[] }
@@ -169,8 +169,8 @@ export const SERVICE_LINKS = [
     icon: '/px/picon-84c912e7.svg',
   },
   {
-    id: 'google-ads',
-    name: 'Google Ads',
+    id: 'sea',
+    name: 'SEA',
     d: 'Des annonces qui rapportent des contacts.',
     icon: '/px/picon-011bf99b.svg',
   },
@@ -200,8 +200,28 @@ const SEO_GEO: Point = {
 }
 const ADS: Point = {
   t: 'On vous accompagne aussi sur la publicité',
-  d: 'Besoin de contacts plus vite ? On crée et on pilote vos annonces Google Ads.',
-  links: [{ to: '/expertises/google-ads', label: 'Découvrir Google Ads' }],
+  d: 'Besoin de contacts plus vite ? On crée et on pilote vos annonces SEA.',
+  links: [{ to: '/expertises/sea', label: 'Découvrir le SEA' }],
+}
+
+const SAAS_GROWTH: Point = {
+  t: 'On vous aide à trouver vos utilisateurs',
+  d: 'Un produit doit se faire connaître : votre site de présentation peut être travaillé pour Google et pour les IA, et des annonces peuvent accélérer les premières inscriptions.',
+  links: [
+    { to: '/expertises/seo', label: 'Le SEO' },
+    { to: '/expertises/geo', label: 'Le GEO' },
+    { to: '/expertises/sea', label: 'Le SEA' },
+  ],
+}
+const SEA_SEO: Point = {
+  t: 'Le référencement naturel en relais',
+  d: 'Les annonces apportent des contacts tout de suite. Le SEO construit une visibilité qui ne s’arrête pas quand le budget s’arrête.',
+  links: [{ to: '/expertises/seo', label: 'Découvrir le SEO' }],
+}
+const SEO_GEO_LINK: Point = {
+  t: 'Le GEO en complément',
+  d: 'Vos clients posent aussi leurs questions à ChatGPT ou Perplexity. Le même travail de fond peut vous y faire apparaître.',
+  links: [{ to: '/expertises/geo', label: 'Découvrir le GEO' }],
 }
 
 const MAINT: Point = {
@@ -795,6 +815,7 @@ export const SERVICES: Record<ServiceId, Service> = {
       {
         t: 'Un bon complément au SEO',
         d: 'Les IA comme Google aiment les sites clairs : ce travail profite aux deux.',
+        links: [{ to: '/expertises/seo', label: 'Découvrir le SEO' }],
       },
     ],
     refs: [
@@ -818,10 +839,10 @@ export const SERVICES: Record<ServiceId, Service> = {
       },
     ],
   },
-  'google-ads': {
+  'sea': {
     what: {
-      title: 'Google Ads ?',
-      lead: 'C’est la publicité sur Google. Vos annonces apparaissent quand quelqu’un cherche ce que vous proposez, et vous payez quand on clique dessus.',
+      title: 'le SEA ?',
+      lead: 'C’est la publicité sur les moteurs de recherche, Google en tête. Vos annonces apparaissent quand quelqu’un cherche ce que vous proposez, et vous payez quand on clique dessus.',
       points: [
         {
           t: 'À quoi ça sert',
@@ -963,12 +984,24 @@ const SHOP_PAGES: readonly ServiceId[] = [
 ]
 export const VISIBLE_PAGES = SHOP_PAGES
 
-/** Et après : le contenu de la page, puis ce qu'on propose à tous les clients (sans renvoyer vers la page en cours). */
-export const afterOf = (id: ServiceId): Point[] => [
-  ...SERVICES[id].after,
-  ...(SHOP_PAGES.includes(id) ? [ACCESS] : []),
-  ...(id === 'seo' || id === 'geo' ? [ADS] : id === 'google-ads' ? [SEO_GEO] : [SEO_GEO, ADS]),
-]
+/** Ce qui complète chaque service : seulement ce qui a du sens pour lui. */
+const EXTRA: Record<ServiceId, Point[]> = {
+  'site-internet': [ACCESS, SEO_GEO, ADS],
+  'site-vitrine': [ACCESS, SEO_GEO, ADS],
+  'site-dynamique': [ACCESS, SEO_GEO, ADS],
+  'site-concept': [ACCESS, SEO_GEO, ADS],
+  'e-commerce': [ACCESS, SEO_GEO, ADS],
+  // une application sert vos équipes ou vos clients connectés : pas de référencement à vendre
+  'developpement-applications': [],
+  saas: [SAAS_GROWTH],
+  seo: [SEO_GEO_LINK, ADS],
+  geo: [ADS],
+  sea: [SEA_SEO],
+  automatisations: [],
+}
+
+/** Et après : le contenu de la page, puis ce qui complète vraiment ce service. */
+export const afterOf = (id: ServiceId): Point[] => [...SERVICES[id].after, ...EXTRA[id]]
 
 /** Les pages où le bloc Orion Admin a du sens : pas la boutique, qui se gère dans Shopify. */
 export const SITE_PAGES: readonly ServiceId[] = [

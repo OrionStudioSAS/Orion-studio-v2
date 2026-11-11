@@ -35,7 +35,7 @@ export function MobileFooter() {
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>
             <Link to="/expertises/geo">GEO</Link>
-            <Link to="/expertises/google-ads">Google Ads</Link>
+            <Link to="/expertises/sea">SEA</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>

@@ -39,7 +39,7 @@ const PATHS = {
   automatisations: '/expertises/automatisations',
   seo: '/expertises/seo',
   geo: '/expertises/geo',
-  'google-ads': '/expertises/google-ads',
+  'sea': '/expertises/sea',
   studio: '/le-studio',
   ressources: '/ressources',
   'etre-cite-par-les-ia': '/ressources/etre-cite-par-chatgpt-perplexity',
@@ -100,7 +100,7 @@ Object.assign(TITLES, {
   saas: 'SaaS — Orion Studio',
   seo: 'SEO — Orion Studio',
   geo: 'GEO — Orion Studio',
-  'google-ads': 'Google Ads — Orion Studio',
+  'sea': 'SEA — Orion Studio',
 })
 TITLES['automatisations'] = 'Automatisations — Orion Studio'
 Object.assign(TITLES, {

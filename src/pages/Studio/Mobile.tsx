@@ -402,7 +402,7 @@ function Mq() {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Google Ads</span>
+        <span>SEA</span>
         <i>
           <svg
             className="pxstar"
@@ -540,7 +540,7 @@ function Mq() {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Google Ads</span>
+        <span>SEA</span>
         <i>
           <svg
             className="pxstar"
@@ -678,7 +678,7 @@ function Mq() {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Google Ads</span>
+        <span>SEA</span>
         <i>
           <svg
             className="pxstar"
@@ -1017,7 +1017,7 @@ function MoFt() {
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>
             <Link to="/expertises/geo">GEO</Link>
-            <Link to="/expertises/google-ads">Google Ads</Link>
+            <Link to="/expertises/sea">SEA</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>

@@ -9,11 +9,11 @@ function Hero() {
     <section className="hero">
       <div className="crumb">
         <Link to="/">
-          Expertises / <b>Google Ads</b>
+          Expertises / <b>SEA</b>
         </Link>
       </div>
       <h1 className="s-h1">
-        <span className="s-a">Campagnes Google Ads</span>
+        <span className="s-a">Campagnes SEA</span>
         <span className="serif">pilotées au nombre de contacts.</span>
       </h1>
       <div className="hero-row">
@@ -169,7 +169,7 @@ function HeroMedia() {
         <div className="ch2-sug">
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
-            <b>Lancer Google Ads</b>
+            <b>Lancer une campagne SEA</b>
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
@@ -239,7 +239,7 @@ export function Desktop() {
       <MmVeilLive />
       <Hero />
       <HeroMedia />
-      <ServiceSections id="google-ads" />
+      <ServiceSections id="sea" />
       <GCta />
     </section>
   )

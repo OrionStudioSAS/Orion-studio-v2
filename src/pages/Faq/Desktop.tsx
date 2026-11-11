@@ -228,7 +228,7 @@ function FqBody() {
             </p>
           </div>
           <div className="fq-q">
-            <h3>Gérez-vous les campagnes Google Ads ?</h3>
+            <h3>Gérez-vous les campagnes SEA ?</h3>
             <p>
               Oui : audit, création des campagnes, pages d’atterrissage et pilotage mensuel, avec un suivi des
               conversions de l’annonce jusqu’à la demande.

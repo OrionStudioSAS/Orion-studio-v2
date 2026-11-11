@@ -1,3 +1,4 @@
 {
+  "redirects": [{ "source": "/expertises/google-ads", "destination": "/expertises/sea", "permanent": true }],
   "rewrites": [{ "source": "/((?!images/|px/|media/|assets/|favicon).*)", "destination": "/index.html" }]
 }

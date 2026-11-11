@@ -7,11 +7,11 @@ function MoHero() {
     <section className="mo-hero">
       <div className="crumb">
         <Link to="/">
-          Expertises / <b>Google Ads</b>
+          Expertises / <b>SEA</b>
         </Link>
       </div>
       <h1 className="mo-h1">
-        Campagnes Google Ads
+        Campagnes SEA
         <span className="serif">pilotées au nombre de contacts.</span>
       </h1>
       <p className="mo-lead">
@@ -104,7 +104,7 @@ function MoMedia() {
         <div className="mo-sug">
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
-            <b>Lancer Google Ads</b>
+            <b>Lancer une campagne SEA</b>
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
@@ -177,7 +177,7 @@ function MoFt() {
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>
             <Link to="/expertises/geo">GEO</Link>
-            <Link to="/expertises/google-ads">Google Ads</Link>
+            <Link to="/expertises/sea">SEA</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>
@@ -261,7 +261,7 @@ export function Mobile() {
       <MobileNav />
       <MoHero />
       <MoMedia />
-      <ServiceSections id="google-ads" mobile />
+      <ServiceSections id="sea" mobile />
       <MoFt />
     </section>
   )

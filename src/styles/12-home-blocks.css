@@ -61,32 +61,6 @@
     opacity 0.45s steps(5),
     transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.hc-cap {
-  position: absolute;
-  left: 8px;
-  right: 8px;
-  bottom: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  background: rgba(14, 14, 12, 0.86);
-  color: #f4f4f1;
-  opacity: 0;
-  transform: translateY(10px);
-  transition:
-    opacity 0.25s,
-    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.hc-cap b {
-  font: 600 13px/1.2 'Geist';
-  letter-spacing: -0.02em;
-}
-.hc-cap small {
-  font: 400 10px/1.2 'Geist Mono';
-  color: rgba(244, 244, 241, 0.65);
-}
 .hc-c:hover .hc-shot,
 .hc-c:focus-visible .hc-shot,
 .hc-c.on .hc-shot {
@@ -97,12 +71,6 @@
 .hc-c:focus-visible .hc-logo,
 .hc-c.on .hc-logo {
   opacity: 0;
-}
-.hc-c:hover .hc-cap,
-.hc-c:focus-visible .hc-cap,
-.hc-c.on .hc-cap {
-  opacity: 1;
-  transform: none;
 }
 .hc-m {
   margin-top: 0;
@@ -600,7 +568,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hc-shot,
-  .hc-cap,
   .hc-logo {
     transition: none;
   }

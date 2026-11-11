@@ -239,7 +239,9 @@ button {
 .mm-live .mm-it:first-of-type {
   background: none;
 }
-.mm-it:hover {
+/* le premier lien de chaque colonne aussi : la règle au-dessus, plus précise, lui retirait son fond au survol */
+.mm-it:hover,
+.mm-live .mm-it:first-of-type:hover {
   background: var(--panel);
 }
 .mm-veil-live {
@@ -881,4 +883,129 @@ button {
 .ad-toast .cf-ok {
   width: 26px;
   height: 26px;
+}
+
+/* ---------- méga menus : Julien, Théo et Doggy dans le studio, avec l'appel à démarrer un projet ---------- */
+.mm-crew {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+.mm-crew-tall {
+  width: 300px;
+}
+.mm-crew-square {
+  width: 360px;
+  align-self: flex-start;
+}
+.mm-crew-st {
+  position: relative;
+  flex: 1;
+  min-height: 300px;
+  overflow: hidden;
+  background: #e9e2d6;
+}
+.mm-crew-square .mm-crew-st {
+  flex: none;
+  height: 250px;
+  min-height: 0;
+}
+.mm-crew-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 100%;
+  image-rendering: pixelated;
+}
+.mm-crew-row {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+}
+.mm-cm {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.mm-cm .dg {
+  cursor: default;
+}
+.mm-cm .dg-f {
+  width: 64px;
+  height: auto;
+}
+.mm-cm-d .dg-f {
+  width: 70px;
+}
+.mm-crew-tall .mm-cm .dg-f {
+  width: 72px;
+}
+.mm-crew-tall .mm-cm-d .dg-f {
+  width: 78px;
+}
+.mm-cm figcaption {
+  padding: 4px 7px 5px;
+  border-radius: 5px;
+  background: rgba(14, 14, 12, 0.72);
+  font: 600 11px/1 'Geist';
+  color: #f4f4f1;
+  letter-spacing: -0.01em;
+}
+.mm-cm .dg-bub {
+  font-size: 12px;
+  padding: 7px 9px;
+}
+.mm-crew-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-top: 1px solid var(--line);
+}
+.mm-crew-tall .mm-crew-bar {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+  padding: 18px;
+}
+.mm-crew-bar b {
+  display: block;
+  font: 600 15px/1.2 'Geist';
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.mm-crew-bar span {
+  display: block;
+  margin-top: 4px;
+  font: 400 12px/1.4 'Geist';
+  color: var(--muted);
+}
+.mm-crew-bar .btn {
+  flex: none;
+  justify-content: center;
+}
+.mm-live .mm-crew {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.4s 0.18s,
+    transform 0.5s 0.18s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.mm-live.on .mm-crew {
+  opacity: 1;
+  transform: none;
 }

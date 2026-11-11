@@ -71,8 +71,8 @@ const GROUPS: { title: string; items: Item[] }[] = [
         icon: '/px/picon-84c912e7.svg',
       },
       {
-        id: 'google-ads',
-        name: 'Google Ads',
+        id: 'sea',
+        name: 'SEA',
         d: 'Des annonces qui rapportent des contacts, pas seulement des clics.',
         icon: '/px/picon-011bf99b.svg',
       },
@@ -99,7 +99,7 @@ const LEADS: Record<string, string> = {
     'Une demi-journée dans vos locaux, offerte, pour repérer ce qui peut tourner tout seul. Ensuite, on est payés sur les heures que vos équipes gagnent.',
   seo: 'Audit, SEO technique, contenus et référencement local : votre site remonte sur les recherches qui amènent de vrais clients, pas seulement du trafic.',
   geo: 'Vos clients posent leurs questions aux IA. On structure votre site et vos contenus pour que votre marque apparaisse, et soit citée, dans leurs réponses.',
-  'google-ads':
+  'sea':
     'Search, Performance Max, campagnes locales : des campagnes construites et pilotées pour générer des demandes, avec des pages qui convertissent.',
 }
 
@@ -174,7 +174,7 @@ const Visual = ({ id }: { id: string }) => {
         </div>
       </div>
     )
-  if (id === 'google-ads')
+  if (id === 'sea')
     return (
       <div className="sv sv-serp sv-ads">
         <Search q="agence site internet" />

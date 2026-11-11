@@ -129,7 +129,7 @@ function MoMedia() {
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
-            <b>Lancer Google Ads</b>
+            <b>Lancer une campagne SEA</b>
           </span>
         </div>
         <div className="ch2-note mo-note">
@@ -327,7 +327,7 @@ function CeQuOnLivre() {
               </div>
             </div>
           </div>
-          <h3>Google Ads</h3>
+          <h3>SEA</h3>
           <p>Des annonces locales quand vous voulez du travail rapidement.</p>
         </article>
       </div>
@@ -617,7 +617,7 @@ function MoFt() {
             <Link to="/expertises/automatisations">Automatisations</Link>
             <Link to="/expertises/seo">SEO</Link>
             <Link to="/expertises/geo">GEO</Link>
-            <Link to="/expertises/google-ads">Google Ads</Link>
+            <Link to="/expertises/sea">SEA</Link>
           </div>
           <div className="mo-fc">
             <div className="fc-k">Pour qui ?</div>

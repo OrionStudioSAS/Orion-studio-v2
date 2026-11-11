@@ -283,7 +283,7 @@ function chatFlow(chat, pfx) {
   const kindOf = (t) =>
     /pas encore de site|^Créer mon site|nouvelle marque/i.test(t)
       ? 'new'
-      : /Google Ads|Auditer mon compte|campagne|atterrissage/i.test(t)
+      : /\bSEA\b|Auditer mon compte|campagne|atterrissage/i.test(t)
         ? 'ads'
         : /ChatGPT|les IA/i.test(t)
           ? 'geo'

@@ -46,9 +46,9 @@ export function MobileMenu() {
           <img className="pxsvg picon" src="/px/picon-84c912e7.svg" alt="" width={20} height={20} />
           <span>GEO</span>
         </Link>
-        <Link to="/expertises/google-ads" className="mo-mi" data-exp="google-ads">
+        <Link to="/expertises/sea" className="mo-mi" data-exp="sea">
           <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
-          <span>Google Ads</span>
+          <span>SEA</span>
         </Link>
       </div>
       <div className="mo-mk">Pour qui ?</div>
@@ -707,10 +707,10 @@ export function ProjectModal() {
                   </span>
                 </label>
                 <label className="pj-card">
-                  <input type="checkbox" name="type" value="Google Ads" id="pj-type-ads" />
+                  <input type="checkbox" name="type" value="SEA" id="pj-type-ads" />
                   <span className="pj-card-in">
                     <img className="pxsvg picon" src="/px/picon-011bf99b.svg" alt="" width={20} height={20} />
-                    <b>Google Ads</b>
+                    <b>SEA</b>
                     <small>Campagnes pilotées aux contacts</small>
                     <i className="pj-tick">
                       <svg

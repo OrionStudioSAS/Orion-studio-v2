@@ -1623,19 +1623,6 @@ body.cur-label .cur-dot i {
 .mo-ix[data-proj] {
   cursor: pointer;
 }
-.mm-ex {
-  color: var(--ink);
-  text-decoration: underline;
-  text-decoration-color: var(--line);
-  text-underline-offset: 3px;
-  transition:
-    text-decoration-color 0.25s,
-    color 0.25s;
-}
-.mm-ex:hover {
-  color: var(--acc);
-  text-decoration-color: var(--acc);
-}
 .mm-k[data-pv],
 .mo-mk[data-pv] {
   cursor: pointer;

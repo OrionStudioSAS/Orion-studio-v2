@@ -118,7 +118,7 @@ export function Mq({ mobile = false }: { mobile?: boolean }) {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Google Ads</span>
+        <span>SEA</span>
         <i>
           <svg
             className="pxstar"
@@ -256,7 +256,7 @@ export function Mq({ mobile = false }: { mobile?: boolean }) {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Google Ads</span>
+        <span>SEA</span>
         <i>
           <svg
             className="pxstar"
@@ -394,7 +394,7 @@ export function Mq({ mobile = false }: { mobile?: boolean }) {
             <rect x="9" y="10.5" width="3" height="1.5" fill="#FF4D1A" />
           </svg>
         </i>
-        <span>Google Ads</span>
+        <span>SEA</span>
         <i>
           <svg
             className="pxstar"

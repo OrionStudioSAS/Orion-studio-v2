@@ -195,7 +195,7 @@ function HeroMedia() {
           </span>
           <span className="sg">
             <img className="pxsvg picon" src="/px/picon-34cc7426.svg" alt="" width={10} height={10} />
-            <b>Lancer Google Ads</b>
+            <b>Lancer une campagne SEA</b>
           </span>
         </div>
         <div className="ch2-note">
@@ -420,7 +420,7 @@ function CeQuOnLivre() {
             </div>
           </div>
           <div className="gc-b">
-            <h3>Google Ads</h3>
+            <h3>SEA</h3>
             <p>Des annonces locales quand vous voulez du travail rapidement.</p>
           </div>
         </article>
